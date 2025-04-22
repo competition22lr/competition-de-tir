@@ -1,0 +1,50 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer [mode]="isMobile ? 'over' : 'side'" [opened]="!isMobile">
+
+    <mat-nav-list>
+      <mat-list-item [routerLink]="['/accueil']" (click)="isMobile && drawer.close()">
+        <mat-icon>home</mat-icon>
+        <span>Accueil</span>
+      </mat-list-item>
+      
+    <mat-list-item [routerLink]="['/reglements']" (click)="isMobile && drawer.close()">
+      <mat-icon>gavel</mat-icon>
+      <span>Règlements</span>
+    </mat-list-item>
+  </mat-nav-list>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Sélectionner une compétition</mat-label>
+      <mat-select [(value)]="indexCompetitionSelectionne" (selectionChange)="onCompetitionChange($event.value)">
+        <mat-option *ngFor="let competition of competitionsDispo; let i = index" [value]="i">
+          {{ competition }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-nav-list>
+      <mat-list-item *ngFor="let mois of moisDispo"
+        [routerLink]="['/classement', indexCompetitionSelectionne, encodeMois(mois.name)]"
+        (click)="isMobile && drawer.close()">
+        <span>{{ mois.name }}</span>
+      </mat-list-item>
+
+
+      
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Contenu principal -->
+
+    <mat-toolbar color="primary" class="mobile-toolbar">
+      <button mat-icon-button (click)="drawer.toggle()" class="mobile-toggle-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <!-- Zone d'affichage pour les pages comme /reglements -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

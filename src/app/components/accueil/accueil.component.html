@@ -1,0 +1,17 @@
+<div class="accueil-container">
+  <div class="message">
+    <h1>Bienvenue sur le site des Résultats des Compétitions!</h1>
+    <p>Ce site vous permet de consulter les classements mensuels des compétitions de tir organisées par le CTO.</p>
+  
+    <h2>Comment ça fonctionne ?</h2>
+    <ul>
+      <li>Sélectionnez une compétition dans le menu latéral.</li>
+      <li>Choisissez le mois pour lequel vous souhaitez voir les résultats.</li>
+      <li>Consultez le classement détaillé des participants.</li>
+    </ul>
+  
+    <p>Pour en savoir plus sur les règles et le fonctionnement, consultez la section <a routerLink="/reglements">Règlements</a>.</p>
+  </div>
+  <img [src]="resultatsService.imageLocationUrl + 'construction-tir-fr.png'" alt="Site en construction" class="construction-image">
+  <img [src]="resultatsService.imageLocationUrl + 'construction-tir-en.png'" alt="Site under construction" class="construction-image">
+</div>
