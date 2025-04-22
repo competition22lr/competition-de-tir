@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "resultats": {
+    "competition-de-tir": {
       "projectType": "application",
       "schematics": {},
       "root": "",
