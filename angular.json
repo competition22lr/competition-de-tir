@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/resultats",
+            "outputPath": "dist/competition-de-tir",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "resultats:build:production"
+              "buildTarget": "competition-de-tir:build:production"
             },
             "development": {
-              "buildTarget": "resultats:build:development"
+              "buildTarget": "competition-de-tir:build:development"
             }
           },
           "defaultConfiguration": "development"

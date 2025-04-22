@@ -1,6 +1,6 @@
 // import { ResultatsCummulatif } from './resultats.model';
 
-// describe('Resultats', () => {
+// describe('competition-de-tir', () => {
 //   it('should create an instance', () => {
 //     expect(new ResultatsCummulatif()).toBeTruthy();
 //   });
