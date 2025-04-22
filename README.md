@@ -1,4 +1,5 @@
-# Competition De-Tir [![Netlify Status](https://api.netlify.com/api/v1/badges/79f87037-7aeb-455b-8716-27c595eae505/deploy-status)](https://app.netlify.com/sites/competitioncto/deploys)
+# Competition De-Tir 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/69bc00c9-2772-4475-a4d8-d6693097cd7a/deploy-status)](https://app.netlify.com/sites/competition-de-tir/deploys)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
