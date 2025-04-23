@@ -2,14 +2,12 @@
   width: 100%;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+.example-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.example-container {
-   height: 100vh; /* // Assure que tout le container prend l'écran */
-}
 
 mat-sidenav {
   display: flex;
