@@ -1,12 +1,4 @@
 
-body {
-  font-family: "Segoe UI", Roboto, sans-serif;
-  background-color: #f7f9fc;
-  color: #222;
-  line-height: 1.6;
-  padding: 2rem;
-}
-
 .reglements-container {
   padding: 2rem;
   max-width: 800px;
@@ -62,7 +54,6 @@ a:hover {
 }
 
 .calibres-block {
-  background-color: #f3f3f3;
   padding: 1rem;
   border-left: 4px solid #2e7d32;
   margin-top: 1rem;
@@ -103,7 +94,6 @@ a:hover {
 
 .alert {
   margin-top: 1rem;
-  background-color: #eef5ff;
   border-left: 4px solid #0070f3;
   padding: 1rem;
   border-radius: 6px;

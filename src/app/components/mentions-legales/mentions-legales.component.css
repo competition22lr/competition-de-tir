@@ -1,0 +1,27 @@
+.mentions-legales-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mentions-legales-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .mentions-legales-container h2 {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-top: 2rem;
+  }
+  
+  .mentions-legales-container p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
