@@ -82,3 +82,11 @@
   .trophy-card-Bronze {
     background: #88540B;
   }
+
+  @media (max-width: 768px) {
+    .classements {      
+    padding: unset;
+    border-radius: unset;
+    box-shadow: unset;
+    }
+  }
