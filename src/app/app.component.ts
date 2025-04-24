@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Router, NavigationEnd, RouterModule } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { filter } from 'rxjs/operators';
@@ -12,9 +13,12 @@ import { HeaderComponent } from './components/header/header.component';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HeaderComponent, SideNavComponent, RouterModule, FooterComponent]
+  imports: [HeaderComponent, SideNavComponent, RouterModule, FooterComponent, CommonModule]
 })
 export class AppComponent {
+
+  currentUrl: string = '';
+
   constructor(private router: Router, private viewportScroller: ViewportScroller) {
      // ecoute les changements de route
      this.router.events.pipe(
@@ -28,5 +32,15 @@ export class AppComponent {
         }, 0);
       }
     });
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.currentUrl = event.urlAfterRedirects;
+      }
+    });
+  }
+
+  isImpressionRoute(): boolean {
+    return this.currentUrl.startsWith('/impression');
   }
 }

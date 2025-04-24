@@ -1,3 +1,8 @@
 <app-header></app-header>
-<app-side-nav></app-side-nav>
-<app-footer></app-footer>
+<app-side-nav *ngIf="!isImpressionRoute()"></app-side-nav>
+
+<router-outlet  *ngIf="isImpressionRoute()"></router-outlet>
+
+<app-footer *ngIf="!isImpressionRoute()"></app-footer>
+
+

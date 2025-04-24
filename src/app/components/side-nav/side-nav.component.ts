@@ -22,7 +22,7 @@ import { filter } from 'rxjs';
     MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
     RouterModule],
   templateUrl: './side-nav.component.html',
-  styleUrls: ['./side-nav.component.css']
+  styleUrls: ['../../../styles-print.css', './side-nav.component.css']
 
 })
 export class SideNavComponent implements OnInit {

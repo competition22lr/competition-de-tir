@@ -1,0 +1,88 @@
+/*
+ ✅ Astuces :
+Ajoute class="no-print" sur tout ce que tu veux cacher uniquement à l'impression (boutons, menus, etc.).
+Ajoute class="page-break" sur un div ou hr pour forcer une saut de page. 
+*/
+@media print {
+
+    /* Masquer les éléments non nécessaires à l'impression */
+    mat-sidenav,
+    .mat-toolbar,
+    nav,
+    footer,
+    .no-print {
+        display: none !important;
+    }
+
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    mat-sidenav-content {
+        margin: 0 !important;
+        padding: 1cm !important; /* Réduit le padding */
+        width: 100% !important;
+        box-sizing: border-box;
+        font-size: 12pt;
+        color: #000;
+    }
+
+    /* Éviter que des blocs soient coupés */
+    .header-toolbar,
+    .classement-container,
+    .classement-section,
+    .trophy-card,
+    section {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .header-toolbar {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        page-break-after: avoid !important;
+        margin-bottom: 0 !important;
+    }
+
+    .trophy-img {
+        display: block;
+        margin: 0 auto 0.5rem;
+        max-width: 80px;
+    }
+
+    .trophy-card td {
+        text-align: center;
+        vertical-align: top;
+        padding: 0.5rem;
+    }
+
+    .trophy-card-Diamant { background-color: #A7BCBE !important; color: black; }
+    .trophy-card-Platine { background-color: #99A0A2 !important; color: black; }
+    .trophy-card-Or { background-color: #DC9403 !important; color: black; }
+    .trophy-card-Argent { background-color: #C0C0C0 !important; color: black; }
+    .trophy-card-Bronze { background-color: #88540B !important; color: black; }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+        page-break-before: avoid;
+        color: black !important;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+
+    /* Supprimer tout overlay */
+    .cdk-overlay-container,
+    .cdk-global-overlay-wrapper {
+        display: none !important;
+    }
+}

@@ -10,9 +10,18 @@
       </div>
     </div>
   </div>
-  <div>
-    <a [routerLink]="['/reglements']" fragment="classement">
-      🏅 Système de Classement des Tireurs
-    </a>
+
+  <div class="no-print">
+    <ul >
+      <li style="list-style-image: none;"><a [routerLink]="['/impression', this.indexCompetitionSelectionne, this.moisSelectionne?.name]"
+          target="_blank">🖨️
+          Version imprimable</a></li>
+      <li style="list-style-image: none;"><a [routerLink]="['/reglements']" fragment="classement">
+          🏅 Système de Classement des Tireurs
+        </a></li>
+    </ul>
+
+    <br />
+
   </div>
 </div>

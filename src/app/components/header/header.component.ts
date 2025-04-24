@@ -6,7 +6,7 @@ import { ResultatsService } from '../../services/resultats.service';
   selector: 'app-header',
   imports: [MatToolbarModule],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['../../../styles-print.css', './header.component.css']
 })
 export class HeaderComponent {
   constructor(public resultatsService: ResultatsService) { }

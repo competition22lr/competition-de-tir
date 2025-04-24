@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Participant } from '../../models/participant.model';
 import { CommonModule } from '@angular/common';
-import { ResultatsService } from '../../services/resultats.service';
-import { MoisResultats } from '../../models/mois-resultats.model';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { Participant } from '../../models/participant.model';
 import { Competition } from '../../models/competition.model';
+import { MoisResultats } from '../../models/mois-resultats.model';
+import { ResultatsService } from '../../services/resultats.service';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-classement-mensuel',
+  selector: 'app-impression-classement',
   imports: [CommonModule, RouterModule],
-  templateUrl: './classement-mensuel.component.html',
-  styleUrls: ['./classement-mensuel.component.css']
+  templateUrl: './impression-classement.component.html',
+  styleUrl: './impression-classement.component.css'
 })
-export class ClassementMensuelComponent implements OnInit {
+export class ImpressionClassementComponent implements OnInit {
   participants: Participant[] = [];
   competitionSelectionnee!: Competition;
   moisSelectionne?: MoisResultats;
@@ -63,6 +63,9 @@ export class ClassementMensuelComponent implements OnInit {
     });
   }
 
+  imprimer(): void {
+    window.print();
+  }
 
 
   get topParticipants() {

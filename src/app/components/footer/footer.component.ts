@@ -6,7 +6,7 @@ import { Router, RouterModule } from '@angular/router';
   selector: 'app-footer',
   imports: [RouterModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrls: [ '../../../styles-print.css','./footer.component.css']
 })
 export class FooterComponent {
   constructor(public resultatsService: ResultatsService , private router: Router) { }

@@ -14,18 +14,14 @@
 }
 
 .logo {
-  height: auto;
-  max-height: 100px;
+  height: 70px;
   width: auto;
-}
-
-.logo-right {
-  display: block;
+  max-width: 100px;
 }
 
 .title-container {
-  flex-grow: 1;
   text-align: center;
+  flex-grow: 1;
 }
 
 .title {
@@ -33,12 +29,51 @@
   font-weight: bold;
   color: black;
   margin: 0;
+  /* font-size: 1.6rem; */
 }
 
 .subtitle {
   font-size: 1.1rem;
   margin: 0;
   opacity: 0.9;
+}
+
+/* --- Impression --- */
+@media print {
+  .header-toolbar {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  .header-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 1rem;
+    padding: 0 !important;
+  }
+
+  .logo, .logo-right {
+    height: 60px !important;
+    width: auto !important;
+    max-width: 100px !important;
+  }
+
+  .logo-right {
+    display: block !important; /* Assure qu’elle s’affiche même sur mobile en print */
+  }
+
+  .title-container {
+    text-align: center;
+    flex: 1;
+  }
+
+  .title, .subtitle {
+    margin: 0;
+  }
 }
 
 /* Responsive tablette et mobile */
