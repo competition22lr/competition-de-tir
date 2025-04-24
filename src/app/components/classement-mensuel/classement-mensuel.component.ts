@@ -3,12 +3,12 @@ import { Participant } from '../../models/participant.model';
 import { CommonModule } from '@angular/common';
 import { ResultatsService } from '../../services/resultats.service';
 import { MoisResultats } from '../../models/mois-resultats.model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Competition } from '../../models/competition.model';
 
 @Component({
   selector: 'app-classement-mensuel',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './classement-mensuel.component.html',
   styleUrls: ['./classement-mensuel.component.css']
 })
@@ -19,7 +19,7 @@ export class ClassementMensuelComponent implements OnInit {
   indexCompetitionSelectionne!: number;
   private _moisSelectionne!: string;
 
-  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute) { }
+  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
