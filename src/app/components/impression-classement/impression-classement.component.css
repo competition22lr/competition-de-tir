@@ -1,0 +1,88 @@
+.classement-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.titre-mois {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.trophy-card-Diamant {
+  background: #A7BCBE;
+}
+
+.trophy-card-Platine {
+  background: #99A0A2;
+}
+
+.trophy-card-Or {
+  background: #DC9403;
+}
+
+.trophy-card-Argent {
+  background: #C0C0C0;
+}
+
+.trophy-card-Bronze {
+  background: #88540B;
+}
+
+.trophy-card {
+  border-radius: 12px;
+  padding: 0.5rem;
+  /* width: 100px; portrait */
+  width: 150px; /* landscape */
+
+  text-align: center;
+  color: black;
+}
+
+.trophy-img {
+  display: block;
+  margin: 0 auto 0.5rem;
+  max-width: 80px;
+}
+
+.infos {
+  margin-top: 0.5rem;
+
+  .nom {
+    font-weight: bold;
+  }
+
+  .score {
+    font-size: 0.9rem;
+    color: black;
+  }
+}
+
+.classement-container {
+  display: flex;
+  flex-direction: column;
+  /* Important pour mettre le titre au-dessus */
+  align-items: center;
+  gap: 1rem;
+  /* Un peu d’espace entre les éléments */
+}
+
+.trophees {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media print {
+
+  /* Masquer les éléments non nécessaires à l'impression */
+  .no-print {
+    display: none !important;
+  }
+}
