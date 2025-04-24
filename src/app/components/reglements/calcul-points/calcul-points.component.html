@@ -1,0 +1,45 @@
+<h2>📋Calcul des points</h2>
+<p>Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.</p>
+
+<div class="exemple-tir tir-parfait">
+    <h3>🎯 Tir Parfait</h3>
+    <p>Le tireur atteint le centre de la cible, sans erreur, et fait completement disparetre le point central. il
+        obtient <strong>10 points de
+            base</strong> ainsi que <strong>1 points bonis</strong>.</p>
+    <div class="tir-parfait-gallery">
+        <img [src]="resultatsService.imageLocationUrl + 'tir-parfait.jpg'" alt="Tir parfait" />
+        <img [src]="resultatsService.imageLocationUrl + 'tir-parfait1.jpg'" alt="Tir parfait 1" />
+        <img [src]="resultatsService.imageLocationUrl + 'tir-parfait1.jpg'" alt="Tir parfait 2" />
+    </div>
+</div>
+
+<div class="exemple-tir tir-solide">
+    <h3>✅ Tir Excellent sans bonis</h3>
+    <p>Le tireur atteint le centre de la cible, sans erreur, <strong>mais</strong> ne fait <strong>pas</strong>
+        completement disparetre le point central. il obtient <strong>10 points de
+            base</strong>.</p>
+    <div class="tir-parfait-gallery">
+        <img [src]="resultatsService.imageLocationUrl + 'tir-solide.jpg'" alt="Tir solide sans bonis" />
+        <img [src]="resultatsService.imageLocationUrl + 'tir-solide.jpg'" alt="Tir solide sans bonis 1" />
+        <img [src]="resultatsService.imageLocationUrl + 'tir-solide.jpg'" alt="Tir solide sans bonis 2" />
+    </div>
+</div>
+
+<div class="exemple-tir tir-invalide">
+    <h3>❌ Tir Invalide</h3>
+    <p>Le tir contient une erreur : <strong>double tir</strong> sur une même cible ou <strong>tir hors cible</strong>
+        (dans l'encadrement mais hors zone de score). Aucun point n'est attribué.</p>
+    <div class="tir-parfait-gallery">
+        <img [src]="resultatsService.imageLocationUrl + 'tir-invalide.jpg'" alt="Tir invalide" />
+    </div>
+</div>
+
+<div class="exemple-tir tir-triche">
+    <h3>🚫 Tentative de triche</h3>
+    <p>Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score. <strong>Disqualification
+            automatique</strong>.</p>
+            <div class="tir-parfait-gallery">
+                <img [src]="resultatsService.imageLocationUrl + 'tir-triche.jpg'" alt="Cible trafiquée" />
+                <img [src]="resultatsService.imageLocationUrl + 'tir-triche-overlay-rouge.jpg'" alt="Cible trafiquée" />
+            </div>
+</div>
