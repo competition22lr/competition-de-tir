@@ -1,0 +1,100 @@
+<h2>🏅 Système de Classement des Tireurs</h2>
+<p>
+    Les tireurs sont classés en fonction de leurs performances lors des épreuves comptabilisées.
+    Le classement prend en compte <strong>le score de base</strong>, <strong>les points bonis</strong>,
+    <strong>le type de cible utilisée</strong>, ainsi que le <strong>rang global</strong> obtenu.
+    Un tireur <strong>ne peut être classé que dans un seul groupe</strong>.
+</p>
+<div class="classements">
+    <div class="classements-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Classement</th>
+                    <th>Conditions d'obtention</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="trophy-card trophy-card-Diamant">
+                        <div class="trophy-content">
+                            <img [src]="getTrophyImage('Diamant')" class="trophy-img" alt="trophée Diamant" />
+                            <span>Diamant</span>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Score de <strong>200 points de base minimum</strong> (hors bonis)</li>
+                            <li><strong>Meilleur total de points bonis</strong></li>
+                            <li>Utilisation de <strong>cibles réduites</strong></li>
+                            <li><em>Si le score de base n'est pas atteint, aucun classement n'est attribué</em></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="trophy-card trophy-card-Platine">
+                        <div class="trophy-content">
+                            <img [src]="getTrophyImage('Platine')" class="trophy-img" alt="trophée Platine" />
+                            <span>Platine</span>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Score de <strong>200 points de base minimum</strong></li>
+                            <li>Meilleur total de points bonis</li>
+                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="trophy-card trophy-card-Or">
+                        <div class="trophy-content">
+                            <img [src]="getTrophyImage('Or')" class="trophy-img" alt="trophée Or" />
+                            <span>Or</span>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Meilleur score total</strong> (base + bonis)</li>
+                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="trophy-card trophy-card-Argent">
+                        <div class="trophy-content">
+                            <img [src]="getTrophyImage('Argent')" class="trophy-img" alt="trophée Argent" />
+                            <span>Argent</span>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Deuxième meilleur score total</strong></li>
+                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="trophy-card trophy-card-Bronze">
+                        <div class="trophy-content">
+                            <img [src]="getTrophyImage('Bronze')" class="trophy-img" alt="trophée Bronze" />
+                            <span>Bronze</span>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Troisième meilleur score total</strong></li>
+                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="note">
+        🔒 <strong>Note :</strong> Un tireur qui tente le classement <strong>Diamant</strong> mais
+        n'atteint pas les <strong>200 points de base</strong> ne sera classé <strong>dans aucun groupe</strong>,
+        même avec un excellent pointage bonifié.
+    </div>
+</div>

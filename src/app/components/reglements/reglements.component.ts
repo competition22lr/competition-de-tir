@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ClassementComponent } from './classement/classement.component';
+import { EquipementComponent } from './equipement/equipement.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { FeuillePointageComponent } from './feuille-pointage/feuille-pointage.component';
 
 @Component({
   selector: 'app-reglements',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,ClassementComponent,EquipementComponent,CategoriesComponent,FeuillePointageComponent],
   templateUrl: './reglements.component.html',
   styleUrls: ['./reglements.component.css']
 })

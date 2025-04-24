@@ -8,6 +8,7 @@
       <li><a (click)="goToAnchor('categories')">Catégories</a></li>
       <li><a (click)="goToAnchor('feuille-points')">Feuille de cible</a></li>
       <li><a (click)="goToAnchor('calcul-points')">Calcul des points</a></li>
+      <li><a (click)="goToAnchor('classement')">Système de Classement des Tireurs</a></li>
       <li><a (click)="goToAnchor('equipement')">Équipement autorisé</a>
         <ul>
           <li><a (click)="goToAnchor('calibres')">Calibres autorisés</a></li>
@@ -22,83 +23,11 @@
   </section>
 
   <section id="categories">
-    <div class="bloc">
-      <h2>📂 Catégories</h2>
-      <p>La définition des catégories officielles est en cours de finalisation. Cette classification visera à structurer
-        équitablement la participation des tireurs selon différents critères, tels que :</p>
-      <ul>
-        <li>Le type de carabine (air comprimé, .22 LR, percussion centrale, etc.)</li>
-        <li>Le niveau d'expérience (débutant, confirmé, expert)</li>
-        <li>La classification ou l'âge (si applicable selon les règlements en vigueur)</li>
-      </ul>
-      <div class="note">
-        <strong>ℹ️ À venir :</strong> Les catégories officielles seront publiées prochainement après validation par les
-        instances organisatrices.
-      </div>
-    </div>
+    <app-reglement-categories></app-reglement-categories>
   </section>
 
   <section id="feuille-points">
-    <h2>🎯 Feuille de cible</h2>
-    <p>
-      La feuille de pointage est un document officiel servant à consigner les résultats individuels de chaque tireur au
-      cours d'une épreuve. Elle doivent signée par l'officiel à l'issue de la séance.
-    </p>
-
-
-    <div class="bloc">
-      <h3>🔸Éléments contenus de la feuille de participation</h3>
-      <ul>
-        <li>Logo du club hôte</li>
-        <li>Logo de la compétition</li>
-        <li>Nom et prénom du tireur</li>
-        <li>Numéro de membre</li>
-        <li>Date de l'épreuve</li>
-        <li>Catégorie (A venir)</li>
-        <li>Calibre utilisé (ex : .22 LR)</li>
-        <li>Position de tir</li>
-        <li>Pointage Total</li>
-        <li>25 cibles identiques (5 pratiques, 20 comptabilisées)</li>
-        <li>Estompe du club avec la signature de l'officiel de tir responsable</li>
-      </ul>
-    </div>
-
-    <div class="bloc">
-      <h3>🔸Présentation des cibles</h3>
-      <p>
-        La présentation des cibles est uniforme pour l'ensemble des participants, qu'ils soient en position assise,
-        debout, ou appuyés sur une table de tir.
-        Toutes les cibles, qu'elles se trouvent dans la zone d'entraînement (numérotée de P1 à P5) ou dans la section
-        des tirs comptabilisés (numérotée de 1 à 20), respectent les mêmes critères de disposition et de visibilité.
-      </p>
-
-    </div>
-
-
-    <div class="bloc">
-      <h3>🔸Détails de l'Épreuve</h3>
-      <ul>
-        <li>Distance de tir : 25 mètres</li>
-        <li>Position de tir (ex : couchée, debout, genou, table de tir)</li>
-        <li>Type d'épreuve (ex : précision, vitesse)</li>
-        <li>Nombre de séries prévues</li>
-        <li>Nombre de coups par série</li>
-        <li>Temps imparti par série (le cas échéant)</li>
-      </ul>
-    </div>
-
-    <div class="bloc">
-      <h3>🔸Feuille de Pointage</h3>
-      <p>Un tableau clair doit être présenté, comprenant les résultats de chaque tir :</p>
-
-      <p class="notation">
-        <strong>Notation :</strong> Chaque tir est noté de 0 à 10 points. En tir de précision, des subdivisions en
-        dixièmes est utilisées.
-        Les tirs parfaits (centre absolu) peuvent être marqués d'un « . » de 1mimimetre de diametre.
-      </p>
-    </div>
-
-
+    <app-reglement-feuille-pointage></app-reglement-feuille-pointage>    
   </section>
 
 
@@ -107,103 +36,12 @@
     <p>Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.</p>
   </section>
 
+  <section id="classement">
+    <app-reglements-classement></app-reglements-classement>
+  </section>
+
   <section id="equipement">
-    <h2>🛠️ Équipements autorisés en compétition de tir à la carabine</h2>
-    <p>La réglementation suivante s'applique aux épreuves officielles de tir à la carabine. Tous les équipements doivent
-      être conformes aux normes de sécurité et respecter les spécifications du règlement en vigueur.</p>
-
-    <div class="bloc">
-      <h3>🔸 Matériel de sécurité obligatoire</h3>
-      <ul>
-        <li>Protection auditive (casque antibruit ou bouchons homologués)</li>
-        <li>Protection oculaire (lunettes de sécurité balistique)</li>
-      </ul>
-    </div>
-
-    <div class="bloc">
-      <h3>🔸 Carabines autorisées</h3>
-      <ul>
-        <li>Carabines à percussion annulaire (.22 LR ou similaires)</li>
-        <li>Carabines à percussion centrale <a (click)="goToAnchor('calibres')">(calibres réglementaires)</a></li>
-        <li>Systèmes d'alimentation :
-          <ul>
-            <li>Alimentation manuelle (chargement un à un)</li>
-            <li>Chargeur amovible</li>
-          </ul>
-        </li>
-        <li>Types d'action :
-          <ul>
-            <li>Semi-automatique</li>
-            <li>À verrou</li>
-            <li>À levier de sous-garde</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="bloc">
-      <h3>🔸 Accessoires autorisés</h3>
-      <ul>
-        <li><strong>Systèmes de visée :</strong>
-          <ul>
-            <li>Dioptres et guidons (sans optique grossissante)</li>
-            <li>Lunette de visée, point rouge</li>
-            <li>Lunette de visée de haute précision</li>
-          </ul>
-        </li>
-        <li><strong>Éléments de confort et d'ajustement :</strong>
-          <ul>
-            <li>Plaque de couche ajustable</li>
-            <li>Busc ajustable</li>
-            <li>Gants de tir</li>
-            <li>Cache-œil / Œillère</li>
-          </ul>
-        </li>
-        <li><strong>Supports et matériel complémentaire :</strong>
-          <ul>
-            <li>Bipied, trépied ou sac de sable (avant uniquement)</li>
-            <li>Table ou banc de tir (selon les compétitions)</li>
-            <li>Tapis de tir personnel</li>
-            <li>Frein de bouche (si autorisé)</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <div class="bloc">
-      <h3>🔸 Accessoires NON autorisés</h3>
-      <ul class="non-authorise">
-        <li>Bipied, trépied ou sac de sable positionnés à l'arrière</li>
-      </ul>
-    </div>
-
-    <div class="calibres-block" id="calibres">
-      <h3>Calibres autorisés</h3>
-      <ul>
-        <li>.22 Short</li>
-        <li>.22 LR (Long Rifle)</li>
-        <li>.22 Winchester Magnum Rimfire (WMR)</li>
-        <li>.22 CB (Conical Ball)</li>
-        <li>.22 Remington Jet</li>
-        <li>.22 Hornet</li>
-        <li>.22 TCM (Tuason Craig Micromagnum)</li>
-        <li>.22 Nosler</li>
-        <li>.22 Savage Hi-Power</li>
-        <li>.22 PPC</li>
-        <li>.222 Remington</li>
-        <li>.223 Remington</li>
-        <li>.223 Wylde (chambre hybride entre .223 Rem et 5.56 NATO)</li>
-        <li>5.56x45mm NATO</li>
-        <li>5.7x28mm FN</li>
-        <li>.224 Valkyrie</li>
-        <li>.220 Swift</li>
-        <li>Autres calibres compatibles selon le règlement en vigueur</li>
-      </ul>
-    </div>
-
-    <div class="note">
-      <strong>Remarque :</strong> Tout équipement non listé ci-dessus doit être validé par l'organisation avant le début
-      de la compétition.
-    </div>
+    <app-regelement-equipement></app-regelement-equipement>
   </section>
 
 </div>

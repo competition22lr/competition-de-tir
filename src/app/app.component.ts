@@ -1,11 +1,10 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
-import { HeaderComponent } from "./components/header/header.component"; // adapte le chemin selon ton projet
-
-import { RouterModule } from '@angular/router';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component } from '@angular/core';
+import { Router, NavigationEnd, RouterModule } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 import { filter } from 'rxjs/operators';
 import { FooterComponent } from "./components/footer/footer.component";
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @Component({
@@ -13,18 +12,21 @@ import { FooterComponent } from "./components/footer/footer.component";
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None,  // <- Désactive l'encapsulation CSS
   imports: [HeaderComponent, SideNavComponent, RouterModule, FooterComponent]
 })
 export class AppComponent {
-  showClassement = true;
-
-  constructor(private router: Router) {
-    // ecoute les changements de route
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe((event: NavigationEnd) => {
-      this.showClassement = !event.url.includes('/reglements');
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {
+     // ecoute les changements de route
+     this.router.events.pipe(
+      filter(e => e instanceof NavigationEnd)
+    ).subscribe(() => {
+      const fragment = window.location.hash;
+      if (fragment) {
+        const id = fragment.substring(1); // enlever le #
+        setTimeout(() => {
+          this.viewportScroller.scrollToAnchor(id);
+        }, 0);
+      }
     });
   }
 }
