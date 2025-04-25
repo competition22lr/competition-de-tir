@@ -1,0 +1,40 @@
+name: Bump Minor Version
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Bump minor version
+        run: |
+          npm version minor --no-git-tag-version
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          git commit -m "chore: bump minor version [skip ci]"
+          git push
+
+
+
+
+
+
+
+
+# Commande	         Résultat si version actuelle = 1.2.3	    Description
+# npm version patch	    1.2.4	                                Correction de bug mineure, sans ajout de fonctionnalité.
+# npm version minor	    1.3.0	                                Nouvelle fonctionnalité rétrocompatible.
+# npm version major	    2.0.0	                                Modifications cassant la compatibilité (breaking changes).

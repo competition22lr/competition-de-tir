@@ -1,5 +1,5 @@
 <div class="classement-container">
-  <h2 class="titre-mois">Classement - {{ moisSelectionne?.name }}</h2>
+  <h2 class="titre-mois">Classement - {{ moisSelectionne?.displayName() }}</h2>
 
   <div class="trophees">
     <div *ngFor="let p of topParticipants; let i = index" class="trophy-card trophy-card-{{p.classement}}">
@@ -12,16 +12,12 @@
   </div>
 
   <div class="no-print">
-    <ul >
-      <li style="list-style-image: none;"><a [routerLink]="['/impression', this.indexCompetitionSelectionne, this.moisSelectionne?.name]"
-          target="_blank">🖨️
-          Version imprimable</a></li>
-      <li style="list-style-image: none;"><a [routerLink]="['/reglements']" fragment="classement">
-          🏅 Système de Classement des Tireurs
-        </a></li>
-    </ul>
-
+    <a [routerLink]="['/reglements']" fragment="classement">
+      🏅 Système de Classement des Tireurs
+    </a>
     <br />
-
+    <a [routerLink]="['/impression', this.indexCompetitionSelectionne, this.moisSelectionne?.name]" target="_blank">
+      🖨️ Version imprimable
+    </a>
   </div>
 </div>

@@ -17,7 +17,7 @@
       <mat-label>Sélectionner une compétition</mat-label>
       <mat-select [(value)]="indexCompetitionSelectionne" (selectionChange)="onCompetitionChange($event.value)">
         <mat-option *ngFor="let competition of competitionsDispo; let i = index" [value]="i">
-          {{ competition }}
+         <span style="white-space: pre-line;">{{ competition }}</span>
         </mat-option>
       </mat-select>
     </mat-form-field>
@@ -26,7 +26,7 @@
       <mat-list-item *ngFor="let mois of moisDispo"
         [routerLink]="['/classement', indexCompetitionSelectionne, encodeMois(mois.name)]"
         (click)="isMobile && drawer.close()">
-        <span>{{ mois.name }}</span>
+        <span>{{ mois.displayName() }}</span>
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>

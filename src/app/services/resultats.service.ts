@@ -32,7 +32,7 @@ export class ResultatsService {
         const data = ResultatsCummulatif.fromXml(xml);
 
         // 👉 Ajouter la compétition fake ici
-        // data.competitions = [...data.competitions, this.fakeService.getFakeCompetition()];
+         data.competitions = [...data.competitions, this.fakeService.getFakeCompetition()];
 
         this.cache = { timestamp: now, data };
         return data;

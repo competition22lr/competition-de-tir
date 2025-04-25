@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+::ng-deep .mat-mdc-select-value-text{
+  white-space: pre-line !important;
+}
+
 mat-sidenav-container {
   min-height: 100vh;
   display: flex;
@@ -12,6 +16,7 @@ mat-sidenav {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 35vh;
   max-height: 100vh;
   overflow-y: auto;
   box-sizing: border-box;
