@@ -39,7 +39,7 @@ export class ResultatsCummulatif {
   }
 
   getCompetitionsDisponibles(): string[] {
-    return this.competitions.map((c, i) => `Compétition ${i + 1} (${c.debut} → ${c.fin})`);
+    return this.competitions.map((c, i) => `Compétition ${i + 1}\n(${c.debut} → ${c.fin})`);
   }
 
   getCompetitions(indexCompetition: number): Competition {

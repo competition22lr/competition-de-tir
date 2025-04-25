@@ -38,3 +38,8 @@
   color: white;
   text-decoration: underline;
 }
+
+.footer-version{
+  font-size: xx-small;
+  padding-top: 1em;
+}

@@ -89,4 +89,8 @@
     border-radius: unset;
     box-shadow: unset;
     }
+
+    ul{
+      padding: unset !important;
+    }
   }

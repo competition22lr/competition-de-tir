@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Competition } from '../models/competition.model';
-import { MoisResultats } from '../models/mois-resultats.model';
 import { Participant } from '../models/participant.model';
+import { Utilistaire } from '../services/utilitaire';
 
 @Injectable({
   providedIn: 'root'
@@ -13,11 +13,11 @@ export class FakeCompetitionService {
 }
 
 const fakeCompetition: Competition = {
-  debut: new Date().toISOString(),
-  fin: new Date().toISOString(),
+  debut: "Jan.1999",
+  fin: "Dec.1999",
   mois: [
     {
-      name: 'janvier',
+      name: 'jan.2000',
       participants: [
         new Participant({
           numero: '0005',
@@ -60,6 +60,13 @@ const fakeCompetition: Competition = {
           classement: 'Bronze',
         })
       ],
+      displayName(): string {
+          let abbreviation: string = this.name.split('.')[0];
+          let annee: string = this.name.split('.')[1];
+          let moisNumero :number = Utilistaire.convertMonthToNumber(abbreviation);
+      
+          return Utilistaire.moisEnFrancais(moisNumero) + " " +  annee;
+        }
     },
   ],
 };
