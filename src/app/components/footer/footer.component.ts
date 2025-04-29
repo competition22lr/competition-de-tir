@@ -7,10 +7,9 @@ import { appVersion } from '../../../environments/version';
   selector: 'app-footer',
   imports: [RouterModule],
   templateUrl: './footer.component.html',
-  styleUrls: [ '../../../styles-print.css','./footer.component.css']
+  styleUrls: ['../../../styles-print.css', './footer.component.css']
 })
-export class FooterComponent {  
+export class FooterComponent {
   version = appVersion; // crée une propriété accessible au HTML
-  constructor(public resultatsService: ResultatsService , private router: Router) {   
-  }
+  constructor(public resultatsService: ResultatsService, private router: Router) { }
 }
