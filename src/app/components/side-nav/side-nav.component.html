@@ -6,21 +6,29 @@
         <mat-icon>home</mat-icon>
         <span>Accueil</span>
       </mat-list-item>
-      
-    <mat-list-item [routerLink]="['/reglements']" (click)="isMobile && drawer.close()">
-      <mat-icon>gavel</mat-icon>
-      <span>Règlements</span>
-    </mat-list-item>
-  </mat-nav-list>
+
+      <mat-list-item [routerLink]="['/reglements']" (click)="isMobile && drawer.close()">
+        <mat-icon>gavel</mat-icon>
+        <span>Règlements</span>
+      </mat-list-item>
+    </mat-nav-list>
 
     <mat-form-field appearance="fill">
       <mat-label>Sélectionner une compétition</mat-label>
       <mat-select [(value)]="indexCompetitionSelectionne" (selectionChange)="onCompetitionChange($event.value)">
         <mat-option *ngFor="let competition of competitionsDispo; let i = index" [value]="i">
-         <span style="white-space: pre-line;">{{ competition }}</span>
+          <span style="white-space: pre-line;">{{ competition }}</span>
         </mat-option>
       </mat-select>
     </mat-form-field>
+
+    <mat-nav-list *ngIf="showTirage">
+      <mat-list-item [routerLink]="['/gagnants-tirage', indexCompetitionSelectionne]" (click)="isMobile && drawer.close()">
+        <mat-icon></mat-icon>
+        <span>🎉 Gagnants 50/50</span>
+      </mat-list-item>
+    </mat-nav-list>
+
 
     <mat-nav-list>
       <mat-list-item *ngFor="let mois of moisDispo"

@@ -32,6 +32,7 @@ export class SideNavComponent implements OnInit {
   showClassement = true;
   moisSelectionne!: MoisResultats;
   isMobile = false;
+  showTirage = false;
   indexCompetitionSelectionne: number = 0;
 
   constructor(private resultatsService: ResultatsService,

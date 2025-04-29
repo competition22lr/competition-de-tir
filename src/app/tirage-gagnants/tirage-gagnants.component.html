@@ -1,0 +1,16 @@
+<div class="tirage-gagnants">
+    <h2>🎉 Gagnants du 50/50</h2>
+  
+    <div *ngIf="gagnantsParMois.length > 0; else pasDeGagnants">
+      <ul>
+        <li *ngFor="let gagnant of gagnantsParMois">
+          <strong>{{ gagnant.mois }} :</strong> {{ gagnant.gagnant }}
+        </li>
+      </ul>
+    </div>
+  
+    <ng-template #pasDeGagnants>
+      <p>Aucun gagnant pour cette compétition.</p>
+    </ng-template>
+  </div>
+  
