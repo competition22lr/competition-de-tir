@@ -4,6 +4,7 @@ import { ClassementMensuelComponent } from './components/classement-mensuel/clas
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales.component';
 import { ImpressionClassementComponent } from './components/impression-classement/impression-classement.component';
+import { TirageGagnantsComponent } from './tirage-gagnants/tirage-gagnants.component';
 
 export const routes: Routes = [
     { path: '', component: AccueilComponent },
@@ -11,6 +12,7 @@ export const routes: Routes = [
     { path: 'classement/:competition/:mois', component: ClassementMensuelComponent },
     { path: 'reglements', component: ReglementsComponent },
     { path: 'mentions-legales', component: MentionsLegalesComponent },
-    { path: 'impression/:competition/:mois', component: ImpressionClassementComponent }
+    { path: 'impression/:competition/:mois', component: ImpressionClassementComponent },
+    { path: 'gagnants-tirage/:competition', component: TirageGagnantsComponent }
 
 ];
