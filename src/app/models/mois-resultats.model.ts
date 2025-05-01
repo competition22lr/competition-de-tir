@@ -1,10 +1,12 @@
 import { Utilistaire } from "../services/utilitaire";
 import { Participant } from "./participant.model";
+import { ResultatTirage5050 } from "./resultat-tirage5050.model";
 
 export class MoisResultats {
   constructor(
     public name: string,
-    public participants: Participant[]
+    public participants: Participant[],
+    public resultatTirage: ResultatTirage5050
   ) { }
 
   displayName(): string {

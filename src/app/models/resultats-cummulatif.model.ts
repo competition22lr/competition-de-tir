@@ -1,6 +1,7 @@
 import { Participant } from "./participant.model";
 import { Competition } from "./competition.model";
 import { MoisResultats } from "./mois-resultats.model";
+import { ResultatTirage5050 } from "./resultat-tirage5050.model";
 
 export class ResultatsCummulatif {
   constructor(
@@ -29,7 +30,13 @@ export class ResultatsCummulatif {
           });
         });
 
-        return new MoisResultats(name, participants);
+        const r = moisEl.getElementsByTagName('ResultatTirage5050')[0];
+        let aResultatTirage5050: ResultatTirage5050 | null = null;
+        const get = (tag: string) => r.getElementsByTagName(tag)[0]?.textContent?.trim() ?? '';
+        aResultatTirage5050 = new ResultatTirage5050(get('Nom'), Number(get('Montant')));
+
+
+        return new MoisResultats(name, participants, aResultatTirage5050);
       });
 
       return new Competition(debut, fin, mois);

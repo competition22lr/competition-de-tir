@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Competition } from '../models/competition.model';
 import { Participant } from '../models/participant.model';
 import { Utilistaire } from '../services/utilitaire';
+import { ResultatTirage5050 } from '../models/resultat-tirage5050.model';
 
 @Injectable({
   providedIn: 'root'
@@ -60,18 +61,17 @@ const fakeCompetition: Competition = {
           classement: 'Bronze',
         })
       ],
+      resultatTirage: new ResultatTirage5050("Diamant", 0),
       displayName(): string {
-          let abbreviation: string = this.name.split('.')[0];
-          let annee: string = this.name.split('.')[1];
-          let moisNumero :number = Utilistaire.convertMonthToNumber(abbreviation);
-      
-          return Utilistaire.moisEnFrancais(moisNumero) + " " +  annee;
-        }
+        let abbreviation: string = this.name.split('.')[0];
+        let annee: string = this.name.split('.')[1];
+        let moisNumero: number = Utilistaire.convertMonthToNumber(abbreviation);
+
+        return Utilistaire.moisEnFrancais(moisNumero) + " " + annee;
+      }
     },
   ],
+  getGagnanTirage: function (): { mois: string; gagnant: string; }[] {
+    throw new Error('Function not implemented.');
+  }
 };
-
-
-
-
-
