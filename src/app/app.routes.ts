@@ -4,7 +4,7 @@ import { ClassementMensuelComponent } from './components/classement-mensuel/clas
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales.component';
 import { ImpressionClassementComponent } from './components/impression-classement/impression-classement.component';
-import { TirageGagnantsComponent } from './tirage-gagnants/tirage-gagnants.component';
+import { TirageGagnantsComponent } from './components/tirage-gagnants/tirage-gagnants.component';
 
 export const routes: Routes = [
     { path: '', component: AccueilComponent },

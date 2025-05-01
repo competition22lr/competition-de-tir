@@ -1,0 +1,104 @@
+.tirage-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.tirage-gagnants {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #f9f9f9;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tirage-table {
+  width: 100%;
+
+  .moisTirage {
+    width: 50%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .gagnantTirage {
+    width: 50%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+}
+
+
+
+
+.classements-table {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.classements-table table {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  background-color: #fdfdfd;
+}
+
+.classements-table th,
+.classements-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+  /* vertical-align: top; */
+}
+
+.classements-table th {
+  background-color: #00518f;
+  color: white;
+  font-weight: bold;
+}
+
+.classements-table td:first-child {
+  font-weight: bold;
+  color: #2a3b4c;
+  width: 40%;
+}
+
+.trophy-card {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.trophy-content {
+  color: black;
+}
+
+.trophy-img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.trophy-card-Diamant {
+  background: #A7BCBE;
+}
+
+.trophy-card-Platine {
+  background: #99A0A2;
+}
+
+.trophy-card-Or {
+  background: #DC9403;
+}
+
+.trophy-card-Argent {
+  background: #C0C0C0;
+}
+
+.trophy-card-Bronze {
+  background: #88540B;
+}

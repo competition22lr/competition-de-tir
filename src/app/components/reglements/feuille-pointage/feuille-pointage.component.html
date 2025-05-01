@@ -31,21 +31,64 @@
     </p>
     <div class="image-gallery">
         <img *ngIf="generatedImageUrl" [src]="generatedImageUrl" alt="Cible carabine avec watermark" />
-
-
+    </div>
+    <div class="bloc-sub">
+        <h4>🔸Dimension de la cible régulière</h4>
+        <div class="h4-content">
+            <p>Donne les dimension de chaqu'un des anneaux de pointage ainsi que la dimention du point pour le boni.</p>
+            <div class="dimension-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Dimension</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Point central pour un tir à la cible parfait </td>
+                            <td> 1.25 millimètres </td>
+                        </tr>
+                        <tr>
+                            <td> Anneau blanche de 10 points </td>
+                            <td> 12.5 millimètres </td>
+                        </tr>
+                        <tr>
+                            <td> Anneau noir de 9 points </td>
+                            <td> 15 millimètres </td>
+                        </tr>
+                        <tr>
+                            <td> Anneau blanche de 8 points </td>
+                            <td> 22.5 millimètres </td>
+                        </tr>
+                        <tr>
+                            <td> Anneau noir de 7 points </td>
+                            <td> 30 millimètres </td>
+                        </tr>
+                        <tr>
+                            <td> Cadre numéroté de 1 à 20 </td>
+                            <td> millimètres </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="bloc">
-    <h3>🔸Détails de l'Épreuve</h3>
+    <h3>🔸Détails de l'Épreuve Régulière</h3>
     <ul>
         <li>Distance de tir : 25 mètres</li>
-        <li>Position de tir (ex : couchée, debout, genou, table de tir)</li>
-        <li>Type d'épreuve (ex : précision, vitesse)</li>
-        <li>Nombre de séries prévues</li>
-        <li>Nombre de coups par série</li>
-        <li>Temps imparti par série (le cas échéant)</li>
+        <li>Position de tir : appuyer sur table de tir</li>
+        <li>Type d'épreuve : précision</li>
+        <li>Nombre de séries prévues : 5</li>
+        <li>Nombre de coups par série : 5</li>
+        <li>Nombre tire par feuille : illimité*</li>
     </ul>
+    <div class="note bloc-sub">
+        <span>* Voir la section <strong>Calcul des points</strong> pour les tirs qualifié.</span>
+    </div>
 </div>
 
 <div class="bloc">

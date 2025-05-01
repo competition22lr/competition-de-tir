@@ -1,0 +1,98 @@
+<div class="tirage-container">
+  <h2>🎉 Gagnants au tirage 50/50 mensuel</h2>
+  <div class="tirage-section">
+    <p>
+      Chaque tireur reçoit automatiquement <strong>1 participation</strong> par
+      <em>feuille de cible soumise</em>, assurant ainsi une chance équitable à
+      tous les participants.
+    </p>
+    <div class="tirage-gagnants">
+      <div *ngIf="gagnantsParMois.length > 0; else pasDeGagnants">
+        <table class="tirage-table">
+          <tr *ngFor="let gagnant of gagnantsParMois">
+            <td class="moisTirage"><strong>{{ gagnant.mois }} :</strong></td>
+            <td class="gagnantTirage">{{ getGagnantAffichage(gagnant) }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <p>
+      Des <strong>participations supplémentaires</strong> sont accordées selon le
+      <strong>classement mensuel</strong> :
+    </p>
+    <div class="classements-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Classement</th>
+            <th>Participations supplémentaires</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="trophy-card trophy-card-Diamant">
+              <div class="trophy-content">
+                <img [src]="getTrophyImage('Diamant')" class="trophy-img" alt="trophée Diamant" />
+                <span>Diamant</span>
+              </div>
+            </td>
+            <td>
+              Non comptabilisé<br />(en cours de validation)
+            </td>
+          </tr>
+          <tr>
+            <td class="trophy-card trophy-card-Platine">
+              <div class="trophy-content">
+                <img [src]="getTrophyImage('Platine')" class="trophy-img" alt="trophée Platine" />
+                <span>Platine</span>
+              </div>
+            </td>
+            <td>
+              +15 participations
+            </td>
+          </tr>
+          <tr>
+            <td class="trophy-card trophy-card-Or">
+              <div class="trophy-content">
+                <img [src]="getTrophyImage('Or')" class="trophy-img" alt="trophée Or" />
+                <span>Or</span>
+              </div>
+            </td>
+            <td>
+              +10 participations
+            </td>
+          </tr>
+          <tr>
+            <td class="trophy-card trophy-card-Argent">
+              <div class="trophy-content">
+                <img [src]="getTrophyImage('Argent')" class="trophy-img" alt="trophée Argent" />
+                <span>Argent</span>
+              </div>
+            </td>
+            <td>
+              +5 participations
+            </td>
+          </tr>
+          <tr>
+            <td class="trophy-card trophy-card-Bronze">
+              <div class="trophy-content">
+                <img [src]="getTrophyImage('Bronze')" class="trophy-img" alt="trophée Bronze" />
+                <span>Bronze</span>
+              </div>
+            </td>
+            <td>
+              +3 participations
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Ces bonifications récompensent la performance tout en combinant la
+      participation active. Le classement devient ainsi un levier stratégique pour
+      augmenter vos chances de remporter le tirage mensuel.
+    </p>
+    <ng-template #pasDeGagnants>
+      <p>Aucun gagnant pour cette compétition.</p>
+    </ng-template>
+  </div>
