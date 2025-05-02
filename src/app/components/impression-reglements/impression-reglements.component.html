@@ -1,0 +1,48 @@
+<div class="reglements-container">
+    <h1>Règlements de la compétition</h1>
+
+    <button (click)="imprimer()" class="no-print">🖨️ Imprimer</button>
+    
+    <nav class="table-des-matieres">
+        <h3>Table des matières</h3>
+        <ul>
+            <li>Déroulement</li>
+            <li>Catégories</li>
+            <li>Feuille de cible</li>
+            <li>Calcul des points</li>
+            <li>Système de Classement des Tireurs</li>
+            <li>Équipement autorisé
+                <ul>
+                    <li>Calibres autorisés</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="deroulement">
+        <h2>Déroulement de la compétition</h2>
+        <p>Décris ici comment la compétition se déroule (ex : nombre de tirs, durée, etc.).</p>
+    </section>
+
+    <section id="categories">
+        <app-reglement-categories></app-reglement-categories>
+    </section>
+
+    <section id="feuille-points">
+        <app-reglement-feuille-pointage></app-reglement-feuille-pointage>
+    </section>
+
+
+    <section id="calcul-points">
+        <app-regement-calcul-points></app-regement-calcul-points>
+    </section>
+
+    <section id="classement">
+        <app-reglements-classement></app-reglements-classement>
+    </section>
+
+    <section id="equipement">
+        <app-regelement-equipement></app-regelement-equipement>
+    </section>
+
+</div>

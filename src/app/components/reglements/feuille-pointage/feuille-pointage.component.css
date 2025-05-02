@@ -33,11 +33,21 @@
   .dimension-table td {
     border: 1px solid #ddd;
     padding: 1rem;
-    text-align: left;
+    /* text-align: left; */
     /* vertical-align: top; */
   }
   
+  .dimension-row-text{
+    text-align: left;
+  }
+
+  .dimension-row-valeur{
+    text-align: center;
+  }
+
   .dimension-table th {
+    font-family: Times New Roman;
+    font-size: larger;
     background-color: #00518f;
     color: white;
     font-weight: bold;

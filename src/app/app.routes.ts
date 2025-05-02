@@ -5,6 +5,7 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales.component';
 import { ImpressionClassementComponent } from './components/impression-classement/impression-classement.component';
 import { TirageGagnantsComponent } from './components/tirage-gagnants/tirage-gagnants.component';
+import { ImpressionReglementsComponent } from './components/impression-reglements/impression-reglements.component';
 
 export const routes: Routes = [
     { path: '', component: AccueilComponent },
@@ -13,6 +14,7 @@ export const routes: Routes = [
     { path: 'reglements', component: ReglementsComponent },
     { path: 'mentions-legales', component: MentionsLegalesComponent },
     { path: 'impression/:competition/:mois', component: ImpressionClassementComponent },
-    { path: 'gagnants-tirage/:competition', component: TirageGagnantsComponent }
+    { path: 'gagnants-tirage/:competition', component: TirageGagnantsComponent },
+    { path: 'impression-reglements', component: ImpressionReglementsComponent },
 
 ];

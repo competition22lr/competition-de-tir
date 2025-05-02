@@ -85,4 +85,12 @@ Ajoute class="page-break" sur un div ou hr pour forcer une saut de page.
     .cdk-global-overlay-wrapper {
         display: none !important;
     }
+
+    .page-break {
+        page-break-before: always;
+        break-before: page;
+      }
+
+
 }
+
