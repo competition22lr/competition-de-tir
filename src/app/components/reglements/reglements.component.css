@@ -88,14 +88,3 @@ ul ul {
   list-style: circle;
   margin-left: 1.5rem;
 }
-
-.note {
-  margin-top: 1.5rem;
-  font-style: italic;
-  background: #f0f0f0;
-  padding: 1rem;
-  border-left: 4px solid #00518f;
-  border-radius: 6px;
-  color: #003366;
-  font-weight: 500;
-}
