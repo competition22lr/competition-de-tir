@@ -1,6 +1,44 @@
 <?xml version='1.0' standalone='no'?>
 <resultats_cummulatif>
 	<competition debut='Nov. 2024' fin='Oct. 2025'>
+		<mois name='Mai.2025'>
+			<participant>
+				<Numero_Membre>xxx1</Numero_Membre>
+				<Nom>Dummy1</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+				<Classement>Platine</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>xxx2</Numero_Membre>
+				<Nom>Dummy2</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+				<Classement>Or</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>xxx3</Numero_Membre>
+				<Nom>Dummy3</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>202</Pointage_Total>
+				<Classement>Argent</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>xxx4</Numero_Membre>
+				<Nom>Dummy4</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+				<Classement>Bronze</Classement>
+			</participant>
+			<ResultatTirage5050>
+				<Nom>Participation</Nom>
+				<Montant>0</Montant>
+			</ResultatTirage5050>
+		</mois>
 		<mois name='Avr.2025'>
 			<participant>
 				<Numero_Membre>0251</Numero_Membre>
