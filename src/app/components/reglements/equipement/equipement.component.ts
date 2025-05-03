@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CalibresAutorisesComponent } from "./calibres-autorises/calibres-autorises.component";
 
 @Component({
   selector: 'app-regelement-equipement',
-  imports: [],
+  imports: [CalibresAutorisesComponent],
   templateUrl: './equipement.component.html',
   styleUrls: ['./equipement.component.css', './../reglements.component.css']
 })
