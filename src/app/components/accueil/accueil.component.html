@@ -1,17 +1,26 @@
 <div class="accueil-container">
-  <div class="message">
-    <h1>Bienvenue sur le site des Résultats des Compétitions!</h1>
-    <p>Ce site vous permet de consulter les classements mensuels des compétitions de tir organisées par le <strong><a href="https://www.clubtiroutaouais.ca/" target="_blank" rel="noopener noreferrer">Club de Tir de l'Outaouais</a></strong>.</p>
-  
-    <h2>Comment ça fonctionne ?</h2>
-    <ul>
-      <li>Sélectionnez une compétition dans le menu latéral.</li>
-      <li>Choisissez le mois pour lequel vous souhaitez voir les résultats.</li>
-      <li>Consultez le classement détaillé des participants.</li>
+  <h1>Bienvenue sur le site de la Compétition de Tir de Précision</h1>
+  <p class="intro">
+    Cette plateforme vous permet de consulter les résultats mensuels, les règlements de la compétition et les informations utiles pour les tireurs participants.
+  </p>
+
+  <section class="club-info">
+    <h2>Organisé par le <strong>Club de Tir de l'Outaouais</strong></h2>
+    <p><strong>Adresse :</strong> 268 chemin industriel, L'Ange-Gardien, (Québec), J8L 0A9 — Sortie 174</p>
+    <p><strong>Téléphone :</strong> (819) 986-3584</p>
+    <p><strong>Courriel : </strong><a href="mailto:ctoutaouais@hotmail.com" target="_blank">ctoutaouais&#64;hotmail.com</a></p>
+    <p><strong>Site Web : </strong><a href="https://www.clubtiroutaouais.ca/" target="_blank">https://www.clubtiroutaouais.ca/</a></p>
+    
+    <h3>Heures d'ouverture :</h3>
+    <ul class="horaire">
+      <li><img class="icon" src="https://raw.githubusercontent.com/competition22lr/competition-de-tir/refs/heads/main/public/images/carabine.png" alt="icône carabine" /> Lundi au Vendredi : 18h00 à 21h00</li>
+      <li><img class="icon" src="https://raw.githubusercontent.com/competition22lr/competition-de-tir/refs/heads/main/public/images/carabine.png" alt="icône carabine" /> Samedi : 9h00 à 16h00</li>
+      <li><img class="icon" src="https://raw.githubusercontent.com/competition22lr/competition-de-tir/refs/heads/main/public/images/carabine.png" alt="icône carabine" /> Dimanche : 9h00 à 12h00</li>
     </ul>
-  
-    <p>Pour en savoir plus sur les règles et le fonctionnement, consultez la section <a routerLink="/reglements">Règlements</a>.</p>
-  </div>
+    <p class="note">* Veuillez vérifier le calendrier du club pour connaître l'horaire exact.</p>
+  </section>
+</div>
+<div>
   <img [src]="resultatsService.imageLocationUrl + 'construction-tir-fr.png'" alt="Site en construction" class="construction-image">
   <img [src]="resultatsService.imageLocationUrl + 'construction-tir-en.png'" alt="Site under construction" class="construction-image">
 </div>
