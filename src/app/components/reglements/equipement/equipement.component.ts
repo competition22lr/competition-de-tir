@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CalibresAutorisesComponent } from "./calibres-autorises/calibres-autorises.component";
+import { CarabinesAutoriseesComponent } from "./carabines-autorisees/carabines-autorisees.component";
 
 @Component({
   selector: 'app-regelement-equipement',
-  imports: [CalibresAutorisesComponent],
+  imports: [CalibresAutorisesComponent, CarabinesAutoriseesComponent],
   templateUrl: './equipement.component.html',
   styleUrls: ['./equipement.component.css', './../reglements.component.css']
 })
