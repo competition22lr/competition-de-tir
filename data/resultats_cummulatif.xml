@@ -3,36 +3,85 @@
 	<competition debut='Nov. 2024' fin='Oct. 2025'>
 		<mois name='Mai.2025'>
 			<participant>
-				<Numero_Membre>xxx1</Numero_Membre>
-				<Nom>Dummy1</Nom>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
 				<Pointage>200</Pointage>
-				<Point_Boni>4</Point_Boni>
-				<Pointage_Total>204</Pointage_Total>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>208</Pointage_Total>
 				<Classement>Platine</Classement>
 			</participant>
 			<participant>
-				<Numero_Membre>xxx2</Numero_Membre>
-				<Nom>Dummy2</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
+				<Numero_Membre>0739</Numero_Membre>
+				<Nom>Roger Boisvert</Nom>
+				<Pointage>177</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>177</Pointage_Total>
 				<Classement>Or</Classement>
 			</participant>
 			<participant>
-				<Numero_Membre>xxx3</Numero_Membre>
-				<Nom>Dummy3</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>2</Point_Boni>
-				<Pointage_Total>202</Pointage_Total>
+				<Numero_Membre>xxx1</Numero_Membre>
+				<Nom>Placeholder #1</Nom>
+				<Pointage>1</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>2</Pointage_Total>
 				<Classement>Argent</Classement>
 			</participant>
 			<participant>
-				<Numero_Membre>xxx4</Numero_Membre>
-				<Nom>Dummy4</Nom>
-				<Pointage>200</Pointage>
+				<Numero_Membre>xxx2</Numero_Membre>
+				<Nom>Placeholder #2</Nom>
+				<Pointage>0</Pointage>
 				<Point_Boni>1</Point_Boni>
-				<Pointage_Total>201</Pointage_Total>
+				<Pointage_Total>1</Pointage_Total>
 				<Classement>Bronze</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>198</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>190</Pointage>
+				<Point_Boni>8</Point_Boni>
+				<Pointage_Total>198</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>7</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0251</Numero_Membre>
+				<Nom>Gaetan Martel</Nom>
+				<Pointage>198</Pointage>
+				<Point_Boni>2</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
 			</participant>
 			<ResultatTirage5050>
 				<Nom>Participation</Nom>
