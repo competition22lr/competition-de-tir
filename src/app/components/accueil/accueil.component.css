@@ -23,7 +23,7 @@ h1 {
   background: #f4f8fb;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .club-info h2 {
@@ -31,7 +31,8 @@ h1 {
   color: #002b55;
 }
 
-.club-info p, .club-info li {
+.club-info p,
+.club-info li {
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -46,6 +47,10 @@ h1 {
   height: auto;
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+
+.iconLink {
+  text-decoration: none;
 }
 
 .note {
