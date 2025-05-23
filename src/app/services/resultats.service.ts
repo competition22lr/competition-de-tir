@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { MoisResultats } from '../models/mois-resultats.model';
 import { Competition } from '../models/competition.model';
-import { FakeCompetitionService } from '../mocks/fake-competition.service';
+// import { FakeCompetitionService } from '../mocks/fake-competition.service';
 
 
 @Injectable({ providedIn: 'root' })
@@ -17,7 +17,7 @@ export class ResultatsService {
   public imageLocationUrl: string = 'https://raw.githubusercontent.com/competition22lr/competition-de-tir/refs/heads/main/public/images/';
 
 
-  constructor(private http: HttpClient, private fakeService: FakeCompetitionService) { }
+  constructor(private http: HttpClient) { }
 
   getResultats(): Observable<ResultatsCummulatif> {
     const now = Date.now();

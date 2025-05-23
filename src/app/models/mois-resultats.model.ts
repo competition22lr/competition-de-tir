@@ -12,9 +12,19 @@ export class MoisResultats {
   displayName(): string {
     let abbreviation: string = this.name.split('.')[0];
     let annee: string = this.name.split('.')[1];
-    let moisNumero :number = Utilistaire.convertMonthToNumber(abbreviation);
+    let moisNumero: number = Utilistaire.convertMonthToNumber(abbreviation);
 
-    return Utilistaire.moisEnFrancais(moisNumero) + " " +  annee;
+    return Utilistaire.moisEnFrancais(moisNumero) + " " + annee;
+  }
+
+  getMoisCleText(): string {
+    let abbreviation: string = this.name.split('.')[0];
+    let moisNumero: number = Utilistaire.convertMonthToNumber(abbreviation);
+    return "MOIS." + moisNumero;
+  }
+
+  getAnnee() {
+    return this.name.split('.')[1];
   }
 }
 

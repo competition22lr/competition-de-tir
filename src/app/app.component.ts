@@ -6,6 +6,7 @@ import { filter } from 'rxjs/operators';
 import { FooterComponent } from "./components/footer/footer.component";
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { HeaderComponent } from './components/header/header.component';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -19,7 +20,11 @@ export class AppComponent {
 
   currentUrl: string = '';
 
-  constructor(private router: Router, private viewportScroller: ViewportScroller) {
+  constructor(private router: Router, private viewportScroller: ViewportScroller,
+      public translate: TranslateService) {
+    
+    translate.use('fr'); // Force le français au démarrage
+
      // ecoute les changements de route
      this.router.events.pipe(
       filter(e => e instanceof NavigationEnd)

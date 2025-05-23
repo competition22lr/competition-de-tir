@@ -1,12 +1,12 @@
 <footer class="footer">
   <div class="footer-content">
     <img [src]="resultatsService.imageLocationUrl + 'logoCompetition.png'" alt="Logo compétition" class="footer-logo" />
-    <span>© 2025 Compétition de tir - Tous droits réservés</span>    
+    <span>{{ 'FOOTER.DROITS' | translate }}</span>    
   </div>
   <div class="footer-links">
-    <a [routerLink]="['/mentions-legales']">Mentions légales</a>
-    <!-- <a routerLink="/contact">Contact</a>
-        <a routerLink="/a-propos">À propos</a> -->
+    <a [routerLink]="['/mentions-legales']">{{ 'FOOTER.MENTIONS_LEGALES' | translate }}</a>
+    <!-- <a routerLink="/contact">{{ 'FOOTER.CONTACT' | translate }}</a>
+        <a routerLink="/a-propos">{{ 'FOOTER.APROPOS' | translate }}</a> -->
   </div> 
-  <div class="footer-version">Version {{ version }}</div>
+  <div class="footer-version">{{ 'FOOTER.VERSION' | translate }} {{ version }}</div>
 </footer>
