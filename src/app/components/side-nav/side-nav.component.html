@@ -4,17 +4,17 @@
     <mat-nav-list>
       <mat-list-item [routerLink]="['/accueil']" (click)="isMobile && drawer.close()">
         <mat-icon>home</mat-icon>
-        <span>Accueil</span>
+        <span>{{ 'SIDENAV.ACCUEIL' | translate }}</span>
       </mat-list-item>
 
       <mat-list-item [routerLink]="['/reglements']" (click)="isMobile && drawer.close()">
         <mat-icon>gavel</mat-icon>
-        <span>Règlements</span>
+        <span>{{ 'SIDENAV.REGLEMENT' | translate }}</span>
       </mat-list-item>
     </mat-nav-list>
 
     <mat-form-field appearance="fill">
-      <mat-label>Sélectionner une compétition</mat-label>
+      <mat-label>{{ 'SIDENAV.SELECTIONNER_COMPETITION' | translate }}</mat-label>
       <mat-select [(value)]="indexCompetitionSelectionne" (selectionChange)="onCompetitionChange($event.value)">
         <mat-option *ngFor="let competition of competitionsDispo; let i = index" [value]="i">
           <span style="white-space: pre-line;">{{ competition }}</span>
@@ -23,9 +23,10 @@
     </mat-form-field>
 
     <mat-nav-list *ngIf="showTirage">
-      <mat-list-item [routerLink]="['/gagnants-tirage', indexCompetitionSelectionne]" (click)="isMobile && drawer.close()">
+      <mat-list-item [routerLink]="['/gagnants-tirage', indexCompetitionSelectionne]"
+        (click)="isMobile && drawer.close()">
         <mat-icon></mat-icon>
-        <span>🎉 Gagnants 50/50</span>
+        <span>🎉 {{ 'SIDENAV.BOUTON_GAGNANTS5050' | translate }}</span>
       </mat-list-item>
     </mat-nav-list>
 
@@ -34,9 +35,14 @@
       <mat-list-item *ngFor="let mois of moisDispo"
         [routerLink]="['/classement', indexCompetitionSelectionne, encodeMois(mois.name)]"
         (click)="isMobile && drawer.close()">
-        <span>{{ mois.displayName() }}</span>
+        <span>{{ getMoisAfficahge(mois) }}</span>
       </mat-list-item>
     </mat-nav-list>
+
+    <button type="button" class="btn btn-outline-primary btn-lg btn-block" (click)="switchLanguage()">
+      {{ 'SIDENAV.BOUTON_LANGUE' | translate }}
+    </button>
+
   </mat-sidenav>
 
   <mat-sidenav-content>

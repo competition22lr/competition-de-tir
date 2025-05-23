@@ -1,0 +1,73 @@
+{
+    "SORTIE": "Sortie",
+    "HEADER": {
+        "TITLE": "Compétition de tir de précision",
+        "SUBTITLE": "Club de Tir de l'Outaouais"
+    },
+    "FOOTER": {
+        "DROITS": "© 2025 Compétition de tir - Tous droits réservés",
+        "MENTIONS_LEGALES": "Mentions légales",
+        "CONTACT": "Contact",
+        "APROPOS": "À propos",
+        "VERSION": "Version"
+    },
+    "MENTIONS_LEGALES": {
+        "TITRE": "Mentions légales",
+        "EDITEUR_TITRE": "Éditeur du site",
+        "EDITEUR_CONTENU": "Le présent site est édité par :",
+        "EDITEUR_NOM": "Sylvain Trépanier",
+        "EDITEUR_CLUB": "pour le ",
+        "EDITEUR_ADRESSE": "Adresse :",
+        "EDITEUR_ADRESSE2":"(Sortie 174 de l'Autoroute 50)",
+        "EDITEUR_TEL": "Téléphone :",
+        "EDITEUR_SITE": "Site Web :",
+        "RESPONSABLE": "Responsable de la publication :",
+        "PROPRIETE_TITRE": "Propriété intellectuelle",
+        "PROPRIETE_CONTENU": "L'ensemble du contenu présent sur ce site (textes, images, graphismes, logos, vidéos, etc.) est la propriété exclusive de l'association ou de ses partenaires, sauf mention contraire. Toute reproduction, distribution, modification ou adaptation, sans l'accord préalable écrit, est interdite.",
+        "DONNEES_TITRE": "Protection des données personnelles",
+        "DONNEES_CONTENU": "Les données éventuellement collectées via ce site (formulaire de contact, inscriptions, etc.) sont uniquement utilisées dans le cadre de l’activité de l’association. Conformément à la loi Informatique et Libertés et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, contactez-nous à l’adresse : [Email de contact].",
+        "COOKIES_TITRE": "Cookies",
+        "COOKIES_CONTENU": "Ce site peut utiliser des cookies pour améliorer l'expérience utilisateur. Vous pouvez configurer votre navigateur pour refuser tout ou partie des cookies.",
+        "RESPONSABILITE_TITRE": "Limitation de responsabilité",
+        "RESPONSABILITE_CONTENU": "L'association ne peut être tenue responsable des erreurs ou omissions dans les informations diffusées, ni de l'utilisation qui pourrait en être faite."
+    },
+    "": {},
+    "": {},
+    "": {},
+    "SIDENAV": {
+        "BOUTON_LANGUE": "Show the site in English",
+        "BOUTON_GAGNANTS5050": "Gagnants 50/50",
+        "REGLEMENT": "Règlements",
+        "ACCUEIL": "Accueil",
+        "SELECTIONNER_COMPETITION": "Sélectionner une compétition"
+    },
+    "MOIS": {
+        "1": "Janvier",
+        "2": "Février",
+        "3": "Mars",
+        "4": "Avril",
+        "5": "Mai",
+        "6": "Juin",
+        "7": "Juillet",
+        "8": "Août",
+        "9": "Septembre",
+        "10": "Octobre",
+        "11": "Novembre",
+        "12": "Décembre"
+    },
+    "ACCUEIL": {
+        "TITRE": "Bienvenue sur le site de la Compétition de Tir de Précision",
+        "INTRO": "Cette plateforme vous permet de consulter les résultats mensuels, les règlements de la compétition et les informations utiles pour les tireurs participants.",
+        "HORAIRE_TITRE": "Heures d'ouverture de champ de tir:",
+        "NOTE": "* Veuillez vérifier le calendrier du club pour connaître l'horaire exact.",
+        "CLUB_TITRE": "Organisé par le ",
+        "ADRESSE": "Adresse : ",
+        "TELEPHONE": "Téléphone : ",
+        "COURRIEL": "Courriel : ",
+        "SITE_WEB": "Site Web : ",
+        "HORAIRE_SEMAINE": "Lundi au Vendredi : ",
+        "HORAIRE_SAMEDI": "Samedi : ",
+        "HORAIRE_DIMANCHE": "Dimanche : ",
+        "HORAIRE_A": "à"
+    }
+}

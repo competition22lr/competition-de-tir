@@ -60,17 +60,13 @@ h1 {
   color: #555;
 }
 
+.img_construction{
+  text-align: center;
+}
+
 .construction-image {
   max-width: 600px;
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
-}
-
-/* Pour les écrans plus larges */
-@media (min-width: 768px) {
-  .construction-image {
-    width: 45%;
-    /* deux images côte à côte avec un peu d'espace */
-  }
 }
