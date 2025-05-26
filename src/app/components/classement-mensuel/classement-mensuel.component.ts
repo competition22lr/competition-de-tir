@@ -5,21 +5,24 @@ import { ResultatsService } from '../../services/resultats.service';
 import { MoisResultats } from '../../models/mois-resultats.model';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Competition } from '../../models/competition.model';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-classement-mensuel',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './classement-mensuel.component.html',
   styleUrls: ['./classement-mensuel.component.css']
 })
 export class ClassementMensuelComponent implements OnInit {
   participants: Participant[] = [];
   competitionSelectionnee!: Competition;
-  moisSelectionne?: MoisResultats;
+  moisSelectionne!: MoisResultats;
   indexCompetitionSelectionne!: number;
   private _moisSelectionne!: string;
 
-  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router) { }
+  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router,
+    private translate: TranslateService
+  ) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -63,7 +66,9 @@ export class ClassementMensuelComponent implements OnInit {
     });
   }
 
-
+ getMoisAfficahge(mois: MoisResultats): string {
+   return this.translate.instant(mois.getMoisCleText()) + " " + mois.getAnnee();
+  }
 
   get topParticipants() {
     let top5: Participant[] = this.participants.filter(p => p.aClassement());

@@ -66,5 +66,10 @@
         "HORAIRE_SAMEDI": "Saturday: ",
         "HORAIRE_DIMANCHE": "Sunday  ",
         "HORAIRE_A": "to"
+    },
+    "CLASSEMENT_MENSUEL": {
+        "CLASSEMENT": "Ranking",
+        "SYSTEME_CLASSEMENT_TIREURS": "Shooter Ranking System",
+        "VERSION_IMPRIMABLE": "Printable Version"
     }
 }
