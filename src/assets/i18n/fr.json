@@ -52,6 +52,14 @@
         "11": "Novembre",
         "12": "Décembre"
     },
+    "CLASSEMENT": {
+        "TITRE": "Classement",
+        "DIAMANT": "Diamant",
+        "PLATINE": "Platine",
+        "OR": "Or",
+        "ARGENT": "Argent",
+        "BRONZE": "Bronze"
+    },
     "ACCUEIL": {
         "TITRE": "Bienvenue sur le site de la Compétition de Tir de Précision",
         "INTRO": "Cette plateforme vous permet de consulter les résultats mensuels, les règlements de la compétition et les informations utiles pour les tireurs participants.",
@@ -72,6 +80,25 @@
         "SYSTEME_CLASSEMENT_TIREURS": "Système de Classement des Tireurs",
         "VERSION_IMPRIMABLE": "Version imprimable"
     },
-    "": {},
-    "": {}
+    "TIRAGE": {
+        "TITRE": "Gagnants au tirage 50/50 mensuel",
+        "INTRO": "Chaque tireur reçoit automatiquement",
+        "INTRO.1": "1 participation",
+        "INTRO.2": "par",
+        "INTRO.3": "feuille de cible soumise",
+        "INTRO.4": ", assurant ainsi une chance équitable à tous les participants.",
+        "DETAILS_BONUS": "Des",
+        "DETAILS_BONUS.1": "participations supplémentaires",
+        "DETAILS_BONUS.2": "sont accordées selon le",
+        "DETAILS_BONUS.3": "classement mensuel ",
+        "PARTICIPATIONS": "Participations supplémentaires",
+        "DIAMANT_NOTE": "Non comptabilisé",
+        "DIAMANT_NOTE.1":"(en cours de validation)",
+        "PLATINE_NOTE": "+15 participations",
+        "OR_NOTE": "+10 participations",
+        "ARGENT_NOTE": "+5 participations",
+        "BRONZE_NOTE": "+3 participations",
+        "CONCLUSION": "Ces bonifications récompensent la performance tout en combinant la participation active. Le classement devient ainsi un levier stratégique pour augmenter vos chances de remporter le tirage mensuel.",
+        "AUCUN_GAGNANT": "Aucun gagnant pour cette compétition."
+    }
 }

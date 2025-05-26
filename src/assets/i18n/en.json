@@ -18,7 +18,7 @@
         "EDITEUR_NOM": "Sylvain Trépanier",
         "EDITEUR_CLUB": "for the ",
         "EDITEUR_ADRESSE": "Address:",
-        "EDITEUR_ADRESSE2":"(Exit 174 from Highway 50)",
+        "EDITEUR_ADRESSE2": "(Exit 174 from Highway 50)",
         "EDITEUR_TEL": "Phone:",
         "EDITEUR_SITE": "Website:",
         "RESPONSABLE": "Publication Manager:",
@@ -52,6 +52,14 @@
         "11": "November",
         "12": "December"
     },
+    "CLASSEMENT": {
+        "TITRE": "Ranking",
+        "DIAMANT": "Diamond",
+        "PLATINE": "Platinum",
+        "OR": "Gold",
+        "ARGENT": "Silver",
+        "BRONZE": "Bronze"
+    },
     "ACCUEIL": {
         "TITRE": "Welcome to the Precision Shooting Competition site",
         "INTRO": "This platform allows you to view monthly results, competition rules, and useful information for participating shooters.",
@@ -71,5 +79,26 @@
         "CLASSEMENT": "Ranking",
         "SYSTEME_CLASSEMENT_TIREURS": "Shooter Ranking System",
         "VERSION_IMPRIMABLE": "Printable Version"
+    },
+    "TIRAGE": {
+        "TITRE": "Monthly 50/50 Draw Winners",
+        "INTRO": "Each shooter automatically receives",
+        "INTRO.1": "1 entry",
+        "INTRO.2": "per",
+        "INTRO.3": "submitted target sheet",
+        "INTRO.4": ", ensuring a fair chance for all participants.",
+        "DETAILS_BONUS": "",
+        "DETAILS_BONUS.1": "Additional entries",
+        "DETAILS_BONUS.2": "are awarded based on the",
+        "DETAILS_BONUS.3": "monthly ranking",
+        "PARTICIPATIONS": "Additional Entries",
+        "DIAMANT_NOTE": "Not counted",
+        "DIAMANT_NOTE.1":"(under review)",
+        "PLATINE_NOTE": "+15 entries",
+        "OR_NOTE": "+10 entries",
+        "ARGENT_NOTE": "+5 entries",
+        "BRONZE_NOTE": "+3 entries",
+        "CONCLUSION": "These bonuses reward performance while encouraging active participation. Ranking becomes a strategic way to increase your chances of winning the monthly draw.",
+        "AUCUN_GAGNANT": "No winners for this competition."
     }
 }
