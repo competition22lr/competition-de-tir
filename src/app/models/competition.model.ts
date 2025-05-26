@@ -7,12 +7,13 @@ export class Competition {
     public mois: MoisResultats[]
   ) { }
 
-  getGagnanTirage(): { mois: string; gagnant: string; }[] {
-    const gagnantsParMois: { mois: string; gagnant: string; }[] = []
+  getGagnanTirage(): {  moisCle: string; annee: string; gagnant: string; }[] {
+    const gagnantsParMois: { moisCle: string; annee: string; gagnant: string; }[] = []
 
     this.mois.forEach(element => {
       const gagnant = {
-        mois: element.displayName(),
+        moisCle: element.getMoisCleText(),
+        annee: element.getAnnee(),
         gagnant: element.resultatTirage.Nom
       };
       gagnantsParMois.push(gagnant);
