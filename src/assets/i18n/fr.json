@@ -18,7 +18,7 @@
         "EDITEUR_NOM": "Sylvain Trépanier",
         "EDITEUR_CLUB": "pour le ",
         "EDITEUR_ADRESSE": "Adresse :",
-        "EDITEUR_ADRESSE2":"(Sortie 174 de l'Autoroute 50)",
+        "EDITEUR_ADRESSE2": "(Sortie 174 de l'Autoroute 50)",
         "EDITEUR_TEL": "Téléphone :",
         "EDITEUR_SITE": "Site Web :",
         "RESPONSABLE": "Responsable de la publication :",
@@ -31,9 +31,6 @@
         "RESPONSABILITE_TITRE": "Limitation de responsabilité",
         "RESPONSABILITE_CONTENU": "L'association ne peut être tenue responsable des erreurs ou omissions dans les informations diffusées, ni de l'utilisation qui pourrait en être faite."
     },
-    "": {},
-    "": {},
-    "": {},
     "SIDENAV": {
         "BOUTON_LANGUE": "Show the site in English",
         "BOUTON_GAGNANTS5050": "Gagnants 50/50",
@@ -69,5 +66,12 @@
         "HORAIRE_SAMEDI": "Samedi : ",
         "HORAIRE_DIMANCHE": "Dimanche : ",
         "HORAIRE_A": "à"
-    }
+    },
+    "CLASSEMENT_MENSUEL": {
+        "CLASSEMENT": "Classement",
+        "SYSTEME_CLASSEMENT_TIREURS": "Système de Classement des Tireurs",
+        "VERSION_IMPRIMABLE": "Version imprimable"
+    },
+    "": {},
+    "": {}
 }
