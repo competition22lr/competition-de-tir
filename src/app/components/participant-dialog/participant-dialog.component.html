@@ -1,0 +1,21 @@
+<div class="dialog-container animate-popup">
+    <h2 class="dialog-title">👤 {{ data.nom }}</h2>
+
+    <div class="dialog-message">
+        <p>{{ 'POPUP_PARTICIPATIONS.MESSAGE' | translate:{ count: data.participations } }}</p>
+        <p *ngIf="data.mois?.length">
+            {{ 'POPUP_PARTICIPATIONS.MOIS' | translate }} :
+            <span class="mois-list">
+                <ul>
+                    <li *ngFor="let mois of data.mois">{{ mois }}</li>
+                </ul>
+            </span>
+        </p>
+    </div>
+
+    <div class="dialog-actions">
+        <button mat-raised-button color="primary" mat-dialog-close>
+            {{ 'POPUP_PARTICIPATIONS.FERMER' | translate }}
+        </button>
+    </div>
+</div>

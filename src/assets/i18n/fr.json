@@ -79,7 +79,15 @@
         "CLASSEMENT": "Classement",
         "SYSTEME_CLASSEMENT_TIREURS": "Système de Classement des Tireurs",
         "VERSION_IMPRIMABLE": "Version imprimable",
-        "PRINT":"Imprimé"
+        "PRINT": "Imprimé"
+    },
+    "CLASSEMENT_ANNUEL": {
+        "TITRE": "Top 10 Annuel",
+        "TITRE_TOP10": "Classement Annuel - Top 10",
+        "POINTAGE": "Pointage",
+        "BONI": "Boni",
+        "TOTAL": "Total",
+        "MOIS_MEILLEUR_SCORE": "Meilleur score obtenu en"
     },
     "TIRAGE": {
         "TITRE": "Gagnants au tirage 50/50 mensuel",
@@ -141,5 +149,10 @@
                 }
             }
         }
+    },
+    "POPUP_PARTICIPATIONS": {
+        "MESSAGE": "Ce tireur a participé {{count}} fois à cette compétition.",
+        "MOIS": "Mois de participation",
+        "FERMER": "Fermer"
     }
 }

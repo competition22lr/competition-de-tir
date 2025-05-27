@@ -79,7 +79,15 @@
         "CLASSEMENT": "Ranking",
         "SYSTEME_CLASSEMENT_TIREURS": "Shooter Ranking System",
         "VERSION_IMPRIMABLE": "Printable Version",
-        "PRINT":"Print"
+        "PRINT": "Print"
+    },
+    "CLASSEMENT_ANNUEL": {
+        "TITRE": "Annual Top 10",
+        "TITRE_TOP10": "Annual Ranking - Top 10",
+        "POINTAGE": "Score",
+        "BONI": "Bonus",
+        "TOTAL": "Total",
+        "MOIS_MEILLEUR_SCORE": "Best score obtained in"
     },
     "TIRAGE": {
         "TITRE": "Monthly 50/50 Draw Winners",
@@ -141,5 +149,10 @@
                 }
             }
         }
+    },
+    "POPUP_PARTICIPATIONS": {
+        "MESSAGE": "This shooter participated {{count}} times in this competition.",
+        "MOIS": "Participation months",
+        "FERMER": "Close"
     }
 }

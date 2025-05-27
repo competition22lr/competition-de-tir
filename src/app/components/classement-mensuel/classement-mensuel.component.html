@@ -1,8 +1,10 @@
 <div class="classement-container">
-  <h2 class="titre-mois">{{ 'CLASSEMENT_MENSUEL.CLASSEMENT' | translate }}  - {{ getMoisAfficahge(moisSelectionne) }}</h2>
+  <h2 class="titre-mois">{{ 'CLASSEMENT_MENSUEL.CLASSEMENT' | translate }} - {{ getMoisAfficahge(moisSelectionne) }}
+  </h2>
 
   <div class="trophees">
-    <div *ngFor="let p of topParticipants; let i = index" class="trophy-card trophy-card-{{p.classement}}">
+    <div *ngFor="let p of topParticipants; let i = index" class="trophy-card trophy-card-{{p.classement}}"
+      (click)="ouvrirPopup(p)">
       <img [src]="getTrophyImage(p.classement)" class="trophy-img" alt="{{p.classement}}" />
       <div class="infos">
         <div class="nom">{{ p.nom }}</div>
@@ -13,11 +15,12 @@
 
   <div class="no-print">
     <a [routerLink]="['/reglements']" fragment="classement">
-      🏅 {{ 'CLASSEMENT_MENSUEL.SYSTEME_CLASSEMENT_TIREURS' | translate }} 
+      🏅 {{ 'CLASSEMENT_MENSUEL.SYSTEME_CLASSEMENT_TIREURS' | translate }}
     </a>
     <br />
-    <a [routerLink]="['/impression', this.indexCompetitionSelectionne, this.moisSelectionne.name, this.translate.currentLang]" target="_blank">
-      🖨️ {{ 'CLASSEMENT_MENSUEL.VERSION_IMPRIMABLE' | translate }} 
+    <a [routerLink]="['/impression', this.indexCompetitionSelectionne, this.moisSelectionne.name, this.translate.currentLang]"
+      target="_blank">
+      🖨️ {{ 'CLASSEMENT_MENSUEL.VERSION_IMPRIMABLE' | translate }}
     </a>
   </div>
 </div>

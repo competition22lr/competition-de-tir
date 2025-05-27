@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
+  
+  flex-direction: column;  /* Important pour mettre le titre au-dessus */
+  align-items: center;
 }
 
 .titre-mois {
@@ -71,15 +74,6 @@
     font-size: 0.9rem;
     color: #260155;
   }
-}
-
-.classement-container {
-  display: flex;
-  flex-direction: column;
-  /* Important pour mettre le titre au-dessus */
-  align-items: center;
-  gap: 1rem;
-  /* Un peu d’espace entre les éléments */
 }
 
 .trophees {
