@@ -5,26 +5,32 @@ import { Competition } from '../../models/competition.model';
 import { MoisResultats } from '../../models/mois-resultats.model';
 import { ResultatsService } from '../../services/resultats.service';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-impression-classement',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './impression-classement.component.html',
   styleUrl: './impression-classement.component.css'
 })
 export class ImpressionClassementComponent implements OnInit {
   participants: Participant[] = [];
   competitionSelectionnee!: Competition;
-  moisSelectionne?: MoisResultats;
+  moisSelectionne!: MoisResultats;
   indexCompetitionSelectionne!: number;
   private _moisSelectionne!: string;
 
-  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router) { }
+  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router,
+    private translate: TranslateService
+  ) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       const paramCompetition = params.get('competition');
       const paramMois = params.get('mois');
+      const paramLangue = params.get('langue');
+
+      this.translate.use(paramLangue ==null ? "fr" :paramLangue);
 
       this.indexCompetitionSelectionne = paramCompetition !== null ? Number(paramCompetition) ? Number(paramCompetition) : 0 : 0;
       // ✅ Décodage des underscores → points
@@ -33,6 +39,7 @@ export class ImpressionClassementComponent implements OnInit {
 
       console.log("params.get('competition') =>", paramCompetition);
       console.log("params.get('mois') =>", paramMois);
+      console.log("params.get('langue') =>", paramLangue);
 
       console.log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
       console.log("this._moisSelectionne =>", this._moisSelectionne);
@@ -70,7 +77,6 @@ export class ImpressionClassementComponent implements OnInit {
 
   get topParticipants() {
     let top5: Participant[] = this.participants.filter(p => p.aClassement());
-
     return top5;
   }
 
@@ -78,5 +84,9 @@ export class ImpressionClassementComponent implements OnInit {
     let imgPrefix = "logoCompetition";
     let imgSufix = ".png";
     return this.resultatsService.imageLocationUrl + imgPrefix + classement + imgSufix;
+  }
+
+  getMoisAfficahge(mois: MoisResultats): string {
+   return this.translate.instant(mois.getMoisCleText()) + " " + mois.getAnnee();
   }
 }

@@ -6,18 +6,19 @@ import { EquipementComponent } from './equipement/equipement.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { FeuillePointageComponent } from './feuille-pointage/feuille-pointage.component';
 import { CalculPointsComponent } from "./calcul-points/calcul-points.component";
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-reglements',
   standalone: true,
   imports: [CommonModule, ClassementComponent, EquipementComponent, CategoriesComponent,
-    FeuillePointageComponent, CalculPointsComponent, RouterModule],
+    FeuillePointageComponent, CalculPointsComponent, RouterModule, TranslateModule],
   templateUrl: './reglements.component.html',
   styleUrls: ['./reglements.component.css']
 })
 export class ReglementsComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private translate: TranslateService) { }
 
   goToAnchor(anchor: string) {
     // S'assure que l'utilisateur est bien sur /reglements

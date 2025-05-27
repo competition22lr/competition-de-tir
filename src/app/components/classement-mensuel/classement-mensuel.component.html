@@ -16,7 +16,7 @@
       🏅 {{ 'CLASSEMENT_MENSUEL.SYSTEME_CLASSEMENT_TIREURS' | translate }} 
     </a>
     <br />
-    <a [routerLink]="['/impression', this.indexCompetitionSelectionne, this.moisSelectionne?.name]" target="_blank">
+    <a [routerLink]="['/impression', this.indexCompetitionSelectionne, this.moisSelectionne.name, this.translate.currentLang]" target="_blank">
       🖨️ {{ 'CLASSEMENT_MENSUEL.VERSION_IMPRIMABLE' | translate }} 
     </a>
   </div>

@@ -21,7 +21,7 @@ export class ClassementMensuelComponent implements OnInit {
   private _moisSelectionne!: string;
 
   constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router,
-    private translate: TranslateService
+    public translate: TranslateService
   ) { }
 
   ngOnInit() {
