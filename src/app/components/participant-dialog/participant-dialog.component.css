@@ -1,0 +1,61 @@
+.dialog-container {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+  animation: popupFadeIn 0.3s ease-out;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dialog-title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #2b6cb0;
+  font-weight: 600;
+}
+
+.dialog-message {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.mois-list {
+  display: block;
+  margin-top: 0.5rem;
+  color: #2c5282;
+  font-weight: 500;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+}
+
+button[mat-raised-button] {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  margin: 4px 0;
+}

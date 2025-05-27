@@ -1,28 +1,28 @@
 <div class="reglements-container">
-  <h1>Règlements de la compétition</h1>
+  <h1>{{ 'REGLEMENT.TITRE' | translate }}</h1>
 
   <nav class="table-des-matieres">
-    <h3>Table des matières</h3>
+    <h3>{{ 'REGLEMENT.TABLE.TITLE' | translate }}</h3>
     <ul>
-      <li><a (click)="goToAnchor('deroulement')">Déroulement</a></li>
-      <li><a (click)="goToAnchor('categories')">Catégories</a></li>
-      <li><a (click)="goToAnchor('feuille-points')">Feuille de cible</a></li>
-      <li><a (click)="goToAnchor('calcul-points')">Calcul des points</a></li>
-      <li><a (click)="goToAnchor('classement')">Système de Classement des Tireurs</a></li>
-      <li><a (click)="goToAnchor('equipement')">Équipement autorisé</a>
+      <li><a (click)="goToAnchor('deroulement')">{{ 'REGLEMENT.TABLE.DEROULEMENT' | translate }}</a></li>
+      <li><a (click)="goToAnchor('categories')">{{ 'REGLEMENT.TABLE.CATEGORIES' | translate }}</a></li>
+      <li><a (click)="goToAnchor('feuille-points')">{{ 'REGLEMENT.TABLE.FEUILLEPOINTS' | translate }}</a></li>
+      <li><a (click)="goToAnchor('calcul-points')">{{ 'REGLEMENT.TABLE.CALCULPOINTS' | translate }}</a></li>
+      <li><a (click)="goToAnchor('classement')">{{ 'REGLEMENT.TABLE.CLASSEMENT' | translate }}</a></li>
+      <li><a (click)="goToAnchor('equipement')">{{ 'REGLEMENT.TABLE.EQUIPEMENT' | translate }}</a>
         <ul>
-          <li><a (click)="goToAnchor('calibres')">Calibres autorisés</a></li>
+          <li><a (click)="goToAnchor('calibres')">{{ 'REGLEMENT.TABLE.CALIBRES' | translate }}</a></li>
         </ul>
       </li>
     </ul>
     <!-- <a [routerLink]="['/impression-reglements']" target="_blank">
-      🖨️ Version imprimable
+      🖨️ {{ 'REGLEMENT.IMPRIMABLE' | translate }}
     </a> -->
   </nav>
 
   <section id="deroulement">
-    <h2>Déroulement de la compétition</h2>
-    <p>Décris ici comment la compétition se déroule (ex : nombre de tirs, durée, etc.).</p>
+    <h2>{{ 'REGLEMENT.SECTIONS.DEROULEMENT.TITLE' | translate }}</h2>
+    <p>{{ 'REGLEMENT.SECTIONS.DEROULEMENT.DESCRIPTION' | translate }}</p>
   </section>
 
   <section id="categories">

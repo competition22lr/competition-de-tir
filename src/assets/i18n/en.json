@@ -1,0 +1,158 @@
+{
+    "SORTIE": "Exit",
+    "HEADER": {
+        "TITLE": "Precision Shooting Competition",
+        "SUBTITLE": "Club de Tir de l'Outaouais"
+    },
+    "FOOTER": {
+        "DROITS": "© 2025 Precision Shooting Competition - All Rights Reserved",
+        "MENTIONS_LEGALES": "Legal Notice",
+        "CONTACT": "Contact",
+        "APROPOS": "About",
+        "VERSION": "Version"
+    },
+    "MENTIONS_LEGALES": {
+        "TITRE": "Legal Notice",
+        "EDITEUR_TITRE": "Site Publisher",
+        "EDITEUR_CONTENU": "This website is published by:",
+        "EDITEUR_NOM": "Sylvain Trépanier",
+        "EDITEUR_CLUB": "for the ",
+        "EDITEUR_ADRESSE": "Address:",
+        "EDITEUR_ADRESSE2": "(Exit 174 from Highway 50)",
+        "EDITEUR_TEL": "Phone:",
+        "EDITEUR_SITE": "Website:",
+        "RESPONSABLE": "Publication Manager:",
+        "PROPRIETE_TITRE": "Intellectual Property",
+        "PROPRIETE_CONTENU": "All content on this website (texts, images, graphics, logos, videos, etc.) is the exclusive property of the association or its partners, unless otherwise stated. Any reproduction, distribution, modification, or adaptation without prior written consent is prohibited.",
+        "DONNEES_TITRE": "Personal Data Protection",
+        "DONNEES_CONTENU": "Any data collected through this website (contact forms, registrations, etc.) is used solely for the purposes of the association’s activities. In accordance with data protection laws and GDPR, you have the right to access, correct, and delete your personal data. To exercise this right, contact us at: [Contact email].",
+        "COOKIES_TITRE": "Cookies",
+        "COOKIES_CONTENU": "This site may use cookies to enhance user experience. You can configure your browser to refuse all or some cookies.",
+        "RESPONSABILITE_TITRE": "Limitation of Liability",
+        "RESPONSABILITE_CONTENU": "The association cannot be held responsible for errors or omissions in the information provided, nor for any use that may be made of it."
+    },
+    "SIDENAV": {
+        "BOUTON_LANGUE": "Afficher le site en français",
+        "BOUTON_GAGNANTS5050": "50/50 Winners",
+        "REGLEMENT": "Rules",
+        "ACCUEIL": "Home",
+        "SELECTIONNER_COMPETITION": "Select a competition"
+    },
+    "MOIS": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+    },
+    "CLASSEMENT": {
+        "TITRE": "Ranking",
+        "DIAMANT": "Diamond",
+        "PLATINE": "Platinum",
+        "OR": "Gold",
+        "ARGENT": "Silver",
+        "BRONZE": "Bronze"
+    },
+    "ACCUEIL": {
+        "TITRE": "Welcome to the Precision Shooting Competition site",
+        "INTRO": "This platform allows you to view monthly results, competition rules, and useful information for participating shooters.",
+        "HORAIRE_TITRE": "Shooting range opening hours:",
+        "NOTE": "* Please check the club calendar for the exact schedule.",
+        "CLUB_TITRE": "Organized by the ",
+        "ADRESSE": "Address: ",
+        "TELEPHONE": "Phone: ",
+        "COURRIEL": "Email: ",
+        "SITE_WEB": "Website: ",
+        "HORAIRE_SEMAINE": "Monday to Friday: ",
+        "HORAIRE_SAMEDI": "Saturday: ",
+        "HORAIRE_DIMANCHE": "Sunday  ",
+        "HORAIRE_A": "to"
+    },
+    "CLASSEMENT_MENSUEL": {
+        "CLASSEMENT": "Ranking",
+        "SYSTEME_CLASSEMENT_TIREURS": "Shooter Ranking System",
+        "VERSION_IMPRIMABLE": "Printable Version",
+        "PRINT": "Print"
+    },
+    "CLASSEMENT_ANNUEL": {
+        "TITRE": "Annual Top 10",
+        "TITRE_TOP10": "Annual Ranking - Top 10",
+        "POINTAGE": "Score",
+        "BONI": "Bonus",
+        "TOTAL": "Total",
+        "MOIS_MEILLEUR_SCORE": "Best score obtained in"
+    },
+    "TIRAGE": {
+        "TITRE": "Monthly 50/50 Draw Winners",
+        "INTRO": "Each shooter automatically receives",
+        "INTRO.1": "1 entry",
+        "INTRO.2": "per",
+        "INTRO.3": "submitted target sheet",
+        "INTRO.4": ", ensuring a fair chance for all participants.",
+        "DETAILS_BONUS": "",
+        "DETAILS_BONUS.1": "Additional entries",
+        "DETAILS_BONUS.2": "are awarded based on the",
+        "DETAILS_BONUS.3": "monthly ranking",
+        "PARTICIPATIONS": "Additional Entries",
+        "DIAMANT_NOTE": "Not counted",
+        "DIAMANT_NOTE.1": "(under review)",
+        "PLATINE_NOTE": "+15 entries",
+        "OR_NOTE": "+10 entries",
+        "ARGENT_NOTE": "+5 entries",
+        "BRONZE_NOTE": "+3 entries",
+        "CONCLUSION": "These bonuses reward performance while encouraging active participation. Ranking becomes a strategic way to increase your chances of winning the monthly draw.",
+        "AUCUN_GAGNANT": "No winners for this competition."
+    },
+    "REGLEMENT": {
+        "TITRE": "Competition Rules",
+        "IMPRIMABLE": "Printable version",
+        "TABLE": {
+            "TITLE": "Table of Contents",
+            "DEROULEMENT": "Competition Process",
+            "CATEGORIES": "Categories",
+            "FEUILLEPOINTS": "Target Sheet",
+            "CALCULPOINTS": "Scoring Method",
+            "CLASSEMENT": "Shooter Ranking System",
+            "EQUIPEMENT": "Authorized Equipment",
+            "CALIBRES": "Authorized Calibers"
+        },
+        "SECTIONS": {
+            "DEROULEMENT": {
+                "TITLE": "Competition Process",
+                "DESCRIPTION": "Describe how the competition is conducted (e.g., number of shots, duration, etc.)."
+            },
+            "CALCULPOINTS": {
+                "TITLE": "Scoring System",
+                "DESCRIPTION": "Describe the point calculation rules for each target, including penalties, bonuses, etc.",
+                "TIRPARFAIT": {
+                    "TITLE": "Perfect Shot",
+                    "DESCRIPTION": "The shooter hits the center of the target flawlessly, <strong>completely removing the central dot</strong>. They receive <strong>10 base points</strong> plus <strong>1 bonus point</strong>."
+                },
+                "TIRSOLIDE": {
+                    "TITLE": "Excellent Shot without Bonus",
+                    "DESCRIPTION": "The shooter hits the center of the target with no error, <strong>but does not</strong> completely remove the central dot. They receive <strong>10 base points</strong>."
+                },
+                "TIRINVALIDE": {
+                    "TITLE": "Invalid Shot",
+                    "DESCRIPTION": "The shot contains an error: either a <strong>double shot</strong> on the same target or a shot <strong>outside the target area</strong> (within the frame but outside the scoring zone). <strong>No points are awarded</strong>."
+                },
+                "TIRTRICHE": {
+                    "TITLE": "Attempt to Cheat",
+                    "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score. <strong>==>&nbsp;Automatic&nbsp;disqualification&nbsp;<==</strong>."
+                }
+            }
+        }
+    },
+    "POPUP_PARTICIPATIONS": {
+        "MESSAGE": "This shooter participated {{count}} times in this competition.",
+        "MOIS": "Participation months",
+        "FERMER": "Close"
+    }
+}

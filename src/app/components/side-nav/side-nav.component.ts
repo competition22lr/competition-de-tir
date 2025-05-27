@@ -14,13 +14,14 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultatsService } from '../../services/resultats.service';
 import { MoisResultats } from '../../models/mois-resultats.model';
 import { filter } from 'rxjs';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-side-nav',
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
     MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
-    RouterModule],
+    RouterModule,TranslateModule],
   templateUrl: './side-nav.component.html',
   styleUrls: ['../../../styles-print.css', './side-nav.component.css']
 
@@ -34,9 +35,13 @@ export class SideNavComponent implements OnInit {
   isMobile = false;
   showTirage = true;
   indexCompetitionSelectionne: number = 0;
+  currentLang = 'fr';
 
   constructor(private resultatsService: ResultatsService,
-    private breakpointObserver: BreakpointObserver, private route: ActivatedRoute, private router: Router) {
+    private breakpointObserver: BreakpointObserver, private route: ActivatedRoute, private router: Router,
+     private translate: TranslateService) {
+
+    this.currentLang = translate.currentLang;
 
     // Écoute les changements de route
     this.router.events.pipe(
@@ -70,6 +75,11 @@ export class SideNavComponent implements OnInit {
     });
   }
 
+  switchLanguage() {
+    this.currentLang = this.currentLang === 'fr' ? 'en' : 'fr';
+    this.translate.use(this.currentLang);
+  }
+
   onCompetitionChange(index: number) {
     this.indexCompetitionSelectionne = index;
 
@@ -97,5 +107,9 @@ export class SideNavComponent implements OnInit {
     if (this.isMobile && this.drawer) {
       this.drawer.close();
     }
+  }
+
+  getMoisAfficahge(mois: MoisResultats): string {
+   return this.translate.instant(mois.getMoisCleText()) + " " + mois.getAnnee();
   }
 }

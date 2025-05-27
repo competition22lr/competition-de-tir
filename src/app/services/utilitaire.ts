@@ -41,6 +41,16 @@ export class Utilistaire {
         }
     }
 
+    static moisEnAnglais(moisNumero: number): string {
+        const months: string[] = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"];
+
+        if (moisNumero >= 1 && moisNumero <= 12) {
+            return months[moisNumero - 1];
+        } else {
+            return "Numéro de mois invalide";
+        }
+    }
 
     static generateWatermarkedImage(imageUrl: string, watermarkText: string = "© TREPANIER.CC 2025"): Promise<string> {
         return new Promise((resolve, reject) => {
