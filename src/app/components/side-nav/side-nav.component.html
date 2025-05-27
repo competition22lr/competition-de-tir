@@ -4,12 +4,12 @@
     <mat-nav-list>
       <mat-list-item [routerLink]="['/accueil']" (click)="isMobile && drawer.close()">
         <mat-icon>home</mat-icon>
-        <span>{{ 'SIDENAV.ACCUEIL' | translate }}</span>
+        <span> {{ 'SIDENAV.ACCUEIL' | translate }}</span>
       </mat-list-item>
 
       <mat-list-item [routerLink]="['/reglements']" (click)="isMobile && drawer.close()">
         <mat-icon>gavel</mat-icon>
-        <span>{{ 'SIDENAV.REGLEMENT' | translate }}</span>
+        <span> {{ 'SIDENAV.REGLEMENT' | translate }}</span>
       </mat-list-item>
     </mat-nav-list>
 
@@ -30,7 +30,7 @@
       </mat-list-item>
     </mat-nav-list>
 
-
+    <!-- Liste des mois -->
     <mat-nav-list>
       <mat-list-item *ngFor="let mois of moisDispo"
         [routerLink]="['/classement', indexCompetitionSelectionne, encodeMois(mois.name)]"
@@ -39,7 +39,16 @@
       </mat-list-item>
     </mat-nav-list>
 
-    <button type="button" class="btn btn-outline-primary btn-lg btn-block" (click)="switchLanguage()">
+    <!-- Lien vers le classement annuel Top 10 -->
+    <mat-nav-list>
+      <mat-list-item [routerLink]="['/classement-annuel', indexCompetitionSelectionne]"
+        (click)="isMobile && drawer.close()">
+        <span>🏆 {{ 'CLASSEMENT_ANNUEL.TITRE' | translate }}</span>
+      </mat-list-item>
+    </mat-nav-list>
+
+    <button type="button" class="btn btn-outline-primary btn-lg btn-block"
+      (click)="switchLanguage(); isMobile && drawer.close()">
       {{ 'SIDENAV.BOUTON_LANGUE' | translate }}
     </button>
 

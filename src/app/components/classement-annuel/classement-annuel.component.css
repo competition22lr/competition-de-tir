@@ -1,0 +1,68 @@
+.classement-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto; /* centre le contenu horizontalement */
+}
+
+.titre-top {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Grille responsive : 1 à 3 colonnes selon la taille */
+.cartes-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-items: center; /* centre les cartes dans leur colonne */
+  max-width: 800px;
+  margin: auto;
+}
+
+.carte-participant {
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px; /* limite la taille max d'une carte */
+  text-align: center;
+  color: black;
+  box-shadow: 0 0 10px #0006;
+  transition: transform 0.2s;
+  background-color: white;
+}
+
+.carte-participant:hover {
+  transform: scale(1.05);
+}
+
+.rang {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+.nom {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.scores div {
+  margin: 0.2rem 0;
+}
+
+/* ✅ Media query mobile : 1 colonne en dessous de 600px */
+@media (max-width: 600px) {
+  .cartes-top {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .carte-participant {
+    width: 100%;
+    max-width: 90%; /* pleine largeur avec un petit padding */
+  }
+}

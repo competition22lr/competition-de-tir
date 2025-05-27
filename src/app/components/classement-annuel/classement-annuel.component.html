@@ -1,0 +1,16 @@
+<div class="classement-container">
+  <h2 class="titre-top">🏆 {{ 'CLASSEMENT_ANNUEL.TITRE_TOP10' | translate }}</h2>
+
+  <div class="cartes-top">
+    <div class="carte-participant" *ngFor="let p of top10; let i = index" (click)="ouvrirPopup(p)">
+      <div class="rang">#{{ i + 1 }}</div>
+      <div class="nom">{{ p.nom }}</div>
+      <div class="scores">
+        <div>{{ 'CLASSEMENT_ANNUEL.POINTAGE' | translate }}: <strong>{{ p.pointage }}</strong></div>
+        <div>{{ 'CLASSEMENT_ANNUEL.BONI' | translate }}: <strong>{{ p.pointBoni }}</strong></div>
+        <div>{{ 'CLASSEMENT_ANNUEL.TOTAL' | translate }}: <strong>{{ p.total }}</strong></div>
+        <p>{{ 'CLASSEMENT_ANNUEL.MOIS_MEILLEUR_SCORE' | translate }} : {{ p.mois }}</p>
+      </div>
+    </div>
+  </div>
+</div>

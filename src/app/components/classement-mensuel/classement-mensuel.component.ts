@@ -6,6 +6,9 @@ import { MoisResultats } from '../../models/mois-resultats.model';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Competition } from '../../models/competition.model';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MeilleurScore } from '../../models/MeilleurScore';
+import { ParticipantDialogComponent } from '../participant-dialog/participant-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-classement-mensuel',
@@ -21,7 +24,7 @@ export class ClassementMensuelComponent implements OnInit {
   private _moisSelectionne!: string;
 
   constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router,
-    public translate: TranslateService
+    public translate: TranslateService, private dialog: MatDialog
   ) { }
 
   ngOnInit() {
@@ -81,4 +84,23 @@ export class ClassementMensuelComponent implements OnInit {
     let imgSufix = ".png";
     return this.resultatsService.imageLocationUrl + imgPrefix + classement + imgSufix;
   }
+
+  ouvrirPopup(participant: Participant) {
+      const nombreDeParticipations =  this.getNombreDeParticipation(participant.numero)
+  
+      this.dialog.open(ParticipantDialogComponent, {
+        data: {
+          nom: participant.nom,
+          participations: nombreDeParticipations,
+          mois: null
+        }
+      });
+    }
+  
+    getNombreDeParticipation(numeroParticipant: string): number {
+      console.log("numeroParticipant => ",numeroParticipant);
+      let nombreParticipations: number = this.moisSelectionne.participants.filter(p => p.numero === numeroParticipant).length;
+
+      return nombreParticipations;
+    }
 }
