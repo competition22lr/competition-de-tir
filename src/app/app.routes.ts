@@ -13,7 +13,7 @@ export const routes: Routes = [
     { path: 'classement/:competition/:mois', component: ClassementMensuelComponent },
     { path: 'reglements', component: ReglementsComponent },
     { path: 'mentions-legales', component: MentionsLegalesComponent },
-    { path: 'impression/:competition/:mois', component: ImpressionClassementComponent },
+    { path: 'impression/:competition/:mois/:langue', component: ImpressionClassementComponent },
     { path: 'gagnants-tirage/:competition', component: TirageGagnantsComponent },
     { path: 'impression-reglements', component: ImpressionReglementsComponent },
 

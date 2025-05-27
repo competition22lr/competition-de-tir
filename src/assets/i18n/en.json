@@ -78,7 +78,8 @@
     "CLASSEMENT_MENSUEL": {
         "CLASSEMENT": "Ranking",
         "SYSTEME_CLASSEMENT_TIREURS": "Shooter Ranking System",
-        "VERSION_IMPRIMABLE": "Printable Version"
+        "VERSION_IMPRIMABLE": "Printable Version",
+        "PRINT":"Print"
     },
     "TIRAGE": {
         "TITRE": "Monthly 50/50 Draw Winners",
@@ -93,12 +94,52 @@
         "DETAILS_BONUS.3": "monthly ranking",
         "PARTICIPATIONS": "Additional Entries",
         "DIAMANT_NOTE": "Not counted",
-        "DIAMANT_NOTE.1":"(under review)",
+        "DIAMANT_NOTE.1": "(under review)",
         "PLATINE_NOTE": "+15 entries",
         "OR_NOTE": "+10 entries",
         "ARGENT_NOTE": "+5 entries",
         "BRONZE_NOTE": "+3 entries",
         "CONCLUSION": "These bonuses reward performance while encouraging active participation. Ranking becomes a strategic way to increase your chances of winning the monthly draw.",
         "AUCUN_GAGNANT": "No winners for this competition."
+    },
+    "REGLEMENT": {
+        "TITRE": "Competition Rules",
+        "IMPRIMABLE": "Printable version",
+        "TABLE": {
+            "TITLE": "Table of Contents",
+            "DEROULEMENT": "Competition Process",
+            "CATEGORIES": "Categories",
+            "FEUILLEPOINTS": "Target Sheet",
+            "CALCULPOINTS": "Scoring Method",
+            "CLASSEMENT": "Shooter Ranking System",
+            "EQUIPEMENT": "Authorized Equipment",
+            "CALIBRES": "Authorized Calibers"
+        },
+        "SECTIONS": {
+            "DEROULEMENT": {
+                "TITLE": "Competition Process",
+                "DESCRIPTION": "Describe how the competition is conducted (e.g., number of shots, duration, etc.)."
+            },
+            "CALCULPOINTS": {
+                "TITLE": "Scoring System",
+                "DESCRIPTION": "Describe the point calculation rules for each target, including penalties, bonuses, etc.",
+                "TIRPARFAIT": {
+                    "TITLE": "Perfect Shot",
+                    "DESCRIPTION": "The shooter hits the center of the target flawlessly, <strong>completely removing the central dot</strong>. They receive <strong>10 base points</strong> plus <strong>1 bonus point</strong>."
+                },
+                "TIRSOLIDE": {
+                    "TITLE": "Excellent Shot without Bonus",
+                    "DESCRIPTION": "The shooter hits the center of the target with no error, <strong>but does not</strong> completely remove the central dot. They receive <strong>10 base points</strong>."
+                },
+                "TIRINVALIDE": {
+                    "TITLE": "Invalid Shot",
+                    "DESCRIPTION": "The shot contains an error: either a <strong>double shot</strong> on the same target or a shot <strong>outside the target area</strong> (within the frame but outside the scoring zone). <strong>No points are awarded</strong>."
+                },
+                "TIRTRICHE": {
+                    "TITLE": "Attempt to Cheat",
+                    "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score. <strong>==>&nbsp;Automatic&nbsp;disqualification&nbsp;<==</strong>."
+                }
+            }
+        }
     }
 }

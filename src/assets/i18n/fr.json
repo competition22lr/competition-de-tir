@@ -78,7 +78,8 @@
     "CLASSEMENT_MENSUEL": {
         "CLASSEMENT": "Classement",
         "SYSTEME_CLASSEMENT_TIREURS": "Système de Classement des Tireurs",
-        "VERSION_IMPRIMABLE": "Version imprimable"
+        "VERSION_IMPRIMABLE": "Version imprimable",
+        "PRINT":"Imprimé"
     },
     "TIRAGE": {
         "TITRE": "Gagnants au tirage 50/50 mensuel",
@@ -93,12 +94,52 @@
         "DETAILS_BONUS.3": "classement mensuel ",
         "PARTICIPATIONS": "Participations supplémentaires",
         "DIAMANT_NOTE": "Non comptabilisé",
-        "DIAMANT_NOTE.1":"(en cours de validation)",
+        "DIAMANT_NOTE.1": "(en cours de validation)",
         "PLATINE_NOTE": "+15 participations",
         "OR_NOTE": "+10 participations",
         "ARGENT_NOTE": "+5 participations",
         "BRONZE_NOTE": "+3 participations",
         "CONCLUSION": "Ces bonifications récompensent la performance tout en combinant la participation active. Le classement devient ainsi un levier stratégique pour augmenter vos chances de remporter le tirage mensuel.",
         "AUCUN_GAGNANT": "Aucun gagnant pour cette compétition."
+    },
+    "REGLEMENT": {
+        "TITRE": "Règlements de la compétition",
+        "IMPRIMABLE": "Version imprimable",
+        "TABLE": {
+            "TITLE": "Table des matières",
+            "DEROULEMENT": "Déroulement",
+            "CATEGORIES": "Catégories",
+            "FEUILLEPOINTS": "Feuille de cible",
+            "CALCULPOINTS": "Calcul des points",
+            "CLASSEMENT": "Système de Classement des Tireurs",
+            "EQUIPEMENT": "Équipement autorisé",
+            "CALIBRES": "Calibres autorisés"
+        },
+        "SECTIONS": {
+            "DEROULEMENT": {
+                "TITLE": "Déroulement de la compétition",
+                "DESCRIPTION": "Décris ici comment la compétition se déroule (ex : nombre de tirs, durée, etc.)."
+            },
+            "CALCULPOINTS": {
+                "TITLE": "Calcul des points",
+                "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
+                "TIRPARFAIT": {
+                    "TITLE": "Tir Parfait",
+                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."
+                },
+                "TIRSOLIDE": {
+                    "TITLE": "Tir Excellent sans bonis",
+                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, <strong>mais</strong> ne fait <strong>pas</strong> completement disparetre le point central. il obtient <strong>10 points de base</strong>."
+                },
+                "TIRINVALIDE": {
+                    "TITLE": "Tir Invalide",
+                    "DESCRIPTION": "Le tir contient une erreur : <strong>double tir</strong> sur une même cible ou <strong>tir hors cible</strong> (dans l'encadrement mais hors zone de score). <strong>Aucun point n'est attribué</strong>."
+                },
+                "TIRTRICHE": {
+                    "TITLE": "Tentative de triche",
+                    "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score. <strong>==>&nbsp;Disqualification&nbsp;automatique&nbsp;<==</strong>."
+                }
+            }
+        }
     }
 }
