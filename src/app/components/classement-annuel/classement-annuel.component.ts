@@ -60,7 +60,7 @@ export class ClassementAnnuelComponent implements OnInit {
             pointBoni: p.pointBoni,
             pointage: p.pointage,
             total: p.total,
-            mois: mois.displayName(this.translate)
+            mois: this.getMoisAfficahge(mois)
           });
         }
       }
@@ -90,11 +90,15 @@ export class ClassementAnnuelComponent implements OnInit {
     for (const mois of this.competitionSelectionnee.mois) {
       const aParticipe = mois.participants.some(p => p.numero === numeroParticipant);
       if (aParticipe) {
-        moisList.push(mois.displayName(this.translate)); // Ex: "Janvier 2024"
+        moisList.push(this.getMoisAfficahge(mois)); // Ex: "Janvier 2024"
       }
     }
 
     return moisList;
+  }
+
+  getMoisAfficahge(mois: MoisResultats): string {
+   return this.translate.instant(mois.getMoisCleText()) + " " + mois.getAnnee();
   }
 
   getNombreDeParticipation(numeroParticipant: string): number {
