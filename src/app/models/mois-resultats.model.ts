@@ -10,10 +10,6 @@ export class MoisResultats {
     public resultatTirage: ResultatTirage5050
   ) { }
   
-  displayName(translate: TranslateService): string {
-    return translate.instant(this.getMoisCleText()) + " " + this.getAnnee();
-  }
-
   getMoisCleText(): string {
     let abbreviation: string = this.name.split('.')[0];
     let moisNumero: number = Utilistaire.convertMonthToNumber(abbreviation);
