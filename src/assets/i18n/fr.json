@@ -147,6 +147,15 @@
                     "TITLE": "Tentative de triche",
                     "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score. <strong>==>&nbsp;Disqualification&nbsp;automatique&nbsp;<==</strong>."
                 }
+            },
+            "CATEGORIES": {
+                "TITRE": "Catégories",
+                "INTRO": "La définition des catégories officielles est en cours de finalisation. Cette classification visera à structurer équitablement la participation des tireurs selon différents critères, tels que :",
+                "TYPE_ARME": "Le type de carabine (air comprimé, .22 LR, percussion centrale, etc.)",
+                "EXPERIENCE": "Le niveau d'expérience (débutant, confirmé, expert)",
+                "CLASSE_AGE": "La classification ou l'âge (si applicable selon les règlements en vigueur)",
+                "NOTE_A_VENIR":"À venir : ",
+                "NOTE": "Les catégories officielles seront publiées prochainement après validation par les instances organisatrices."
             }
         }
     },

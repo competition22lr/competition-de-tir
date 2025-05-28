@@ -6,6 +6,7 @@ import { MoisResultats } from '../../models/mois-resultats.model';
 import { ResultatsService } from '../../services/resultats.service';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Utilistaire } from '../../services/utilitaire';
 
 @Component({
   selector: 'app-impression-classement',
@@ -37,18 +38,18 @@ export class ImpressionClassementComponent implements OnInit {
       this._moisSelectionne = paramMois !== null ? paramMois.replace(/_/g, '.') : '';
 
 
-      console.log("params.get('competition') =>", paramCompetition);
-      console.log("params.get('mois') =>", paramMois);
-      console.log("params.get('langue') =>", paramLangue);
+      Utilistaire.Log("params.get('competition') =>", paramCompetition);
+      Utilistaire.Log("params.get('mois') =>", paramMois);
+      Utilistaire.Log("params.get('langue') =>", paramLangue);
 
-      console.log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
-      console.log("this._moisSelectionne =>", this._moisSelectionne);
+      Utilistaire.Log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
+      Utilistaire.Log("this._moisSelectionne =>", this._moisSelectionne);
 
       // Charge la compétition
       this.resultatsService.getCompetition(this.indexCompetitionSelectionne).subscribe(competition => {
         this.competitionSelectionnee = competition;
 
-        console.log("this.competitionSelectionnee =>", this.competitionSelectionnee);
+        Utilistaire.Log("this.competitionSelectionnee =>", this.competitionSelectionnee);
 
         // Fallback : si aucun mois dans l'URL ou s'il n'est pas trouvé, on prend le premier
         this.moisSelectionne =
@@ -57,14 +58,14 @@ export class ImpressionClassementComponent implements OnInit {
 
         this._moisSelectionne = this.moisSelectionne.name;
 
-        console.log("mois sélectionné :", this.moisSelectionne);
+        Utilistaire.Log("mois sélectionné :", this.moisSelectionne);
 
         // Ensuite on récupère les participants
         this.resultatsService
           .getParticipantsPourMois(this.indexCompetitionSelectionne, this._moisSelectionne)
           .subscribe((_Participant: Participant[]) => {
             this.participants = _Participant;
-            console.log("participants =>", this.participants);
+            Utilistaire.Log("participants =>", this.participants);
           });
       });
     });

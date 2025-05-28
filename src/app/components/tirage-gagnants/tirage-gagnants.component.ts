@@ -4,6 +4,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ResultatsService } from '../../services/resultats.service';
 import { Competition } from '../../models/competition.model';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Utilistaire } from '../../services/utilitaire';
 
 @Component({
   selector: 'app-tirage-gagnants',
@@ -26,7 +27,7 @@ export class TirageGagnantsComponent implements OnInit {
       const paramMois = params.get('mois');
 
       this.indexCompetitionSelectionne = paramCompetition !== null ? Number(paramCompetition) ? Number(paramCompetition) : 0 : 0;
-      console.log("params.get('competition') =>", paramCompetition);
+      Utilistaire.Log("params.get('competition') =>", paramCompetition);
 
     })
 

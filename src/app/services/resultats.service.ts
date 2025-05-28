@@ -8,6 +8,7 @@ import { MoisResultats } from '../models/mois-resultats.model';
 import { Competition } from '../models/competition.model';
 import { FakeCompetitionService } from '../mocks/fake-competition.service';
 import { environment } from '../../environments/environment';
+import { Utilistaire } from './utilitaire';
 
 
 @Injectable({ providedIn: 'root' })
@@ -32,7 +33,7 @@ export class ResultatsService {
         const xml = new DOMParser().parseFromString(xmlString, 'text/xml');
         const data = ResultatsCummulatif.fromXml(xml);
 
-        console.log('Production mode ?', environment.production);
+        Utilistaire.Log('Production mode ?', environment.production);
         
         // 👉 Ajouter la compétition fake ici
         if (!environment.production) {
@@ -52,7 +53,7 @@ export class ResultatsService {
         const comp = data.getCompetitions(indexCompetition);
         const moisData = comp?.mois?.find(m => m.name.toLowerCase() === mois.toLowerCase());
 
-        console.log('MoisData =>', moisData);
+        Utilistaire.Log('MoisData =>', moisData);
 
         return moisData?.participants || [];
       })

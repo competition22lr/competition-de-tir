@@ -1,14 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { MoisResultats } from '../../models/mois-resultats.model';
 import { CommonModule } from '@angular/common';
-import { MeilleurScore } from '../../models/MeilleurScore';
-import { ActivatedRoute, Router } from '@angular/router';
-import { ResultatsService } from '../../services/resultats.service';
-import { Competition } from '../../models/competition.model';
-import { ParticipantDialogComponent } from '../participant-dialog/participant-dialog.component';
-import { MatDialogModule, MatDialog } from '@angular/material/dialog';
+import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Competition } from '../../models/competition.model';
+import { MeilleurScore } from '../../models/MeilleurScore';
+import { MoisResultats } from '../../models/mois-resultats.model';
+import { ResultatsService } from '../../services/resultats.service';
+import { Utilistaire } from '../../services/utilitaire';
+import { ParticipantDialogComponent } from '../participant-dialog/participant-dialog.component';
 
 @Component({
   selector: 'app-classement-annuel',
@@ -30,17 +31,17 @@ export class ClassementAnnuelComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       const paramCompetition = params.get('competition');
 
-      console.log("params.get('competition') =>", paramCompetition);
+      Utilistaire.Log("params.get('competition') =>", paramCompetition);
 
       this.indexCompetitionSelectionne = paramCompetition !== null ? Number(paramCompetition) ? Number(paramCompetition) : 0 : 0;
 
-      console.log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
+      Utilistaire.Log("this.indexCompetitionSelectionne =>", this.indexCompetitionSelectionne);
 
       // Charge la compétition
       this.resultatsService.getCompetition(this.indexCompetitionSelectionne).subscribe(competition => {
         this.competitionSelectionnee = competition;
 
-        console.log("this.competitionSelectionnee =>", this.competitionSelectionnee);
+        Utilistaire.Log("this.competitionSelectionnee =>", this.competitionSelectionnee);
 
         this.getMeilleurScore();
       });
@@ -102,7 +103,7 @@ export class ClassementAnnuelComponent implements OnInit {
   }
 
   getNombreDeParticipation(numeroParticipant: string): number {
-    console.log("numeroParticipant => ", numeroParticipant);
+    Utilistaire.Log("numeroParticipant => ", numeroParticipant);
     let nombreParticipations: number = 0;
 
     for (const mois of this.competitionSelectionnee.mois) {

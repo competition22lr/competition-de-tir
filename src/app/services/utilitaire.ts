@@ -1,3 +1,5 @@
+import { environment } from "../../environments/environment";
+
 export class Utilistaire {
     static convertMonthToNumber(abbreviation: string): number {
         switch (abbreviation.replace('.', '').toLowerCase()) { // Convert to lowercase to avoid case sensitivity and remove the dot
@@ -91,5 +93,11 @@ export class Utilistaire {
 
             img.src = imageUrl;
         });
+    }
+
+    static Log(message?: any, ...optionalParams: any[]): void {
+        if (!environment.production) {
+            console.log(message, optionalParams);
+        }
     }
 }

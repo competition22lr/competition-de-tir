@@ -147,6 +147,15 @@
                     "TITLE": "Attempt to Cheat",
                     "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score. <strong>==>&nbsp;Automatic&nbsp;disqualification&nbsp;<==</strong>."
                 }
+            },
+            "CATEGORIES": {
+                "TITRE": "Categories",
+                "INTRO": "The definition of official categories is being finalized. This classification aims to fairly organize shooter participation based on various criteria, such as:",
+                "TYPE_ARME": "Type of rifle (air rifle, .22 LR, centerfire, etc.)",
+                "EXPERIENCE": "Level of experience (beginner, intermediate, expert)",
+                "CLASSE_AGE": "Classification or age (if applicable according to current regulations)",
+                "NOTE_A_VENIR":"Coming soon: ",
+                "NOTE": "Official categories will be published shortly after validation by the organizing bodies."
             }
         }
     },
