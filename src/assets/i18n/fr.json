@@ -128,6 +128,57 @@
                 "TITLE": "Déroulement de la compétition",
                 "DESCRIPTION": "Décris ici comment la compétition se déroule (ex : nombre de tirs, durée, etc.)."
             },
+            "CATEGORIES": {
+                "TITRE": "Catégories",
+                "INTRO": "La définition des catégories officielles est en cours de finalisation. Cette classification visera à structurer équitablement la participation des tireurs selon différents critères, tels que :",
+                "TYPE_ARME": "Le type de carabine (air comprimé, .22 LR, percussion centrale, etc.)",
+                "EXPERIENCE": "Le niveau d'expérience (débutant, confirmé, expert)",
+                "CLASSE_AGE": "La classification ou l'âge (si applicable selon les règlements en vigueur)",
+                "NOTE_A_VENIR": "À venir : ",
+                "NOTE": "Les catégories officielles seront publiées prochainement après validation par les instances organisatrices."
+            },
+            "FEUILLE": {
+                "TITRE": "Feuille de cible",
+                "INTRO1": "La feuille de pointage est un document officiel servant à consigner les résultats individuels de chaque tireur au cours d'une épreuve.",
+                "INTRO2": "Elle doit être signée par l'officiel à l'issue de la séance.",
+                "ELEMENTS_TITRE": "Éléments contenus de la feuille de participation",
+                "ELEMENT1": "Logo du club hôte",
+                "ELEMENT2": "Logo de la compétition",
+                "ELEMENT3": "Nom et prénom du tireur",
+                "ELEMENT4": "Numéro de membre",
+                "ELEMENT5": "Date de l'épreuve",
+                "ELEMENT6": "Catégorie (À venir)",
+                "ELEMENT7": "Calibre utilisé (ex : .22 LR)",
+                "ELEMENT8": "Position de tir",
+                "ELEMENT9": "Pointage total",
+                "ELEMENT10": "25 cibles identiques (5 pratiques, 20 comptabilisées)",
+                "ELEMENT11": "Estompe du club avec la signature de l'officiel de tir responsable",
+                "PRESENTATION_TITRE": "Présentation des cibles",
+                "PRESENTATION_TEXTE": "La présentation des cibles est uniforme pour l'ensemble des participants, qu'ils soient en position assise, debout ou appuyés sur une table de tir. Toutes les cibles, qu'elles se trouvent dans la zone d'entraînement (numérotée de P1 à P5) ou dans la section des tirs comptabilisés (numérotée de 1 à 20), respectent les mêmes critères de disposition et de visibilité.",
+                "ALT_IMAGE": "Cible carabine avec watermark",
+                "DIMENSIONS_TITRE": "Dimension des cibles régulières et Élites",
+                "DIMENSIONS_INTRO": "Donne les dimensions de chacun des anneaux de pointage ainsi que la dimension du point pour le boni.",
+                "TABLE": {
+                    "COL_ELEMENT": "Élément du cadre cible",
+                    "COL_DIMENSIONS": "Dimension en millimètres",
+                    "REGULIERE": "Régulière",
+                    "ELITE": "Élite"
+                },
+                "ROW1": "Point central pour un tir à la cible parfait",
+                "ROW2": "Anneau blanc de 10 points",
+                "ROW3": "Anneau noir de 9 points",
+                "ROW4": "Anneau blanc de 8 points",
+                "ROW5": "Anneau noir de 7 points",
+                "ROW6": "Cadre numéroté de 1 à 20",
+                "EPREUVE_TITRE": "Détails de l'Épreuve Régulière",
+                "EPREUVE1": "Distance de tir : 25 mètres",
+                "EPREUVE2": "Position de tir : appuyé sur table de tir",
+                "EPREUVE3": "Type d'épreuve : précision",
+                "EPREUVE4": "Nombre de séries prévues : 5",
+                "EPREUVE5": "Nombre de coups par série : 5",
+                "EPREUVE6": "Nombre de tirs par feuille : illimité*",
+                "NOTE": "Voir la section Calcul des points pour les tirs qualifiés."
+            },
             "CALCULPOINTS": {
                 "TITLE": "Calcul des points",
                 "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
@@ -148,14 +199,62 @@
                     "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score. <strong>==>&nbsp;Disqualification&nbsp;automatique&nbsp;<==</strong>."
                 }
             },
-            "CATEGORIES": {
-                "TITRE": "Catégories",
-                "INTRO": "La définition des catégories officielles est en cours de finalisation. Cette classification visera à structurer équitablement la participation des tireurs selon différents critères, tels que :",
-                "TYPE_ARME": "Le type de carabine (air comprimé, .22 LR, percussion centrale, etc.)",
-                "EXPERIENCE": "Le niveau d'expérience (débutant, confirmé, expert)",
-                "CLASSE_AGE": "La classification ou l'âge (si applicable selon les règlements en vigueur)",
-                "NOTE_A_VENIR":"À venir : ",
-                "NOTE": "Les catégories officielles seront publiées prochainement après validation par les instances organisatrices."
+            "CLASSEMENT": {
+                "TITRE": "Système de Classement des Tireurs",
+                "INTRO1": "Les tireurs sont classés en fonction de leurs performances lors des épreuves comptabilisées.",
+                "INTRO2": "le score de base",
+                "INTRO3": "les points bonis",
+                "INTRO4": "le type de cible utilisée",
+                "INTRO5": "ainsi que le",
+                "INTRO6": "rang global obtenu",
+                "COL_CLASSEMENT": "Classement",
+                "COL_CONDITIONS": "Conditions d'obtention",
+                "DIAMANT": {
+                    "TITRE": "Diamant",
+                    "ALERT": "« Cette catégorie est actuellement en cours d'élaboration et n'est pas encore officiellement active. Aucun essai n'est prévu pour le moment. Sa mise en œuvre future sera déterminée par le comité organisateur selon l'évolution des besoins et des objectifs de la compétition. »",
+                    "CONDITION1_PART1": "Score de",
+                    "CONDITION1_PART2": "200 points de base minimum",
+                    "CONDITION1_PART3": "(hors bonis)",
+                    "CONDITION2": "Meilleur total de points bonis",
+                    "CONDITION3_PART1": "Utilisation de",
+                    "CONDITION3_PART2": "cibles d'élite",
+                    "CONDITION4": "Si le score de base n'est pas atteint, aucun classement n'est attribué"
+                },
+                "PLATINE": {
+                    "TITRE": "Platine",
+                    "CONDITION1_PART1": "Score de",
+                    "CONDITION1_PART2": "200 points de base minimum",
+                    "CONDITION2": "Meilleur total de points bonis",
+                    "CONDITION3_PART1": "Utilisation de",
+                    "CONDITION3_PART2": "cibles régulières"
+                },
+                "OR": {
+                    "TITRE": "Or",
+                    "CONDITION1": "Meilleur score total",
+                    "CONDITION1_PART2": "(base + bonis)",
+                    "CONDITION2_PART1": "Utilisation de",
+                    "CONDITION2_PART2": "cibles régulières"
+                },
+                "ARGENT": {
+                    "TITRE": "Argent",
+                    "CONDITION1": "Deuxième meilleur score total",
+                    "CONDITION2_PART1": "Utilisation de",
+                    "CONDITION2_PART2": "cibles régulières"
+                },
+                "BRONZE": {
+                    "TITRE": "Bronze",
+                    "CONDITION1": "Troisième meilleur score total",
+                    "CONDITION2_PART1": "Utilisation de",
+                    "CONDITION2_PART2": "cibles régulières"
+                },
+                "NOTE": {
+                    "TITRE": "Note :",
+                    "TEXTE1": "Un tireur qui tente le classement",
+                    "TEXTE2": "Diamant",
+                    "TEXTE3": "mais n'atteint pas les",
+                    "TEXTE4": "200 points de base",
+                    "TEXTE5": "ne sera classé dans aucun groupe, même avec un excellent pointage bonifié."
+                }
             }
         }
     },

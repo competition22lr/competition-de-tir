@@ -1,17 +1,19 @@
-<h2>🏅 Système de Classement des Tireurs</h2>
+<h2>🏅 {{ 'REGLEMENT.SECTIONS.CLASSEMENT.TITRE' | translate }}</h2>
 <p>
-    Les tireurs sont classés en fonction de leurs performances lors des épreuves comptabilisées.
-    Le classement prend en compte <strong>le score de base</strong>, <strong>les points bonis</strong>,
-    <strong>le type de cible utilisée</strong>, ainsi que le <strong>rang global</strong> obtenu.
-    Un tireur <strong>ne peut être classé que dans un seul groupe</strong>.
+    {{ 'REGLEMENT.SECTIONS.CLASSEMENT.INTRO1' | translate }}
+    <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.INTRO2' | translate }}</strong>,
+    <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.INTRO3' | translate }}</strong>,
+    <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.INTRO4' | translate }}</strong>,
+    {{ 'REGLEMENT.SECTIONS.CLASSEMENT.INTRO5' | translate }}
+    <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.INTRO6' | translate }}</strong>.
 </p>
 <div class="classements">
     <div class="classements-table">
         <table>
             <thead>
                 <tr>
-                    <th>Classement</th>
-                    <th>Conditions d'obtention</th>
+                    <th>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.COL_CLASSEMENT' | translate }}</th>
+                    <th>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.COL_CONDITIONS' | translate }}</th>
                 </tr>
             </thead>
             <tbody>
@@ -19,18 +21,29 @@
                     <td class="trophy-card trophy-card-Diamant">
                         <div class="trophy-content">
                             <img [src]="getTrophyImage('Diamant')" class="trophy-img" alt="trophée Diamant" />
-                            <span>Diamant</span>
+                            <span>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.TITRE' | translate }}</span>
                         </div>
                     </td>
                     <td>
                         <div class="alert">
-                        « Cette catégorie est actuellement en cours d'élaboration et n'est pas encore officiellement active. Aucun essai n'est prévu pour le moment. Sa mise en œuvre future sera déterminée par le comité organisateur selon l'évolution des besoins et des objectifs de la compétition. »
-                    </div>
-                     <ul>
-                            <li>Score de <strong>200 points de base minimum</strong> (hors bonis)</li>
-                            <li><strong>Meilleur total de points bonis</strong></li>
-                            <li>Utilisation de <strong>cibles d'élite</strong></li>
-                            <li><em>Si le score de base n'est pas atteint, aucun classement n'est attribué</em></li>
+                            {{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.ALERT' | translate }}
+                        </div>
+                        <ul>
+                            <li>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.CONDITION1_PART1' | translate }}
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.CONDITION1_PART2' | translate }}</strong>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.CONDITION1_PART3' | translate }}
+                            </li>
+                            <li>
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.CONDITION2' | translate }}</strong>
+                            </li>
+                            <li>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.CONDITION3_PART1' | translate }}
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.CONDITION3_PART2' | translate }}</strong>
+                            </li>
+                            <li>
+                                <em>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.DIAMANT.CONDITION4' | translate }}</em>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -38,14 +51,20 @@
                     <td class="trophy-card trophy-card-Platine">
                         <div class="trophy-content">
                             <img [src]="getTrophyImage('Platine')" class="trophy-img" alt="trophée Platine" />
-                            <span>Platine</span>
+                            <span>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.PLATINE.TITRE' | translate }}</span>
                         </div>
                     </td>
                     <td>
                         <ul>
-                            <li>Score de <strong>200 points de base minimum</strong></li>
-                            <li>Meilleur total de points bonis</li>
-                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                            <li>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PLATINE.CONDITION1_PART1' | translate }}
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.PLATINE.CONDITION1_PART2' | translate }}</strong>
+                            </li>
+                            <li>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.PLATINE.CONDITION2' | translate }}</li>
+                            <li>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PLATINE.CONDITION3_PART1' | translate }}
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.PLATINE.CONDITION3_PART2' | translate }}</strong>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -53,13 +72,19 @@
                     <td class="trophy-card trophy-card-Or">
                         <div class="trophy-content">
                             <img [src]="getTrophyImage('Or')" class="trophy-img" alt="trophée Or" />
-                            <span>Or</span>
+                            <span>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.OR.TITRE' | translate }}</span>
                         </div>
                     </td>
                     <td>
                         <ul>
-                            <li><strong>Meilleur score total</strong> (base + bonis)</li>
-                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                            <li>
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.OR.CONDITION1' | translate }}</strong>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.OR.CONDITION1_PART2' | translate }}
+                            </li>
+                            <li>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.OR.CONDITION2_PART1' | translate }}
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.OR.CONDITION2_PART2' | translate }}</strong>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -67,13 +92,16 @@
                     <td class="trophy-card trophy-card-Argent">
                         <div class="trophy-content">
                             <img [src]="getTrophyImage('Argent')" class="trophy-img" alt="trophée Argent" />
-                            <span>Argent</span>
+                            <span>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.TITRE' | translate }}</span>
                         </div>
                     </td>
                     <td>
                         <ul>
-                            <li><strong>Deuxième meilleur score total</strong></li>
-                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                            <li><strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION1' | translate }}</strong></li>
+                            <li>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION2_PART1' | translate }}
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION2_PART2' | translate }}</strong>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -81,23 +109,28 @@
                     <td class="trophy-card trophy-card-Bronze">
                         <div class="trophy-content">
                             <img [src]="getTrophyImage('Bronze')" class="trophy-img" alt="trophée Bronze" />
-                            <span>Bronze</span>
+                            <span>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.TITRE' | translate }}</span>
                         </div>
                     </td>
                     <td>
                         <ul>
-                            <li><strong>Troisième meilleur score total</strong></li>
-                            <li>Utilisation de <strong>cibles régulières</strong></li>
+                            <li><strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION1' | translate }}</strong></li>
+                            <li>
+                                {{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION2_PART1' | translate }}
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION2_PART2' | translate }}</strong>
+                            </li>
                         </ul>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-
     <div class="note">
-        🔒 <strong>Note :</strong> Un tireur qui tente le classement <strong>Diamant</strong> mais
-        n'atteint pas les <strong>200 points de base</strong> ne sera classé <strong>dans aucun groupe</strong>,
-        même avec un excellent pointage bonifié.
+        🔒 <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TITRE' | translate }}</strong>
+        {{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE1' | translate }}
+        <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE2' | translate }}</strong>
+        {{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE3' | translate }}
+        <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE4' | translate }}</strong>
+        {{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE5' | translate }}
     </div>
 </div>
