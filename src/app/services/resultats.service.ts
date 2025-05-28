@@ -32,6 +32,8 @@ export class ResultatsService {
         const xml = new DOMParser().parseFromString(xmlString, 'text/xml');
         const data = ResultatsCummulatif.fromXml(xml);
 
+        console.log('Production mode ?', environment.production);
+        
         // 👉 Ajouter la compétition fake ici
         if (!environment.production) {
          data.competitions = [...data.competitions, this.fakeService.getFakeCompetition()];
