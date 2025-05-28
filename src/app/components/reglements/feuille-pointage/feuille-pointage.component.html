@@ -1,82 +1,79 @@
-<h2>🎯 Feuille de cible</h2>
+<h2>🎯 {{ 'REGLEMENT.SECTIONS.FEUILLE.TITRE' | translate }}</h2>
 <p>
-    La feuille de pointage est un document officiel servant à consigner les résultats individuels de chaque tireur au
-    cours d'une épreuve. Elle doivent signée par l'officiel à l'issue de la séance.
+    {{ 'REGLEMENT.SECTIONS.FEUILLE.INTRO1' | translate }}
+    <strong>{{ 'REGLEMENT.SECTIONS.FEUILLE.INTRO2' | translate }}</strong>
 </p>
 
 <div class="bloc">
-    <h3>🔸Éléments contenus de la feuille de participation</h3>
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENTS_TITRE' | translate }}</h3>
     <ul>
-        <li>Logo du club hôte</li>
-        <li>Logo de la compétition</li>
-        <li>Nom et prénom du tireur</li>
-        <li>Numéro de membre</li>
-        <li>Date de l'épreuve</li>
-        <li>Catégorie (A venir)</li>
-        <li>Calibre utilisé (ex : .22 LR)</li>
-        <li>Position de tir</li>
-        <li>Pointage Total</li>
-        <li>25 cibles identiques (5 pratiques, 20 comptabilisées)</li>
-        <li>Estompe du club avec la signature de l'officiel de tir responsable</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT1' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT2' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT3' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT4' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT5' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT6' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT7' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT8' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT9' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT10' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT11' | translate }}</li>
     </ul>
 </div>
 
 <div class="bloc">
-    <h3>🔸Présentation des cibles</h3>
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.PRESENTATION_TITRE' | translate }}</h3>
     <p>
-        La présentation des cibles est uniforme pour l'ensemble des participants, qu'ils soient en position assise,
-        debout, ou appuyés sur une table de tir.
-        Toutes les cibles, qu'elles se trouvent dans la zone d'entraînement (numérotée de P1 à P5) ou dans la section
-        des tirs comptabilisés (numérotée de 1 à 20), respectent les mêmes critères de disposition et de visibilité.
+        {{ 'REGLEMENT.SECTIONS.FEUILLE.PRESENTATION_TEXTE' | translate }}
     </p>
     <div class="image-gallery">
-        <img *ngIf="generatedImageUrl" [src]="generatedImageUrl" alt="Cible carabine avec watermark" />
+        <img *ngIf="generatedImageUrl" [src]="generatedImageUrl" alt="{{ 'REGLEMENT.SECTIONS.FEUILLE.ALT_IMAGE' | translate }}" />
     </div>
     <div class="bloc-sub">
-        <h4>🔸Dimension de la cible régulière</h4>
+        <h4>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_TITRE' | translate }}</h4>
         <div class="h4-content">
-            <p>Donne les dimension de chaqu'un des anneaux de pointage ainsi que la dimention du point pour le boni.</p>
+            <p>{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_INTRO' | translate }}</p>
             <div class="dimension-table">
                 <table>
                     <thead>
                         <tr>
-                            <th rowspan="2">Élément du cadre cible</th>
-                            <th colspan="2">Dimension en millimètres</th>
+                            <th rowspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_ELEMENT' | translate }}</th>
+                            <th colspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_DIMENSIONS' | translate }}</th>
                         </tr>
                         <tr>
-                            <th>Régulière</th>
-                            <th>Élite</th>
+                            <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.REGULIERE' | translate }}</th>
+                            <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.ELITE' | translate }}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="dimension-row-text"> Point central pour un tir à la cible parfait </td>
-                            <td class="dimension-row-valeur"> 1.25 </td>
-                            <td class="dimension-row-valeur"> 1 </td>
+                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW1' | translate }}</td>
+                            <td class="dimension-row-valeur">1.25</td>
+                            <td class="dimension-row-valeur">1</td>
                         </tr>
                         <tr>
-                            <td class="dimension-row-text"> Anneau blanche de 10 points </td>
-                            <td class="dimension-row-valeur"> 7.5 </td>
-                            <td class="dimension-row-valeur"> 6 </td>
+                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW2' | translate }}</td>
+                            <td class="dimension-row-valeur">7.5</td>
+                            <td class="dimension-row-valeur">6</td>
                         </tr>
                         <tr>
-                            <td class="dimension-row-text"> Anneau noir de 9 points </td>
-                            <td class="dimension-row-valeur"> 15 </td>
-                            <td class="dimension-row-valeur"> 12</td>
+                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW3' | translate }}</td>
+                            <td class="dimension-row-valeur">15</td>
+                            <td class="dimension-row-valeur">12</td>
                         </tr>
                         <tr>
-                            <td> Anneau blanche de 8 points </td>
-                            <td class="dimension-row-valeur"> 22.5 </td>
-                            <td class="dimension-row-valeur"> 18 </td>
+                            <td>{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW4' | translate }}</td>
+                            <td class="dimension-row-valeur">22.5</td>
+                            <td class="dimension-row-valeur">18</td>
                         </tr>
                         <tr>
-                            <td class="dimension-row-text"> Anneau noir de 7 points </td>
-                            <td class="dimension-row-valeur"> 30 </td>
-                            <td class="dimension-row-valeur"> 24 </td>
+                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW5' | translate }}</td>
+                            <td class="dimension-row-valeur">30</td>
+                            <td class="dimension-row-valeur">24</td>
                         </tr>
                         <tr>
-                            <td class="dimension-row-text"> Cadre numéroté de 1 à 20 </td>
-                            <td colspan="2" class="dimension-row-valeur"> 35 x 35 </td>
+                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW6' | translate }}</td>
+                            <td colspan="2" class="dimension-row-valeur">35 x 35</td>
                         </tr>
                     </tbody>
                 </table>
@@ -86,27 +83,16 @@
 </div>
 
 <div class="bloc">
-    <h3>🔸Détails de l'Épreuve Régulière</h3>
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE_TITRE' | translate }}</h3>
     <ul>
-        <li>Distance de tir : 25 mètres</li>
-        <li>Position de tir : appuyer sur table de tir</li>
-        <li>Type d'épreuve : précision</li>
-        <li>Nombre de séries prévues : 5</li>
-        <li>Nombre de coups par série : 5</li>
-        <li>Nombre tire par feuille : illimité*</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE1' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE2' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE3' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE4' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE5' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE6' | translate }}</li>
     </ul>
     <div class="note bloc-sub">
-        <span>* Voir la section <strong>Calcul des points</strong> pour les tirs qualifié.</span>
+        <span>* {{ 'REGLEMENT.SECTIONS.FEUILLE.NOTE' | translate }}</span>
     </div>
-</div>
-
-<div class="bloc">
-    <h3>🔸Feuille de Pointage</h3>
-    <p>Un tableau clair doit être présenté, comprenant les résultats de chaque tir :</p>
-
-    <p class="notation">
-        <strong>Notation :</strong> Chaque tir est noté de 0 à 10 points. En tir de précision, des subdivisions en
-        dixièmes est utilisées.
-        Les tirs parfaits (centre absolu) peuvent être marqués d'un « . » .
-    </p>
 </div>

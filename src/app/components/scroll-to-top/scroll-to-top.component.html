@@ -1,0 +1,5 @@
+<button class="scroll-to-top" [ngStyle]="{ bottom: position.bottom + 'px', right: position.right + 'px' }"
+    [class.show]="showButton" (click)="scrollToTop()">
+    <span class="icon" *ngIf="icon">{{ icon }}</span>
+    <img *ngIf="showLogo && logoUrl" [src]="logoUrl" alt="logo" class="logo" />
+</button>

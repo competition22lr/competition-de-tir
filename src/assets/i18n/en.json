@@ -128,6 +128,57 @@
                 "TITLE": "Competition Process",
                 "DESCRIPTION": "Describe how the competition is conducted (e.g., number of shots, duration, etc.)."
             },
+            "CATEGORIES": {
+                "TITRE": "Categories",
+                "INTRO": "The definition of official categories is being finalized. This classification aims to fairly organize shooter participation based on various criteria, such as:",
+                "TYPE_ARME": "Type of rifle (air rifle, .22 LR, centerfire, etc.)",
+                "EXPERIENCE": "Level of experience (beginner, intermediate, expert)",
+                "CLASSE_AGE": "Classification or age (if applicable according to current regulations)",
+                "NOTE_A_VENIR": "Coming soon: ",
+                "NOTE": "Official categories will be published shortly after validation by the organizing bodies."
+            },
+            "FEUILLE": {
+                "TITRE": "Target Sheet",
+                "INTRO1": "The scoring sheet is an official document used to record individual results for each shooter during a competition.",
+                "INTRO2": "It must be signed by the official at the end of the session.",
+                "ELEMENTS_TITRE": "Elements contained in the participation sheet",
+                "ELEMENT1": "Host club logo",
+                "ELEMENT2": "Competition logo",
+                "ELEMENT3": "Shooter’s first and last name",
+                "ELEMENT4": "Membership number",
+                "ELEMENT5": "Event date",
+                "ELEMENT6": "Category (Coming soon)",
+                "ELEMENT7": "Caliber used (e.g.: .22 LR)",
+                "ELEMENT8": "Shooting position",
+                "ELEMENT9": "Total score",
+                "ELEMENT10": "25 identical targets (5 practice, 20 scored)",
+                "ELEMENT11": "Club stamp with the signature of the responsible shooting official",
+                "PRESENTATION_TITRE": "Target Presentation",
+                "PRESENTATION_TEXTE": "The target presentation is standardized for all participants, whether seated, standing, or supported on a shooting bench. All targets, whether in the training area (numbered P1 to P5) or the scored section (numbered 1 to 20), follow the same layout and visibility criteria.",
+                "ALT_IMAGE": "Rifle target with watermark",
+                "DIMENSIONS_TITRE": "Dimensions of Regular and Elite Targets",
+                "DIMENSIONS_INTRO": "Provides the dimension of each scoring ring and the point size for the bonus.",
+                "TABLE": {
+                    "COL_ELEMENT": "Target frame element",
+                    "COL_DIMENSIONS": "Size in millimeters",
+                    "REGULIERE": "Regular",
+                    "ELITE": "Elite"
+                },
+                "ROW1": "Center point for a perfect shot",
+                "ROW2": "White ring - 10 points",
+                "ROW3": "Black ring - 9 points",
+                "ROW4": "White ring - 8 points",
+                "ROW5": "Black ring - 7 points",
+                "ROW6": "Frame numbered from 1 to 20",
+                "EPREUVE_TITRE": "Details of the Regular Event",
+                "EPREUVE1": "Shooting distance: 25 meters",
+                "EPREUVE2": "Shooting position: supported on a shooting table",
+                "EPREUVE3": "Type of event: precision",
+                "EPREUVE4": "Number of series: 5",
+                "EPREUVE5": "Shots per series: 5",
+                "EPREUVE6": "Number of shoots per sheet: unlimited*",
+                "NOTE": "See the Scoring System section for qualifying shots."
+            },
             "CALCULPOINTS": {
                 "TITLE": "Scoring System",
                 "DESCRIPTION": "Describe the point calculation rules for each target, including penalties, bonuses, etc.",
@@ -148,14 +199,62 @@
                     "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score. <strong>==>&nbsp;Automatic&nbsp;disqualification&nbsp;<==</strong>."
                 }
             },
-            "CATEGORIES": {
-                "TITRE": "Categories",
-                "INTRO": "The definition of official categories is being finalized. This classification aims to fairly organize shooter participation based on various criteria, such as:",
-                "TYPE_ARME": "Type of rifle (air rifle, .22 LR, centerfire, etc.)",
-                "EXPERIENCE": "Level of experience (beginner, intermediate, expert)",
-                "CLASSE_AGE": "Classification or age (if applicable according to current regulations)",
-                "NOTE_A_VENIR":"Coming soon: ",
-                "NOTE": "Official categories will be published shortly after validation by the organizing bodies."
+            "CLASSEMENT": {
+                "TITRE": "Shooter Ranking System",
+                "INTRO1": "Shooters are ranked based on their performance in scored events.",
+                "INTRO2": "base score",
+                "INTRO3": "bonus points",
+                "INTRO4": "type of target used",
+                "INTRO5": "as well as the",
+                "INTRO6": "overall rank obtained",
+                "COL_CLASSEMENT": "Ranking",
+                "COL_CONDITIONS": "Eligibility Conditions",
+                "DIAMANT": {
+                    "TITRE": "Diamond",
+                    "ALERT": "This category is currently under development and is not yet officially active. No trials are scheduled at this time. Its future implementation will be determined by the organizing committee based on evolving needs and competition goals.",
+                    "CONDITION1_PART1": "Score of",
+                    "CONDITION1_PART2": "a minimum of 200 base points",
+                    "CONDITION1_PART3": "(excluding bonuses)",
+                    "CONDITION2": "Highest total of bonus points",
+                    "CONDITION3_PART1": "Use of",
+                    "CONDITION3_PART2": "elite targets",
+                    "CONDITION4": "If the base score is not reached, no ranking is assigned"
+                },
+                "PLATINE": {
+                    "TITRE": "Platinum",
+                    "CONDITION1_PART1": "Score of",
+                    "CONDITION1_PART2": "a minimum of 200 base points",
+                    "CONDITION2": "Highest total of bonus points",
+                    "CONDITION3_PART1": "Use of",
+                    "CONDITION3_PART2": "regular targets"
+                },
+                "OR": {
+                    "TITRE": "Gold",
+                    "CONDITION1": "Highest overall score",
+                    "CONDITION1_PART2": "(base + bonuses)",
+                    "CONDITION2_PART1": "Use of",
+                    "CONDITION2_PART2": "regular targets"
+                },
+                "ARGENT": {
+                    "TITRE": "Silver",
+                    "CONDITION1": "Second highest overall score",
+                    "CONDITION2_PART1": "Use of",
+                    "CONDITION2_PART2": "regular targets"
+                },
+                "BRONZE": {
+                    "TITRE": "Bronze",
+                    "CONDITION1": "Third highest overall score",
+                    "CONDITION2_PART1": "Use of",
+                    "CONDITION2_PART2": "regular targets"
+                },
+                "NOTE": {
+                    "TITRE": "Note:",
+                    "TEXTE1": "A shooter attempting the",
+                    "TEXTE2": "Diamond",
+                    "TEXTE3": "ranking but not reaching the",
+                    "TEXTE4": "200 base points",
+                    "TEXTE5": "will not be ranked in any group, even with an excellent bonus score."
+                }
             }
         }
     },
