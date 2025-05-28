@@ -21,16 +21,35 @@
   </nav>
 
   <section id="deroulement">
-    <h2>{{ 'REGLEMENT.SECTIONS.DEROULEMENT.TITLE' | translate }}</h2>
-    <p>{{ 'REGLEMENT.SECTIONS.DEROULEMENT.DESCRIPTION' | translate }}</p>
+    <h2 (click)="toggleSection('deroulement')" class="collapsible-header">
+      <mat-icon>{{ sectionStates['deroulement'] ? 'expand_more' : 'chevron_right' }}</mat-icon>
+      {{ 'REGLEMENT.SECTIONS.DEROULEMENT.TITLE' | translate }}
+    </h2>
+    <div *ngIf="sectionStates['deroulement']" class="collapsible-content">
+      <p>{{ 'REGLEMENT.SECTIONS.DEROULEMENT.DESCRIPTION' | translate }}</p>
+    </div>
   </section>
 
   <section id="categories">
-    <app-reglement-categories></app-reglement-categories>
+    <h2 (click)="toggleSection('categories')" class="collapsible-header">
+      <mat-icon>{{ sectionStates['categories'] ? 'expand_more' : 'chevron_right' }}</mat-icon>
+      📂 {{ 'REGLEMENT.SECTIONS.CATEGORIES.TITRE' | translate }}
+    </h2>
+    <div *ngIf="sectionStates['categories']" class="collapsible-content">
+      <app-reglement-categories></app-reglement-categories>
+    </div>
   </section>
 
+
+
   <section id="feuille-points">
-    <app-reglement-feuille-pointage></app-reglement-feuille-pointage>    
+    <h2 (click)="toggleSection('feuillePoints')" class="collapsible-header">
+      <mat-icon>{{ sectionStates['feuillePoints'] ? 'expand_more' : 'chevron_right' }}</mat-icon>
+      <h2>🎯 Feuille de cible</h2>
+    </h2>
+    <div *ngIf="sectionStates['feuillePoints']" class="collapsible-content">
+      <app-reglement-feuille-pointage></app-reglement-feuille-pointage>
+    </div>
   </section>
 
 

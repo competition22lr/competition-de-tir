@@ -89,6 +89,24 @@ ul ul {
   margin-left: 1.5rem;
 }
 
+.collapsible-header {
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5rem;
+  background-color: #e0f0ff;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.collapsible-content {
+  padding: 0.5rem 1rem;
+  background-color: #f8fbff;
+  border-left: 3px solid #42a5f5;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 1rem;
+}
+
 
 /* Responsive : une image par ligne en mobile */
 @media (max-width: 768px) {
