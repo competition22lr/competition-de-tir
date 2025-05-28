@@ -1,6 +1,6 @@
 {
   "name": "competition-de-tir",
-  "version": "0.25.0",
+  "version": "0.26.0",
   "scripts": {
     "prestart": "node set-version.js",
     "prebuild": "node set-version.js",
@@ -9,7 +9,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-     "build:netlify": "ng build --configuration=production"
+    "build:netlify": "ng build --configuration=production"
   },
   "private": true,
   "dependencies": {
