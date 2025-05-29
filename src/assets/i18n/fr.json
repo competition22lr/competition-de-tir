@@ -255,6 +255,12 @@
                     "TEXTE4": "200 points de base",
                     "TEXTE5": "ne sera classé dans aucun groupe, même avec un excellent pointage bonifié."
                 }
+            },
+            "CALIBRES": {
+                "TITRE": "Calibres autorisés",
+                "DESCRIPTION": "Seuls les calibres spécifiquement mentionnés ci-dessous sont autorisés pour cette compétition. Toute autre munition est strictement interdite.",
+                "AUTRE": "D'autres calibres peuvent être acceptés conformément au règlement en vigueur et à la législation applicable.",
+                "WYLDE": ".223 Wylde (chambre hybride compatible avec les munitions .223 Rem et 5.56 NATO)"
             }
         }
     },
