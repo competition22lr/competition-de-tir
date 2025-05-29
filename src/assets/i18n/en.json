@@ -255,6 +255,12 @@
                     "TEXTE4": "200 base points",
                     "TEXTE5": "will not be ranked in any group, even with an excellent bonus score."
                 }
+            },
+            "CALIBRES": {
+                "TITRE": "Authorized Calibers",
+                "DESCRIPTION": "Only the calibers explicitly listed below are permitted for this competition. The use of any other ammunition is strictly prohibited.",
+                "AUTRE": "Other calibers may be accepted in accordance with the applicable rules and legal regulations.",
+                "WYLDE": ".223 Wylde (hybrid chamber compatible with both .223 Rem and 5.56 NATO)"
             }
         }
     },

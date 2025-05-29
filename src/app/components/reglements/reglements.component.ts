@@ -7,13 +7,13 @@ import { CategoriesComponent } from './categories/categories.component';
 import { FeuillePointageComponent } from './feuille-pointage/feuille-pointage.component';
 import { CalculPointsComponent } from "./calcul-points/calcul-points.component";
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ScrollToTopComponent } from "../scroll-to-top/scroll-to-top.component";
+import { CalibresAutorisesComponent } from "./equipement/calibres-autorises/calibres-autorises.component";
 
 @Component({
   selector: 'app-reglements',
   standalone: true,
   imports: [CommonModule, ClassementComponent, EquipementComponent, CategoriesComponent,
-    FeuillePointageComponent, CalculPointsComponent, RouterModule, TranslateModule, ScrollToTopComponent],
+    FeuillePointageComponent, CalculPointsComponent, RouterModule, TranslateModule, CalibresAutorisesComponent],
   templateUrl: './reglements.component.html',
   styleUrls: ['./reglements.component.css']
 })

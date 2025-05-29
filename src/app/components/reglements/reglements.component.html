@@ -10,10 +10,7 @@
       <li><a (click)="goToAnchor('calcul-points')">{{ 'REGLEMENT.TABLE.CALCULPOINTS' | translate }}</a></li>
       <li><a (click)="goToAnchor('classement')">{{ 'REGLEMENT.TABLE.CLASSEMENT' | translate }}</a></li>
       <li><a (click)="goToAnchor('equipement')">{{ 'REGLEMENT.TABLE.EQUIPEMENT' | translate }}</a>
-        <ul>
-          <li><a (click)="goToAnchor('calibres')">{{ 'REGLEMENT.TABLE.CALIBRES' | translate }}</a></li>
-        </ul>
-      </li>
+      <li><a (click)="goToAnchor('calibres')">{{ 'REGLEMENT.TABLE.CALIBRES' | translate }}</a></li>
     </ul>
     <!-- <a [routerLink]="['/impression-reglements']" target="_blank">
       🖨️ {{ 'REGLEMENT.IMPRIMABLE' | translate }}
@@ -46,7 +43,9 @@
     <app-regelement-equipement></app-regelement-equipement>
   </section>
 
-  <app-scroll-to-top/>
+  <section id="calibres">
+    <app-calibres-autorises></app-calibres-autorises>
+  </section>
 
   <!-- <app-scroll-to-top [icon]="'⬆️'" [showLogo]="true" [logoUrl]="'assets/logo-club.svg'"
     [position]="{ bottom: 30, right: 15 }" [threshold]="200" /> -->

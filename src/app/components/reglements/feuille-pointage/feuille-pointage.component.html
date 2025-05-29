@@ -27,57 +27,59 @@
         {{ 'REGLEMENT.SECTIONS.FEUILLE.PRESENTATION_TEXTE' | translate }}
     </p>
     <div class="image-gallery">
-        <img *ngIf="generatedImageUrl" [src]="generatedImageUrl" alt="{{ 'REGLEMENT.SECTIONS.FEUILLE.ALT_IMAGE' | translate }}" />
+        <img *ngIf="generatedImageUrl" [src]="generatedImageUrl"
+            alt="{{ 'REGLEMENT.SECTIONS.FEUILLE.ALT_IMAGE' | translate }}" />
     </div>
-    <div class="bloc-sub">
-        <h4>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_TITRE' | translate }}</h4>
-        <div class="h4-content">
-            <p>{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_INTRO' | translate }}</p>
-            <div class="dimension-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th rowspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_ELEMENT' | translate }}</th>
-                            <th colspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_DIMENSIONS' | translate }}</th>
-                        </tr>
-                        <tr>
-                            <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.REGULIERE' | translate }}</th>
-                            <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.ELITE' | translate }}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW1' | translate }}</td>
-                            <td class="dimension-row-valeur">1.25</td>
-                            <td class="dimension-row-valeur">1</td>
-                        </tr>
-                        <tr>
-                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW2' | translate }}</td>
-                            <td class="dimension-row-valeur">7.5</td>
-                            <td class="dimension-row-valeur">6</td>
-                        </tr>
-                        <tr>
-                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW3' | translate }}</td>
-                            <td class="dimension-row-valeur">15</td>
-                            <td class="dimension-row-valeur">12</td>
-                        </tr>
-                        <tr>
-                            <td>{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW4' | translate }}</td>
-                            <td class="dimension-row-valeur">22.5</td>
-                            <td class="dimension-row-valeur">18</td>
-                        </tr>
-                        <tr>
-                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW5' | translate }}</td>
-                            <td class="dimension-row-valeur">30</td>
-                            <td class="dimension-row-valeur">24</td>
-                        </tr>
-                        <tr>
-                            <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW6' | translate }}</td>
-                            <td colspan="2" class="dimension-row-valeur">35 x 35</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+</div>
+
+<div class="bloc">
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_TITRE' | translate }}</h3>
+    <div class="h4-content">
+        <p>{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_INTRO' | translate }}</p>
+        <div class="dimension-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_ELEMENT' | translate }}</th>
+                        <th colspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_DIMENSIONS' | translate }}</th>
+                    </tr>
+                    <tr>
+                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.REGULIERE' | translate }}</th>
+                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.ELITE' | translate }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW1' | translate }}</td>
+                        <td class="dimension-row-valeur">1.25</td>
+                        <td class="dimension-row-valeur">1</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW2' | translate }}</td>
+                        <td class="dimension-row-valeur">7.5</td>
+                        <td class="dimension-row-valeur">6</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW3' | translate }}</td>
+                        <td class="dimension-row-valeur">15</td>
+                        <td class="dimension-row-valeur">12</td>
+                    </tr>
+                    <tr>
+                        <td>{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW4' | translate }}</td>
+                        <td class="dimension-row-valeur">22.5</td>
+                        <td class="dimension-row-valeur">18</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW5' | translate }}</td>
+                        <td class="dimension-row-valeur">30</td>
+                        <td class="dimension-row-valeur">24</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW6' | translate }}</td>
+                        <td colspan="2" class="dimension-row-valeur">35 x 35</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

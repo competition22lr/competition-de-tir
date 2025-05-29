@@ -4,7 +4,8 @@ import { ResultatsService } from '../../services/resultats.service';
 
 @Component({
   selector: 'app-scroll-to-top',
-   imports: [CommonModule],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './scroll-to-top.component.html',
   styleUrls: ['./scroll-to-top.component.css']
 })
@@ -16,18 +17,35 @@ export class ScrollToTopComponent implements OnInit {
 
   showButton = false;
 
-  constructor(public resultatsService: ResultatsService) { }
+  constructor(public resultatsService: ResultatsService) {}
 
   ngOnInit(): void {
-    // Initialise un logo par défaut si rien n’est fourni
+    // Logo par défaut
     if (this.showLogo && !this.logoUrl) {
-      this.logoUrl = this.resultatsService.imageLocationUrl + 'LogoClubDeTir.png'
+      this.logoUrl = this.resultatsService.imageLocationUrl + 'LogoClubDeTir.png';
     }
+
+    // Appliquer la position initiale
+    this.updatePosition(window.innerWidth);
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
     this.showButton = window.scrollY > 300;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    const width = (event.target as Window).innerWidth;
+    this.updatePosition(width);
+  }
+
+  private updatePosition(width: number): void {
+    if (width <= 600) {
+      this.position.right = 5;
+    } else {
+      this.position.right = 24;
+    }
   }
 
   scrollToTop(): void {

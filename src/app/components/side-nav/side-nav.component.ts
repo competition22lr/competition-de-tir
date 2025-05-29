@@ -15,13 +15,14 @@ import { ResultatsService } from '../../services/resultats.service';
 import { MoisResultats } from '../../models/mois-resultats.model';
 import { filter } from 'rxjs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ScrollToTopComponent } from "../scroll-to-top/scroll-to-top.component";
 
 @Component({
   selector: 'app-side-nav',
   standalone: true,
   imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
     MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
-    RouterModule,TranslateModule],
+    RouterModule, TranslateModule, ScrollToTopComponent],
   templateUrl: './side-nav.component.html',
   styleUrls: ['../../../styles-print.css', './side-nav.component.css']
 
