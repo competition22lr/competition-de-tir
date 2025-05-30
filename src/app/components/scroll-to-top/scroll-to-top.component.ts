@@ -12,7 +12,6 @@ import { ResultatsService } from '../../services/resultats.service';
 export class ScrollToTopComponent implements OnInit {
   @Input() showLogo = true;
   @Input() logoUrl?: string;
-  @Input() icon: string = '⮝';
   @Input() position = { bottom: 24, right: 24 };
 
   showButton = false;
