@@ -20,7 +20,7 @@
     color: #00796b;
 }
 
-tir-parfait-gallery {
+.tir-parfait-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
