@@ -23,20 +23,6 @@ mat-sidenav {
   padding: 1rem;
 }
 
-.refresh-btn {
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #2196f3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.refresh-btn:hover {
-  background-color: #1976d2;
-}
-
 .mobile-toolbar {
   display: none;
 }
