@@ -256,6 +256,71 @@
                     "TEXTE5": "ne sera classé dans aucun groupe, même avec un excellent pointage bonifié."
                 }
             },
+            "EQUIPEMENT": {
+                "SECURITE": {
+                    "TITRE": "Matériel de sécurité obligatoire",
+                    "ELEMENTS": {
+                        "AUDITIVE": "Protection auditive (ex.: casque antibruit ou bouchons homologués)",
+                        "OCULAIRE": "Protection oculaire (ex.: lunettes de sécurité balistique)"
+                    },
+                    "NOTE": {
+                        "TEXTE": "Les lunettes de prescription sont acceptées à titre de protection oculaire.",
+                        "LABEL": "Remarque :"
+                    }
+                },
+                "CARABINES": {
+                    "TITRE": "Carabines admissibles à la compétition",
+                    "DESCRIPTION": "Les carabines suivantes sont autorisées sous réserve de conformité avec les règlements de la compétition et les lois en vigueur.",
+                    "TYPES": {
+                        "ANNULAIRE": "Carabines à percussion annulaire",
+                        "ANNULAIRE_LIEN": "(.17 HMR, .22 LR ou similaires)",
+                        "CENTRALE": "Carabines à percussion centrale",
+                        "CENTRALE_LIEN": "(calibres réglementaires)",
+                        "AIR": "Carabines à air comprimé"
+                    },
+                    "ALIMENTATION": {
+                        "TITRE": "Systèmes d'alimentation",
+                        "MANUEL": "Alimentation manuelle (chargement un à un)",
+                        "FIXE": "Chargeur fixe",
+                        "AMOVIBLE": "Chargeur amovible"
+                    },
+                    "ACTION": {
+                        "TITRE": "Types d'action",
+                        "SEMI_AUTO": "Semi-automatique",
+                        "VERROU": "À verrou latéral",
+                        "LEVIER": "À levier",
+                        "BASCULE": "À bascule ou à charnière",
+                        "POMPE": "À pompe",
+                        "BARILLET": "À barillet"
+                    }
+                },
+                "ACCESSOIRES": {
+                    "TITRE": "Accessoires autorisés",
+                    "CATEGORIES": {
+                        "VISEE": "Systèmes de visée",
+                        "CONFORT": "Éléments de confort et d'ajustement",
+                        "SUPPORT": "Supports et matériel complémentaire"
+                    },
+                    "VISEE": {
+                        "ITEM1": "Dioptres et guidons (sans optique grossissante)",
+                        "ITEM2": "Lunette de visée, point rouge",
+                        "ITEM3": "Lunette de visée de haute précision"
+                    },
+                    "CONFORT": {
+                        "ITEM1": "Plaque de couche ajustable",
+                        "ITEM2": "Busc ajustable",
+                        "ITEM3": "Gants de tir",
+                        "ITEM4": "Cache-œil / Œillère"
+                    },
+                    "SUPPORT": {
+                        "ITEM1": "Bipied, trépied ou sac de sable (avant uniquement)",
+                        "ITEM2": "Table ou banc de tir (selon les compétitions)",
+                        "ITEM3": "Tapis de tir personnel",
+                        "ITEM4": "Frein de bouche",
+                        "ITEM5": "Accordeur de barillet"
+                    }
+                }
+            },
             "CALIBRES": {
                 "TITRE": "Calibres autorisés",
                 "DESCRIPTION": "Seuls les calibres spécifiquement mentionnés ci-dessous sont autorisés pour cette compétition. Toute autre munition est strictement interdite.",
