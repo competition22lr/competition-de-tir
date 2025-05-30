@@ -32,6 +32,13 @@
   font-size: 1.5rem;
 }
 
+.fad.fa-chevron-up {
+  --fa-primary-color: #001f3e;
+  --fa-secondary-color: #004993;
+  --fa-secondary-opacity: 0.5;
+}
+
+
 .logo {
   height: 24px;
   width: auto;
