@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ResultatsService } from '../../../services/resultats.service';
 import { CommonModule } from '@angular/common';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-regement-calcul-points',
@@ -10,6 +10,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './calcul-points.component.css'
 })
 export class CalculPointsComponent {
-  constructor(public resultatsService: ResultatsService, private translate: TranslateService) { }
+  constructor(public resultatsService: ResultatsService) { }
 
 }

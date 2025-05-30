@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-carabines-autorisees',
@@ -10,7 +10,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class CarabinesAutoriseesComponent {
 
-  constructor(private router: Router, private translate: TranslateService) { }
+  constructor(private router: Router) { }
 
   goToAnchor(anchor: string) {
     // S'assure que l'utilisateur est bien sur /reglements
