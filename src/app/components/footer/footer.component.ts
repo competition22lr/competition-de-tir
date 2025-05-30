@@ -12,6 +12,5 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class FooterComponent {
   version = appVersion; // crée une propriété accessible au HTML
-  constructor(public resultatsService: ResultatsService, private router: Router,
-         private translate: TranslateService) { }
+  constructor(public resultatsService: ResultatsService, private router: Router) { }
 }

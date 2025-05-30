@@ -21,7 +21,7 @@ export class ImpressionClassementComponent implements OnInit {
   indexCompetitionSelectionne!: number;
   private _moisSelectionne!: string;
 
-  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute, private router: Router,
+  constructor(public resultatsService: ResultatsService, private route: ActivatedRoute,
     private translate: TranslateService
   ) { }
 

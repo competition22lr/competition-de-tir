@@ -6,7 +6,7 @@ import { EquipementComponent } from './equipement/equipement.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { FeuillePointageComponent } from './feuille-pointage/feuille-pointage.component';
 import { CalculPointsComponent } from "./calcul-points/calcul-points.component";
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { CalibresAutorisesComponent } from "./equipement/calibres-autorises/calibres-autorises.component";
 
 @Component({
@@ -19,7 +19,7 @@ import { CalibresAutorisesComponent } from "./equipement/calibres-autorises/cali
 })
 export class ReglementsComponent {
 
-  constructor(private router: Router, private translate: TranslateService) { }
+  constructor(private router: Router) { }
 
   goToAnchor(anchor: string) {
     // S'assure que l'utilisateur est bien sur /reglements
