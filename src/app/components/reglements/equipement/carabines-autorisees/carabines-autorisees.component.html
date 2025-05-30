@@ -1,24 +1,37 @@
-<div class="bloc" id="carabines">
-    <h3>🔸 Carabines autorisées</h3>
-    <ul>
-        <li>Carabines à percussion annulaire (.22 LR ou similaires)</li>
-        <li>Carabines à percussion centrale <a (click)="goToAnchor('calibres')">(calibres réglementaires)</a></li>
-        <li>Systèmes d'alimentation :
-            <ul>
-                <li>Alimentation manuelle (chargement un à un)</li>
-                <li>Chargeur fixe</li>
-                <li>Chargeur amovible</li>
-            </ul>
-        </li>
-        <li>Types d'action :
-            <ul>
-                <li>Semi-automatique</li>
-                <li>À verrou latéral</li>
-                <li>À levier</li>
-                <li>À bascule ou à charnière</li>
-                <li>À pompe</li>
-                <li>À barillet</li>
-            </ul>
-        </li>
-    </ul>
-</div>
+<h3>🔸{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.TITRE' | translate }}</h3>
+<p>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.DESCRIPTION' | translate }}</p>
+
+<ul>
+    <li><strong>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.TYPES.ANNULAIRE' | translate }}</strong> 
+        <a href="" (click)="goToAnchor('calibres')"> {{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.TYPES.ANNULAIRE_LIEN' |
+            translate }}</a>
+    </li>
+    <li><strong>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.TYPES.CENTRALE' | translate }}</strong>
+        <a href="" (click)="goToAnchor('calibres')"> {{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.TYPES.CENTRALE_LIEN' |
+            translate }}</a>
+    </li>
+    <li><strong>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.TYPES.AIR' | translate }}</strong></li>
+</ul>
+
+<ul>
+    <li><strong>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ALIMENTATION.TITRE' | translate }}</strong>
+        <ul>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ALIMENTATION.MANUEL' | translate }}</li>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ALIMENTATION.FIXE' | translate }}</li>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ALIMENTATION.AMOVIBLE' | translate }}</li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li><strong>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ACTION.TITRE' | translate }}</strong>
+        <ul>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ACTION.SEMI_AUTO' | translate }}</li>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ACTION.VERROU' | translate }}</li>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ACTION.LEVIER' | translate }}</li>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ACTION.BASCULE' | translate }}</li>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ACTION.POMPE' | translate }}</li>
+            <li>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.CARABINES.ACTION.BARILLET' | translate }}</li>
+        </ul>
+    </li>
+</ul>

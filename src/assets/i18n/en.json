@@ -256,6 +256,71 @@
                     "TEXTE5": "will not be ranked in any group, even with an excellent bonus score."
                 }
             },
+            "EQUIPEMENT": {
+                "SECURITE": {
+                    "TITRE": "Mandatory Safety Equipment",
+                    "ELEMENTS": {
+                        "AUDITIVE": "Hearing protection (e.g., earmuffs or certified earplugs)",
+                        "OCULAIRE": "Eye protection (e.g., ballistic safety glasses)"
+                    },
+                    "NOTE": {
+                        "TEXTE": "Prescription glasses are accepted as valid eye protection.",
+                        "LABEL": "Note:"
+                    }
+                },
+                "CARABINES": {
+                    "TITRE": "Rifles Approved for Competition",
+                    "DESCRIPTION": "The following rifles are permitted, provided they comply with competition regulations and applicable laws.",
+                    "TYPES": {
+                        "ANNULAIRE": "Rimfire rifles",
+                        "ANNULAIRE_LIEN": "(.17 HMR, .22 LR or similar)",
+                        "CENTRALE": "Centerfire rifles",
+                        "CENTRALE_LIEN": "(permitted calibers)",
+                        "AIR": "Air rifles"
+                    },
+                    "ALIMENTATION": {
+                        "TITRE": "Feeding systems",
+                        "MANUEL": "Manual feed (single round loading)",
+                        "FIXE": "Fixed magazine",
+                        "AMOVIBLE": "Detachable magazine"
+                    },
+                    "ACTION": {
+                        "TITRE": "Action types",
+                        "SEMI_AUTO": "Semi-automatic",
+                        "VERROU": "Bolt-action",
+                        "LEVIER": "Lever-action",
+                        "BASCULE": "Break-action or hinge",
+                        "POMPE": "Pump-action",
+                        "BARILLET": "Revolving cylinder"
+                    }
+                },
+                "ACCESSOIRES": {
+                    "TITRE": "Allowed Accessories",
+                    "CATEGORIES": {
+                        "VISEE": "Sighting Systems",
+                        "CONFORT": "Comfort & Adjustment Equipment",
+                        "SUPPORT": "Support & Complementary Equipment"
+                    },
+                    "VISEE": {
+                        "ITEM1": "Aperture sights and front sights (non-magnified)",
+                        "ITEM2": "Rifle scope, red dot",
+                        "ITEM3": "High-precision rifle scope"
+                    },
+                    "CONFORT": {
+                        "ITEM1": "Adjustable buttplate",
+                        "ITEM2": "Adjustable cheek rest",
+                        "ITEM3": "Shooting gloves",
+                        "ITEM4": "Eye patch or blinder"
+                    },
+                    "SUPPORT": {
+                        "ITEM1": "Bipod, tripod, or sandbag (front support only)",
+                        "ITEM2": "Shooting table or bench (depending on the event)",
+                        "ITEM3": "Personal shooting mat",
+                        "ITEM4": "Muzzle brake",
+                        "ITEM5": "Barrel tuner"
+                    }
+                }
+            },
             "CALIBRES": {
                 "TITRE": "Authorized Calibers",
                 "DESCRIPTION": "Only the calibers explicitly listed below are permitted for this competition. The use of any other ammunition is strictly prohibited.",
