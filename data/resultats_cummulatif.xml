@@ -19,12 +19,20 @@
 				<Classement>Or</Classement>
 			</participant>
 			<participant>
+				<Numero_Membre>0748</Numero_Membre>
+				<Nom>Sylvain Trepanier</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
+				<Classement>Argent</Classement>
+			</participant>
+			<participant>
 				<Numero_Membre>0945</Numero_Membre>
 				<Nom>Rene Beland</Nom>
 				<Pointage>199</Pointage>
 				<Point_Boni>5</Point_Boni>
 				<Pointage_Total>204</Pointage_Total>
-				<Classement>Argent</Classement>
+				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0748</Numero_Membre>
@@ -32,7 +40,6 @@
 				<Pointage>198</Pointage>
 				<Point_Boni>1</Point_Boni>
 				<Pointage_Total>199</Pointage_Total>
-				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0945</Numero_Membre>
@@ -208,6 +215,55 @@
 				<Pointage>184</Pointage>
 				<Point_Boni>2</Point_Boni>
 				<Pointage_Total>186</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0748</Numero_Membre>
+				<Nom>Sylvain Trepanier</Nom>
+				<Pointage>173</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>174</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0945</Numero_Membre>
+				<Nom>Rene Beland</Nom>
+				<Pointage>199</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>204</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0945</Numero_Membre>
+				<Nom>Rene Beland</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>4</Point_Boni>
+				<Pointage_Total>201</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0945</Numero_Membre>
+				<Nom>Rene Beland</Nom>
+				<Pointage>197</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>197</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0945</Numero_Membre>
+				<Nom>Rene Beland</Nom>
+				<Pointage>196</Pointage>
+				<Point_Boni>1</Point_Boni>
+				<Pointage_Total>197</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>5</Point_Boni>
+				<Pointage_Total>205</Pointage_Total>
 			</participant>
 			<ResultatTirage5050>
 				<Nom>Participation</Nom>
