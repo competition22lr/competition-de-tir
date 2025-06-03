@@ -29,3 +29,9 @@ body {
     color: black;
     font-weight: 500;
   }
+
+  .fad {
+  --fa-primary-color: #001f3e;
+  --fa-secondary-color: #004993;
+  --fa-secondary-opacity: 0.5;
+}

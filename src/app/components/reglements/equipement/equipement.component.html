@@ -1,6 +1,5 @@
-<h2>🛠️ Équipements autorisés en compétition de tir à la carabine</h2>
-<p>La réglementation suivante s'applique aux épreuves officielles de tir à la carabine. Tous les équipements doivent
-  être conformes aux normes de sécurité et respecter les spécifications du règlement en vigueur.</p>
+<h2>🛠️ {{ 'REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate }}</h2>
+<p>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.INTRO' | translate }}</p>
 
 <div class="bloc" id="obligatoire">
   <app-materiel-securite-obligatoire></app-materiel-securite-obligatoire>
@@ -10,18 +9,17 @@
   <app-carabines-autorisees></app-carabines-autorisees>
 </div>
 
-<div class="bloc">
+<div class="bloc" id="accessoires">
   <app-accessoires-autorises></app-accessoires-autorises>
 </div>
 
-<div class="bloc">
-  <h3>🔸 Accessoires NON autorisés</h3>
+<div class="bloc" id="NON_AUTORISES">
+  <h3>🔸 {{ 'REGLEMENT.SECTIONS.EQUIPEMENT.ACCESSOIRES_NON_AUTORISES_TITRE' | translate }}</h3>
   <ul class="non-authorise">
-    <li>Bipied, trépied ou sac de sable positionnés à l'arrière</li>
+    <li *ngFor="let item of ('REGLEMENT.SECTIONS.EQUIPEMENT.ACCESSOIRES_NON_AUTORISES_LISTE' | translate)">{{ item }}</li>
   </ul>
 </div>
 
 <div class="note">
-  <strong>Remarque :</strong> Tout équipement non listé ci-dessus doit être validé par l'organisation avant le début
-  de la compétition.
+  <strong>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.REMARQUE' | translate }}</strong>
 </div>

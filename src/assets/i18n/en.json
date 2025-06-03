@@ -1,8 +1,8 @@
 {
     "SORTIE": "Exit",
     "HEADER": {
-        "TITLE": "Precision Shooting Competition",
-        "SUBTITLE": "Club de Tir de l'Outaouais"
+        "TITRE": "Precision Shooting Competition",
+        "NOM_CLUB": "Club de Tir de l'Outaouais"
     },
     "FOOTER": {
         "DROITS": "© 2025 Precision Shooting Competition - All Rights Reserved",
@@ -113,20 +113,26 @@
     "REGLEMENT": {
         "TITRE": "Competition Rules",
         "IMPRIMABLE": "Printable version",
-        "TABLE": {
-            "TITLE": "Table of Contents",
-            "DEROULEMENT": "Competition Process",
-            "CATEGORIES": "Categories",
-            "FEUILLEPOINTS": "Target Sheet",
-            "CALCULPOINTS": "Scoring Method",
-            "CLASSEMENT": "Shooter Ranking System",
-            "EQUIPEMENT": "Authorized Equipment",
-            "CALIBRES": "Authorized Calibers"
-        },
+        "TABLE.TITRE": "Table of Contents",
         "SECTIONS": {
             "DEROULEMENT": {
-                "TITLE": "Competition Process",
-                "DESCRIPTION": "Describe how the competition is conducted (e.g., number of shots, duration, etc.)."
+                "TITRE": "Competition Process",
+                "DESCRIPTION": "The competition spans an entire year and features monthly rankings. Each participant must obtain an official target sheet from the store counter.",
+                "FEUILLES": {
+                    "TITRE": "Participation Sheets",
+                    "OBTENTION": "Sheets must be obtained from a staff member at the store counter.",
+                    "PARTICIPATIONS": "There is no limit to the number of participations during the year.",
+                    "PRIX_MEMBRE": "Each sheet costs $2 for members.",
+                    "PRIX_NON_MEMBRE": "Each sheet costs $5 for non-members.",
+                    "FRAIS_TERRAIN": "Additional shooting range access fees apply."
+                },
+                "VALIDATION": {
+                    "TITRE": "Shot Validation",
+                    "ESTAMPILLE": "Each sheet must be stamped by the employee at the time of issue.",
+                    "DISTANCE": "Targets must be placed exactly at a distance of 25 meters.",
+                    "REFUS_SIGNATURE": "If this distance is not respected, the official will not sign the sheet, and it will be considered invalid."
+                },
+                "NOTE": "Refer to the \"Target Sheet\" and the \"Scoring System\" section for detailed specifications."
             },
             "CATEGORIES": {
                 "TITRE": "Categories",
@@ -137,22 +143,23 @@
                 "NOTE_A_VENIR": "Coming soon: ",
                 "NOTE": "Official categories will be published shortly after validation by the organizing bodies."
             },
-            "FEUILLE": {
+            "FEUILLEPOINTS": {
                 "TITRE": "Target Sheet",
                 "INTRO1": "The scoring sheet is an official document used to record individual results for each shooter during a competition.",
                 "INTRO2": "It must be signed by the official at the end of the session.",
                 "ELEMENTS_TITRE": "Elements contained in the participation sheet",
-                "ELEMENT1": "Host club logo",
-                "ELEMENT2": "Competition logo",
-                "ELEMENT3": "Shooter’s first and last name",
-                "ELEMENT4": "Membership number",
-                "ELEMENT5": "Event date",
-                "ELEMENT6": "Category (Coming soon)",
-                "ELEMENT7": "Caliber used (e.g.: .22 LR)",
-                "ELEMENT8": "Shooting position",
-                "ELEMENT9": "Total score",
-                "ELEMENT10": "25 identical targets (5 practice, 20 scored)",
-                "ELEMENT11": "Club stamp with the signature of the responsible shooting official",
+                "ELEMENT_LISTE": [
+                    "Host club logo",
+                    "Competition logo",
+                    "Shooter’s first and last name",
+                    "Membership number",
+                    "Event date",
+                    "Caliber used (e.g.: .22 LR)",
+                    "Shooting position",
+                    "Total score",
+                    "25 identical targets (5 practice, 20 scored)",
+                    "Club stamp with the signature of the responsible shooting official"
+                ],
                 "PRESENTATION_TITRE": "Target Presentation",
                 "PRESENTATION_TEXTE": "The target presentation is standardized for all participants, whether seated, standing, or supported on a shooting bench. All targets, whether in the training area (numbered P1 to P5) or the scored section (numbered 1 to 20), follow the same layout and visibility criteria.",
                 "ALT_IMAGE": "Rifle target with watermark",
@@ -180,22 +187,22 @@
                 "NOTE": "See the Scoring System section for qualifying shots."
             },
             "CALCULPOINTS": {
-                "TITLE": "Scoring System",
+                "TITRE": "Scoring System",
                 "DESCRIPTION": "Describe the point calculation rules for each target, including penalties, bonuses, etc.",
                 "TIRPARFAIT": {
-                    "TITLE": "Perfect Shot",
+                    "TITRE": "Perfect Shot",
                     "DESCRIPTION": "The shooter hits the center of the target flawlessly, <strong>completely removing the central dot</strong>. They receive <strong>10 base points</strong> plus <strong>1 bonus point</strong>."
                 },
                 "TIRSOLIDE": {
-                    "TITLE": "Excellent Shot without Bonus",
+                    "TITRE": "Excellent Shot without Bonus",
                     "DESCRIPTION": "The shooter hits the center of the target with no error, <strong>but does not</strong> completely remove the central dot. They receive <strong>10 base points</strong>."
                 },
                 "TIRINVALIDE": {
-                    "TITLE": "Invalid Shot",
+                    "TITRE": "Invalid Shot",
                     "DESCRIPTION": "The shot contains an error: either a <strong>double shot</strong> on the same target or a shot <strong>outside the target area</strong> (within the frame but outside the scoring zone). <strong>No points are awarded</strong>."
                 },
                 "TIRTRICHE": {
-                    "TITLE": "Attempt to Cheat",
+                    "TITRE": "Attempt to Cheat",
                     "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score. <strong>==>&nbsp;Automatic&nbsp;disqualification&nbsp;<==</strong>."
                 }
             },
@@ -257,6 +264,13 @@
                 }
             },
             "EQUIPEMENT": {
+                "TITRE": "Authorized Equipment",
+                "INTRO": "The following regulations apply to official rifle shooting events. All equipment must comply with safety standards and adhere to the current rules.",
+                "ACCESSOIRES_NON_AUTORISES_TITRE": "Prohibited Accessories",
+                "ACCESSOIRES_NON_AUTORISES_LISTE": [
+                    "Bipod, tripod or sandbag placed at the rear"
+                ],
+                "REMARQUE": "Note: Any equipment not listed above must be approved by the organizers prior to the start of the competition.",
                 "SECURITE": {
                     "TITRE": "Mandatory Safety Equipment",
                     "ELEMENTS": {

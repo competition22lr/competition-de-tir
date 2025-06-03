@@ -1,81 +1,71 @@
-<h2>🎯 {{ 'REGLEMENT.SECTIONS.FEUILLE.TITRE' | translate }}</h2>
+<h2>🎯 {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TITRE' | translate }}</h2>
 <p>
-    {{ 'REGLEMENT.SECTIONS.FEUILLE.INTRO1' | translate }}
-    <strong>{{ 'REGLEMENT.SECTIONS.FEUILLE.INTRO2' | translate }}</strong>
+    {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.INTRO1' | translate }}
+    <strong>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.INTRO2' | translate }}</strong>
 </p>
 
 <div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENTS_TITRE' | translate }}</h3>
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENTS_TITRE' | translate }}</h3>
     <ul>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT1' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT2' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT3' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT4' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT5' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT6' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT7' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT8' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT9' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT10' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.ELEMENT11' | translate }}</li>
+        <li *ngFor="let item of ('REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENT_LISTE' | translate)">{{ item }}</li>
     </ul>
 </div>
 
 <div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.PRESENTATION_TITRE' | translate }}</h3>
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TITRE' | translate }}</h3>
     <p>
-        {{ 'REGLEMENT.SECTIONS.FEUILLE.PRESENTATION_TEXTE' | translate }}
+        {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TEXTE' | translate }}
     </p>
     <div class="image-gallery">
         <img *ngIf="generatedImageUrl" [src]="generatedImageUrl"
-            alt="{{ 'REGLEMENT.SECTIONS.FEUILLE.ALT_IMAGE' | translate }}" />
+            alt="{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ALT_IMAGE' | translate }}" />
     </div>
 </div>
 
 <div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_TITRE' | translate }}</h3>
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_TITRE' | translate }}</h3>
     <div class="h4-content">
-        <p>{{ 'REGLEMENT.SECTIONS.FEUILLE.DIMENSIONS_INTRO' | translate }}</p>
+        <p>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_INTRO' | translate }}</p>
         <div class="dimension-table">
             <table>
                 <thead>
                     <tr>
-                        <th rowspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_ELEMENT' | translate }}</th>
-                        <th colspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.COL_DIMENSIONS' | translate }}</th>
+                        <th rowspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.COL_ELEMENT' | translate }}</th>
+                        <th colspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.COL_DIMENSIONS' | translate }}</th>
                     </tr>
                     <tr>
-                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.REGULIERE' | translate }}</th>
-                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLE.TABLE.ELITE' | translate }}</th>
+                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.REGULIERE' | translate }}</th>
+                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.ELITE' | translate }}</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW1' | translate }}</td>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW1' | translate }}</td>
                         <td class="dimension-row-valeur">1.25</td>
                         <td class="dimension-row-valeur">1</td>
                     </tr>
                     <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW2' | translate }}</td>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW2' | translate }}</td>
                         <td class="dimension-row-valeur">7.5</td>
                         <td class="dimension-row-valeur">6</td>
                     </tr>
                     <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW3' | translate }}</td>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW3' | translate }}</td>
                         <td class="dimension-row-valeur">15</td>
                         <td class="dimension-row-valeur">12</td>
                     </tr>
                     <tr>
-                        <td>{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW4' | translate }}</td>
+                        <td>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW4' | translate }}</td>
                         <td class="dimension-row-valeur">22.5</td>
                         <td class="dimension-row-valeur">18</td>
                     </tr>
                     <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW5' | translate }}</td>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW5' | translate }}</td>
                         <td class="dimension-row-valeur">30</td>
                         <td class="dimension-row-valeur">24</td>
                     </tr>
                     <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLE.ROW6' | translate }}</td>
+                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW6' | translate }}</td>
                         <td colspan="2" class="dimension-row-valeur">35 x 35</td>
                     </tr>
                 </tbody>
@@ -85,16 +75,16 @@
 </div>
 
 <div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE_TITRE' | translate }}</h3>
+    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE_TITRE' | translate }}</h3>
     <ul>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE1' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE2' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE3' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE4' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE5' | translate }}</li>
-        <li>{{ 'REGLEMENT.SECTIONS.FEUILLE.EPREUVE6' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE1' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE2' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE3' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE4' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE5' | translate }}</li>
+        <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE6' | translate }}</li>
     </ul>
     <div class="note bloc-sub">
-        <span>* {{ 'REGLEMENT.SECTIONS.FEUILLE.NOTE' | translate }}</span>
+        <span>* {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.NOTE' | translate }}</span>
     </div>
 </div>

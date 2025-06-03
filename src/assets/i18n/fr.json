@@ -1,8 +1,8 @@
 {
     "SORTIE": "Sortie",
     "HEADER": {
-        "TITLE": "Compétition de tir de précision",
-        "SUBTITLE": "Club de Tir de l'Outaouais"
+        "TITRE": "Compétition de tir de précision",
+        "NOM_CLUB": "Club de Tir de l'Outaouais"
     },
     "FOOTER": {
         "DROITS": "© 2025 Compétition de tir - Tous droits réservés",
@@ -113,20 +113,26 @@
     "REGLEMENT": {
         "TITRE": "Règlements de la compétition",
         "IMPRIMABLE": "Version imprimable",
-        "TABLE": {
-            "TITLE": "Table des matières",
-            "DEROULEMENT": "Déroulement",
-            "CATEGORIES": "Catégories",
-            "FEUILLEPOINTS": "Feuille de cible",
-            "CALCULPOINTS": "Calcul des points",
-            "CLASSEMENT": "Système de Classement des Tireurs",
-            "EQUIPEMENT": "Équipement autorisé",
-            "CALIBRES": "Calibres autorisés"
-        },
+        "TABLE.TITRE": "Table des matières",
         "SECTIONS": {
             "DEROULEMENT": {
-                "TITLE": "Déroulement de la compétition",
-                "DESCRIPTION": "Décris ici comment la compétition se déroule (ex : nombre de tirs, durée, etc.)."
+                "TITRE": "Déroulement de la compétition",
+                "DESCRIPTION": "La compétition s’étend sur une année complète et se décline en classements mensuels. Chaque participant doit se procurer une feuille de cible officielle au comptoir de la boutique.",
+                "FEUILLES": {
+                    "TITRE": "Feuilles de participation",
+                    "OBTENTION": "Les feuilles doivent être obtenues auprès d’un employé au comptoir de la boutique.",
+                    "PARTICIPATIONS": "Le nombre de participations n’est pas limité durant l’année.",
+                    "PRIX_MEMBRE": "Chaque feuille coûte 2 $ pour les membres.",
+                    "PRIX_NON_MEMBRE": "Chaque feuille coûte 5 $ pour les non-membres.",
+                    "FRAIS_TERRAIN": "Des frais d’accès au champ de tir s’appliquent en sus."
+                },
+                "VALIDATION": {
+                    "TITRE": "Validation des tirs",
+                    "ESTAMPILLE": "Chaque feuille doit être estampillée par l’employé lors de son émission.",
+                    "DISTANCE": "Les cibles doivent obligatoirement être positionnées à une distance de 25 mètres.",
+                    "REFUS_SIGNATURE": "En cas de non-respect de la distance, l’officiel ne pourra signer et la feuille sera considérée comme invalide."
+                },
+                "NOTE": "Consultez la section « Feuille de cible » et « Calcul des points » pour les spécifications détaillées."
             },
             "CATEGORIES": {
                 "TITRE": "Catégories",
@@ -137,22 +143,23 @@
                 "NOTE_A_VENIR": "À venir : ",
                 "NOTE": "Les catégories officielles seront publiées prochainement après validation par les instances organisatrices."
             },
-            "FEUILLE": {
+            "FEUILLEPOINTS": {
                 "TITRE": "Feuille de cible",
                 "INTRO1": "La feuille de pointage est un document officiel servant à consigner les résultats individuels de chaque tireur au cours d'une épreuve.",
                 "INTRO2": "Elle doit être signée par l'officiel à l'issue de la séance.",
                 "ELEMENTS_TITRE": "Éléments contenus de la feuille de participation",
-                "ELEMENT1": "Logo du club hôte",
-                "ELEMENT2": "Logo de la compétition",
-                "ELEMENT3": "Nom et prénom du tireur",
-                "ELEMENT4": "Numéro de membre",
-                "ELEMENT5": "Date de l'épreuve",
-                "ELEMENT6": "Catégorie (À venir)",
-                "ELEMENT7": "Calibre utilisé (ex : .22 LR)",
-                "ELEMENT8": "Position de tir",
-                "ELEMENT9": "Pointage total",
-                "ELEMENT10": "25 cibles identiques (5 pratiques, 20 comptabilisées)",
-                "ELEMENT11": "Estompe du club avec la signature de l'officiel de tir responsable",
+                "ELEMENT_LISTE": [
+                    "Logo du club hôte",
+                    "Logo de la compétition",
+                    "Nom et prénom du tireur",
+                    "Numéro de membre",
+                    "Date de l'épreuve",
+                    "Calibre utilisé (ex : .22 LR)",
+                    "Position de tir",
+                    "Pointage total",
+                    "25 cibles identiques (5 pratiques, 20 comptabilisées)",
+                    "Estompe du club avec la signature de l'officiel de tir responsable"
+                ],
                 "PRESENTATION_TITRE": "Présentation des cibles",
                 "PRESENTATION_TEXTE": "La présentation des cibles est uniforme pour l'ensemble des participants, qu'ils soient en position assise, debout ou appuyés sur une table de tir. Toutes les cibles, qu'elles se trouvent dans la zone d'entraînement (numérotée de P1 à P5) ou dans la section des tirs comptabilisés (numérotée de 1 à 20), respectent les mêmes critères de disposition et de visibilité.",
                 "ALT_IMAGE": "Cible carabine avec watermark",
@@ -180,22 +187,22 @@
                 "NOTE": "Voir la section Calcul des points pour les tirs qualifiés."
             },
             "CALCULPOINTS": {
-                "TITLE": "Calcul des points",
+                "TITRE": "Calcul des points",
                 "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
                 "TIRPARFAIT": {
-                    "TITLE": "Tir Parfait",
+                    "TITRE": "Tir Parfait",
                     "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."
                 },
                 "TIRSOLIDE": {
-                    "TITLE": "Tir Excellent sans bonis",
+                    "TITRE": "Tir Excellent sans bonis",
                     "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, <strong>mais</strong> ne fait <strong>pas</strong> completement disparetre le point central. il obtient <strong>10 points de base</strong>."
                 },
                 "TIRINVALIDE": {
-                    "TITLE": "Tir Invalide",
+                    "TITRE": "Tir Invalide",
                     "DESCRIPTION": "Le tir contient une erreur : <strong>double tir</strong> sur une même cible ou <strong>tir hors cible</strong> (dans l'encadrement mais hors zone de score). <strong>Aucun point n'est attribué</strong>."
                 },
                 "TIRTRICHE": {
-                    "TITLE": "Tentative de triche",
+                    "TITRE": "Tentative de triche",
                     "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score. <strong>==>&nbsp;Disqualification&nbsp;automatique&nbsp;<==</strong>."
                 }
             },
@@ -257,6 +264,13 @@
                 }
             },
             "EQUIPEMENT": {
+                "TITRE": "Équipement autorisé",
+                "INTRO": "La réglementation suivante s'applique aux épreuves officielles de tir à la carabine. Tous les équipements doivent être conformes aux normes de sécurité et respecter les spécifications du règlement en vigueur.",
+                "ACCESSOIRES_NON_AUTORISES_TITRE": "Accessoires NON autorisés",
+                "ACCESSOIRES_NON_AUTORISES_LISTE": [
+                    "Bipied, trépied ou sac de sable positionnés à l'arrière"
+                ],
+                "REMARQUE": "Remarque : Tout équipement non listé ci-dessus doit être validé par l'organisation avant le début de la compétition.",
                 "SECURITE": {
                     "TITRE": "Matériel de sécurité obligatoire",
                     "ELEMENTS": {
