@@ -2,24 +2,23 @@
   <h1>{{ 'REGLEMENT.TITRE' | translate }}</h1>
 
   <nav class="table-des-matieres">
-    <h3>{{ 'REGLEMENT.TABLE.TITLE' | translate }}</h3>
+    <h3>{{ 'REGLEMENT.TABLE.TITRE' | translate }}</h3>
     <ul>
-      <li><a (click)="goToAnchor('deroulement')">{{ 'REGLEMENT.TABLE.DEROULEMENT' | translate }}</a></li>
-      <li><a (click)="goToAnchor('categories')">{{ 'REGLEMENT.TABLE.CATEGORIES' | translate }}</a></li>
-      <li><a (click)="goToAnchor('feuille-points')">{{ 'REGLEMENT.TABLE.FEUILLEPOINTS' | translate }}</a></li>
-      <li><a (click)="goToAnchor('calcul-points')">{{ 'REGLEMENT.TABLE.CALCULPOINTS' | translate }}</a></li>
-      <li><a (click)="goToAnchor('classement')">{{ 'REGLEMENT.TABLE.CLASSEMENT' | translate }}</a></li>
-      <li><a (click)="goToAnchor('equipement')">{{ 'REGLEMENT.TABLE.EQUIPEMENT' | translate }}</a>
-      <li><a (click)="goToAnchor('calibres')">{{ 'REGLEMENT.TABLE.CALIBRES' | translate }}</a></li>
+      <li><a (click)="goToAnchor('deroulement')">{{ 'REGLEMENT.SECTIONS.DEROULEMENT.TITRE' | translate }}</a></li>
+      <li><a (click)="goToAnchor('categories')">{{ 'REGLEMENT.SECTIONS.CATEGORIES.TITRE' | translate }}</a></li>
+      <li><a (click)="goToAnchor('feuille-points')">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TITRE' | translate }}</a></li>
+      <li><a (click)="goToAnchor('calcul-points')">{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TITRE' | translate }}</a></li>
+      <li><a (click)="goToAnchor('classement')">{{ 'REGLEMENT.SECTIONS.CLASSEMENT.TITRE' | translate }}</a></li>
+      <li><a (click)="goToAnchor('equipement')">{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate }}</a>
+      <li><a (click)="goToAnchor('calibres')">{{ 'REGLEMENT.SECTIONS.CALIBRES.TITRE' | translate }}</a></li>
     </ul>
-    <!-- <a [routerLink]="['/impression-reglements']" target="_blank">
+    <a [routerLink]="['/impression-reglements']" target="_blank">
       🖨️ {{ 'REGLEMENT.IMPRIMABLE' | translate }}
-    </a> -->
+    </a>
   </nav>
 
   <section id="deroulement">
-    <h2>{{ 'REGLEMENT.SECTIONS.DEROULEMENT.TITLE' | translate }}</h2>
-    <p>{{ 'REGLEMENT.SECTIONS.DEROULEMENT.DESCRIPTION' | translate }}</p>
+    <app-deroulement></app-deroulement>
   </section>
 
   <section id="categories">
@@ -46,8 +45,5 @@
   <section id="calibres">
     <app-calibres-autorises></app-calibres-autorises>
   </section>
-
-  <!-- <app-scroll-to-top [icon]="'⬆️'" [showLogo]="true" [logoUrl]="'assets/logo-club.svg'"
-    [position]="{ bottom: 30, right: 15 }" [threshold]="200" /> -->
 
 </div>

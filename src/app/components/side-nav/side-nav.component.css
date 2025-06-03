@@ -38,7 +38,7 @@ mat-sidenav {
   }
 
   mat-sidenav {
-    max-height: 100vh;
+    max-height: 150vh;
     overflow-y: auto;
   }
 }

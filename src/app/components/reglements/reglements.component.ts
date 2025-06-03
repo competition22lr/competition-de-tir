@@ -8,12 +8,13 @@ import { FeuillePointageComponent } from './feuille-pointage/feuille-pointage.co
 import { CalculPointsComponent } from "./calcul-points/calcul-points.component";
 import { TranslateModule } from '@ngx-translate/core';
 import { CalibresAutorisesComponent } from "./equipement/calibres-autorises/calibres-autorises.component";
+import { DeroulementComponent } from "./deroulement/deroulement.component";
 
 @Component({
   selector: 'app-reglements',
   standalone: true,
   imports: [CommonModule, ClassementComponent, EquipementComponent, CategoriesComponent,
-    FeuillePointageComponent, CalculPointsComponent, RouterModule, TranslateModule, CalibresAutorisesComponent],
+    FeuillePointageComponent, CalculPointsComponent, RouterModule, TranslateModule, CalibresAutorisesComponent, DeroulementComponent],
   templateUrl: './reglements.component.html',
   styleUrls: ['./reglements.component.css']
 })
