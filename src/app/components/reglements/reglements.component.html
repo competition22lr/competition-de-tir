@@ -1,5 +1,5 @@
 <div class="reglements-container">
-  <h1>{{ 'REGLEMENT.TITRE' | translate }}</h1>
+  <h1><i class="fad fa-gavel fa-flip-horizontal fa-lg"></i> {{ 'REGLEMENT.TITRE' | translate }}</h1>
 
   <nav class="table-des-matieres">
     <h3>{{ 'REGLEMENT.TABLE.TITRE' | translate }}</h3>
@@ -13,7 +13,7 @@
       <li><a (click)="goToAnchor('calibres')">{{ 'REGLEMENT.SECTIONS.CALIBRES.TITRE' | translate }}</a></li>
     </ul>
     <a [routerLink]="['/impression-reglements']" target="_blank">
-      🖨️ {{ 'REGLEMENT.IMPRIMABLE' | translate }}
+      <i class="fad fa-print"></i> {{ 'REGLEMENT.IMPRIMABLE' | translate }}
     </a>
   </nav>
 

@@ -45,7 +45,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;    /* espace entre les images */
+    gap: 1rem;
+    /* espace entre les images */
     margin-bottom: 1em;
 }
 
@@ -69,7 +70,7 @@
         width: 150px;
     }
 
-    .calcul-des-points  {
+    .calcul-des-points {
         padding: unset !important;
         border-radius: unset !important;
         box-shadow: unset !important;
@@ -79,16 +80,34 @@
 /* Couleurs spécifiques par type */
 .tir-parfait {
     border-color: #4caf50;
+
+    .fad {
+        --fa-secondary-color: #4caf50;
+    }
 }
 
 .tir-solide {
     border-color: #2196f3;
+
+    .fad {
+        --fa-secondary-color: #2196f3;
+    }
 }
 
 .tir-invalide {
-    border-color: #f44336;
+    border-color: #ff9800;
+
+    .fad {
+        --fa-secondary-color: #ff9800;
+    }
 }
 
 .tir-triche {
-    border-color: #ff9800;
+    border-color: #f44336;
+
+    .fad {
+        --fa-primary-color: #f44336;
+        --fa-secondary-color: #001f3e;
+        --fa-secondary-opacity: 0.7;
+    }
 }
