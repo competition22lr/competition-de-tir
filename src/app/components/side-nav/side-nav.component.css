@@ -7,7 +7,7 @@
 }
 
 mat-sidenav-container {
-  min-height: 100vh;
+  min-height: 170vh;
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +17,8 @@ mat-sidenav {
   flex-direction: column;
   height: 100%;
   max-width: 35vh;
-  max-height: 100vh;
+  min-height: 170vh;
+  max-height: 200vh;
   overflow-y: auto;
   box-sizing: border-box;
   padding: 1rem;

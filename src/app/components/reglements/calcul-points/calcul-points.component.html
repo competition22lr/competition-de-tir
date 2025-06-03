@@ -31,7 +31,8 @@
 
     <div class="exemple-tir tir-triche">
         <h3><i class="fad fa-ban"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.TITRE' | translate }}</h3>
-        <p innerHTML="{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.DESCRIPTION' | translate }}"></p>
+        <p>{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.DESCRIPTION' | translate }}</p>
+        <p><i class="fad fa-eject"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.DQ_AUTO' | translate }}</p>
         <div class="tir-triche-gallery">
             <img [src]="resultatsService.imageLocationUrl + 'tir-triche.jpg'" alt="Cible trafiquée" />
             <img [src]="resultatsService.imageLocationUrl + 'tir-triche-overlay-rouge.jpg'" alt="Cible trafiquée" />

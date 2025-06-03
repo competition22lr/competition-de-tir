@@ -203,7 +203,8 @@
                 },
                 "TIRTRICHE": {
                     "TITRE": "Attempt to Cheat",
-                    "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score. <strong>==>&nbsp;Automatic&nbsp;disqualification&nbsp;<==</strong>."
+                    "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score.",
+                    "DQ_AUTO":"Automatic disqualification"
                 }
             },
             "CLASSEMENT": {

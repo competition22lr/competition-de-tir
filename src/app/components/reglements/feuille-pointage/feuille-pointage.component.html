@@ -5,14 +5,7 @@
 </p>
 
 <div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENTS_TITRE' | translate }}</h3>
-    <ul>
-        <li *ngFor="let item of ('REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENT_LISTE' | translate)">{{ item }}</li>
-    </ul>
-</div>
-
-<div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TITRE' | translate }}</h3>
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TITRE' | translate }}</h3>
     <p>
         {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TEXTE' | translate }}
     </p>
@@ -23,7 +16,14 @@
 </div>
 
 <div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_TITRE' | translate }}</h3>
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENTS_TITRE' | translate }}</h3>
+    <ul>
+        <li *ngFor="let item of ('REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENT_LISTE' | translate)">{{ item }}</li>
+    </ul>
+</div>
+
+<div class="bloc">
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_TITRE' | translate }}</h3>
     <div class="h4-content">
         <p>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_INTRO' | translate }}</p>
         <div class="dimension-table">
@@ -75,7 +75,7 @@
 </div>
 
 <div class="bloc">
-    <h3>🔸{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE_TITRE' | translate }}</h3>
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE_TITRE' | translate }}</h3>
     <ul>
         <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE1' | translate }}</li>
         <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE2' | translate }}</li>

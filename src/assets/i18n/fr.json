@@ -203,7 +203,8 @@
                 },
                 "TIRTRICHE": {
                     "TITRE": "Tentative de triche",
-                    "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score. <strong>==>&nbsp;Disqualification&nbsp;automatique&nbsp;<==</strong>."
+                    "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score.",
+                    "DQ_AUTO":"Disqualification automatique"
                 }
             },
             "CLASSEMENT": {
