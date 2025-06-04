@@ -5,7 +5,8 @@
 </p>
 
 <div class="bloc">
-    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TITRE' | translate }}</h3>
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TITRE' | translate
+        }}</h3>
     <p>
         {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TEXTE' | translate }}
     </p>
@@ -16,67 +17,68 @@
 </div>
 
 <div class="bloc">
-    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENTS_TITRE' | translate }}</h3>
-    <ul>
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENTS_TITRE' | translate }}
+    </h3>
+    <ul class="custom-icon-list">
         <li *ngFor="let item of ('REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENT_LISTE' | translate)">{{ item }}</li>
     </ul>
 </div>
 
 <div class="bloc">
-    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_TITRE' | translate }}</h3>
-    <div class="h4-content">
-        <p>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_INTRO' | translate }}</p>
-        <div class="dimension-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th rowspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.COL_ELEMENT' | translate }}</th>
-                        <th colspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.COL_DIMENSIONS' | translate }}</th>
-                    </tr>
-                    <tr>
-                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.REGULIERE' | translate }}</th>
-                        <th>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.ELITE' | translate }}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW1' | translate }}</td>
-                        <td class="dimension-row-valeur">1.25</td>
-                        <td class="dimension-row-valeur">1</td>
-                    </tr>
-                    <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW2' | translate }}</td>
-                        <td class="dimension-row-valeur">7.5</td>
-                        <td class="dimension-row-valeur">6</td>
-                    </tr>
-                    <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW3' | translate }}</td>
-                        <td class="dimension-row-valeur">15</td>
-                        <td class="dimension-row-valeur">12</td>
-                    </tr>
-                    <tr>
-                        <td>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW4' | translate }}</td>
-                        <td class="dimension-row-valeur">22.5</td>
-                        <td class="dimension-row-valeur">18</td>
-                    </tr>
-                    <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW5' | translate }}</td>
-                        <td class="dimension-row-valeur">30</td>
-                        <td class="dimension-row-valeur">24</td>
-                    </tr>
-                    <tr>
-                        <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW6' | translate }}</td>
-                        <td colspan="2" class="dimension-row-valeur">35 x 35</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_TITRE' | translate }}
+    </h3>
+    <p>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.DIMENSIONS_INTRO' | translate }}</p>
+    <div class="dimension-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.COL_ELEMENT' | translate }}</th>
+                    <th colspan="2">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.COL_DIMENSIONS' | translate }}</th>
+                </tr>
+                <tr>
+                    <th>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.REGULIERE' | translate }}</th>
+                    <th>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TABLE.ELITE' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW1' | translate }}</td>
+                    <td class="dimension-row-valeur">1.25</td>
+                    <td class="dimension-row-valeur">1</td>
+                </tr>
+                <tr>
+                    <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW2' | translate }}</td>
+                    <td class="dimension-row-valeur">7.5</td>
+                    <td class="dimension-row-valeur">6</td>
+                </tr>
+                <tr>
+                    <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW3' | translate }}</td>
+                    <td class="dimension-row-valeur">15</td>
+                    <td class="dimension-row-valeur">12</td>
+                </tr>
+                <tr>
+                    <td>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW4' | translate }}</td>
+                    <td class="dimension-row-valeur">22.5</td>
+                    <td class="dimension-row-valeur">18</td>
+                </tr>
+                <tr>
+                    <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW5' | translate }}</td>
+                    <td class="dimension-row-valeur">30</td>
+                    <td class="dimension-row-valeur">24</td>
+                </tr>
+                <tr>
+                    <td class="dimension-row-text">{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ROW6' | translate }}</td>
+                    <td colspan="2" class="dimension-row-valeur">35 x 35</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
 <div class="bloc">
-    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE_TITRE' | translate }}</h3>
-    <ul>
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE_TITRE' | translate }}
+    </h3>
+    <ul class="custom-icon-list">
         <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE1' | translate }}</li>
         <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE2' | translate }}</li>
         <li>{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.EPREUVE3' | translate }}</li>

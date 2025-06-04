@@ -84,16 +84,6 @@
   background: #88540B;
 }
 
-ul {
-  list-style: disc;
-  margin-left: 1.5rem;
-}
-
-ul ul {
-  list-style: circle;
-  margin-left: 1.5rem;
-}
-
 @media (max-width: 768px) {
   .classements {
     padding: unset;

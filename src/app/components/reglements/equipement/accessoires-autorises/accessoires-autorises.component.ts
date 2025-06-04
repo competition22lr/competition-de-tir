@@ -5,7 +5,7 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-accessoires-autorises',
   imports: [TranslateModule],
   templateUrl: './accessoires-autorises.component.html',
-  styleUrls: ['./accessoires-autorises.component.css', './../equipement.component.css', './../../reglements.component.css']
+  styleUrls: ['./accessoires-autorises.component.css', './../../reglements.component.css']
 })
 export class AccessoiresAutorisesComponent {
 

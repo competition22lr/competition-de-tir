@@ -56,3 +56,13 @@
   color: #2a3b4c;
   width: 60%;
 }
+
+/* Responsive : une image par ligne en mobile */
+@media (max-width: 768px) {
+
+  .dimension-table th,
+  .dimension-table td {
+    border: 1px solid #ddd;
+    padding: 0.3rem;
+  }
+}

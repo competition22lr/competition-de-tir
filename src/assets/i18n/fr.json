@@ -132,7 +132,18 @@
                     "DISTANCE": "Les cibles doivent obligatoirement être positionnées à une distance de 25 mètres.",
                     "REFUS_SIGNATURE": "En cas de non-respect de la distance, l’officiel ne pourra signer et la feuille sera considérée comme invalide."
                 },
-                "NOTE": "Consultez la section « Feuille de cible » et « Calcul des points » pour les spécifications détaillées."
+                "TRAITEMENT": {
+                    "TITRE": "Traitement des résultats",
+                    "CALCUL_MANUEL": "Le calcul des points est effectué manuellement par les responsables de l’organisation.",
+                    "SAISIE_EXCEL": "Les résultats sont saisis dans un tableur Microsoft Excel.",
+                    "PUBLICATION": "Le classement final mensuel est publié dans la première semaine du mois suivant, au plus tard le premier samedi."
+                },
+                "TIRAGE": {
+                    "TITRE": "Tirage au sort 50/50",
+                    "EXPLICATION": "Le tirage au sort mensuel du 50/50 est réalisé de manière électronique à l’aide d’un module intégré à Microsoft Excel.",
+                    "EQUITABLE": "Ce procédé garantit une sélection aléatoire et équitable parmi les participations valides."
+                },
+                "NOTE": "Veuillez consulter les sections connexes pour plus de détails sur le fonctionnement de la compétition."
             },
             "CATEGORIES": {
                 "TITRE": "Catégories",
@@ -204,7 +215,7 @@
                 "TIRTRICHE": {
                     "TITRE": "Tentative de triche",
                     "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score.",
-                    "DQ_AUTO":"Disqualification automatique"
+                    "DQ_AUTO": "Disqualification automatique"
                 }
             },
             "CLASSEMENT": {

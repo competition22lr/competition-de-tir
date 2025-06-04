@@ -35,3 +35,45 @@ body {
   --fa-secondary-color: #004993;
   --fa-secondary-opacity: 0.5;
 }
+
+ul.custom-icon-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul.custom-icon-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+ul.custom-icon-list li::before {
+  content: "\f276"; /* map-pin pour le niveau 1 */
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.15rem;
+  font-size: 0.75rem;
+  transform: rotate(270deg);
+  color: #001f3e;
+}
+
+/* ✅ Icône différente pour les sous-éléments */
+ul.custom-icon-list ul{
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul.custom-icon-list ul li::before {
+  content: "\f276"; /* map-pin pour le niveau 1 */
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.2rem;
+  font-size: 0.75rem;
+  transform: rotate(270deg);
+  color: #004993;
+}
+

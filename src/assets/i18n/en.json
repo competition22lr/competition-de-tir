@@ -132,7 +132,18 @@
                     "DISTANCE": "Targets must be placed exactly at a distance of 25 meters.",
                     "REFUS_SIGNATURE": "If this distance is not respected, the official will not sign the sheet, and it will be considered invalid."
                 },
-                "NOTE": "Refer to the \"Target Sheet\" and the \"Scoring System\" section for detailed specifications."
+                "TRAITEMENT": {
+                    "TITRE": "Result Processing",
+                    "CALCUL_MANUEL": "Scores are manually calculated by the competition organizers.",
+                    "SAISIE_EXCEL": "Results are entered into a Microsoft Excel spreadsheet.",
+                    "PUBLICATION": "Final monthly rankings are published during the first week of the following month, no later than the first Saturday."
+                },
+                "TIRAGE": {
+                    "TITRE": "50/50 Random Draw",
+                    "EXPLICATION": "The monthly 50/50 draw is conducted electronically using a module in Microsoft Excel.",
+                    "EQUITABLE": "This process ensures a fair and random selection among valid entries."
+                },
+                "NOTE": "Please refer to the related sections for further details on how the competition is structured."
             },
             "CATEGORIES": {
                 "TITRE": "Categories",
@@ -204,7 +215,7 @@
                 "TIRTRICHE": {
                     "TITRE": "Attempt to Cheat",
                     "DESCRIPTION": "The target has been altered, replaced, or manipulated to artificially increase the score.",
-                    "DQ_AUTO":"Automatic disqualification"
+                    "DQ_AUTO": "Automatic disqualification"
                 }
             },
             "CLASSEMENT": {
