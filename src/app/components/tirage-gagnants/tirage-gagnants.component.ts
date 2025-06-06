@@ -5,10 +5,11 @@ import { ResultatsService } from '../../services/resultats.service';
 import { Competition } from '../../models/competition.model';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Utilistaire } from '../../services/utilitaire';
+import { RoueFortuneComponent } from "../roue-fortune/roue-fortune.component";
 
 @Component({
   selector: 'app-tirage-gagnants',
-  imports: [CommonModule, RouterModule, TranslateModule],
+  imports: [CommonModule, RouterModule, TranslateModule, RoueFortuneComponent],
   templateUrl: './tirage-gagnants.component.html',
   styleUrls: ['./tirage-gagnants.component.css']
 })

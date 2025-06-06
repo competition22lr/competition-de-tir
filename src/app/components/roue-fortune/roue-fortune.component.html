@@ -1,0 +1,18 @@
+<div class="wheel-container">
+  <div class="arrow">▼</div>
+  <div #carousel class="carousel">
+    <div
+      class="item"
+      *ngFor="let p of displayedNames"
+      [style.background-color]="getColor(p.name)"
+      [style.color]="getContrastColor(getColor(p.name))"
+    >
+      <div>{{ p.name.split(' - ')[0] }}</div>
+      <div>{{ p.name.split(' - ')[1] }}</div>
+    </div>
+  </div>
+  <button (click)="spin()" [disabled]="isSpinning">Lancer la roue</button>
+  <div class="winner" *ngIf="winner">
+    🎉 Gagnant: {{ winner.name }} 🎉
+  </div>
+</div>
