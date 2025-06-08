@@ -274,7 +274,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0251 - Gaetan Martel</Nom>
-				<Montant>76</Montant>
+				<Montant>38</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Avr.2025'>
@@ -663,7 +663,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0251 - Gaetan Martel</Nom>
-				<Montant>117</Montant>
+				<Montant>58.5</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Mar.2025'>
@@ -1156,7 +1156,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0945 - Rene Beland</Nom>
-				<Montant>71.5</Montant>
+				<Montant>0</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Fev.2025'>
@@ -1950,7 +1950,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0624 - Charles Marchand</Nom>
-				<Montant>116.5</Montant>
+				<Montant>0</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Jan.2025'>
@@ -2653,7 +2653,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0624 - Charles Marchand</Nom>
-				<Montant>107.2</Montant>
+				<Montant>-14.4</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Dec.2024'>
@@ -3273,7 +3273,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0251 - Gaetan Martel</Nom>
-				<Montant>87</Montant>
+				<Montant>0</Montant>
 			</ResultatTirage5050>
 		</mois>
 		<mois name='Nov.2024'>
@@ -3867,7 +3867,7 @@
 			</participant>
 			<ResultatTirage5050>
 				<Nom>0251 - Gaetan Martel</Nom>
-				<Montant>97</Montant>
+				<Montant>0</Montant>
 			</ResultatTirage5050>
 		</mois>
 	</competition>
