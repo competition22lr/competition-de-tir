@@ -3,12 +3,20 @@
 	<competition debut='Nov. 2024' fin='Oct. 2025'>
 		<mois name='Mai.2025'>
 			<participant>
+				<Numero_Membre>0619</Numero_Membre>
+				<Nom>Carl David Hoffman</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>11</Point_Boni>
+				<Pointage_Total>211</Pointage_Total>
+				<Classement>Platine</Classement>
+			</participant>
+			<participant>
 				<Numero_Membre>0138</Numero_Membre>
 				<Nom>Robert Guilbault</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>10</Point_Boni>
 				<Pointage_Total>210</Pointage_Total>
-				<Classement>Platine</Classement>
+				<Classement>Or</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0251</Numero_Membre>
@@ -16,7 +24,7 @@
 				<Pointage>200</Pointage>
 				<Point_Boni>8</Point_Boni>
 				<Pointage_Total>208</Pointage_Total>
-				<Classement>Or</Classement>
+				<Classement>Argent</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0748</Numero_Membre>
@@ -24,7 +32,14 @@
 				<Pointage>200</Pointage>
 				<Point_Boni>5</Point_Boni>
 				<Pointage_Total>205</Pointage_Total>
-				<Classement>Argent</Classement>
+				<Classement>Bronze</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>0138</Numero_Membre>
+				<Nom>Robert Guilbault</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>6</Point_Boni>
+				<Pointage_Total>206</Pointage_Total>
 			</participant>
 			<participant>
 				<Numero_Membre>0945</Numero_Membre>
@@ -32,7 +47,6 @@
 				<Pointage>199</Pointage>
 				<Point_Boni>5</Point_Boni>
 				<Pointage_Total>204</Pointage_Total>
-				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0748</Numero_Membre>
@@ -152,13 +166,6 @@
 				<Pointage>188</Pointage>
 				<Point_Boni>0</Point_Boni>
 				<Pointage_Total>188</Pointage_Total>
-			</participant>
-			<participant>
-				<Numero_Membre>0138</Numero_Membre>
-				<Nom>Robert Guilbault</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>6</Point_Boni>
-				<Pointage_Total>206</Pointage_Total>
 			</participant>
 			<participant>
 				<Numero_Membre>0138</Numero_Membre>
