@@ -3,32 +3,44 @@
 	<competition debut='Nov. 2024' fin='Oct. 2025'>
 		<mois name='Juin.2025'>
 			<participant>
+				<Numero_Membre>xxx2</Numero_Membre>
+				<Nom>Placeholder #2</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>3</Point_Boni>
+				<Pointage_Total>203</Pointage_Total>
+				<Classement>Platine</Classement>
+			</participant>
+			<participant>
 				<Numero_Membre>0138</Numero_Membre>
 				<Nom>Robert Guilbault</Nom>
 				<Pointage>199</Pointage>
 				<Point_Boni>3</Point_Boni>
 				<Pointage_Total>202</Pointage_Total>
-			</participant>
-			<participant>
-				<Numero_Membre>xxx2</Numero_Membre>
-				<Nom>Dummy2</Nom>
-				<Pointage>200</Pointage>
-				<Point_Boni>3</Point_Boni>
-				<Pointage_Total>203</Pointage_Total>
+				<Classement>Or</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>xxx3</Numero_Membre>
-				<Nom>Dummy3</Nom>
+				<Nom>Placeholder #3</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>2</Point_Boni>
 				<Pointage_Total>202</Pointage_Total>
+				<Classement>Or</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>xxx4</Numero_Membre>
-				<Nom>Dummy4</Nom>
+				<Nom>Placeholder #4</Nom>
 				<Pointage>200</Pointage>
 				<Point_Boni>1</Point_Boni>
 				<Pointage_Total>201</Pointage_Total>
+				<Classement>Argent</Classement>
+			</participant>
+			<participant>
+				<Numero_Membre>xxx1</Numero_Membre>
+				<Nom>Placeholder #1</Nom>
+				<Pointage>200</Pointage>
+				<Point_Boni>0</Point_Boni>
+				<Pointage_Total>200</Pointage_Total>
+				<Classement>Bronze</Classement>
 			</participant>
 			<participant>
 				<Numero_Membre>0138</Numero_Membre>
