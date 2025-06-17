@@ -108,7 +108,8 @@
         "ARGENT_NOTE": "+5 participations",
         "BRONZE_NOTE": "+3 participations",
         "CONCLUSION": "Ces bonifications récompensent la performance tout en combinant la participation active. Le classement devient ainsi un levier stratégique pour augmenter vos chances de remporter le tirage mensuel.",
-        "AUCUN_GAGNANT": "Aucun gagnant pour cette compétition."
+        "AUCUN_GAGNANT": "Aucun gagnant pour cette compétition.",
+        "LANCER_TIRAGE": "Afficher roue de la chance"
     },
     "REGLEMENT": {
         "TITRE": "Règlements de la compétition",

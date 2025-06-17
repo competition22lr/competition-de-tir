@@ -2,35 +2,66 @@ import { environment } from "../../environments/environment";
 
 export class Utilistaire {
     static convertMonthToNumber(abbreviation: string): number {
-        switch (abbreviation.replace('.', '').toLowerCase()) { // Convert to lowercase to avoid case sensitivity and remove the dot
+        // Nettoyage : on enlève les accents, les points et on met en minuscules
+        const clean = abbreviation
+            .normalize("NFD") // décompose les lettres accentuées
+            .replace(/\p{Diacritic}/gu, "") // enlève les accents
+            .replace('.', '') // enlève le point
+            .toLowerCase();
+
+        switch (clean) {
             case "jan":
-                return 1; // Janvier (January)
+            case "janvier":
+            case "january":
+                return 1;
             case "fev":
-                return 2; // Février (February)
+            case "fevrier":
+            case "february":
+                return 2;
             case "mar":
-                return 3; // Mars (March)
+            case "mars":
+            case "march":
+                return 3;
             case "avr":
-                return 4; // Avril (April)
+            case "avril":
+            case "april":
+                return 4;
             case "mai":
-                return 5; // Mai (May)
+            case "may":
+                return 5;
             case "jun":
-                return 6; // Juin (June)
+            case "juin":
+            case "june":
+                return 6;
             case "jul":
-                return 7; // Juillet (July)
+            case "juillet":
+            case "july":
+                return 7;
             case "aou":
-                return 8; // Août (August)
+            case "aout":
+            case "august":
+                return 8;
             case "sep":
-                return 9; // Septembre (September)
+            case "septembre":
+            case "september":
+                return 9;
             case "oct":
-                return 10; // Octobre (October)
+            case "octobre":
+            case "october":
+                return 10;
             case "nov":
-                return 11; // Novembre (November)
+            case "novembre":
+            case "november":
+                return 11;
             case "dec":
-                return 12; // Décembre (December)
+            case "decembre":
+            case "december":
+                return 12;
             default:
-                return -1; // Return -1 if the month abbreviation is invalid
+                return -1;
         }
     }
+
 
     static moisEnFrancais(moisNumero: number): string {
         const months: string[] = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",

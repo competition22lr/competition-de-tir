@@ -108,7 +108,8 @@
         "ARGENT_NOTE": "+5 entries",
         "BRONZE_NOTE": "+3 entries",
         "CONCLUSION": "These bonuses reward performance while encouraging active participation. Ranking becomes a strategic way to increase your chances of winning the monthly draw.",
-        "AUCUN_GAGNANT": "No winners for this competition."
+        "AUCUN_GAGNANT": "No winners for this competition.",
+        "LANCER_TIRAGE": "Show wheel of fortune"
     },
     "REGLEMENT": {
         "TITRE": "Competition Rules",

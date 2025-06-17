@@ -16,6 +16,7 @@ export const routes: Routes = [
     { path: 'mentions-legales', component: MentionsLegalesComponent },
     { path: 'impression/:competition/:mois/:langue', component: ImpressionClassementComponent },
     { path: 'gagnants-tirage/:competition', component: TirageGagnantsComponent },
+    { path: 'gagnants-tirage/:competition/:spin', component: TirageGagnantsComponent },
     { path: 'impression-reglements', component: ImpressionReglementsComponent },
     { path: 'classement-annuel/:competition', component: ClassementAnnuelComponent },
 

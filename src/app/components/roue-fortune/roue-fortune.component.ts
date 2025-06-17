@@ -1,18 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ResultatsService } from '../../services/resultats.service';
+import { Participant } from '../../models/participant.model';
+import { Utilistaire } from '../../services/utilitaire';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Inject } from '@angular/core';
 
-const nomParticipants = ['0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0945 - Rene Beland', '0619 - Carl David Hoffman', '0251 - Gaetan Martel', '0624 - Charles Marchand', '0624 - Charles Marchand', '0624 - Charles Marchand', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0624 - Charles Marchand', '0624 - Charles Marchand', '0251 - Gaetan Martel', '0251 - Gaetan Martel',
-  '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0920-i - Zachary Lebel', '0920 - Mathieu Patry', '1415 - Adam-Luc Belec', '1415 - Adam-Luc Belec', '0945 - Rene Beland', '0624-i - Mathys Appocher', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0920 - Mathieu Patry', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0945 - Rene Beland', '0945 - Rene Beland', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel',
-  '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0945 - Rene Beland', '0945 - Rene Beland', '0945 - Rene Beland', '0619 - Carl David Hoffman', '0619 - Carl David Hoffman', '1415 - Adam-Luc Belec', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher',
-  '0945 - Rene Beland', '0619 - Carl David Hoffman', '0251 - Gaetan Martel', '0624 - Charles Marchand', '0624 - Charles Marchand', '0624 - Charles Marchand', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0624 - Charles Marchand', '0624 - Charles Marchand', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0920-i - Zachary Lebel', '0920 - Mathieu Patry', '1415 - Adam-Luc Belec', '1415 - Adam-Luc Belec', '0945 - Rene Beland', '0624-i - Mathys Appocher', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0920 - Mathieu Patry', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0945 - Rene Beland', '0945 - Rene Beland', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0138 - Robert Guilbault',
-  '0138 - Robert Guilbault', '0945 - Rene Beland', '0945 - Rene Beland', '0945 - Rene Beland', '0619 - Carl David Hoffman', '0619 - Carl David Hoffman', '1415 - Adam-Luc Belec', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0624-i - Mathys Appocher', '0945 - Rene Beland', '0619 - Carl David Hoffman', '0251 - Gaetan Martel', '0624 - Charles Marchand', '0624 - Charles Marchand',
-  '0624 - Charles Marchand', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0624 - Charles Marchand', '0624 - Charles Marchand', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0920-i - Zachary Lebel', '0920 - Mathieu Patry', '1415 - Adam-Luc Belec',
-  '1415 - Adam-Luc Belec', '0945 - Rene Beland', '0624-i - Mathys Appocher', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0920 - Mathieu Patry', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0945 - Rene Beland', '0945 - Rene Beland', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0251 - Gaetan Martel', '0138 - Robert Guilbault', '0138 - Robert Guilbault', '0945 - Rene Beland', '0945 - Rene Beland', '0945 - Rene Beland', '0619 - Carl David Hoffman', '0619 - Carl David Hoffman', '1415 - Adam-Luc Belec'
-]
-
-
-interface Participant {
+interface Participation {
   id: number;
+  numMembre: string;
   name: string;
 }
 
@@ -23,29 +19,62 @@ interface Participant {
   templateUrl: './roue-fortune.component.html',
   styleUrls: ['./roue-fortune.component.css']
 })
-export class RoueFortuneComponent implements AfterViewInit {
-  names: Participant[] = nomParticipants.map((name, index) => ({
-    id: index + 1,
-    name
-  }));
+export class RoueFortuneComponent implements AfterViewInit, OnInit {
 
-  displayedNames: Participant[] = [];
+  names: Participation[] = [];
+
+  displayedNames: Participation[] = [];
   isSpinning = false;
-  winner: Participant | null = null;
+  winner: Participation | null = null;
+  itemHeight = 0;
 
   @ViewChild('carousel', { static: true }) carousel!: ElementRef;
 
   private colorMap = new Map<string, string>();
-  private itemWidth = 0;
+  indexCompetitionSelectionne!: number;
+
+  constructor(public resultatsService: ResultatsService,
+    @Inject(MAT_DIALOG_DATA) public data: { mois: string, competition: number }
+
+  ) { }
 
   ngOnInit() {
-    this.shuffleNames();
-    this.displayedNames = [...this.names];
+
+    const mois = this.data.mois;
+    const competition = this.data.competition;
+
+    console.log('Mois:', mois);
+    console.log('Compétition:', competition);
+
+
+    //On récupère les participants
+    this.resultatsService
+      .getParticipantsPourMois(competition, mois)
+      .subscribe((participants: Participant[]) => {
+        let indx = 0;
+
+        participants.forEach((element, i) => {
+          let nbParticipation = getNbParticipation(element);
+          for (let index = 0; index < nbParticipation; index++) {
+            this.names.push({
+              id: ++indx,
+              numMembre: element.numero,
+              name: element.nom
+            });
+          }
+        });
+
+        this.shuffleNames();
+        this.displayedNames = [...this.names];
+
+      });
   }
 
   ngAfterViewInit() {
-    const itemEl = this.carousel.nativeElement.querySelector('.item') as HTMLElement;
-    this.itemWidth = itemEl.offsetWidth;
+    const itemEl = this.carousel.nativeElement.querySelector('.slot') as HTMLElement;
+    if (itemEl) {
+      this.itemHeight = itemEl.offsetHeight;
+    }
   }
 
   shuffleNames() {
@@ -61,22 +90,55 @@ export class RoueFortuneComponent implements AfterViewInit {
     this.winner = null;
 
     const carouselEl = this.carousel.nativeElement;
-    const totalItems = this.displayedNames.length;
 
-    const centerIndex = Math.floor(Math.random() * totalItems);
-    const scrollTo = this.itemWidth * centerIndex - (carouselEl.offsetWidth / 2 - this.itemWidth / 2);
+    const visibleSlots = 9;
+    const middleSlotOffset = Math.floor(visibleSlots / 2); // index 4 (5e case visible)
+    const totalItems = this.names.length;
+    const rounds = 3;
 
-    this.animateScroll(carouselEl, scrollTo, 4000).then(() => {
-      const centerOfViewport = carouselEl.scrollLeft + carouselEl.offsetWidth / 2;
-      const actualIndex = Math.round(centerOfViewport / this.itemWidth);
+    // ✅ Réinitialise et génère une nouvelle séquence à chaque spin
+    this.displayedNames = [];
 
-      this.winner = this.displayedNames[actualIndex];
+    for (let i = 0; i < rounds; i++) {
+      // Tu peux aussi reshuffler à chaque round si tu veux plus d'aléatoire
+      const shuffled = [...this.names];
+      for (let j = shuffled.length - 1; j > 0; j--) {
+        const r = Math.floor(Math.random() * (j + 1));
+        [shuffled[j], shuffled[r]] = [shuffled[r], shuffled[j]];
+      }
+      this.displayedNames.push(...shuffled);
+    }
+
+    Utilistaire.Log("RoueFortuneComponent.spin.displayedNames =>", this.displayedNames);
+
+    // ✅ Calcule la position cible pour centrer un gagnant
+    const extendedTotal = this.displayedNames.length;
+    const targetIndex = Math.floor(Math.random() * totalItems) + totalItems * (rounds - 1);
+    const centerOffset = this.itemHeight * middleSlotOffset;
+    const targetPosition = this.itemHeight * targetIndex;
+    const finalScroll = targetPosition - centerOffset;
+
+    // ✅ Lancement du scroll fluide
+    this.animateVerticalScroll(carouselEl, finalScroll, 10000).then(() => {
+      const centeredY = carouselEl.scrollTop + centerOffset;
+      const actualIndex = Math.round(centeredY / this.itemHeight);
+      const exactScroll = this.itemHeight * actualIndex - centerOffset;
+      carouselEl.scrollTop = exactScroll;
+
+      // ✅ Corrige pour retrouver l'ID réel du gagnant
+      const trueIndex = actualIndex % totalItems;
+      this.winner = this.names[trueIndex];
+
+      console.log("actualIndex:", actualIndex);
+      console.log("trueIndex:", trueIndex);
+      console.log("Gagnant:", this.winner);
+
       this.isSpinning = false;
     });
   }
 
-  animateScroll(element: HTMLElement, to: number, duration: number): Promise<void> {
-    const start = element.scrollLeft;
+  animateVerticalScroll(element: HTMLElement, to: number, duration: number): Promise<void> {
+    const start = element.scrollTop;
     const change = to - start;
     const startTime = performance.now();
 
@@ -84,7 +146,7 @@ export class RoueFortuneComponent implements AfterViewInit {
       const animate = (currentTime: number) => {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        element.scrollLeft = start + change * this.easeOutCubic(progress);
+        element.scrollTop = start + change * this.easeOutCubic(progress);
 
         if (progress < 1) {
           requestAnimationFrame(animate);
@@ -115,4 +177,28 @@ export class RoueFortuneComponent implements AfterViewInit {
     const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
     return luminance > 0.5 ? 'black' : 'white';
   }
+}
+
+function getNbParticipation(_Participant: Participant): number {
+  let nbParticipation = 1;
+
+  if (_Participant.aClassement()) {
+    switch (_Participant.classement.toLowerCase()) {
+      case "platine":
+        nbParticipation = + 15
+        break;
+      case "or":
+        nbParticipation = + 10
+        break;
+      case "argent":
+        nbParticipation = + 5
+        break;
+      case "bronze":
+        nbParticipation = + 3
+        break;
+    }
+
+  }
+
+  return nbParticipation;
 }

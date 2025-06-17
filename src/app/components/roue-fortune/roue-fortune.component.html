@@ -1,18 +1,27 @@
-<div class="wheel-container">
-  <div class="arrow">▼</div>
-  <div #carousel class="carousel">
-    <div
-      class="item"
-      *ngFor="let p of displayedNames"
-      [style.background-color]="getColor(p.name)"
-      [style.color]="getContrastColor(getColor(p.name))"
-    >
-      <div>{{ p.name.split(' - ')[0] }}</div>
-      <div>{{ p.name.split(' - ')[1] }}</div>
+<div class="wheel-popup">
+    <div class="wheel-frame">
+        <div class="arrow-top"><img [src]="resultatsService.imageLocationUrl + 'LogoClubDeTir.png'"
+                alt="Logo club de tir" /></div>
+
+        <div class="scroll-box" #carousel>
+            <div class="slot" *ngFor="let p of displayedNames; let i = index" [style.backgroundColor]="getColor(p.name)"
+                [style.color]="getContrastColor(getColor(p.name))">
+                <div class="slot-text">
+                    {{ p.numMembre }} - {{p.id}}
+                </div>
+                <div class="slot-text">
+                    {{ p.name}}
+
+                    <!-- ✅ Affiche l'icône si ce participant est le gagnant -->
+                    <i *ngIf="winner?.id === p.id" class="fa-duotone fa-regular fa-medal medal-icon"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <i class="far fa-arrow-alt-right decor-left"></i>
+        <i class="far fa-arrow-alt-left decor-right"></i>
+
+        <button class="spin-btn" (click)="spin()" [disabled]="isSpinning">🎯 Lancer</button>
     </div>
-  </div>
-  <button (click)="spin()" [disabled]="isSpinning">Lancer la roue</button>
-  <div class="winner" *ngIf="winner">
-    🎉 Gagnant: {{ winner.name }} 🎉
-  </div>
 </div>
