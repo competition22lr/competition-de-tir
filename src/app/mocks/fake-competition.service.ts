@@ -3,6 +3,7 @@ import { Competition } from '../models/competition.model';
 import { Participant } from '../models/participant.model';
 import { Utilistaire } from '../services/utilitaire';
 import { ResultatTirage5050 } from '../models/resultat-tirage5050.model';
+import { GagnanTirage } from '../models/gagnan-tirage.model';
 
 @Injectable({
     providedIn: 'root'
@@ -73,7 +74,7 @@ const fakeCompetition: Competition = {
             }
         },
     ],
-    getGagnanTirage: function (): { moisCle: string; annee: string; gagnant: string; }[] {
+    getGagnanTirage: function (): GagnanTirage[] {
         throw new Error('Function not implemented.');
     }
 };

@@ -1,0 +1,119 @@
+.wheel-popup {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#004d4d, #001a1a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wheel-frame {
+  height: 675px; 
+  width: 330px;
+  background: #0f2a3d;
+  border: 10px solid gold;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 0 20px gold, 0 0 60px #ff9800 inset;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-box {
+  height: 612px; /* 9 slots * (60px + 8px margin total) */
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slot {
+  width: 260px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  margin: 4px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+@keyframes flash {
+  0%, 100% { box-shadow: 0 0 12px gold; }
+  50% { box-shadow: 0 0 24px 8px orange; }
+}
+
+.slot.gagnant {
+  animation: flash 1s infinite;
+}
+
+.arrow-top {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: red;
+  z-index: 2;
+}
+
+.arrow-top img {
+    height: 100px !important;
+    width: auto !important;
+    max-width: 100px !important;
+  }
+
+.decor-left, .decor-right {
+  position: absolute;
+  top: 50%;
+  font-size: 4rem;
+  color: rgb(255, 0, 0);
+   transform: translateY(-50%);/* centre de la fleche */
+}
+
+.decor-left {
+  left: 30px;
+}
+
+.decor-right {
+  right: 30px;
+}
+
+.spin-btn {
+    position: absolute;
+    bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background: green;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.medal-icon {
+  margin-left: 0.5rem;
+  color: gold;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.center-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 2px;
+  background: red;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+}
