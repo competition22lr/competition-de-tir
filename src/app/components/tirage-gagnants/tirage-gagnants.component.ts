@@ -65,7 +65,7 @@ export class TirageGagnantsComponent implements OnInit {
   ouvrirPopupTirage(unGagnant: GagnanTirage) {
     this.dialog.open(RoueFortuneComponent, {
       width: '400px',
-      height: '650px',
+      height: '800px',
       disableClose: false,
       panelClass: 'popup-dialog-style',
       data: {

@@ -1,26 +1,28 @@
 <div class="wheel-popup">
     <div class="wheel-frame">
-        <div class="arrow-top"><img [src]="resultatsService.imageLocationUrl + 'LogoClubDeTir.png'"
-                alt="Logo club de tir" /></div>
-
-        <div class="scroll-box" #carousel>
-            <div class="slot" *ngFor="let p of displayedNames; let i = index" [style.backgroundColor]="getColor(p.name)"
-                [style.color]="getContrastColor(getColor(p.name))">
-                <div class="slot-text">
-                    {{ p.numMembre }} - {{p.id}}
-                </div>
-                <div class="slot-text">
-                    {{ p.name}}
-
-                    <!-- ✅ Affiche l'icône si ce participant est le gagnant -->
-                    <i *ngIf="winner?.id === p.id" class="fa-duotone fa-regular fa-medal medal-icon"></i>
-                </div>
-            </div>
-
+        <div class="arrow-top">
+            <img [src]="resultatsService.imageLocationUrl + 'LogoClubDeTir.png'" alt="Logo club de tir" />
         </div>
 
-        <i class="far fa-arrow-alt-right decor-left"></i>
-        <i class="far fa-arrow-alt-left decor-right"></i>
+        <div class="scroll-box" #carousel>
+
+            <div class="slot" *ngFor="let i of displayedIndexes" [class.gagnant]="winner?.id === names[i].id"
+                [style.backgroundColor]="getColor(names[i].name)"
+                [style.color]="getContrastColor(getColor(names[i].name))">
+
+                <div class="slot-text">
+                    {{ names[i].numMembre }} - {{ names[i].id }}
+                </div>
+
+                <div class="slot-text">
+                    {{ names[i].name }}
+                    <i *ngIf="winner?.id === names[i].id" class="fad fa-regular fa-medal"></i>
+                </div>
+            </div>
+        </div>
+
+        <i class="fad fa-arrow-alt-right decor-left"></i>
+        <i class="fad fa-arrow-alt-left decor-right"></i>
 
         <button class="spin-btn" (click)="spin()" [disabled]="isSpinning">🎯 Lancer</button>
     </div>
