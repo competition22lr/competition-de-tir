@@ -16,6 +16,15 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+.image-gallery-print {
+    text-align: center;
+}
+
+.image-gallery-print img {
+  width: auto;
+  height: 500px;
+}
+
 .dimension-table {
   overflow-x: auto;
   margin-top: 1rem;
@@ -55,6 +64,10 @@
   font-weight: bold;
   color: #2a3b4c;
   width: 60%;
+}
+
+.page-break {
+  page-break-before: always;
 }
 
 /* Responsive : une image par ligne en mobile */

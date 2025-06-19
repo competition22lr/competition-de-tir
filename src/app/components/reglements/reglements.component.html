@@ -12,7 +12,7 @@
       <li><a (click)="goToAnchor('equipement')">{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate }}</a>
       <li><a (click)="goToAnchor('calibres')">{{ 'REGLEMENT.SECTIONS.CALIBRES.TITRE' | translate }}</a></li>
     </ul>
-    <a [routerLink]="['/impression-reglements']" target="_blank">
+    <a [routerLink]="['/impression-reglements', this.translate.currentLang]" target="_blank">
       <i class="fad fa-print"></i> {{ 'REGLEMENT.IMPRIMABLE' | translate }}
     </a>
   </nav>

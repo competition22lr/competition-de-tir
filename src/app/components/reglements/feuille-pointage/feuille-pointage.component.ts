@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ResultatsService } from '../../../services/resultats.service';
 import { CommonModule } from '@angular/common';
 import { Utilistaire } from '../../../services/utilitaire';
@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./feuille-pointage.component.css', './../reglements.component.css']
 })
 export class FeuillePointageComponent implements OnInit {
+  @Input() isPrintMode = false;
   generatedImageUrl: string | null = null;
 
 

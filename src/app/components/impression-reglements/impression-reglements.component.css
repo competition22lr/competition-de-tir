@@ -1,0 +1,44 @@
+.reglements-container {
+    /* max-width: 800px; */
+    margin: auto;
+}
+
+.spacer {
+    padding-bottom: 2rem;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+.print-page {
+    width: 8.5in;
+    /* height: 11in; */
+    padding: 2cm;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: white;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 11pt;
+    font-family: "Arial", sans-serif;
+    page-break-after: always;
+}
+
+
+@media print {
+    body {
+        background: white;
+        margin: 0;
+    }
+
+    .print-page {
+        box-shadow: none;
+        margin: 0;
+        page-break-after: always;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+}

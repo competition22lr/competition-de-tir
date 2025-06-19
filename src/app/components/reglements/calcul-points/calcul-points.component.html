@@ -1,6 +1,7 @@
 <h2><i class="fad fa-clipboard-list"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TITRE' | translate }}</h2>
 <p>{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.DESCRIPTION' | translate }}</p>
 <div class="calcul-des-points">
+    
     <div class="exemple-tir tir-parfait">
         <h3><i class="fad fa-bullseye-arrow"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRPARFAIT.TITRE' | translate }}</h3>        
         <p innerHTML="{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRPARFAIT.DESCRIPTION' | translate }}"></p>
@@ -10,7 +11,7 @@
             <img [src]="resultatsService.imageLocationUrl + 'tir-parfait2.jpg'" alt="Tir parfait 2" />
         </div>
     </div>
-
+    
     <div class="exemple-tir tir-solide">
         <h3><i class="fad fa-check-square"></i>  {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRSOLIDE.TITRE' | translate }}</h3>
         <p innerHTML="{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRSOLIDE.DESCRIPTION' | translate }}"></p>

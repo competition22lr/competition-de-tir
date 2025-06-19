@@ -28,7 +28,7 @@
 .classements th,
 .classements td {
   border: 1px solid #ddd;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: left;
   vertical-align: top;
 }
@@ -42,7 +42,7 @@
 .classements td:first-child {
   font-weight: bold;
   color: #2a3b4c;
-  width: 25%;
+  width: 120px;
 }
 
 .trophy-card {
@@ -94,4 +94,22 @@
   ul {
     padding: unset !important;
   }
+}
+
+@media print {
+  .trophy-img {
+    width: auto;
+    height: 90px;
+  }
+
+  .alert {
+    font-style: italic;
+    background: #f58585;
+    padding: 1rem;
+    border-left: 4px solid #ff0000;
+    border-radius: 6px;
+    color: black;
+    font-weight: 500;
+  }
+
 }

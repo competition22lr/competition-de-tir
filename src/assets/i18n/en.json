@@ -1,4 +1,5 @@
 {
+    "SUITE":"(continued)",
     "SORTIE": "Exit",
     "HEADER": {
         "TITRE": "Precision Shooting Competition",
@@ -115,6 +116,7 @@
         "TITRE": "Competition Rules",
         "IMPRIMABLE": "Printable version",
         "TABLE.TITRE": "Table of Contents",
+        "PRINT": "Print",
         "SECTIONS": {
             "DEROULEMENT": {
                 "TITRE": "Competition Process",

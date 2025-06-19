@@ -9,6 +9,15 @@
   <app-carabines-autorisees></app-carabines-autorisees>
 </div>
 
+@if (isPrintMode) {
+<div class="page-break"></div>
+<h2>
+    <i class="fad fa-tools"></i>
+    &nbsp;{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate }}
+    &nbsp;<small>{{ 'SUITE' | translate }}</small>
+</h2>
+}
+
 <div class="bloc" id="accessoires">
   <app-accessoires-autorises></app-accessoires-autorises>
 </div>
