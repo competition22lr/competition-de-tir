@@ -129,40 +129,30 @@
     }
 }
 
+.page-break {
+  page-break-before: always;
+}
 
 @media print {
-    .tir-parfait-gallery {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .tir-parfait-gallery img {
-        width: 100px;
-    }
-
+    .tir-parfait-gallery,
     .tir-triche-gallery {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
-        /* espace entre les images */
+        gap: 1rem; /* espace entre les images */
         margin-bottom: 1em;
     }
 
+    .tir-parfait-gallery img {        
+        width: 150px;
+    }
+
     .tir-triche-gallery img {
-        width: 100px;
+        width: 150px;
         height: auto;
         object-fit: cover;
         border-radius: 8px;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
-    
-    .calcul-des-points {
-        padding: unset !important;
-        border-radius: unset !important;
-        box-shadow: unset !important;
-    }
-
 }

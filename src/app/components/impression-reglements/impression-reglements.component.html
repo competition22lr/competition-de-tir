@@ -1,6 +1,5 @@
 <button (click)="imprimer()" class="no-print">🖨️ {{ 'REGLEMENT.PRINT' | translate }}</button>
 <div class="print-page">
-
     <div class="reglements-container">
         <h1><i class="fad fa-gavel fa-flip-horizontal fa-lg"></i> {{ 'REGLEMENT.TITRE' | translate }}</h1>
         <div class="spacer"></div>
@@ -24,7 +23,7 @@
         <div class="page-break"></div>
 
         <section id="calcul-points">
-            <app-regement-calcul-points></app-regement-calcul-points>
+            <app-regement-calcul-points [isPrintMode]="true"></app-regement-calcul-points>
         </section>
 
         <div class="page-break"></div>
@@ -44,6 +43,5 @@
         <section id="calibres">
             <app-calibres-autorises></app-calibres-autorises>
         </section>
-
     </div>
 </div>

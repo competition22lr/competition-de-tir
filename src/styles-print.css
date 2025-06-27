@@ -9,7 +9,6 @@ Ajoute class="page-break" sur un div ou hr pour forcer une saut de page.
     mat-sidenav,
     .mat-toolbar,
     nav,
-    footer,
     .no-print {
         display: none !important;
     }
