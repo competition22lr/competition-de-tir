@@ -1,6 +1,6 @@
 {
   "name": "competition-de-tir",
-  "version": "0.66.0",
+  "version": "0.67.0",
   "scripts": {
     "prestart": "node set-version.js",
     "prebuild": "node set-version.js",
