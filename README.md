@@ -43,6 +43,14 @@ The site is built with **Angular** and deployed via **Netlify**.
 
 ---
 
+## 📄 Licence
+
+Ce projet est sous licence **Creative Commons BY-NC-ND 4.0**.  
+Toute utilisation commerciale ou modification requiert l'autorisation de l'auteur.  
+👉 Voir le fichier [LICENSE](./LICENSE.txt) pour plus de détails.
+
+---
+
 ## 📦 Installation locale
 
 ```bash
