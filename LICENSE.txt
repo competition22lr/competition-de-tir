@@ -1,0 +1,26 @@
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+
+© 2025 Sylvain Trépanier
+
+Ce projet est protégé par la licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Pas de Modification 4.0 International.
+
+Vous êtes libre de :
+
+✔️ Partager — copier, distribuer et communiquer le matériel par tous moyens et sous tous formats
+
+Selon les conditions suivantes :
+
+📌 Attribution — Vous devez créditer l’auteur original (nom, lien vers le dépôt, etc.), fournir un lien vers la licence et indiquer si des modifications ont été effectuées. Vous devez le faire de manière raisonnable, sans suggérer que l’auteur vous soutient ou soutient votre usage.
+
+❌ Pas d’utilisation commerciale — Vous n’avez pas le droit d’utiliser ce projet à des fins commerciales.
+
+⛔ Pas de modifications — Vous n’avez pas le droit de modifier, transformer ou créer à partir de ce contenu.
+
+📩 ** Usage spécifique ou autre que personnel / éducatif ** :  
+Pour toute utilisation commerciale, intégration dans un projet plus large ou distribution modifiée, veuillez contacter l’auteur à l’adresse suivante :  
+sylvain@trepanier.cc
+
+👉 Détails de la licence complète :  
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.fr  
+(traduction officielle : https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr)
+
