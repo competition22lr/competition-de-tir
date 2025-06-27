@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { CarabinesAutoriseesComponent } from "./carabines-autorisees/carabines-autorisees.component";
 import { AccessoiresAutorisesComponent } from "./accessoires-autorises/accessoires-autorises.component";
@@ -13,6 +13,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./equipement.component.css', './../reglements.component.css']
 })
 export class EquipementComponent {
+  @Input() isPrintMode = false;
+  
   constructor(private router: Router) { }
 
   goToAnchor(anchor: string) {

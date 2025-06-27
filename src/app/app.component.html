@@ -3,6 +3,6 @@
 
 <router-outlet  *ngIf="isImpressionRoute()"></router-outlet>
 
-<app-footer *ngIf="!isImpressionRoute()"></app-footer>
+<app-footer [isPrintMode]="isImpressionRoute()" ></app-footer>
 
 

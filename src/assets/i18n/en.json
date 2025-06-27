@@ -1,4 +1,5 @@
 {
+    "SUITE":"(continued)",
     "SORTIE": "Exit",
     "HEADER": {
         "TITRE": "Precision Shooting Competition",
@@ -115,6 +116,7 @@
         "TITRE": "Competition Rules",
         "IMPRIMABLE": "Printable version",
         "TABLE.TITRE": "Table of Contents",
+        "PRINT": "Print",
         "SECTIONS": {
             "DEROULEMENT": {
                 "TITRE": "Competition Process",
@@ -201,6 +203,7 @@
             "CALCULPOINTS": {
                 "TITRE": "Scoring System",
                 "DESCRIPTION": "Describe the point calculation rules for each target, including penalties, bonuses, etc.",
+                "DESCRIPTION2":"To standardize the size of bullet impacts across the various authorized calibers and ensure fairness in scoring, a .22 LR overlay template will be used for evaluating all targets.",
                 "TIRPARFAIT": {
                     "TITRE": "Perfect Shot",
                     "DESCRIPTION": "The shooter hits the center of the target flawlessly, <strong>completely removing the central dot</strong>. They receive <strong>10 base points</strong> plus <strong>1 bonus point</strong>."

@@ -70,6 +70,23 @@
         width: 150px;
     }
 
+    .tir-triche-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        /* espace entre les images */
+        margin-bottom: 1em;
+    }
+
+    .tir-triche-gallery img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
     .calcul-des-points {
         padding: unset !important;
         border-radius: unset !important;
@@ -109,5 +126,33 @@
         --fa-primary-color: #f44336;
         --fa-secondary-color: #001f3e;
         --fa-secondary-opacity: 0.7;
+    }
+}
+
+.page-break {
+  page-break-before: always;
+}
+
+@media print {
+    .tir-parfait-gallery,
+    .tir-triche-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* espace entre les images */
+        margin-bottom: 1em;
+    }
+
+    .tir-parfait-gallery img {        
+        width: 150px;
+    }
+
+    .tir-triche-gallery img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
 }

@@ -23,6 +23,7 @@
 
       &:hover {
         text-decoration: underline;
+        cursor: pointer;
       }
     }
   }
@@ -50,7 +51,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-  cursor: url('https://raw.githubusercontent.com/competition22lr/resultats/refs/heads/main/public/images/rifle-cursor.png') 16 16, auto;
 }
 
 /* CSS general */

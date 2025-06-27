@@ -17,7 +17,7 @@ export const routes: Routes = [
     { path: 'impression/:competition/:mois/:langue', component: ImpressionClassementComponent },
     { path: 'gagnants-tirage/:competition', component: TirageGagnantsComponent },
     { path: 'gagnants-tirage/:competition/:spin', component: TirageGagnantsComponent },
-    { path: 'impression-reglements', component: ImpressionReglementsComponent },
+    { path: 'impression-reglements/:langue', component: ImpressionReglementsComponent },
     { path: 'classement-annuel/:competition', component: ClassementAnnuelComponent },
 
 ];

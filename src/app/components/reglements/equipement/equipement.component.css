@@ -24,3 +24,7 @@ ul.non-authorise li::before {
   transform: rotate(270deg);
   color: #c0392b;
 }
+
+.page-break {
+  page-break-before: always;
+}

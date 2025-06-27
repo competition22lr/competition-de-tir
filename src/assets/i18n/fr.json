@@ -1,4 +1,5 @@
 {
+    "SUITE":"(suite)",
     "SORTIE": "Sortie",
     "HEADER": {
         "TITRE": "Compétition de tir de précision",
@@ -115,6 +116,7 @@
         "TITRE": "Règlements de la compétition",
         "IMPRIMABLE": "Version imprimable",
         "TABLE.TITRE": "Table des matières",
+        "PRINT": "Imprimé",
         "SECTIONS": {
             "DEROULEMENT": {
                 "TITRE": "Déroulement de la compétition",
@@ -201,6 +203,7 @@
             "CALCULPOINTS": {
                 "TITRE": "Calcul des points",
                 "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
+                "DESCRIPTION2":"Afin d’uniformiser les dimensions des impacts selon les divers calibres autorisés et ainsi assurer l’équité lors du pointage, un gabarit de superposition (.22 LR overlay) sera utilisé pour l’évaluation de toutes les cibles.",
                 "TIRPARFAIT": {
                     "TITRE": "Tir Parfait",
                     "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."

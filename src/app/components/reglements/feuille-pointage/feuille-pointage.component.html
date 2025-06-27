@@ -10,11 +10,28 @@
     <p>
         {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.PRESENTATION_TEXTE' | translate }}
     </p>
+
+    @if (isPrintMode) {
+    <div class="image-gallery-print">
+        <img *ngIf="generatedImageUrl" [src]="generatedImageUrl"
+            alt="{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ALT_IMAGE' | translate }}" />
+    </div>
+    } @else {
     <div class="image-gallery">
         <img *ngIf="generatedImageUrl" [src]="generatedImageUrl"
             alt="{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ALT_IMAGE' | translate }}" />
     </div>
+    }
 </div>
+
+@if (isPrintMode) {
+<div class="page-break"></div>
+<h2>
+    <i class="fad fa-bullseye-arrow"></i>
+    &nbsp;{{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.TITRE' | translate }}
+    &nbsp;<small>{{ 'SUITE' | translate }}</small>
+</h2>
+}
 
 <div class="bloc">
     <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.FEUILLEPOINTS.ELEMENTS_TITRE' | translate }}
