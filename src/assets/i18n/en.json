@@ -1,5 +1,5 @@
 {
-    "SUITE":"(continued)",
+    "SUITE": "(continued)",
     "SORTIE": "Exit",
     "HEADER": {
         "TITRE": "Precision Shooting Competition",
@@ -203,7 +203,7 @@
             "CALCULPOINTS": {
                 "TITRE": "Scoring System",
                 "DESCRIPTION": "Describe the point calculation rules for each target, including penalties, bonuses, etc.",
-                "DESCRIPTION2":"To standardize the size of bullet impacts across the various authorized calibers and ensure fairness in scoring, a .22 LR overlay template will be used for evaluating all targets.",
+                "DESCRIPTION2": "To standardize the size of bullet impacts across the various authorized calibers and ensure fairness in scoring, a .22 LR overlay template will be used for evaluating all targets.",
                 "TIRPARFAIT": {
                     "TITRE": "Perfect Shot",
                     "DESCRIPTION": "The shooter hits the center of the target flawlessly, <strong>completely removing the central dot</strong>. They receive <strong>10 base points</strong> plus <strong>1 bonus point</strong>."
@@ -363,5 +363,33 @@
         "MESSAGE": "This shooter participated {{count}} times in this competition.",
         "MOIS": "Participation months",
         "FERMER": "Close"
+    },
+    "CONTACT": {
+        "TITLE": "Contact Form",
+        "SUBJECT": "Subject",
+        "SELECT_SUBJECT": "-- Choose a subject --",
+        "SUBJECTS": {
+            "SUGGESTION": "Feature or improvement suggestion",
+            "REGLEMENT": "Request for clarification on a regulation section",
+            "LICENCE": "Request under the license shown on GitHub"
+        },
+        "SECTION": "Regulation Section",
+        "SELECT_SECTION": "-- Choose a section --",
+        "SECTIONS": {
+            "DEROULEMENT": "Competition Process",
+            "CATEGORIES": "Categories",
+            "FEUILLEPOINTS": "Target Sheet",
+            "CALCULPOINTS": "Scoring System",
+            "CLASSEMENT": "Shooter Ranking System",
+            "EQUIPEMENT": "Authorized Equipment",
+            "CALIBRES": "Authorized Calibers"
+        },
+        "NAME": "Name",
+        "EMAIL": "Email",
+        "MESSAGE": "Message",
+        "SEND": "SEND",
+        "SENT_CONFIRMATION": "Your message has been prepared in your email client.",
+        "ERROR_REQUIRED": "This field is required.",
+        "ERROR_EMAIL": "Invalid email address."
     }
 }

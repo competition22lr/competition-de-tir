@@ -1,0 +1,82 @@
+<form [formGroup]="form" (ngSubmit)="envoyer()" class="contact-form" novalidate>
+    <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
+
+    <!-- Sujet -->
+    <label class="field-label">
+        <span>
+            {{ 'CONTACT.SUBJECT' | translate }}
+            <i class="fad fa-asterisk"></i>
+        </span>
+        <select formControlName="sujet">
+            <option value="">{{ 'CONTACT.SELECT_SUBJECT' | translate }}</option>
+            <option *ngFor="let s of sujets" [value]="s">
+                {{ 'CONTACT.SUBJECTS.' + s | translate }}
+            </option>
+        </select>
+        <div class="error" *ngIf="champInvalide('sujet')">
+            {{ 'CONTACT.ERROR_REQUIRED' | translate }}
+        </div>
+    </label>
+
+    <!-- Section (si requise) -->
+    <div *ngIf="isSectionRequired">
+        <label class="field-label">
+            <span>
+                {{ 'CONTACT.SECTION' | translate }}
+                <i class="fad fa-asterisk"></i>
+            </span>
+            <select formControlName="section">
+                <option value="">{{ 'CONTACT.SELECT_SECTION' | translate }}</option>
+                <option *ngFor="let sec of sections" [value]="sec">
+                    {{ 'CONTACT.SECTIONS.' + sec | translate }}
+                </option>
+            </select>
+            <div class="error" *ngIf="champInvalide('section')">
+                {{ 'CONTACT.ERROR_REQUIRED' | translate }}
+            </div>
+        </label>
+    </div>
+
+    <!-- Nom -->
+    <label class="field-label">
+        <span>
+            {{ 'CONTACT.NAME' | translate }}
+            <i class="fad fa-asterisk"></i>
+        </span>
+        <input type="text" formControlName="nom" />
+        <div class="error" *ngIf="champInvalide('nom')">
+            {{ 'CONTACT.ERROR_REQUIRED' | translate }}
+        </div>
+    </label>
+
+    <!-- Email -->
+    <label class="field-label">
+        <span>
+            {{ 'CONTACT.EMAIL' | translate }}
+            <i class="fad fa-asterisk"></i>
+        </span>
+        <input type="email" formControlName="email" />
+        <div class="error" *ngIf="champInvalide('email')">
+            <ng-container *ngIf="form.get('email')?.errors?.['required']">
+                {{ 'CONTACT.ERROR_REQUIRED' | translate }}
+            </ng-container>
+            <ng-container *ngIf="form.get('email')?.errors?.['emailStrict']">
+                {{ 'CONTACT.ERROR_EMAIL' | translate }}
+            </ng-container>
+        </div>
+    </label>
+
+    <!-- Message -->
+    <label class="field-label">
+        <span>
+            {{ 'CONTACT.MESSAGE' | translate }}
+            <i class="fad fa-asterisk"></i>
+        </span>
+        <textarea rows="5" formControlName="message"></textarea>
+        <div class="error" *ngIf="champInvalide('message')">
+            {{ 'CONTACT.ERROR_REQUIRED' | translate }}
+        </div>
+    </label>
+
+    <button type="submit">{{ 'CONTACT.SEND' | translate }}</button>
+</form>
