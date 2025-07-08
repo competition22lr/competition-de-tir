@@ -7,6 +7,7 @@ import { ImpressionClassementComponent } from './components/impression-classemen
 import { TirageGagnantsComponent } from './components/tirage-gagnants/tirage-gagnants.component';
 import { ImpressionReglementsComponent } from './components/impression-reglements/impression-reglements.component';
 import { ClassementAnnuelComponent } from './components/classement-annuel/classement-annuel.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 export const routes: Routes = [
     { path: '', component: AccueilComponent },
@@ -19,5 +20,5 @@ export const routes: Routes = [
     { path: 'gagnants-tirage/:competition/:spin', component: TirageGagnantsComponent },
     { path: 'impression-reglements/:langue', component: ImpressionReglementsComponent },
     { path: 'classement-annuel/:competition', component: ClassementAnnuelComponent },
-
+    { path: 'contact', component: ContactFormComponent },
 ];

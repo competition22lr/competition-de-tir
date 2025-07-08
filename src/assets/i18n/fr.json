@@ -1,5 +1,5 @@
 {
-    "SUITE":"(suite)",
+    "SUITE": "(suite)",
     "SORTIE": "Sortie",
     "HEADER": {
         "TITRE": "Compétition de tir de précision",
@@ -203,7 +203,7 @@
             "CALCULPOINTS": {
                 "TITRE": "Calcul des points",
                 "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
-                "DESCRIPTION2":"Afin d’uniformiser les dimensions des impacts selon les divers calibres autorisés et ainsi assurer l’équité lors du pointage, un gabarit de superposition (.22 LR overlay) sera utilisé pour l’évaluation de toutes les cibles.",
+                "DESCRIPTION2": "Afin d’uniformiser les dimensions des impacts selon les divers calibres autorisés et ainsi assurer l’équité lors du pointage, un gabarit de superposition (.22 LR overlay) sera utilisé pour l’évaluation de toutes les cibles.",
                 "TIRPARFAIT": {
                     "TITRE": "Tir Parfait",
                     "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."
@@ -363,5 +363,33 @@
         "MESSAGE": "Ce tireur a participé {{count}} fois à cette compétition.",
         "MOIS": "Mois de participation",
         "FERMER": "Fermer"
+    },
+    "CONTACT": {
+        "TITLE": "Formulaire de contact",
+        "SUBJECT": "Sujet",
+        "SELECT_SUBJECT": "-- Choisir un sujet --",
+        "SUBJECTS": {
+            "SUGGESTION": "Suggestion d’ajout ou d’amélioration",
+            "REGLEMENT": "Demande de précision sur une section des règlements",
+            "LICENCE": "Demande en vertu de la licence affichée sur GitHub"
+        },
+        "SECTION": "Section du règlement",
+        "SELECT_SECTION": "-- Choisir une section --",
+        "SECTIONS": {
+            "DEROULEMENT": "Déroulement de la compétition",
+            "CATEGORIES": "Catégories",
+            "FEUILLEPOINTS": "Feuille de cible",
+            "CALCULPOINTS": "Calcul des points",
+            "CLASSEMENT": "Système de Classement des Tireurs",
+            "EQUIPEMENT": "Équipement autorisé",
+            "CALIBRES": "Calibres autorisés"
+        },
+        "NAME": "Nom",
+        "EMAIL": "Courriel",
+        "MESSAGE": "Message",
+        "SEND": "Envoyer",
+        "SENT_CONFIRMATION": "Votre message a été préparé dans votre client courriel.",
+        "ERROR_REQUIRED": "Ce champ est obligatoire.",
+        "ERROR_EMAIL": "Adresse courriel invalide."
     }
 }
