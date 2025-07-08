@@ -20,7 +20,7 @@
     color: #00796b;
 }
 
-tir-parfait-gallery {
+.tir-parfait-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -45,7 +45,8 @@ tir-parfait-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;    /* espace entre les images */
+    gap: 1rem;
+    /* espace entre les images */
     margin-bottom: 1em;
 }
 
@@ -69,7 +70,24 @@ tir-parfait-gallery {
         width: 150px;
     }
 
-    .calcul-des-points  {
+    .tir-triche-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        /* espace entre les images */
+        margin-bottom: 1em;
+    }
+
+    .tir-triche-gallery img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .calcul-des-points {
         padding: unset !important;
         border-radius: unset !important;
         box-shadow: unset !important;
@@ -79,16 +97,62 @@ tir-parfait-gallery {
 /* Couleurs spécifiques par type */
 .tir-parfait {
     border-color: #4caf50;
+
+    .fad {
+        --fa-secondary-color: #4caf50;
+    }
 }
 
 .tir-solide {
     border-color: #2196f3;
+
+    .fad {
+        --fa-secondary-color: #2196f3;
+    }
 }
 
 .tir-invalide {
-    border-color: #f44336;
+    border-color: #ff9800;
+
+    .fad {
+        --fa-secondary-color: #ff9800;
+    }
 }
 
 .tir-triche {
-    border-color: #ff9800;
+    border-color: #f44336;
+
+    .fad {
+        --fa-primary-color: #f44336;
+        --fa-secondary-color: #001f3e;
+        --fa-secondary-opacity: 0.7;
+    }
+}
+
+.page-break {
+  page-break-before: always;
+}
+
+@media print {
+    .tir-parfait-gallery,
+    .tir-triche-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* espace entre les images */
+        margin-bottom: 1em;
+    }
+
+    .tir-parfait-gallery img {        
+        width: 150px;
+    }
+
+    .tir-triche-gallery img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
 }

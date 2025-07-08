@@ -1,8 +1,9 @@
 {
+    "SUITE": "(suite)",
     "SORTIE": "Sortie",
     "HEADER": {
-        "TITLE": "Compétition de tir de précision",
-        "SUBTITLE": "Club de Tir de l'Outaouais"
+        "TITRE": "Compétition de tir de précision",
+        "NOM_CLUB": "Club de Tir de l'Outaouais"
     },
     "FOOTER": {
         "DROITS": "© 2025 Compétition de tir - Tous droits réservés",
@@ -108,45 +109,44 @@
         "ARGENT_NOTE": "+5 participations",
         "BRONZE_NOTE": "+3 participations",
         "CONCLUSION": "Ces bonifications récompensent la performance tout en combinant la participation active. Le classement devient ainsi un levier stratégique pour augmenter vos chances de remporter le tirage mensuel.",
-        "AUCUN_GAGNANT": "Aucun gagnant pour cette compétition."
+        "AUCUN_GAGNANT": "Aucun gagnant pour cette compétition.",
+        "LANCER_TIRAGE": "Afficher roue de la chance"
     },
     "REGLEMENT": {
         "TITRE": "Règlements de la compétition",
         "IMPRIMABLE": "Version imprimable",
-        "TABLE": {
-            "TITLE": "Table des matières",
-            "DEROULEMENT": "Déroulement",
-            "CATEGORIES": "Catégories",
-            "FEUILLEPOINTS": "Feuille de cible",
-            "CALCULPOINTS": "Calcul des points",
-            "CLASSEMENT": "Système de Classement des Tireurs",
-            "EQUIPEMENT": "Équipement autorisé",
-            "CALIBRES": "Calibres autorisés"
-        },
+        "TABLE.TITRE": "Table des matières",
+        "PRINT": "Imprimé",
         "SECTIONS": {
             "DEROULEMENT": {
-                "TITLE": "Déroulement de la compétition",
-                "DESCRIPTION": "Décris ici comment la compétition se déroule (ex : nombre de tirs, durée, etc.)."
-            },
-            "CALCULPOINTS": {
-                "TITLE": "Calcul des points",
-                "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
-                "TIRPARFAIT": {
-                    "TITLE": "Tir Parfait",
-                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."
+                "TITRE": "Déroulement de la compétition",
+                "DESCRIPTION": "La compétition s’étend sur une année complète et se décline en classements mensuels. Chaque participant doit se procurer une feuille de cible officielle au comptoir de la boutique.",
+                "FEUILLES": {
+                    "TITRE": "Feuilles de participation",
+                    "OBTENTION": "Les feuilles doivent être obtenues auprès d’un employé au comptoir de la boutique.",
+                    "PARTICIPATIONS": "Le nombre de participations n’est pas limité durant l’année.",
+                    "PRIX_MEMBRE": "Chaque feuille coûte 2 $ pour les membres.",
+                    "PRIX_NON_MEMBRE": "Chaque feuille coûte 5 $ pour les non-membres.",
+                    "FRAIS_TERRAIN": "Des frais d’accès au champ de tir s’appliquent en sus."
                 },
-                "TIRSOLIDE": {
-                    "TITLE": "Tir Excellent sans bonis",
-                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, <strong>mais</strong> ne fait <strong>pas</strong> completement disparetre le point central. il obtient <strong>10 points de base</strong>."
+                "VALIDATION": {
+                    "TITRE": "Validation des tirs",
+                    "ESTAMPILLE": "Chaque feuille doit être estampillée par l’employé lors de son émission.",
+                    "DISTANCE": "Les cibles doivent obligatoirement être positionnées à une distance de 25 mètres.",
+                    "REFUS_SIGNATURE": "En cas de non-respect de la distance, l’officiel ne pourra signer et la feuille sera considérée comme invalide."
                 },
-                "TIRINVALIDE": {
-                    "TITLE": "Tir Invalide",
-                    "DESCRIPTION": "Le tir contient une erreur : <strong>double tir</strong> sur une même cible ou <strong>tir hors cible</strong> (dans l'encadrement mais hors zone de score). <strong>Aucun point n'est attribué</strong>."
+                "TRAITEMENT": {
+                    "TITRE": "Traitement des résultats",
+                    "CALCUL_MANUEL": "Le calcul des points est effectué manuellement par les responsables de l’organisation.",
+                    "SAISIE_EXCEL": "Les résultats sont saisis dans un tableur Microsoft Excel.",
+                    "PUBLICATION": "Le classement final mensuel est publié dans la première semaine du mois suivant, au plus tard le premier samedi."
                 },
-                "TIRTRICHE": {
-                    "TITLE": "Tentative de triche",
-                    "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score. <strong>==>&nbsp;Disqualification&nbsp;automatique&nbsp;<==</strong>."
-                }
+                "TIRAGE": {
+                    "TITRE": "Tirage au sort 50/50",
+                    "EXPLICATION": "Le tirage au sort mensuel du 50/50 est réalisé de manière électronique à l’aide d’un module intégré à Microsoft Excel.",
+                    "EQUITABLE": "Ce procédé garantit une sélection aléatoire et équitable parmi les participations valides."
+                },
+                "NOTE": "Veuillez consulter les sections connexes pour plus de détails sur le fonctionnement de la compétition."
             },
             "CATEGORIES": {
                 "TITRE": "Catégories",
@@ -154,8 +154,208 @@
                 "TYPE_ARME": "Le type de carabine (air comprimé, .22 LR, percussion centrale, etc.)",
                 "EXPERIENCE": "Le niveau d'expérience (débutant, confirmé, expert)",
                 "CLASSE_AGE": "La classification ou l'âge (si applicable selon les règlements en vigueur)",
-                "NOTE_A_VENIR":"À venir : ",
+                "NOTE_A_VENIR": "À venir : ",
                 "NOTE": "Les catégories officielles seront publiées prochainement après validation par les instances organisatrices."
+            },
+            "FEUILLEPOINTS": {
+                "TITRE": "Feuille de cible",
+                "INTRO1": "La feuille de pointage est un document officiel servant à consigner les résultats individuels de chaque tireur au cours d'une épreuve.",
+                "INTRO2": "Elle doit être signée par l'officiel à l'issue de la séance.",
+                "ELEMENTS_TITRE": "Éléments contenus de la feuille de participation",
+                "ELEMENT_LISTE": [
+                    "Logo du club hôte",
+                    "Logo de la compétition",
+                    "Nom et prénom du tireur",
+                    "Numéro de membre",
+                    "Date de l'épreuve",
+                    "Calibre utilisé (ex : .22 LR)",
+                    "Position de tir",
+                    "Pointage total",
+                    "25 cibles identiques (5 pratiques, 20 comptabilisées)",
+                    "Estompe du club avec la signature de l'officiel de tir responsable"
+                ],
+                "PRESENTATION_TITRE": "Présentation des cibles",
+                "PRESENTATION_TEXTE": "La présentation des cibles est uniforme pour l'ensemble des participants, qu'ils soient en position assise, debout ou appuyés sur une table de tir. Toutes les cibles, qu'elles se trouvent dans la zone d'entraînement (numérotée de P1 à P5) ou dans la section des tirs comptabilisés (numérotée de 1 à 20), respectent les mêmes critères de disposition et de visibilité.",
+                "ALT_IMAGE": "Cible carabine avec watermark",
+                "DIMENSIONS_TITRE": "Dimension des cibles régulières et Élites",
+                "DIMENSIONS_INTRO": "Donne les dimensions de chacun des anneaux de pointage ainsi que la dimension du point pour le boni.",
+                "TABLE": {
+                    "COL_ELEMENT": "Élément du cadre cible",
+                    "COL_DIMENSIONS": "Dimension en millimètres",
+                    "REGULIERE": "Régulière",
+                    "ELITE": "Élite"
+                },
+                "ROW1": "Point central pour un tir à la cible parfait",
+                "ROW2": "Anneau blanc de 10 points",
+                "ROW3": "Anneau noir de 9 points",
+                "ROW4": "Anneau blanc de 8 points",
+                "ROW5": "Anneau noir de 7 points",
+                "ROW6": "Cadre numéroté de 1 à 20",
+                "EPREUVE_TITRE": "Détails de l'Épreuve Régulière",
+                "EPREUVE1": "Distance de tir : 25 mètres",
+                "EPREUVE2": "Position de tir : appuyé sur table de tir",
+                "EPREUVE3": "Type d'épreuve : précision",
+                "EPREUVE4": "Nombre de séries prévues : 5",
+                "EPREUVE5": "Nombre de coups par série : 5",
+                "EPREUVE6": "Nombre de tirs par feuille : illimité*",
+                "NOTE": "Voir la section Calcul des points pour les tirs qualifiés."
+            },
+            "CALCULPOINTS": {
+                "TITRE": "Calcul des points",
+                "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
+                "DESCRIPTION2": "Afin d’uniformiser les dimensions des impacts selon les divers calibres autorisés et ainsi assurer l’équité lors du pointage, un gabarit de superposition (.22 LR overlay) sera utilisé pour l’évaluation de toutes les cibles.",
+                "TIRPARFAIT": {
+                    "TITRE": "Tir Parfait",
+                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."
+                },
+                "TIRSOLIDE": {
+                    "TITRE": "Tir Excellent sans bonis",
+                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, <strong>mais</strong> ne fait <strong>pas</strong> completement disparetre le point central. il obtient <strong>10 points de base</strong>."
+                },
+                "TIRINVALIDE": {
+                    "TITRE": "Tir Invalide",
+                    "DESCRIPTION": "Le tir contient une erreur : <strong>double tir</strong> sur une même cible ou <strong>tir hors cible</strong> (dans l'encadrement mais hors zone de score). <strong>Aucun point n'est attribué</strong>."
+                },
+                "TIRTRICHE": {
+                    "TITRE": "Tentative de triche",
+                    "DESCRIPTION": "Une cible est modifiée, remplacée ou manipulée pour améliorer artificiellement le score.",
+                    "DQ_AUTO": "Disqualification automatique"
+                }
+            },
+            "CLASSEMENT": {
+                "TITRE": "Système de Classement des Tireurs",
+                "INTRO1": "Les tireurs sont classés en fonction de leurs performances lors des épreuves comptabilisées.",
+                "INTRO2": "le score de base",
+                "INTRO3": "les points bonis",
+                "INTRO4": "le type de cible utilisée",
+                "INTRO5": "ainsi que le",
+                "INTRO6": "rang global obtenu",
+                "COL_CLASSEMENT": "Classement",
+                "COL_CONDITIONS": "Conditions d'obtention",
+                "DIAMANT": {
+                    "TITRE": "Diamant",
+                    "ALERT": "« Cette catégorie est actuellement en cours d'élaboration et n'est pas encore officiellement active. Aucun essai n'est prévu pour le moment. Sa mise en œuvre future sera déterminée par le comité organisateur selon l'évolution des besoins et des objectifs de la compétition. »",
+                    "CONDITION1_PART1": "Score de",
+                    "CONDITION1_PART2": "200 points de base minimum",
+                    "CONDITION1_PART3": "(hors bonis)",
+                    "CONDITION2": "Meilleur total de points bonis",
+                    "CONDITION3_PART1": "Utilisation de",
+                    "CONDITION3_PART2": "cibles d'élite",
+                    "CONDITION4": "Si le score de base n'est pas atteint, aucun classement n'est attribué"
+                },
+                "PLATINE": {
+                    "TITRE": "Platine",
+                    "CONDITION1_PART1": "Score de",
+                    "CONDITION1_PART2": "200 points de base minimum",
+                    "CONDITION2": "Meilleur total de points bonis",
+                    "CONDITION3_PART1": "Utilisation de",
+                    "CONDITION3_PART2": "cibles régulières"
+                },
+                "OR": {
+                    "TITRE": "Or",
+                    "CONDITION1": "Meilleur score total",
+                    "CONDITION1_PART2": "(base + bonis)",
+                    "CONDITION2_PART1": "Utilisation de",
+                    "CONDITION2_PART2": "cibles régulières"
+                },
+                "ARGENT": {
+                    "TITRE": "Argent",
+                    "CONDITION1": "Deuxième meilleur score total",
+                    "CONDITION2_PART1": "Utilisation de",
+                    "CONDITION2_PART2": "cibles régulières"
+                },
+                "BRONZE": {
+                    "TITRE": "Bronze",
+                    "CONDITION1": "Troisième meilleur score total",
+                    "CONDITION2_PART1": "Utilisation de",
+                    "CONDITION2_PART2": "cibles régulières"
+                },
+                "NOTE": {
+                    "TITRE": "Note :",
+                    "TEXTE1": "Un tireur qui tente le classement",
+                    "TEXTE2": "Diamant",
+                    "TEXTE3": "mais n'atteint pas les",
+                    "TEXTE4": "200 points de base",
+                    "TEXTE5": "ne sera classé dans aucun groupe, même avec un excellent pointage bonifié."
+                }
+            },
+            "EQUIPEMENT": {
+                "TITRE": "Équipement autorisé",
+                "INTRO": "La réglementation suivante s'applique aux épreuves officielles de tir à la carabine. Tous les équipements doivent être conformes aux normes de sécurité et respecter les spécifications du règlement en vigueur.",
+                "ACCESSOIRES_NON_AUTORISES_TITRE": "Accessoires NON autorisés",
+                "ACCESSOIRES_NON_AUTORISES_LISTE": [
+                    "Bipied, trépied ou sac de sable positionnés à l'arrière"
+                ],
+                "REMARQUE": "Remarque : Tout équipement non listé ci-dessus doit être validé par l'organisation avant le début de la compétition.",
+                "SECURITE": {
+                    "TITRE": "Matériel de sécurité obligatoire",
+                    "ELEMENTS": {
+                        "AUDITIVE": "Protection auditive (ex.: casque antibruit ou bouchons homologués)",
+                        "OCULAIRE": "Protection oculaire (ex.: lunettes de sécurité balistique)"
+                    },
+                    "NOTE": {
+                        "TEXTE": "Les lunettes de prescription sont acceptées à titre de protection oculaire.",
+                        "LABEL": "Remarque :"
+                    }
+                },
+                "CARABINES": {
+                    "TITRE": "Carabines admissibles à la compétition",
+                    "DESCRIPTION": "Les carabines suivantes sont autorisées sous réserve de conformité avec les règlements de la compétition et les lois en vigueur.",
+                    "TYPES": {
+                        "ANNULAIRE": "Carabines à percussion annulaire",
+                        "ANNULAIRE_LIEN": "(.17 HMR, .22 LR ou similaires)",
+                        "CENTRALE": "Carabines à percussion centrale",
+                        "CENTRALE_LIEN": "(calibres réglementaires)",
+                        "AIR": "Carabines à air comprimé"
+                    },
+                    "ALIMENTATION": {
+                        "TITRE": "Systèmes d'alimentation",
+                        "MANUEL": "Alimentation manuelle (chargement un à un)",
+                        "FIXE": "Chargeur fixe",
+                        "AMOVIBLE": "Chargeur amovible"
+                    },
+                    "ACTION": {
+                        "TITRE": "Types d'action",
+                        "SEMI_AUTO": "Semi-automatique",
+                        "VERROU": "À verrou latéral",
+                        "LEVIER": "À levier",
+                        "BASCULE": "À bascule ou à charnière",
+                        "POMPE": "À pompe",
+                        "BARILLET": "À barillet"
+                    }
+                },
+                "ACCESSOIRES": {
+                    "TITRE": "Accessoires autorisés",
+                    "CATEGORIES": {
+                        "VISEE": "Systèmes de visée",
+                        "CONFORT": "Éléments de confort et d'ajustement",
+                        "SUPPORT": "Supports et matériel complémentaire"
+                    },
+                    "VISEE": {
+                        "ITEM1": "Dioptres et guidons (sans optique grossissante)",
+                        "ITEM2": "Lunette de visée, point rouge",
+                        "ITEM3": "Lunette de visée de haute précision"
+                    },
+                    "CONFORT": {
+                        "ITEM1": "Plaque de couche ajustable",
+                        "ITEM2": "Busc ajustable",
+                        "ITEM3": "Gants de tir",
+                        "ITEM4": "Cache-œil / Œillère"
+                    },
+                    "SUPPORT": {
+                        "ITEM1": "Bipied, trépied ou sac de sable (avant uniquement)",
+                        "ITEM2": "Table ou banc de tir (selon les compétitions)",
+                        "ITEM3": "Tapis de tir personnel",
+                        "ITEM4": "Frein de bouche",
+                        "ITEM5": "Accordeur de barillet"
+                    }
+                }
+            },
+            "CALIBRES": {
+                "TITRE": "Calibres autorisés",
+                "DESCRIPTION": "Seuls les calibres spécifiquement mentionnés ci-dessous sont autorisés pour cette compétition. Toute autre munition est strictement interdite.",
+                "AUTRE": "D'autres calibres peuvent être acceptés conformément au règlement en vigueur et à la législation applicable.",
+                "WYLDE": ".223 Wylde (chambre hybride compatible avec les munitions .223 Rem et 5.56 NATO)"
             }
         }
     },
@@ -163,5 +363,33 @@
         "MESSAGE": "Ce tireur a participé {{count}} fois à cette compétition.",
         "MOIS": "Mois de participation",
         "FERMER": "Fermer"
+    },
+    "CONTACT": {
+        "TITLE": "Formulaire de contact",
+        "SUBJECT": "Sujet",
+        "SELECT_SUBJECT": "-- Choisir un sujet --",
+        "SUBJECTS": {
+            "SUGGESTION": "Suggestion d’ajout ou d’amélioration",
+            "REGLEMENT": "Demande de précision sur une section des règlements",
+            "LICENCE": "Demande en vertu de la licence affichée sur GitHub"
+        },
+        "SECTION": "Section du règlement",
+        "SELECT_SECTION": "-- Choisir une section --",
+        "SECTIONS": {
+            "DEROULEMENT": "Déroulement de la compétition",
+            "CATEGORIES": "Catégories",
+            "FEUILLEPOINTS": "Feuille de cible",
+            "CALCULPOINTS": "Calcul des points",
+            "CLASSEMENT": "Système de Classement des Tireurs",
+            "EQUIPEMENT": "Équipement autorisé",
+            "CALIBRES": "Calibres autorisés"
+        },
+        "NAME": "Nom",
+        "EMAIL": "Courriel",
+        "MESSAGE": "Message",
+        "SEND": "Envoyer",
+        "SENT_CONFIRMATION": "Votre message a été préparé dans votre client courriel.",
+        "ERROR_REQUIRED": "Ce champ est obligatoire.",
+        "ERROR_EMAIL": "Adresse courriel invalide."
     }
 }

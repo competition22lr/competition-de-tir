@@ -3,12 +3,12 @@
 
     <mat-nav-list>
       <mat-list-item [routerLink]="['/accueil']" (click)="isMobile && drawer.close()">
-        <mat-icon>home</mat-icon>
+        <i class="fad fa-home-lg"></i>
         <span> {{ 'SIDENAV.ACCUEIL' | translate }}</span>
       </mat-list-item>
 
       <mat-list-item [routerLink]="['/reglements']" (click)="isMobile && drawer.close()">
-        <mat-icon>gavel</mat-icon>
+        <i class="fad fa-gavel fa-flip-horizontal"></i>
         <span> {{ 'SIDENAV.REGLEMENT' | translate }}</span>
       </mat-list-item>
     </mat-nav-list>
@@ -25,8 +25,7 @@
     <mat-nav-list *ngIf="showTirage">
       <mat-list-item [routerLink]="['/gagnants-tirage', indexCompetitionSelectionne]"
         (click)="isMobile && drawer.close()">
-        <mat-icon></mat-icon>
-        <span>🎉 {{ 'SIDENAV.BOUTON_GAGNANTS5050' | translate }}</span>
+        <span><i class="fad fa-sack-dollar"></i> {{ 'SIDENAV.BOUTON_GAGNANTS5050' | translate }}</span>
       </mat-list-item>
     </mat-nav-list>
 
@@ -43,7 +42,8 @@
     <mat-nav-list>
       <mat-list-item [routerLink]="['/classement-annuel', indexCompetitionSelectionne]"
         (click)="isMobile && drawer.close()">
-        <span>🏆 {{ 'CLASSEMENT_ANNUEL.TITRE' | translate }}</span>
+        <i class="fad fa-trophy-alt"></i> 
+        <span> {{ 'CLASSEMENT_ANNUEL.TITRE' | translate }}</span>
       </mat-list-item>
     </mat-nav-list>
 
@@ -59,11 +59,13 @@
 
     <mat-toolbar color="primary" class="mobile-toolbar">
       <button mat-icon-button (click)="drawer.toggle()" class="mobile-toggle-button">
-        <mat-icon>menu</mat-icon>
+        <i class="fad fa-bars"></i>
       </button>
     </mat-toolbar>
 
     <!-- Zone d'affichage pour les pages comme /reglements -->
     <router-outlet></router-outlet>
+    <app-scroll-to-top />
+
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -1,60 +1,60 @@
-# Competition De-Tir 
+# 🎯 Competition de Tir
 [![Netlify Status](https://api.netlify.com/api/v1/badges/69bc00c9-2772-4475-a4d8-d6693097cd7a/deploy-status)](https://app.netlify.com/sites/competition-de-tir/deploys)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+## 📝 Description
 
-## Development server
+**Français :**  
+Ce projet est une application web permettant d’afficher, gérer et évaluer les résultats de compétitions de tir à la carabine. L’objectif principal est d’uniformiser l’évaluation des cibles, de diffuser les résultats de manière transparente et de faciliter l’accès pour les participants et organisateurs.
 
-To start a local development server, run:
+Le système utilise un gabarit de superposition **.22 LR overlay** afin de standardiser les dimensions des impacts, quelle que soit le calibre utilisé, garantissant ainsi un pointage équitable.
+
+Le site est développé avec **Angular** et déployé via **Netlify**.
+
+**English:**  
+This project is a web application designed to display, manage, and evaluate results from rifle shooting competitions. The main goal is to standardize target scoring, ensure transparent result sharing, and simplify access for both participants and organizers.
+
+A **.22 LR overlay template** is used to normalize bullet impact dimensions across allowed calibers, ensuring fair scoring.
+
+The site is built with **Angular** and deployed via **Netlify**.
+
+---
+
+## 🌐 Site en ligne
+
+- 🔗 [competitiondetir.trepanier.cc](https://competitiondetir.trepanier.cc/)
+
+---
+
+## ⚙️ Technologies
+
+- Framework : [Angular](https://angular.io/)
+- Langage : TypeScript / HTML / CSS
+- Hébergement : [Netlify](https://www.netlify.com/)
+- Dépôt : [GitHub](https://github.com/competition22lr/competition-de-tir)
+
+---
+
+## 🔧 Fonctionnalités principales
+
+- Affichage des classements et résultats par épreuve
+- Composant de **calcul des points** avec standardisation via gabarit .22 LR
+- Interface responsive pour consultation sur mobile et bureau
+- Architecture modulaire facilitant l’évolution du projet
+
+---
+
+## 📄 Licence
+
+Ce projet est sous licence **Creative Commons BY-NC-ND 4.0**.  
+Toute utilisation commerciale ou modification requiert l'autorisation de l'auteur.  
+👉 Voir le fichier [LICENSE](./LICENSE.txt) pour plus de détails.
+
+---
+
+## 📦 Installation locale
 
 ```bash
+git clone https://github.com/competition22lr/competition-de-tir.git
+cd competition-de-tir
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

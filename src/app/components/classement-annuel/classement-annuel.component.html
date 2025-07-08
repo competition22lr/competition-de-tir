@@ -1,5 +1,5 @@
 <div class="classement-container">
-  <h2 class="titre-top">🏆 {{ 'CLASSEMENT_ANNUEL.TITRE_TOP10' | translate }}</h2>
+  <h2 class="titre-top"><i class="fad fa-trophy-alt fa-lg"></i> {{ 'CLASSEMENT_ANNUEL.TITRE_TOP10' | translate }}</h2>
 
   <div class="cartes-top">
     <div class="carte-participant" *ngFor="let p of top10; let i = index" (click)="ouvrirPopup(p)">

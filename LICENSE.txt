@@ -1,0 +1,55 @@
+LICENSE – CC BY-NC-ND 4.0 (FR/EN)
+
+© 2025 Sylvain Trépanier
+
+Ce projet est protégé par la licence Creative Commons Attribution – Pas d’Utilisation Commerciale – Pas de Modification 4.0 International (CC BY-NC-ND 4.0).
+
+This project is licensed under the Creative Commons Attribution – NonCommercial – NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+📌 FRANÇAIS :
+
+Vous êtes libre de :
+
+✔️ Partager — copier, distribuer et communiquer le matériel par tous moyens et sous tous formats
+
+Sous les conditions suivantes :
+
+🔹 Attribution — Vous devez créditer l’auteur original (nom, lien vers le dépôt, etc.), fournir un lien vers la licence, et indiquer si des modifications ont été effectuées.
+
+🔹 Pas d’utilisation commerciale — Vous ne pouvez pas utiliser ce matériel à des fins commerciales.
+
+🔹 Pas de modifications — Vous ne pouvez pas modifier, transformer ou adapter ce matériel.
+
+📩 Pour toute utilisation commerciale, intégration dans un projet plus large, ou distribution modifiée, **vous devez contacter l’auteur** pour obtenir une autorisation préalable :
+
+Sylvain@Trepanier [dot] cc
+
+➕ Plus d'informations (version juridique complète) :  
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.fr
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+📌 ENGLISH :
+
+You are free to:
+
+✔️ Share — copy, distribute, and transmit the work through any medium or format
+
+Under the following terms:
+
+🔹 Attribution — You must give appropriate credit (name, repository link, etc.), provide a link to the license, and indicate if changes were made.
+
+🔹 NonCommercial — You may not use the material for commercial purposes.
+
+🔹 NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+📩 For any **commercial use**, integration into a larger project, or **modified distribution**, **you must contact the author** for prior written permission:
+
+Sylvain@Trepanier [dot] cc
+
+➕ Full license details:  
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+

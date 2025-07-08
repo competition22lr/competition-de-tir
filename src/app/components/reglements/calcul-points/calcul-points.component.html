@@ -1,8 +1,11 @@
-<h2>📋 {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TITLE' | translate }}</h2>
+<h2><i class="fad fa-clipboard-list"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TITRE' | translate }}</h2>
 <p>{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.DESCRIPTION' | translate }}</p>
+
 <div class="calcul-des-points">
+
     <div class="exemple-tir tir-parfait">
-        <h3>🎯 {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRPARFAIT.TITLE' | translate }}</h3>        
+        <h3><i class="fad fa-bullseye-arrow"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRPARFAIT.TITRE' | translate }}
+        </h3>
         <p innerHTML="{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRPARFAIT.DESCRIPTION' | translate }}"></p>
         <div class="tir-parfait-gallery">
             <img [src]="resultatsService.imageLocationUrl + 'tir-parfait.jpg'" alt="Tir parfait" />
@@ -12,7 +15,7 @@
     </div>
 
     <div class="exemple-tir tir-solide">
-        <h3>✅  {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRSOLIDE.TITLE' | translate }}</h3>
+        <h3><i class="fad fa-check-square"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRSOLIDE.TITRE' | translate }}</h3>
         <p innerHTML="{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRSOLIDE.DESCRIPTION' | translate }}"></p>
         <div class="tir-parfait-gallery">
             <img [src]="resultatsService.imageLocationUrl + 'tir-solide.jpg'" alt="Tir solide sans bonis" />
@@ -22,16 +25,27 @@
     </div>
 
     <div class="exemple-tir tir-invalide">
-        <h3>❌ {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRINVALIDE.TITLE' | translate }}</h3>
+        <h3><i class="fad fa-times-circle"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRINVALIDE.TITRE' | translate }}
+        </h3>
         <p innerHTML="{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRINVALIDE.DESCRIPTION' | translate }}"></p>
         <div class="tir-parfait-gallery">
             <img [src]="resultatsService.imageLocationUrl + 'tir-invalide.jpg'" alt="Tir invalide" />
         </div>
     </div>
 
+    @if (isPrintMode) {
+    <div class="page-break"></div>
+    <h2>
+        <i class="fad fa-tools"></i>
+        &nbsp;{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate }}
+        &nbsp;<small>{{ 'SUITE' | translate }}</small>
+    </h2>
+    }
+
     <div class="exemple-tir tir-triche">
-        <h3>🚫 {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.TITLE' | translate }}</h3>
-        <p innerHTML="{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.DESCRIPTION' | translate }}"></p>
+        <h3><i class="fad fa-ban"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.TITRE' | translate }}</h3>
+        <p>{{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.DESCRIPTION' | translate }}</p>
+        <p><i class="fad fa-eject"></i> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.TIRTRICHE.DQ_AUTO' | translate }}</p>
         <div class="tir-triche-gallery">
             <img [src]="resultatsService.imageLocationUrl + 'tir-triche.jpg'" alt="Cible trafiquée" />
             <img [src]="resultatsService.imageLocationUrl + 'tir-triche-overlay-rouge.jpg'" alt="Cible trafiquée" />
@@ -40,5 +54,9 @@
             <img [src]="resultatsService.imageLocationUrl + 'tir-triche1.jpg'" alt="Cible trafiquée" />
             <img [src]="resultatsService.imageLocationUrl + 'tir-triche1-overlay.jpg'" alt="Cible trafiquée" />
         </div>
+    </div>
+
+    <div class="note">
+        <i class="fad fa-info-square fa-lg"></i><strong> {{ 'REGLEMENT.SECTIONS.CALCULPOINTS.DESCRIPTION2' | translate }}</strong>
     </div>
 </div>

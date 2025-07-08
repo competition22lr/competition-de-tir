@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ResultatsService } from '../../../services/resultats.service';
 import { CommonModule } from '@angular/common';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-regement-calcul-points',
@@ -9,7 +9,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './calcul-points.component.html',
   styleUrl: './calcul-points.component.css'
 })
-export class CalculPointsComponent {
-  constructor(public resultatsService: ResultatsService, private translate: TranslateService) { }
+export class CalculPointsComponent {  
+  @Input() isPrintMode = false;
+
+  constructor(public resultatsService: ResultatsService) { }
 
 }

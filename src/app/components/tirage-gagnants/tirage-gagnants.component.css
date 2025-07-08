@@ -18,21 +18,18 @@
   width: 100%;
 
   .moisTirage {
-    width: 50%;
+    width: 35%;
     padding: 0.5rem 0;
     border-bottom: 1px solid #ddd;
   }
 
   .gagnantTirage {
-    width: 50%;
+    width: 65%;
     padding: 0.5rem 0;
     border-bottom: 1px solid #ddd;
   }
   
 }
-
-
-
 
 .classements-table {
   overflow-x: auto;
@@ -101,4 +98,65 @@
 
 .trophy-card-Bronze {
   background: #88540B;
+}
+
+.btn-tirage {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+::ng-deep .popup-dialog-style .mat-dialog-container {
+  padding: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }

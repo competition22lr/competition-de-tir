@@ -1,59 +1,34 @@
-<h2>🛠️ Équipements autorisés en compétition de tir à la carabine</h2>
-<p>La réglementation suivante s'applique aux épreuves officielles de tir à la carabine. Tous les équipements doivent
-  être conformes aux normes de sécurité et respecter les spécifications du règlement en vigueur.</p>
+<h2><i class="fad fa-tools"></i> {{ 'REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate }}</h2>
+<p>{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.INTRO' | translate }}</p>
 
-<div class="bloc">
-  <h3>🔸 Matériel de sécurité obligatoire</h3>
-  <ul>
-    <li>Protection auditive (ex.: casque antibruit ou bouchons homologués)</li>
-    <li>Protection oculaire (ex.: lunettes de sécurité balistique)</li>
-  </ul>
-  <div class="note bloc-sub">
-    <strong>Remarque :</strong> Les lunettes de prescription sont acceptées à titre de protection oculaire.
-  </div>
+<div class="bloc" id="obligatoire">
+  <app-materiel-securite-obligatoire></app-materiel-securite-obligatoire>
 </div>
 
-<app-carabines-autorisees></app-carabines-autorisees>
-
-<div class="bloc">
-  <h3>🔸 Accessoires autorisés</h3>
-  <ul>
-    <li><strong>Systèmes de visée :</strong>
-      <ul>
-        <li>Dioptres et guidons (sans optique grossissante)</li>
-        <li>Lunette de visée, point rouge</li>
-        <li>Lunette de visée de haute précision</li>
-      </ul>
-    </li>
-    <li><strong>Éléments de confort et d'ajustement :</strong>
-      <ul>
-        <li>Plaque de couche ajustable</li>
-        <li>Busc ajustable</li>
-        <li>Gants de tir</li>
-        <li>Cache-oeil / Oeillère</li>
-      </ul>
-    </li>
-    <li><strong>Supports et matériel complémentaire :</strong>
-      <ul>
-        <li>Bipied, trépied ou sac de sable (avant uniquement)</li>
-        <li>Table ou banc de tir (selon les compétitions)</li>
-        <li>Tapis de tir personnel</li>
-        <li>Frein de bouche (si autorisé)</li>
-      </ul>
-    </li>
-  </ul>
+<div class="bloc" id="carabines">
+  <app-carabines-autorisees></app-carabines-autorisees>
 </div>
 
-<div class="bloc">
-  <h3>🔸 Accessoires NON autorisés</h3>
+@if (isPrintMode) {
+<div class="page-break"></div>
+<h2>
+    <i class="fad fa-tools"></i>
+    &nbsp;{{ 'REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate }}
+    &nbsp;<small>{{ 'SUITE' | translate }}</small>
+</h2>
+}
+
+<div class="bloc" id="accessoires">
+  <app-accessoires-autorises></app-accessoires-autorises>
+</div>
+
+<div class="bloc" id="NON_AUTORISES">
+  <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'REGLEMENT.SECTIONS.EQUIPEMENT.ACCESSOIRES_NON_AUTORISES_TITRE' | translate }}</h3>
   <ul class="non-authorise">
-    <li>Bipied, trépied ou sac de sable positionnés à l'arrière</li>
+    <li *ngFor="let item of ('REGLEMENT.SECTIONS.EQUIPEMENT.ACCESSOIRES_NON_AUTORISES_LISTE' | translate)">{{ item }}</li>
   </ul>
 </div>
-
-<app-calibres-autorises></app-calibres-autorises>
 
 <div class="note">
-  <strong>Remarque :</strong> Tout équipement non listé ci-dessus doit être validé par l'organisation avant le début
-  de la compétition.
+  <i class="fad fa-info-square fa-lg"></i> <strong> {{ 'REGLEMENT.SECTIONS.EQUIPEMENT.REMARQUE' | translate }}</strong>
 </div>

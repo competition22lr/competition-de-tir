@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { ResultatsService } from '../../../services/resultats.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-reglements-classement',
-  imports: [],
+  imports: [TranslateModule,CommonModule],
   templateUrl: './classement.component.html',
   styleUrls: ['./classement.component.css', './../reglements.component.css']
 })

@@ -1,3 +1,4 @@
+import { GagnanTirage } from "./gagnan-tirage.model";
 import { MoisResultats } from "./mois-resultats.model";
 
 export class Competition {
@@ -7,11 +8,12 @@ export class Competition {
     public mois: MoisResultats[]
   ) { }
 
-  getGagnanTirage(): {  moisCle: string; annee: string; gagnant: string; }[] {
-    const gagnantsParMois: { moisCle: string; annee: string; gagnant: string; }[] = []
+  getGagnanTirage(): GagnanTirage[] {
+    const gagnantsParMois: GagnanTirage[] = []
 
     this.mois.forEach(element => {
       const gagnant = {
+        nomXML: element.name,
         moisCle: element.getMoisCleText(),
         annee: element.getAnnee(),
         gagnant: element.resultatTirage.Nom

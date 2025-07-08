@@ -5,7 +5,8 @@
   width: auto;
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 2rem; /* espace avant le footer */
+  margin-top: 2rem;
+  /* espace avant le footer */
 }
 
 .footer-content {
@@ -39,7 +40,25 @@
   text-decoration: underline;
 }
 
-.footer-version{
+.footer-version {
   font-size: xx-small;
   padding-top: 1em;
+}
+
+.fad {
+  --fa-primary-color: noset !important;
+  --fa-secondary-color: noset !important;
+  --fa-secondary-opacity: 0.5;
+}
+
+@media print {
+  .footer {
+    background-color: white;
+    color: black;
+  }
+
+  .footer-version {
+  font-size: x-large;
+  padding-top: 1em;
+}
 }

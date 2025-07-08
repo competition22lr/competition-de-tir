@@ -8,5 +8,4 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './mentions-legales.component.css'
 })
 export class MentionsLegalesComponent {
-constructor(private translate: TranslateService) { }
 }

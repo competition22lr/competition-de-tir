@@ -10,6 +10,5 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrls: ['../../../styles-print.css', './header.component.css']
 })
 export class HeaderComponent {
-  constructor(public resultatsService: ResultatsService,
-       private translate: TranslateService) { }
+  constructor(public resultatsService: ResultatsService) { }
 }
