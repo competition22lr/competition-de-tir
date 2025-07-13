@@ -34,6 +34,7 @@ export class Utilistaire {
             case "june":
                 return 6;
             case "jul":
+            case "juill":
             case "juillet":
             case "july":
                 return 7;
