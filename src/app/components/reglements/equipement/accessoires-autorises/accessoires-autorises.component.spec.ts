@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AccessoiresAutorisesComponent } from './accessoires-autorises.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('AccessoiresAutorisesComponent', () => {
   let component: AccessoiresAutorisesComponent;
@@ -8,9 +9,11 @@ describe('AccessoiresAutorisesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AccessoiresAutorisesComponent]
+      imports: [AccessoiresAutorisesComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(AccessoiresAutorisesComponent);
     component = fixture.componentInstance;

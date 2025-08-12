@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SideNavComponent } from './side-nav.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('SideNavComponent', () => {
   let component: SideNavComponent;
@@ -8,9 +9,11 @@ describe('SideNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SideNavComponent]
+      imports: [SideNavComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(SideNavComponent);
     component = fixture.componentInstance;

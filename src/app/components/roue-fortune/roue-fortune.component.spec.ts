@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RoueFortuneComponent } from './roue-fortune.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('RoueFortuneComponent', () => {
   let component: RoueFortuneComponent;
@@ -8,9 +9,11 @@ describe('RoueFortuneComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RoueFortuneComponent]
+      imports: [RoueFortuneComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(RoueFortuneComponent);
     component = fixture.componentInstance;

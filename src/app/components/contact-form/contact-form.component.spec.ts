@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ContactFormComponent } from './contact-form.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ContactFormComponent', () => {
   let component: ContactFormComponent;
@@ -8,7 +8,10 @@ describe('ContactFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactFormComponent]
+      imports: [
+        ContactFormComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
     .compileComponents();
 

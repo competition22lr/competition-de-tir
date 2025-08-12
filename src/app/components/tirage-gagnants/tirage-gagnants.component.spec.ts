@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TirageGagnantsComponent } from './tirage-gagnants.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('TirageGagnantsComponent', () => {
   let component: TirageGagnantsComponent;
@@ -8,9 +9,11 @@ describe('TirageGagnantsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TirageGagnantsComponent]
+      imports: [TirageGagnantsComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TirageGagnantsComponent);
     component = fixture.componentInstance;

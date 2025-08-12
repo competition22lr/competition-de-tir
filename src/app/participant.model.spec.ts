@@ -1,7 +1,11 @@
-import { Participant } from './participant.model';
+import { SharedTestData, globalBeforeEach } from './services/shared-test-util';
 
 describe('Participant', () => {
+  let shared: SharedTestData = {};
+
+  globalBeforeEach(shared);
+  
   it('should create an instance', () => {
-    expect(new Participant()).toBeTruthy();
+    expect(shared.participants).toBeTruthy();
   });
 });

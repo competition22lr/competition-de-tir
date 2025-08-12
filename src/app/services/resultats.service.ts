@@ -13,7 +13,8 @@ import { Utilistaire } from './utilitaire';
 
 @Injectable({ providedIn: 'root' })
 export class ResultatsService {
-  private xmlUrl = 'https://raw.githubusercontent.com/competition22lr/competition-de-tir/refs/heads/main/data/resultats_cummulatif.xml';
+  //private xmlUrl = 'https://raw.githubusercontent.com/competition22lr/competition-de-tir/refs/heads/main/data/resultats_cummulatif.xml';
+  private xmlUrl = '/.netlify/functions/getResultats';
   private cache: { timestamp: number, data: ResultatsCummulatif } | null = null;
   private CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
   public imageLocationUrl: string = 'https://raw.githubusercontent.com/competition22lr/competition-de-tir/refs/heads/main/public/images/';
@@ -34,12 +35,12 @@ export class ResultatsService {
         const data = ResultatsCummulatif.fromXml(xml);
 
         Utilistaire.Log('Production mode ?', environment.production);
-        
+
         // 👉 Ajouter la compétition fake ici
         if (!environment.production) {
-         data.competitions = [...data.competitions, this.fakeService.getFakeCompetition()];
+          data.competitions = [...data.competitions, this.fakeService.getFakeCompetition()];
         }
-        
+
         this.cache = { timestamp: now, data };
         return data;
       })

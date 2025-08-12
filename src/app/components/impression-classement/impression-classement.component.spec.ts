@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ImpressionClassementComponent } from './impression-classement.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ImpressionClassementComponent', () => {
   let component: ImpressionClassementComponent;
@@ -8,9 +9,11 @@ describe('ImpressionClassementComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImpressionClassementComponent]
+      imports: [ImpressionClassementComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ImpressionClassementComponent);
     component = fixture.componentInstance;

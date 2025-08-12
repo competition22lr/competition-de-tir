@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ParticipantDialogComponent } from './participant-dialog.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ParticipantDialogComponent', () => {
   let component: ParticipantDialogComponent;
@@ -8,9 +9,11 @@ describe('ParticipantDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ParticipantDialogComponent]
+      imports: [ParticipantDialogComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ParticipantDialogComponent);
     component = fixture.componentInstance;

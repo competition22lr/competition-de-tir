@@ -1,7 +1,11 @@
-import { MoisResultats } from './mois-resultats.model';
+import { globalBeforeEach, SharedTestData } from '../services/shared-test-util';
 
 describe('MoisResultats', () => {
+  let shared: SharedTestData = {};
+
+  globalBeforeEach(shared);
+
   it('should create an instance', () => {
-    expect(new MoisResultats()).toBeTruthy();
+    expect(shared.mois).toBeTruthy();
   });
 });

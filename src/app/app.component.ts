@@ -17,6 +17,7 @@ import { TranslateService } from '@ngx-translate/core';
   imports: [HeaderComponent, SideNavComponent, RouterModule, FooterComponent, CommonModule]
 })
 export class AppComponent {
+  title = "";
 
   currentUrl: string = '';
 
@@ -24,6 +25,8 @@ export class AppComponent {
       public translate: TranslateService) {
     
     translate.use('fr'); // Force le français au démarrage
+
+    this.title = this.translate.instant("HEADER.TITRE");
 
      // ecoute les changements de route
      this.router.events.pipe(
