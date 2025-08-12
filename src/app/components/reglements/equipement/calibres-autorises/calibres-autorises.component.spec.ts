@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CalibresAutorisesComponent } from './calibres-autorises.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('CalibresAutorisesComponent', () => {
   let component: CalibresAutorisesComponent;
@@ -8,9 +9,11 @@ describe('CalibresAutorisesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CalibresAutorisesComponent]
+      imports: [CalibresAutorisesComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(CalibresAutorisesComponent);
     component = fixture.componentInstance;

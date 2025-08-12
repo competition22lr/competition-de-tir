@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ScrollToTopComponent } from './scroll-to-top.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ScrollToTopComponent', () => {
   let component: ScrollToTopComponent;
@@ -8,9 +9,11 @@ describe('ScrollToTopComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ScrollToTopComponent]
+      imports: [ScrollToTopComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ScrollToTopComponent);
     component = fixture.componentInstance;

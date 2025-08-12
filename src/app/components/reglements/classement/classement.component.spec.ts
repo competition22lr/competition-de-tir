@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ClassementComponent } from './classement.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ClassementComponent', () => {
   let component: ClassementComponent;
@@ -8,9 +9,11 @@ describe('ClassementComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ClassementComponent]
+      imports: [ClassementComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ClassementComponent);
     component = fixture.componentInstance;

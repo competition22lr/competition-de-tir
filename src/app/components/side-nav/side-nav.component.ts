@@ -1,11 +1,4 @@
-import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSelectModule } from '@angular/material/select';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
+
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
 import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 
@@ -17,12 +10,24 @@ import { filter } from 'rxjs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ScrollToTopComponent } from "../scroll-to-top/scroll-to-top.component";
 
+
+import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+
 @Component({
   selector: 'app-side-nav',
   standalone: true,
-  imports: [CommonModule, MatSidenavModule, MatListModule, MatFormFieldModule,
-    MatInputModule, MatToolbarModule, MatSelectModule, MatCardModule, MatIconModule,
-    RouterModule, TranslateModule, ScrollToTopComponent],
+  imports: [CommonModule,     RouterModule, TranslateModule, ScrollToTopComponent,
+   MatSidenav, MatToolbarModule, MatIconModule,MatFormFieldModule,MatListModule,
+   MatSelectModule,MatSidenavModule
+  ],
   templateUrl: './side-nav.component.html',
   styleUrls: ['../../../styles-print.css', './side-nav.component.css']
 

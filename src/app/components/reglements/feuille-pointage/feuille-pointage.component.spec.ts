@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FeuillePointageComponent } from './feuille-pointage.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('FeuillePointageComponent', () => {
   let component: FeuillePointageComponent;
@@ -8,9 +9,11 @@ describe('FeuillePointageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FeuillePointageComponent]
+      imports: [FeuillePointageComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(FeuillePointageComponent);
     component = fixture.componentInstance;

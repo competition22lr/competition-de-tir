@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ClassementAnnuelComponent } from './classement-annuel.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('ClassementAnnuelComponent', () => {
   let component: ClassementAnnuelComponent;
@@ -8,9 +9,11 @@ describe('ClassementAnnuelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ClassementAnnuelComponent]
+      imports: [ClassementAnnuelComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ClassementAnnuelComponent);
     component = fixture.componentInstance;

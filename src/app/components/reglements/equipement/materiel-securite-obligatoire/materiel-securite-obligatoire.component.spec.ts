@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MaterielSecuriteObligatoireComponent } from './materiel-securite-obligatoire.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('MaterielSecuriteObligatoireComponent', () => {
   let component: MaterielSecuriteObligatoireComponent;
@@ -8,9 +9,11 @@ describe('MaterielSecuriteObligatoireComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MaterielSecuriteObligatoireComponent]
+      imports: [MaterielSecuriteObligatoireComponent,
+        TranslateModule.forRoot()  // ✅ Fournit TranslateService, TranslateStore, etc.
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MaterielSecuriteObligatoireComponent);
     component = fixture.componentInstance;
