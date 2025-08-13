@@ -1,3 +1,4 @@
+// ..\src\app\services\resultats.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ResultatsCummulatif } from '../models/resultats-cummulatif.model';
@@ -56,7 +57,9 @@ export class ResultatsService {
 
         Utilistaire.Log('MoisData =>', moisData);
 
-        return moisData?.participants || [];
+        return (moisData?.participants || []).filter(
+          p => !/^xxx\d+$/.test(p.numero) // ❌ exclut xxx1, xxx2, xxx3...
+        );
       })
     );
   }

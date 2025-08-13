@@ -53,6 +53,12 @@ export class ClassementAnnuelComponent implements OnInit {
 
     for (const mois of this.competitionSelectionnee.mois) {
       for (const p of mois.participants) {
+
+        // 🔹 Ignorer les participants test / fictifs
+        if (/^xxx\d+$/.test(p.numero)) {
+          continue;
+        }
+
         const existing = map.get(p.numero);
         if (!existing || p.total > existing.total) {
           map.set(p.numero, {
@@ -99,7 +105,7 @@ export class ClassementAnnuelComponent implements OnInit {
   }
 
   getMoisAfficahge(mois: MoisResultats): string {
-   return this.translate.instant(mois.getMoisCleText()) + " " + mois.getAnnee();
+    return this.translate.instant(mois.getMoisCleText()) + " " + mois.getAnnee();
   }
 
   getNombreDeParticipation(numeroParticipant: string): number {
