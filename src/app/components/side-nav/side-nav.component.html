@@ -42,7 +42,7 @@
     <mat-nav-list>
       <mat-list-item [routerLink]="['/classement-annuel', indexCompetitionSelectionne]"
         (click)="isMobile && drawer.close()">
-        <i class="fad fa-trophy-alt"></i> 
+        <i class="fad fa-trophy-alt"></i>
         <span> {{ 'CLASSEMENT_ANNUEL.TITRE' | translate }}</span>
       </mat-list-item>
     </mat-nav-list>
@@ -58,8 +58,8 @@
     <!-- Contenu principal -->
 
     <mat-toolbar color="primary" class="mobile-toolbar">
-      <button matMiniFab (click)="drawer.toggle()" >
-        <mat-icon>menu</mat-icon><i class="fad fa-bars"></i>
+      <button id="btnMenu" matMiniFab (click)="drawer.toggle()">
+        <i class="fad fa-bars"></i>
       </button>
     </mat-toolbar>
 
