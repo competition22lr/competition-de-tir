@@ -1,0 +1,42 @@
+{
+    "# File": "./src/assets/i18n/long-gong/fr.json",
+    "LONG_GONG": {
+        "REGLEMENT": {
+            "TITRE": "Règlement Long Gong 25 m",
+            "TABLE": {
+                "TITRE": "Table des matières"
+            },
+            "SECTIONS": {
+                "DEROULEMENT": {
+                    "TITRE": "Déroulement",
+                    "TEXTE": "Description du déroulement..."
+                },
+                "CATEGORIES": {
+                    "TITRE": "Catégories",
+                    "TEXTE": "Liste des catégories..."
+                },
+                "FEUILLEPOINTS": {
+                    "TITRE": "Feuille de points",
+                    "TEXTE": "Explication de la feuille..."
+                },
+                "CALCULPOINTS": {
+                    "TITRE": "Calcul des points",
+                    "TEXTE": "Règles de calcul..."
+                },
+                "CLASSEMENT": {
+                    "TITRE": "Classement",
+                    "TEXTE": "Système de classement..."
+                },
+                "EQUIPEMENT": {
+                    "TITRE": "Équipement",
+                    "TEXTE": "Liste du matériel autorisé..."
+                },
+                "CALIBRES": {
+                    "TITRE": "Calibres autorisés",
+                    "TEXTE": "Liste des calibres autorisés..."
+                }
+            },
+            "IMPRIMABLE": "Version imprimable"
+        }
+    }
+}

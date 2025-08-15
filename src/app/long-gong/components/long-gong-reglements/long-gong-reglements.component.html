@@ -1,0 +1,54 @@
+<div class="reglements-container">
+    <h1><i class="fad fa-gavel fa-flip-horizontal fa-lg"></i> {{ 'LONG_GONG.REGLEMENT.TITRE' | translate }}</h1>
+
+    <nav class="table-des-matieres">
+        <h3>{{ 'LONG_GONG.REGLEMENT.TABLE.TITRE' | translate }}</h3>
+        <ul>
+            <li><a (click)="goToAnchor('deroulement')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.DEROULEMENT.TITRE' | translate
+                    }}</a></li>
+            <li><a (click)="goToAnchor('categories')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CATEGORIES.TITRE' | translate
+                    }}</a></li>
+            <li><a (click)="goToAnchor('feuille-points')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.FEUILLEPOINTS.TITRE' |
+                    translate }}</a></li>
+            <li><a (click)="goToAnchor('calcul-points')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CALCULPOINTS.TITRE' |
+                    translate }}</a></li>
+            <li><a (click)="goToAnchor('classement')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CLASSEMENT.TITRE' | translate
+                    }}</a></li>
+            <li><a (click)="goToAnchor('equipement')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate
+                    }}</a></li>
+            <li><a (click)="goToAnchor('calibres')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CALIBRES.TITRE' | translate }}</a>
+            </li>
+        </ul>
+        <!-- <a [routerLink]="['/impression-long-gong', translate.currentLang]" target="_blank">
+            <i class="fad fa-print"></i> {{ 'LONG_GONG.REGLEMENT.IMPRIMABLE' | translate }}
+        </a> -->
+    </nav>
+
+    <section id="deroulement">
+        <app-long-gong-deroulement></app-long-gong-deroulement>
+    </section>
+
+    <section id="categories">
+        <app-long-gong-categories></app-long-gong-categories>
+    </section>
+
+    <section id="feuille-points">
+        <app-long-gong-feuille-points></app-long-gong-feuille-points>
+    </section>
+
+    <section id="calcul-points">
+        <app-long-gong-calcul-points></app-long-gong-calcul-points>
+    </section>
+
+    <section id="classement">
+        <app-long-gong-classement></app-long-gong-classement>
+    </section>
+
+    <section id="equipement">
+        <app-long-gong-equipement></app-long-gong-equipement>
+    </section>
+
+    <section id="calibres">
+        <app-long-gong-calibres></app-long-gong-calibres>
+    </section>
+</div>
