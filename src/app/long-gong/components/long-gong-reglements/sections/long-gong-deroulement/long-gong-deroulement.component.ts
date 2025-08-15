@@ -8,5 +8,4 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './long-gong-deroulement.component.css'
 })
 export class LongGongDeroulementComponent {
-
 }

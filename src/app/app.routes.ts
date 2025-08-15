@@ -8,7 +8,6 @@ import { TirageGagnantsComponent } from './components/tirage-gagnants/tirage-gag
 import { ImpressionReglementsComponent } from './components/impression-reglements/impression-reglements.component';
 import { ClassementAnnuelComponent } from './components/classement-annuel/classement-annuel.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { LongGongReglementsComponent } from './long-gong/components/long-gong-reglements/long-gong-reglements.component';
 
 export const routes: Routes = [
     { path: '', component: AccueilComponent },
@@ -22,12 +21,9 @@ export const routes: Routes = [
     { path: 'impression-reglements/:langue', component: ImpressionReglementsComponent },
     { path: 'classement-annuel/:competition', component: ClassementAnnuelComponent },
     { path: 'contact', component: ContactFormComponent },
-    // 🔹 Sous-routes Long Gong
+    // Lazy-load Long Gong routes
     {
         path: 'long-gong',
-        children: [
-            { path: 'reglements', component: LongGongReglementsComponent },
-            { path: '', redirectTo: 'reglements', pathMatch: 'full' }
-        ]
+        loadChildren: () => import('./long-gong/long-gong.routes').then(m => m.longGongRoutes)
     }
 ];
