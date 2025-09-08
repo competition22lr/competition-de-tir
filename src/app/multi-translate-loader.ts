@@ -11,7 +11,8 @@ export class MultiTranslateLoader implements TranslateLoader {
     getTranslation(lang: string) {
         const paths = [
             `assets/i18n/${lang}.json`,
-            `assets/i18n/long-gong/${lang}.json`
+            `assets/i18n/long-gong/${lang}.json`,
+            `assets/i18n/long-gong/securite/${lang}.json`
         ];
         return forkJoin(paths.map(path => this.http.get(path))).pipe(
             map(responses => Object.assign({}, ...responses))

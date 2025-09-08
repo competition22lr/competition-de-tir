@@ -2,11 +2,16 @@
     "# File": "./src/assets/i18n/long-gong/fr.json",
     "LONG_GONG": {
         "REGLEMENT": {
-            "TITRE": "Règlement Long Gong 25 m",
+            "TITRE": "LONG GONG – Règlement Officiel",
+            "SOUS-TITRE": "Adapté pour 25m.",
             "TABLE": {
                 "TITRE": "Table des matières"
             },
             "SECTIONS": {
+                "SECURITE": {
+                    "TITRE": "8. SÉCURITÉ – Dispositions Officielles",
+                    "TEXTE": "Description du déroulement..."
+                },
                 "DEROULEMENT": {
                     "TITRE": "Déroulement",
                     "TEXTE": "Description du déroulement..."
@@ -33,7 +38,8 @@
                 },
                 "CALIBRES": {
                     "TITRE": "Calibres autorisés",
-                    "TEXTE": "Liste des calibres autorisés..."
+                    "TEXTE": "Seuls les calibres spécifiquement mentionnés ci-dessous sont autorisés pour cette compétition. Toute autre munition est strictement interdite.",
+                    "AUTRE": "D'autres calibres peuvent être acceptés conformément au règlement en vigueur et à la législation applicable."
                 }
             },
             "IMPRIMABLE": "Version imprimable"

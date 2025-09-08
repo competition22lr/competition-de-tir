@@ -1,0 +1,30 @@
+{
+    "LONGGONG": {
+        "SECURITE": {
+            "TITRE": "8. SÉCURITÉ – Dispositions Officielles",
+            "MANIPULATION": {
+                "TITRE": "Manipulation des armes à feu",
+                "R1": "Les carabines doivent toujours être considérées comme chargées et manipulées en conséquence.",
+                "R2": "Lorsque ce n’est pas le tour du tireur, l’arme doit être posée sur le pas de tir, culasse ouverte, chargeur retiré et chambre vide.",
+                "R3": "Tout manquement à cette règle entraîne une exclusion immédiate de la manche en cours."
+            },
+            "EPI": {
+                "TITRE": "Utilisation des équipements de protection individuelle",
+                "R1": "Le port de lunettes de protection est fortement recommandé pour tous les tireurs et accompagnateurs présents à proximité du pas de tir.",
+                "R2": "Le port de protections auditives reste à la discrétion du tireur, mais il est conseillé pour un confort optimal."
+            },
+            "CIBLES": {
+                "TITRE": "Vérification et entretien des cibles",
+                "R1": "Après chaque série, l’arbitre ou l’organisateur doit procéder à une inspection visuelle des gongs et de leurs fixations.",
+                "R2": "Toute cible présentant un défaut (angle dangereux, fissure, problème de suspension) doit être remplacée ou retirée immédiatement.",
+                "R3": "L’utilisation de cibles métalliques conformes (AR400 ou AR500, épaisseur minimale 3 mm) est obligatoire pour éviter tout risque de perforation."
+            },
+            "COMPORTEMENT": {
+                "TITRE": "Comportement sur le pas de tir",
+                "R1": "Les tireurs doivent respecter en permanence les consignes de l’arbitre ou du directeur de tir.",
+                "R2": "Aucun déplacement en avant de la ligne de tir n’est autorisé sans l’accord de l’arbitre.",
+                "R3": "Tout manquement aux règles de sécurité entraîne l’exclusion immédiate du tireur."
+            }
+        }
+    }
+}

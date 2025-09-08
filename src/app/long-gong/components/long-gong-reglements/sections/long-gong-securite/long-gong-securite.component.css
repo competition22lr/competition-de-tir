@@ -1,0 +1,68 @@
+/* long-gong-securite.component.css */
+.reglement-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reglement-section h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.reglement-section h2 i {
+    margin-right: 0.6rem;
+    color: #007acc;
+}
+
+.reglement-section ol {
+    counter-reset: sec-counter;
+    margin-left: 1rem;
+}
+
+.reglement-section ol>li {
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.reglement-section ol>li::before {
+    counter-increment: sec-counter;
+    content: counter(sec-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #007acc;
+}
+
+.reglement-section h3 {
+    font-size: 1.15rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+    color: #333333;
+}
+
+.reglement-section ul {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.reglement-section ul li {
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+    color: #555555;
+}
+
+/* adapt print styles if needed */
+@media print {
+    .reglement-section {
+        box-shadow: none;
+        background: transparent;
+    }
+}
