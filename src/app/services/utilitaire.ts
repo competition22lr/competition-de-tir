@@ -43,6 +43,7 @@ export class Utilistaire {
             case "august":
                 return 8;
             case "sep":
+            case "sept":
             case "septembre":
             case "september":
                 return 9;
