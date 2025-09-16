@@ -12,33 +12,31 @@
     <nav class="table-des-matieres">
         <h3>{{ 'LONG_GONG.REGLEMENT.TABLE.TITRE' | translate }}</h3>
         <ul>
-            <li>
-                <a (click)="goToAnchor('deroulement')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.DEROULEMENT.TITRE' | translate
-                    }}</a>
-            </li>
-            <li>
-                <a (click)="goToAnchor('categories')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CATEGORIES.TITRE' | translate
-                    }}</a>
 
-            </li>
-            <li>
-                <a (click)="goToAnchor('feuille-points')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.FEUILLEPOINTS.TITRE' |
-                    translate }}</a>
-            </li>
-            <li>
-                <a (click)="goToAnchor('calcul-points')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CALCULPOINTS.TITRE' |
-                    translate }}</a>
-            </li>
-            <li>
-                <a (click)="goToAnchor('classement')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CLASSEMENT.TITRE' | translate
-                    }}</a>
-            </li>
-            <li>
-                <a (click)="goToAnchor('equipement')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.EQUIPEMENT.TITRE' | translate
-                    }}</a>
-            </li>
             <li>
                 <a (click)="goToAnchor('calibres')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CALIBRES.TITRE' | translate }}</a>
+            </li>
+
+
+
+            <li>
+                <a (click)="goToAnchor('jeu')">{{ 'LONGGONG-JEU.TITRE' | translate }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor(' mise_en_place')">{{ 'LONGGONG-MISEENPLACE.TITRE' | translate }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('deroulement')">{{ 'LONGGONG-DEROULEMENT.TITRE' | translate
+                    }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('pointage')">{{ 'LONGGONG-SCORE.TITRE' | translate }}</a>
+            </li>
+            <li>
+                <a (click)="goToAnchor('ordre_passage')">{{ 'LONGGONG-ORDRE-PASSAGE.TITRE' | translate }}</a>
             </li>
             <li>
                 <a (click)="goToAnchor('securite')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.SECURITE.TITRE' | translate }}</a>
@@ -51,32 +49,30 @@
 
     </nav>
 
+
+
+    <section id="calibres">
+        <app-long-gong-calibres></app-long-gong-calibres>
+    </section>
+
+    <section id="jeu">
+        <app-long-gong-jeu></app-long-gong-jeu>
+    </section>
+
+    <section id="mise_en_place">
+        <app-long-gong-mise-en-place></app-long-gong-mise-en-place>
+    </section>
+
     <section id="deroulement">
         <app-long-gong-deroulement></app-long-gong-deroulement>
     </section>
 
-    <section id="categories">
-        <app-long-gong-categories></app-long-gong-categories>
+    <section id="pointage">
+        <app-long-gong-pointage></app-long-gong-pointage>
     </section>
 
-    <section id="feuille-points">
-        <app-long-gong-feuille-points></app-long-gong-feuille-points>
-    </section>
-
-    <section id="calcul-points">
-        <app-long-gong-calcul-points></app-long-gong-calcul-points>
-    </section>
-
-    <section id="classement">
-        <app-long-gong-classement></app-long-gong-classement>
-    </section>
-
-    <section id="equipement">
-        <app-long-gong-equipement></app-long-gong-equipement>
-    </section>
-
-    <section id="calibres">
-        <app-long-gong-calibres></app-long-gong-calibres>
+    <section id="ordre_passage">
+        <app-long-gong-order-passage></app-long-gong-order-passage>
     </section>
 
     <section id="securite">

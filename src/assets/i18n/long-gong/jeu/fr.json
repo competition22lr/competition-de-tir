@@ -1,0 +1,20 @@
+{
+    "LONGGONG-JEU": {
+        "TITRE": "1. Le Jeu",
+        "PRESENTATION": {
+            "TITRE": "Présentation générale",
+            "R1": "La compétition LONG GONG 25 m est une épreuve de tir de précision réservée aux carabines chambrées en calibre .22 Long Rifle.",
+            "R2": "Les tirs se déroulent sur des cibles papier, adaptées à la pratique intérieure, placées à une distance fixe de 25 mètres."
+        },
+        "OBJECTIF": {
+            "TITRE": "Objectif de la compétition",
+            "R1": "Chaque participant doit réaliser le meilleur score possible en atteignant des cibles de tailles différentes.",
+            "R2": "Les cibles les plus petites rapportent un nombre de points plus élevé, augmentant la difficulté et la stratégie."
+        },
+        "ESPRIT": {
+            "TITRE": "Esprit de la compétition",
+            "R1": "L’épreuve valorise la précision, la régularité et la gestion du temps de tir.",
+            "R2": "La compétition met en avant la maîtrise technique, la concentration et l’équité sportive."
+        }
+    }
+}

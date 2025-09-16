@@ -1,0 +1,16 @@
+{
+    "LONGGONG-ORDRE-PASSAGE": {
+        "TITRE": "7. Shooting Order",
+        "MANCHE1": {
+            "TITRE": "First round",
+            "R1": "The shooting order of the first round is determined by an official draw.",
+            "R2": "Each shooter must be present and ready when their name is called."
+        },
+        "MANCHESUIV": {
+            "TITRE": "Subsequent rounds",
+            "R1": "The shooting order is established from the lowest score to the highest.",
+            "R2": "In the event of a tie, the shooter who first reached that score will shoot first.",
+            "R3": "Any unjustified delay or absence may result in the shooter being skipped."
+        }
+    }
+}

@@ -1,30 +1,28 @@
 {
-    "LONGGONG": {
-        "SECURITE": {
-            "TITRE": "8. SAFETY – Official Provisions",
-            "MANIPULATION": {
-                "TITRE": "Firearm handling",
-                "R1": "Rifles must always be treated as if they are loaded and handled accordingly.",
-                "R2": "When it is not the shooter’s turn, the rifle must be placed on the firing line with the bolt open, magazine removed, and chamber empty.",
-                "R3": "Any breach of this rule will result in immediate exclusion from the current round."
-            },
-            "EPI": {
-                "TITRE": "Use of personal protective equipment",
-                "R1": "Wearing safety glasses is strongly recommended for all shooters and assistants near the firing line.",
-                "R2": "Hearing protection is optional but recommended for greater comfort during extended sessions."
-            },
-            "CIBLES": {
-                "TITRE": "Target inspection and maintenance",
-                "R1": "After each series, the referee or organizer must visually inspect the gongs and their supports.",
-                "R2": "Any target showing defects (dangerous angle, cracks, suspension issues) must be replaced or removed immediately.",
-                "R3": "Approved steel targets (AR400 or AR500, minimum thickness 3 mm) are mandatory to avoid perforation risks."
-            },
-            "COMPORTEMENT": {
-                "TITRE": "Behavior on the firing line",
-                "R1": "Shooters must always comply with the instructions of the referee or range officer.",
-                "R2": "No movement forward of the firing line is permitted without the referee’s approval.",
-                "R3": "Any breach of safety rules will result in immediate exclusion of the shooter."
-            }
+    "LONGGONG-SECURITE": {
+        "TITRE": "8. SAFETY – Official Provisions",
+        "MANIPULATION": {
+            "TITRE": "Firearm handling",
+            "R1": "Rifles must always be treated as if they are loaded and handled accordingly.",
+            "R2": "When it is not the shooter’s turn, the rifle must be placed on the firing line with the bolt open, magazine removed, and chamber empty.",
+            "R3": "Any breach of this rule will result in immediate exclusion from the current round."
+        },
+        "EPI": {
+            "TITRE": "Use of personal protective equipment",
+            "R1": "Wearing safety glasses is strongly recommended for all shooters and assistants near the firing line.",
+            "R2": "Hearing protection is optional but recommended for greater comfort during extended sessions."
+        },
+        "CIBLES": {
+            "TITRE": "Target inspection and maintenance",
+            "R1": "After each series, the referee or organizer must visually inspect the gongs and their supports.",
+            "R2": "Any target showing defects (dangerous angle, cracks, suspension issues) must be replaced or removed immediately.",
+            "R3": "Approved steel targets (AR400 or AR500, minimum thickness 3 mm) are mandatory to avoid perforation risks."
+        },
+        "COMPORTEMENT": {
+            "TITRE": "Behavior on the firing line",
+            "R1": "Shooters must always comply with the instructions of the referee or range officer.",
+            "R2": "No movement forward of the firing line is permitted without the referee’s approval.",
+            "R3": "Any breach of safety rules will result in immediate exclusion of the shooter."
         }
     }
 }

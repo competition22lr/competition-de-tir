@@ -1,0 +1,27 @@
+{
+    "LONGGONG-DEROULEMENT": {
+        "TITRE": "4. Round procedure",
+        "REGLES": {
+            "TITRE": "General rules",
+            "R1": "All shooters start on the large gong (1 point).",
+            "R2": "If the target is hit, the shooter may continue on the same gong to accumulate points or move to the medium gong (2 points).",
+            "R3": "After hitting the medium gong, the shooter may attempt the small gong (3 points).",
+            "R4": "If a shot is missed, the shooter goes back down one level (e.g., from small to medium).",
+            "R5": "If the wrong gong is targeted, the shot scores 0 and the shooter must return to the last validated gong."
+        },
+        "EXEMPLE": {
+            "TITRE": "Practical example",
+            "R1": "Julie hits the large gong (+1), moves to the medium (+2), succeeds, then attempts the small (+3) → provisional score: 6 points.",
+            "R2": "She misses the small gong and must return to the medium.",
+            "R3": "She then misses the medium and drops back to the large gong."
+        },
+        "EXCEPTIONS": {
+            "TITRE": "Exceptions",
+            "R1": "In case of a technical issue with the firearm (jam, faulty ammunition), the referee may grant extra time.",
+            "R2": "If a paper target is damaged or unreadable, the referee may order its replacement and replay the shot.",
+            "R3": "In case of an obvious refereeing error or dispute, a shot may be reviewed or replayed.",
+            "R4": "If an exceptional safety condition arises, the round is immediately interrupted.",
+            "R5": "During a tie-break, a special rule may apply, such as shooting only at the small gong."
+        }
+    }
+}

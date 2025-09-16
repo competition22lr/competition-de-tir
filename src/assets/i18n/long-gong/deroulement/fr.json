@@ -1,0 +1,27 @@
+{
+    "LONGGONG-DEROULEMENT": {
+        "TITRE": "4. Déroulement d’une manche",
+        "REGLES": {
+            "TITRE": "Règles générales",
+            "R1": "Tous les tireurs commencent sur le grand gong (1 point).",
+            "R2": "Si le gong est touché, le tireur peut continuer sur ce même gong pour accumuler des points ou passer au gong moyen (2 points).",
+            "R3": "Après avoir touché le gong moyen, il peut tenter le petit gong (3 points).",
+            "R4": "En cas de tir manqué, le tireur redescend d’un niveau (exemple : du petit gong au moyen).",
+            "R5": "Si un gong incorrect est visé, le tir rapporte 0 point et le joueur doit revenir au dernier gong validé."
+        },
+        "EXEMPLE": {
+            "TITRE": "Exemple pratique",
+            "R1": "Julie touche le grand gong (+1), passe au moyen (+2), réussit, puis tente le petit (+3) → score provisoire : 6 points.",
+            "R2": "Elle rate le petit gong, elle doit donc revenir au moyen.",
+            "R3": "Elle rate ensuite le moyen, elle redescend au grand."
+        },
+        "EXCEPTIONS": {
+            "TITRE": "Exceptions",
+            "R1": "En cas de problème technique avec l’arme (enrayage, munition défectueuse), l’arbitre peut accorder un temps supplémentaire.",
+            "R2": "Si une cible papier est endommagée ou devient illisible, l’arbitre peut ordonner son remplacement et faire rejouer le tir.",
+            "R3": "En cas d’erreur d’arbitrage manifeste ou de contestation, un tir peut être revérifié ou rejoué.",
+            "R4": "Si une condition de sécurité exceptionnelle survient, la manche est immédiatement interrompue.",
+            "R5": "Lors d’un départage, une règle spéciale peut être appliquée, par exemple tirer uniquement sur le petit gong."
+        }
+    }
+}

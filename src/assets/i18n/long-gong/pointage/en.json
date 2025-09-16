@@ -1,0 +1,27 @@
+{
+    "LONGGONG-SCORE": {
+        "TITRE": "6. Score",
+        "BAREME": {
+            "TITRE": "Points System",
+            "R1": "Each target corresponds to a specific point value depending on its size: Large = 1 point, Medium = 2 points, Small = 3 points.",
+            "R2": "The smaller the target, the higher the accuracy required, and the greater the reward in points.",
+            "R3": "The shooter chooses the target based on their personal strategy."
+        },
+        "MANCHE": {
+            "TITRE": "Scoring per round",
+            "R1": "Each round consists of a maximum of 10 shots per shooter.",
+            "R2": "The maximum score achievable in a single round is 27 points.",
+            "R3": "The score is recorded immediately after the end of the series."
+        },
+        "COMPET": {
+            "TITRE": "Competition total score",
+            "R1": "A standard competition consists of 5 rounds per participant.",
+            "R2": "The maximum overall score achievable is 135 points."
+        },
+        "EGALITE": {
+            "TITRE": "Tie-breaking rules",
+            "R1": "In the event of a tie in the total score, the ranking is determined by the best individual round achieved.",
+            "R2": "If the tie persists, a shoot-off may be organized at the referee’s discretion."
+        }
+    }
+}
