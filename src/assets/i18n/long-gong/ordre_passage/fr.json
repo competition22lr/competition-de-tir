@@ -1,0 +1,16 @@
+{
+    "LONGGONG-ORDRE-PASSAGE": {
+        "TITRE": "5. Ordre de Passage",
+        "MANCHE1": {
+            "TITRE": "Première manche",
+            "R1": "L’ordre de passage de la première manche est déterminé par un tirage au sort officiel.",
+            "R2": "Chaque tireur doit être présent et prêt lors de l’appel de son nom."
+        },
+        "MANCHESUIV": {
+            "TITRE": "Manches suivantes",
+            "R1": "L’ordre de passage est établi du plus bas score vers le plus haut.",
+            "R2": "En cas d’égalité, le tireur ayant atteint ce score en premier sera appelé avant les autres.",
+            "R3": "Tout retard ou absence non justifiée peut entraîner le saut de passage du tireur concerné."
+        }
+    }
+}

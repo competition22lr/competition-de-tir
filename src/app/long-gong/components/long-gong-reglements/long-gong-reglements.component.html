@@ -1,0 +1,80 @@
+<div class="reglements-container">
+    <h1 class="reglement-titre">
+        <i class="fad fa-gavel fa-flip-horizontal fa-lg"></i>
+        {{ 'LONG_GONG.REGLEMENT.TITRE' | translate }}
+    </h1>
+
+    <h2 class="reglement-sous-titre">
+        {{ 'LONG_GONG.REGLEMENT.SOUS-TITRE' | translate }}
+    </h2>
+
+
+    <nav class="table-des-matieres">
+        <h3>{{ 'LONG_GONG.REGLEMENT.TABLE.TITRE' | translate }}</h3>
+        <ul>
+
+            <li>
+                <a (click)="goToAnchor('jeu')">{{ 'LONGGONG-JEU.TITRE' | translate }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('mise_en_place')">{{ 'LONGGONG-MISEENPLACE.TITRE' | translate }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('deroulement')">{{ 'LONGGONG-DEROULEMENT.TITRE' | translate
+                    }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('pointage')">{{ 'LONGGONG-SCORE.TITRE' | translate }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('ordre_passage')">{{ 'LONGGONG-ORDRE-PASSAGE.TITRE' | translate }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('securite')">{{ 'LONGGONG-SECURITE.TITRE' | translate }}</a>
+            </li>
+
+            <li>
+                <a (click)="goToAnchor('calibres')">{{ 'LONGGONG-CALIBRES.TITRE' | translate }}</a>
+            </li>
+
+        </ul>
+        <a [routerLink]="['/long-gong/impression-reglements', this.translate.currentLang]" target="_blank">
+            <i class="fad fa-print"></i> {{ 'LONG_GONG.REGLEMENT.IMPRIMABLE' | translate }}
+        </a>
+
+
+    </nav>
+
+    <section id="jeu">
+        <app-long-gong-jeu></app-long-gong-jeu>
+    </section>
+
+    <section id="mise_en_place">
+        <app-long-gong-mise-en-place></app-long-gong-mise-en-place>
+    </section>
+
+    <section id="deroulement">
+        <app-long-gong-deroulement></app-long-gong-deroulement>
+    </section>
+
+    <section id="pointage">
+        <app-long-gong-pointage></app-long-gong-pointage>
+    </section>
+
+    <section id="ordre_passage">
+        <app-long-gong-order-passage></app-long-gong-order-passage>
+    </section>
+
+    <section id="securite">
+        <app-long-gong-securite></app-long-gong-securite>
+    </section>
+
+    <section id="calibres">
+        <app-long-gong-calibres></app-long-gong-calibres>
+    </section>
+</div>

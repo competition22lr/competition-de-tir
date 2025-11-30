@@ -21,4 +21,9 @@ export const routes: Routes = [
     { path: 'impression-reglements/:langue', component: ImpressionReglementsComponent },
     { path: 'classement-annuel/:competition', component: ClassementAnnuelComponent },
     { path: 'contact', component: ContactFormComponent },
+    // Lazy-load Long Gong routes
+    {
+        path: 'long-gong',
+        loadChildren: () => import('./long-gong/long-gong.routes').then(m => m.longGongRoutes)
+    }
 ];

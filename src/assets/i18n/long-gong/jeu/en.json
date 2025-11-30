@@ -1,0 +1,20 @@
+{
+    "LONGGONG-JEU": {
+        "TITRE": "1. The Game",
+        "PRESENTATION": {
+            "TITRE": "General Presentation",
+            "R1": "The LONG GONG 25 m competition is a precision shooting event reserved for rifles chambered in .22 Long Rifle caliber.",
+            "R2": "Shots are fired on paper targets, adapted for indoor practice, placed at a fixed distance of 25 meters."
+        },
+        "OBJECTIF": {
+            "TITRE": "Objective of the Competition",
+            "R1": "Each participant must achieve the highest possible score by hitting targets of different sizes.",
+            "R2": "Smaller targets award more points, increasing both difficulty and strategy."
+        },
+        "ESPRIT": {
+            "TITRE": "Spirit of the Competition",
+            "R1": "The event emphasizes precision, consistency, and time management during shooting.",
+            "R2": "The competition highlights technical mastery, concentration, and fair play."
+        }
+    }
+}

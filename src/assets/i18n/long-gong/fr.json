@@ -1,0 +1,13 @@
+{
+    "# File": "./src/assets/i18n/long-gong/fr.json",
+    "LONG_GONG": {
+        "REGLEMENT": {
+            "TITRE": "LONG GONG – Règlement Officiel",
+            "SOUS-TITRE": "Adapté pour 25m.",
+            "TABLE": {
+                "TITRE": "Table des matières"
+            },
+            "IMPRIMABLE": "Version imprimable"
+        }
+    }
+}

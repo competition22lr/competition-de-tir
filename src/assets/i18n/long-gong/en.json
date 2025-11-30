@@ -1,0 +1,72 @@
+{
+    "# File": "./src/assets/i18n/long-gong/en.json",
+    "longGong": {
+        "title": "LONG GONG – 25 m Official Rules",
+        "subtitle": ".22 LR precision challenge. Two variants: Realistic & Fun.",
+        "variantSwitcher": {
+            "aria": "Switch rules view",
+            "both": "Show both",
+            "realistic": "Realistic",
+            "fun": "Fun"
+        },
+        "game": {
+            "title": "The Game",
+            "desc": "<b>Objective:</b> Achieve the highest score by hitting steel gongs at 25 m using a <b>.22 LR rifle</b>. Two variants are available: <b>Realistic</b> (same angular difficulty as 300 yd) and <b>Fun</b> (more accessible)."
+        },
+        "sizes": {
+            "large": "Large (1 pt)",
+            "medium": "Medium (2 pts)",
+            "small": "Small (3 pts)"
+        },
+        "targets": {
+            "title": "Targets & Sizes",
+            "realisticCaption": "Realistic variant – exact 300 yd → 25 m angular equivalents",
+            "funCaption": "Fun variant – enlarged targets for accessibility",
+            "materials": "Use <b>AR400/AR500</b> steel, thickness <b>3–5 mm</b> for .22 LR. Solid plate hits only; chain hits do not count.",
+            "col": {
+                "gong": "Gong",
+                "original": "Original (300 yd)",
+                "realistic": "Realistic @25 m",
+                "fun": "Fun @25 m",
+                "points": "Points"
+            }
+        },
+        "setup": {
+            "title": "Setup",
+            "distance": "Fixed distance: <b>25 m</b> from firing line.",
+            "position": "Bench rest allowed with bipod and bags only – no sleds.",
+            "rounds": "<b>10 rounds</b> per stage (\"manche\").",
+            "time": "<b>3 minutes</b> countdown starts on the first shot."
+        },
+        "flow": {
+            "title": "How a Stage Works",
+            "step1": "Start on the large gong (1 pt).",
+            "step2": "On a hit, you may continue on the same gong or advance to the medium gong (2 pts).",
+            "step3": "After a hit on the medium gong, you may attempt the small gong (3 pts).",
+            "step4": "On a miss, drop back one gong.",
+            "step5": "Shooting the wrong gong scores 0 and resume on the correct previous gong."
+        },
+        "example": {
+            "title": "Example",
+            "text": "Julie hits Large (+1), advances to Medium (+2), hits, then attempts Small (+3). Misses Small → back to Medium; misses again → back to Large."
+        },
+        "scoring": {
+            "title": "Scoring",
+            "maxRound": "Maximum per stage: {{max}} points.",
+            "fullComp": "Full match: {{rounds}} stages (1 box / 50 rds) → <b>{{max}} points</b> max.",
+            "tie": "Ties are broken by the best single-stage score."
+        },
+        "order": {
+            "title": "Shooter Order",
+            "first": "Stage 1: draw lots.",
+            "next": "Next stages: ascending total score. If tied, earliest score achieved shoots first."
+        },
+        "safety": {
+            "title": "Safety",
+            "rule1": "Actions open and chambers flagged until it is your turn.",
+            "rule2": "Eye protection recommended; check mounts and hardware for ricochet risk.",
+            "rule3": "Only solid plate hits count; chain hits do not count."
+        },
+        "print": "Print this page"
+    }
+}

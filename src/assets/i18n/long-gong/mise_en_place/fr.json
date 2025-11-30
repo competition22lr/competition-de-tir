@@ -1,0 +1,29 @@
+{
+    "LONGGONG-MISEENPLACE": {
+        "TITRE": "2. Mise en place",
+        "DISTANCE": {
+            "TITRE": "Distance réglementaire",
+            "R1": "Tous les tirs se font à 25 mètres depuis la ligne de tir.",
+            "R2": "La distance est vérifiée régulièrement pour garantir l’équité."
+        },
+        "POSITION": {
+            "TITRE": "Position de tir",
+            "R1": "La position de tir est Bench Rest (assis avec bipied et sacs).",
+            "R2": "Les supports rigides type 'sled' sont interdits.",
+            "R3": "Seuls les appuis souples comme sacs et bipieds sont autorisés.",
+            "EX1": "Exemple : Position correcte avec bipied et sac arrière.",
+            "EX2": "Exemple : Position incorrecte avec support rigide."
+        },
+        "TIRS": {
+            "TITRE": "Nombre de tirs par manche",
+            "R1": "Chaque tireur dispose de 10 coups par manche.",
+            "R2": "Tout coup supplémentaire est nul et non comptabilisé."
+        },
+        "TEMPS": {
+            "TITRE": "Gestion du temps",
+            "R1": "Chaque manche dure 3 minutes à partir du premier tir.",
+            "R2": "Le chronomètre est contrôlé par l’arbitre.",
+            "R3": "Le tireur doit gérer son rythme de tir selon sa stratégie."
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "LONGGONG-SCORE": {
+        "TITRE": "4. Pointage",
+        "BAREME": {
+            "TITRE": "Barème des points",
+            "R1": "Chaque gong correspond à une valeur en points selon sa taille : Grand = 1 point, Moyen = 2 points, Petit = 3 points.",
+            "R2": "Plus le gong est petit, plus la précision requise est élevée et plus la récompense en points est importante.",
+            "R3": "Le choix du gong appartient au tireur en fonction de sa stratégie."
+        },
+        "MANCHE": {
+            "TITRE": "Score par manche",
+            "R1": "Chaque manche se compose de 10 tirs maximum par tireur.",
+            "R2": "Le score maximum réalisable lors d’une manche est de 27 points.",
+            "R3": "Le résultat est comptabilisé immédiatement après la fin de la série."
+        },
+        "COMPET": {
+            "TITRE": "Score de la compétition complète",
+            "R1": "Une compétition standard comprend 5 manches par participant.",
+            "R2": "Le score total maximum atteignable est de 135 points."
+        },
+        "EGALITE": {
+            "TITRE": "Départage en cas d’égalité",
+            "R1": "En cas d’égalité au score total, le classement se fait selon la meilleure manche individuelle obtenue.",
+            "R2": "Si l’égalité persiste, un tir de barrage peut être organisé à la discrétion de l’arbitre."
+        }
+    }
+}

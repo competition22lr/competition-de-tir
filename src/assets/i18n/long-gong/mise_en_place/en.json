@@ -1,0 +1,29 @@
+{
+    "LONGGONG-MISEENPLACE": {
+        "TITRE": "2. Setup",
+        "DISTANCE": {
+            "TITRE": "Regulation distance",
+            "R1": "All shots are taken at 25 meters from the firing line.",
+            "R2": "The distance is checked regularly to ensure fairness."
+        },
+        "POSITION": {
+            "TITRE": "Shooting position",
+            "R1": "The shooting position is Bench Rest (seated with bipod and sandbags).",
+            "R2": "Rigid supports such as 'sleds' are prohibited.",
+            "R3": "Only soft supports like sandbags and bipods are allowed.",
+            "EX1": "Example: Correct position with bipod and rear bag.",
+            "EX2": "Example: Incorrect position with rigid fixed support."
+        },
+        "TIRS": {
+            "TITRE": "Number of shots per round",
+            "R1": "Each shooter has 10 shots per round.",
+            "R2": "Any extra shots are invalid and not counted."
+        },
+        "TEMPS": {
+            "TITRE": "Time management",
+            "R1": "Each round lasts 3 minutes starting from the first shot.",
+            "R2": "The timer is controlled by the referee.",
+            "R3": "The shooter must manage his shooting pace according to his strategy."
+        }
+    }
+}
