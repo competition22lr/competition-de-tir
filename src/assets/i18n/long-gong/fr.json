@@ -7,41 +7,6 @@
             "TABLE": {
                 "TITRE": "Table des matières"
             },
-            "SECTIONS": {
-                "SECURITE": {
-                    "TITRE": "8. SÉCURITÉ – Dispositions Officielles",
-                    "TEXTE": "Description du déroulement..."
-                },
-                "DEROULEMENT": {
-                    "TITRE": "Déroulement",
-                    "TEXTE": "Description du déroulement..."
-                },
-                "CATEGORIES": {
-                    "TITRE": "Catégories",
-                    "TEXTE": "Liste des catégories..."
-                },
-                "FEUILLEPOINTS": {
-                    "TITRE": "Feuille de points",
-                    "TEXTE": "Explication de la feuille..."
-                },
-                "CALCULPOINTS": {
-                    "TITRE": "Calcul des points",
-                    "TEXTE": "Règles de calcul..."
-                },
-                "CLASSEMENT": {
-                    "TITRE": "Classement",
-                    "TEXTE": "Système de classement..."
-                },
-                "EQUIPEMENT": {
-                    "TITRE": "Équipement",
-                    "TEXTE": "Liste du matériel autorisé..."
-                },
-                "CALIBRES": {
-                    "TITRE": "Calibres autorisés",
-                    "TEXTE": "Seuls les calibres spécifiquement mentionnés ci-dessous sont autorisés pour cette compétition. Toute autre munition est strictement interdite.",
-                    "AUTRE": "D'autres calibres peuvent être acceptés conformément au règlement en vigueur et à la législation applicable."
-                }
-            },
             "IMPRIMABLE": "Version imprimable"
         }
     }

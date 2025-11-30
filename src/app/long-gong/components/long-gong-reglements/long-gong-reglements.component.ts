@@ -15,7 +15,7 @@ import { LongGongMiseEnPlaceComponent } from "./sections/long-gong-mise-en-place
   selector: 'app-long-gong-reglements',
   templateUrl: './long-gong-reglements.component.html',
   styleUrls: ['./long-gong-reglements.component.css'],
-  imports: [CommonModule, RouterModule, TranslateModule, LongGongCalibresComponent, LongGongPointageComponent, LongGongCalibresComponent, LongGongDeroulementComponent, LongGongDeroulementComponent, LongGongCalibresComponent, LongGongDeroulementComponent, LongGongSecuriteComponent, LongGongOrderPassageComponent, LongGongJeuComponent, LongGongPointageComponent, LongGongMiseEnPlaceComponent]
+  imports: [CommonModule, RouterModule, TranslateModule, LongGongPointageComponent, LongGongCalibresComponent, LongGongDeroulementComponent, LongGongDeroulementComponent, LongGongCalibresComponent, LongGongDeroulementComponent, LongGongSecuriteComponent, LongGongOrderPassageComponent, LongGongJeuComponent, LongGongPointageComponent, LongGongMiseEnPlaceComponent]
 })
 export class LongGongReglementsComponent {
   constructor(private router: Router, public translate: TranslateService) { }

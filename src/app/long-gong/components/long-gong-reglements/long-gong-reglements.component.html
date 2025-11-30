@@ -14,17 +14,11 @@
         <ul>
 
             <li>
-                <a (click)="goToAnchor('calibres')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.CALIBRES.TITRE' | translate }}</a>
-            </li>
-
-
-
-            <li>
                 <a (click)="goToAnchor('jeu')">{{ 'LONGGONG-JEU.TITRE' | translate }}</a>
             </li>
 
             <li>
-                <a (click)="goToAnchor(' mise_en_place')">{{ 'LONGGONG-MISEENPLACE.TITRE' | translate }}</a>
+                <a (click)="goToAnchor('mise_en_place')">{{ 'LONGGONG-MISEENPLACE.TITRE' | translate }}</a>
             </li>
 
             <li>
@@ -35,12 +29,19 @@
             <li>
                 <a (click)="goToAnchor('pointage')">{{ 'LONGGONG-SCORE.TITRE' | translate }}</a>
             </li>
+
             <li>
                 <a (click)="goToAnchor('ordre_passage')">{{ 'LONGGONG-ORDRE-PASSAGE.TITRE' | translate }}</a>
             </li>
+
             <li>
-                <a (click)="goToAnchor('securite')">{{ 'LONG_GONG.REGLEMENT.SECTIONS.SECURITE.TITRE' | translate }}</a>
+                <a (click)="goToAnchor('securite')">{{ 'LONGGONG-SECURITE.TITRE' | translate }}</a>
             </li>
+
+            <li>
+                <a (click)="goToAnchor('calibres')">{{ 'LONGGONG-CALIBRES.TITRE' | translate }}</a>
+            </li>
+
         </ul>
         <a [routerLink]="['/long-gong/impression-reglements', this.translate.currentLang]" target="_blank">
             <i class="fad fa-print"></i> {{ 'LONG_GONG.REGLEMENT.IMPRIMABLE' | translate }}
@@ -48,12 +49,6 @@
 
 
     </nav>
-
-
-
-    <section id="calibres">
-        <app-long-gong-calibres></app-long-gong-calibres>
-    </section>
 
     <section id="jeu">
         <app-long-gong-jeu></app-long-gong-jeu>
@@ -77,5 +72,9 @@
 
     <section id="securite">
         <app-long-gong-securite></app-long-gong-securite>
+    </section>
+
+    <section id="calibres">
+        <app-long-gong-calibres></app-long-gong-calibres>
     </section>
 </div>
