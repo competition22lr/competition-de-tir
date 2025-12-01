@@ -22,6 +22,10 @@
             </li>
 
             <li>
+                <a (click)="goToAnchor('feuille_cible')">{{ 'LONGGONG-FEUILLE-CIBLE.TITRE' | translate }}</a>
+            </li>
+
+            <li>
                 <a (click)="goToAnchor('deroulement')">{{ 'LONGGONG-DEROULEMENT.TITRE' | translate
                     }}</a>
             </li>
@@ -56,6 +60,10 @@
 
     <section id="mise_en_place">
         <app-long-gong-mise-en-place></app-long-gong-mise-en-place>
+    </section>
+
+    <section id="feuille_cible">
+        <app-long-gong-feuille-cible></app-long-gong-feuille-cible>
     </section>
 
     <section id="deroulement">
