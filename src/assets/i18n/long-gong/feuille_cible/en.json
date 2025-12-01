@@ -1,0 +1,35 @@
+{
+    "LONGGONG-FEUILLE-CIBLE": {
+        "TITRE": "Target Sheet",
+        "INTRO1": "The scoring sheet is an official document used to record individual results for each shooter during a competition.",
+        "INTRO2": "It must be signed by the official at the end of the session.",
+        "ELEMENTS_TITRE": "Elements contained in the participation sheet",
+        "ELEMENT_LISTE": [
+            "Host club logo",
+            "Competition logo",
+            "Shooter’s first and last name",
+            "Membership number",
+            "Event date",
+            "Caliber used (e.g.: .22 LR)",
+            "Shooting position",
+            "Total score",
+            "25 identical targets (5 practice, 20 scored)",
+            "Club stamp with the signature of the responsible shooting official"
+        ],
+        "PRESENTATION_TITRE": "Target Presentation",
+        "PRESENTATION_TEXTE": "The target presentation is standardized for all participants, whether seated, standing, or supported on a shooting bench. All targets, whether in the training area (numbered P1 to P5) or the scored section (numbered 1 to 20), follow the same layout and visibility criteria.",
+        "ALT_IMAGE": "Rifle target with watermark",
+        "DIMENSIONS_TITRE": "Dimensions of Regular and Elite Targets",
+        "DIMENSIONS_INTRO": "Provides the dimension of each scoring ring and the point size for the bonus.",
+        "TABLE": {
+            "COL_ELEMENT": "Target frame element",
+            "COL_DIMENSIONS": "Size in millimeters",
+            "REGULIERE": "Regular",
+            "ELITE": "Elite"
+        },
+        "ROW1": "Large gong",
+        "ROW2": "Medium gong",
+        "ROW3": "Frame numbered from 1 to 20",
+        "NOTE": "See the Scoring System section for qualifying shots."
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "LONGGONG-FEUILLE-CIBLE": {
+        "TITRE": "2.1 Feuille de cible",
+        "INTRO1": "La feuille de pointage est un document officiel servant à consigner les résultats individuels de chaque tireur au cours d'une épreuve.",
+        "INTRO2": "Elle doit être signée par l'officiel à l'issue de la séance.",
+        "ELEMENTS_TITRE": "Éléments contenus de la feuille de participation",
+        "ELEMENT_LISTE": [
+            "Logo du club hôte",
+            "Logo de la compétition",
+            "Nom et prénom du tireur",
+            "Numéro de membre",
+            "Date de l'épreuve",
+            "Calibre utilisé (ex : .22 LR)",
+            "Position de tir",
+            "Pointage total",
+            "25 cibles identiques (5 pratiques, 20 comptabilisées)",
+            "Estompe du club avec la signature de l'officiel de tir responsable"
+        ],
+        "PRESENTATION_TITRE": "Présentation des cibles",
+        "PRESENTATION_TEXTE": "La présentation des cibles est uniforme pour l'ensemble des participants, qu'ils soient en position assise, debout ou appuyés sur une table de tir. Toutes les cibles, qu'elles se trouvent dans la zone d'entraînement (numérotée de P1 à P5) ou dans la section des tirs comptabilisés (numérotée de 1 à 20), respectent les mêmes critères de disposition et de visibilité.",
+        "ALT_IMAGE": "Cible carabine avec watermark",
+        "DIMENSIONS_TITRE": "Dimension des cibles régulières et Élites",
+        "DIMENSIONS_INTRO": "Donne les dimensions de chacun des anneaux de pointage ainsi que la dimension du point pour le boni.",
+        "TABLE": {
+            "COL_ELEMENT": "Élément du cadre cible",
+            "COL_DIMENSIONS": "Dimension en millimètres",
+            "REGULIERE": "Régulière",
+            "ELITE": "Élite"
+        },
+        "ROW1": "Grand gong",
+        "ROW2": "Gong moyen",
+        "ROW3": "Petit gong",
+        "ROW4": "Cadre numéroté de 1 à 20",
+        "NOTE": "Voir la section Calcul des points pour les tirs qualifiés."
+    }
+}

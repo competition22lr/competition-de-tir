@@ -18,7 +18,8 @@ export class MultiTranslateLoader implements TranslateLoader {
             `assets/i18n/long-gong/pointage/${lang}.json`,
             `assets/i18n/long-gong/deroulement/${lang}.json`,
             `assets/i18n/long-gong/mise_en_place/${lang}.json`,
-            `assets/i18n/long-gong/calibres/${lang}.json`
+            `assets/i18n/long-gong/calibres/${lang}.json`,
+            `assets/i18n/long-gong/feuille_cible/${lang}.json`
         ];
         return forkJoin(paths.map(path => this.http.get(path))).pipe(
             map(responses => Object.assign({}, ...responses))

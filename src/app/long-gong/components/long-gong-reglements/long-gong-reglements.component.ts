@@ -9,13 +9,17 @@ import { LongGongOrderPassageComponent } from "./sections/long-gong-order-passag
 import { LongGongJeuComponent } from "./sections/long-gong-jeu/long-gong-jeu.component";
 import { LongGongPointageComponent } from "./sections/long-gong-pointage/long-gong-pointage.component";
 import { LongGongMiseEnPlaceComponent } from "./sections/long-gong-mise-en-place/long-gong-mise-en-place.component";
+import { FeuilleCibleComponent } from "./sections/feuille-cible/feuille-cible.component";
 
 
 @Component({
   selector: 'app-long-gong-reglements',
   templateUrl: './long-gong-reglements.component.html',
   styleUrls: ['./long-gong-reglements.component.css'],
-  imports: [CommonModule, RouterModule, TranslateModule, LongGongPointageComponent, LongGongCalibresComponent, LongGongDeroulementComponent, LongGongDeroulementComponent, LongGongCalibresComponent, LongGongDeroulementComponent, LongGongSecuriteComponent, LongGongOrderPassageComponent, LongGongJeuComponent, LongGongPointageComponent, LongGongMiseEnPlaceComponent]
+  imports: [CommonModule, RouterModule, TranslateModule, LongGongPointageComponent, LongGongCalibresComponent,
+    LongGongDeroulementComponent, LongGongDeroulementComponent, LongGongCalibresComponent, LongGongDeroulementComponent,
+    LongGongSecuriteComponent, LongGongOrderPassageComponent, LongGongJeuComponent, LongGongPointageComponent,
+    LongGongMiseEnPlaceComponent, FeuilleCibleComponent]
 })
 export class LongGongReglementsComponent {
   constructor(private router: Router, public translate: TranslateService) { }

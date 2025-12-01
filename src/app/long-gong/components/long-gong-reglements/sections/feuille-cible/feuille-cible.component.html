@@ -1,0 +1,88 @@
+<h2><i class="fad fa-bullseye-arrow"></i> {{ 'LONGGONG-FEUILLE-CIBLE.TITRE' | translate }}</h2>
+<p>
+    {{ 'LONGGONG-FEUILLE-CIBLE.INTRO1' | translate }}
+    <strong>{{ 'LONGGONG-FEUILLE-CIBLE.INTRO2' | translate }}</strong>
+</p>
+
+<div class="bloc">
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'LONGGONG-FEUILLE-CIBLE.PRESENTATION_TITRE' | translate
+        }}</h3>
+    <p>
+        {{ 'LONGGONG-FEUILLE-CIBLE.PRESENTATION_TEXTE' | translate }}
+    </p>
+
+    @if (isPrintMode) {
+    <div class="image-gallery-print">
+        <img *ngIf="generatedImageUrl" [src]="generatedImageUrl"
+            alt="{{ 'LONGGONG-FEUILLE-CIBLE.ALT_IMAGE' | translate }}" />
+    </div>
+    } @else {
+    <div class="image-gallery">
+        <img *ngIf="generatedImageUrl" [src]="generatedImageUrl"
+            alt="{{ 'LONGGONG-FEUILLE-CIBLE.ALT_IMAGE' | translate }}" />
+    </div>
+    }
+</div>
+
+@if (isPrintMode) {
+<div class="page-break"></div>
+<h2>
+    <i class="fad fa-bullseye-arrow"></i>
+    &nbsp;{{ 'LONGGONG-FEUILLE-CIBLE.TITRE' | translate }}
+    &nbsp;<small>{{ 'SUITE' | translate }}</small>
+</h2>
+}
+
+<div class="bloc">
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'LONGGONG-FEUILLE-CIBLE.ELEMENTS_TITRE' | translate }}
+    </h3>
+    <ul class="custom-icon-list">
+        <li *ngFor="let item of ('LONGGONG-FEUILLE-CIBLE.ELEMENT_LISTE' | translate)">{{ item }}</li>
+    </ul>
+</div>
+
+<div class="bloc">
+    <h3><i class="fad fa-circle-notch fa-xs"></i> {{ 'LONGGONG-FEUILLE-CIBLE.DIMENSIONS_TITRE' | translate }}
+    </h3>
+    <p>{{ 'LONGGONG-FEUILLE-CIBLE.DIMENSIONS_INTRO' | translate }}</p>
+    <div class="dimension-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">{{ 'LONGGONG-FEUILLE-CIBLE.TABLE.COL_ELEMENT' | translate }}</th>
+                    <th colspan="2">{{ 'LONGGONG-FEUILLE-CIBLE.TABLE.COL_DIMENSIONS' | translate }}</th>
+                </tr>
+                <tr>
+                    <th>{{ 'LONGGONG-FEUILLE-CIBLE.TABLE.REGULIERE' | translate }}</th>
+                    <th>{{ 'LONGGONG-FEUILLE-CIBLE.TABLE.ELITE' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="dimension-row-text">{{ 'LONGGONG-FEUILLE-CIBLE.ROW1' | translate }}</td>
+                    <td class="dimension-row-valeur">500</td>
+                    <td class="dimension-row-valeur">185</td>
+                </tr>
+                <tr>
+                    <td class="dimension-row-text">{{ 'LONGGONG-FEUILLE-CIBLE.ROW2' | translate }}</td>
+                    <td class="dimension-row-valeur">350</td>
+                    <td class="dimension-row-valeur">139</td>
+                </tr>
+                <tr>
+                    <td class="dimension-row-text">{{ 'LONGGONG-FEUILLE-CIBLE.ROW3' | translate }}</td>
+                    <td class="dimension-row-valeur">200</td>
+                    <td class="dimension-row-valeur">93</td>
+                </tr>
+                <!-- <tr>
+                    <td>{{ 'LONGGONG-FEUILLE-CIBLE.ROW4' | translate }}</td>
+                    <td class="dimension-row-valeur"></td>
+                    <td class="dimension-row-valeur"></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="note bloc-sub">
+    <span>* {{ 'LONGGONG-FEUILLE-CIBLE.NOTE' | translate }}</span>
+</div>
