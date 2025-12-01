@@ -1,0 +1,81 @@
+.note {
+    border-left-color: darkgrey !important;
+    background: none !important;
+    color: grey !important;
+}
+
+.bloc-sub {
+    margin-left: 1.5em;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery-print {
+    text-align: center;
+}
+
+.image-gallery-print img {
+    width: auto;
+    height: 500px;
+}
+
+.dimension-table {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.dimension-table table {
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    background-color: #fdfdfd;
+}
+
+.dimension-table th,
+.dimension-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.dimension-row-text {
+    text-align: left;
+}
+
+.dimension-row-valeur {
+    text-align: center;
+}
+
+.dimension-table th {
+    font-family: Times New Roman;
+    font-size: larger;
+    background-color: #00518f;
+    color: white;
+    font-weight: bold;
+}
+
+.dimension-table td:first-child {
+    font-weight: bold;
+    color: #2a3b4c;
+    width: 60%;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+/* Responsive : une image par ligne en mobile */
+@media (max-width: 768px) {
+
+    .dimension-table th,
+    .dimension-table td {
+        border: 1px solid #ddd;
+        padding: 0.3rem;
+    }
+}
