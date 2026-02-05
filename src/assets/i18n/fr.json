@@ -120,7 +120,16 @@
         "SECTIONS": {
             "DEROULEMENT": {
                 "TITRE": "Déroulement de la compétition",
-                "DESCRIPTION": "La compétition s’étend sur une année complète et se décline en classements mensuels. Chaque participant doit se procurer une feuille de cible officielle au comptoir de la boutique.",
+                "DESCRIPTION": "La compétition se déroule sur une période annuelle complète et repose sur un système de classements mensuels. Elle permet aux participants de soumettre, chaque mois, leur meilleure performance réalisée selon des conditions normalisées et équitables. Tout au long de l'année, les tireurs peuvent effectuer un nombre illimité de participations, sous réserve du respect des règles de tir, de validation et de dépôt des feuilles de cible. Les résultats sont ensuite traités par l'organisation afin d'établir les classements mensuels, puis le classement final annuel, qui détermine les récipiendaires des prix lors de l'assemblée générale annuelle.",
+                "PROCEDURE_TIR": {
+                    "TITRE": "Procédure de tir et dépôt de la cible",
+                    "RECUPERATION_CIBLE": "Le tireur doit récupérer une feuille de cible officielle auprès de l’employé du champ de tir.",
+                    "DISTANCE": "Les tirs doivent être effectués à une distance fixe de 25 mètres, conformément au règlement en vigueur.",
+                    "DECISION": "À la fin de la séance de tir, le tireur décide s’il souhaite conserver ou non la feuille de cible obtenue.",
+                    "VALIDATION": "Si le tireur estime que cette feuille représente sa meilleure performance pour le mois en cours, celle-ci doit être validée et signée par un officiel de tir, puis remise à l’employé du champ de tir.",
+                    "LIMITE_MENSUELLE": "Une seule feuille de cible par tireur est acceptée par mois.",
+                    "DELAI": "La feuille de cible doit être remise le jour même où elle a été tirée; toute soumission ultérieure sera refusée."
+                },
                 "FEUILLES": {
                     "TITRE": "Feuilles de participation",
                     "OBTENTION": "Les feuilles doivent être obtenues auprès d’un employé au comptoir de la boutique.",
@@ -139,7 +148,8 @@
                     "TITRE": "Traitement des résultats",
                     "CALCUL_MANUEL": "Le calcul des points est effectué manuellement par les responsables de l’organisation.",
                     "SAISIE_EXCEL": "Les résultats sont saisis dans un tableur Microsoft Excel.",
-                    "PUBLICATION": "Le classement final mensuel est publié dans la première semaine du mois suivant, au plus tard le premier samedi."
+                    "PUBLICATION": "Le classement final et la remise des prix aux trois meilleurs tireurs ont lieu lors de l’assemblée générale annuelle.",
+                    "PRE_PUBLICATION": "Le classement provisoire est publié au cours de la première semaine du mois suivant, au plus tard le premier samedi."
                 },
                 "TIRAGE": {
                     "TITRE": "Tirage au sort 50/50",

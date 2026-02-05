@@ -120,7 +120,16 @@
         "SECTIONS": {
             "DEROULEMENT": {
                 "TITRE": "Competition Process",
-                "DESCRIPTION": "The competition spans an entire year and features monthly rankings. Each participant must obtain an official target sheet from the store counter.",
+                "DESCRIPTION": "The competition runs over a full calendar year and is based on a system of monthly rankings. Each participant may submit, once per month, their best performance achieved under standardized and fair shooting conditions. Throughout the year, shooters may participate an unlimited number of times, provided that all shooting, validation, and target submission rules are respected. Results are processed by the organizers to produce the monthly rankings, followed by the final annual ranking, which determines the prize recipients announced at the Annual General Meeting.",
+                "PROCEDURE_TIR": {
+                    "TITRE": "Shooting Procedure and Target Submission",
+                    "RECUPERATION_CIBLE": "The shooter must obtain an official target sheet from the shooting range staff.",
+                    "DISTANCE": "All shots must be fired at a fixed distance of 25 meters, in accordance with the applicable regulations.",
+                    "DECISION": "At the end of the shooting session, the shooter must decide whether to keep or discard the target sheet.",
+                    "VALIDATION": "If the shooter believes the target represents their best performance for the current month, it must be validated and signed by a range official, then submitted to the shooting range staff.",
+                    "LIMITE_MENSUELLE": "Only one target sheet per shooter is allowed per month.",
+                    "DELAI": "The target sheet must be submitted on the same day it was shot; any late submissions will not be accepted."
+                },
                 "FEUILLES": {
                     "TITRE": "Participation Sheets",
                     "OBTENTION": "Sheets must be obtained from a staff member at the store counter.",
@@ -136,10 +145,11 @@
                     "REFUS_SIGNATURE": "If this distance is not respected, the official will not sign the sheet, and it will be considered invalid."
                 },
                 "TRAITEMENT": {
-                    "TITRE": "Result Processing",
-                    "CALCUL_MANUEL": "Scores are manually calculated by the competition organizers.",
+                    "TITRE": "Results Processing",
+                    "CALCUL_MANUEL": "Points are calculated manually by the competition organizers.",
                     "SAISIE_EXCEL": "Results are entered into a Microsoft Excel spreadsheet.",
-                    "PUBLICATION": "Final monthly rankings are published during the first week of the following month, no later than the first Saturday."
+                    "PUBLICATION": "The final ranking and the award ceremony for the top three shooters take place during the Annual General Meeting.",
+                    "PRE_PUBLICATION": "The provisional ranking is published during the first week of the following month, no later than the first Saturday."
                 },
                 "TIRAGE": {
                     "TITRE": "50/50 Random Draw",
