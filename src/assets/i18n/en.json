@@ -263,22 +263,24 @@
                 },
                 "OR": {
                     "TITRE": "Gold",
-                    "CONDITION1": "Highest overall score",
-                    "CONDITION1_PART2": "(base + bonuses)",
-                    "CONDITION2_PART1": "Use of",
-                    "CONDITION2_PART2": "regular targets"
+                    "CONDITION1": "Highest average of the five best target sheets",
+                    "CONDITION1_PART2": "submitted during the competition period",
+                    "CONDITION2_PART1": "Calculation based on",
+                    "CONDITION2_PART2": "regular targets only"
                 },
                 "ARGENT": {
                     "TITRE": "Silver",
-                    "CONDITION1": "Second highest overall score",
-                    "CONDITION2_PART1": "Use of",
-                    "CONDITION2_PART2": "regular targets"
+                    "CONDITION1": "Second highest average of the five best target sheets",
+                    "CONDITION1_PART2": "submitted during the competition period",
+                    "CONDITION2_PART1": "Calculation based on",
+                    "CONDITION2_PART2": "regular targets only"
                 },
                 "BRONZE": {
                     "TITRE": "Bronze",
-                    "CONDITION1": "Third highest overall score",
-                    "CONDITION2_PART1": "Use of",
-                    "CONDITION2_PART2": "regular targets"
+                    "CONDITION1": "Third highest average of the five best target sheets",
+                    "CONDITION1_PART2": "submitted during the competition period",
+                    "CONDITION2_PART1": "Calculation based on",
+                    "CONDITION2_PART2": "regular targets only"
                 },
                 "NOTE": {
                     "TITRE": "Note:",
@@ -287,6 +289,14 @@
                     "TEXTE3": "ranking but not reaching the",
                     "TEXTE4": "200 base points",
                     "TEXTE5": "will not be ranked in any group, even with an excellent bonus score."
+                },
+                "PRIX": {
+                    "TITRE": "Prize Awarded",
+                    "DESCRIPTION": "Renewal Credit",
+                    "DESCRIPTION2": "A credit applied toward the renewal of the annual club membership, awarded to the shooter achieving this ranking.",
+                    "OR": "Value of $",
+                    "ARGENT": "Value of $",
+                    "BRONZE": "Value of $"
                 }
             },
             "EQUIPEMENT": {

@@ -263,22 +263,24 @@
                 },
                 "OR": {
                     "TITRE": "Or",
-                    "CONDITION1": "Meilleur score total",
-                    "CONDITION1_PART2": "(base + bonis)",
-                    "CONDITION2_PART1": "Utilisation de",
-                    "CONDITION2_PART2": "cibles régulières"
+                    "CONDITION1": "Meilleure moyenne des cinq meilleures feuilles de cible",
+                    "CONDITION1_PART2": "présentées durant la période de la compétition",
+                    "CONDITION2_PART1": "Calcul basé sur",
+                    "CONDITION2_PART2": "des cibles régulières uniquement"
                 },
                 "ARGENT": {
                     "TITRE": "Argent",
-                    "CONDITION1": "Deuxième meilleur score total",
-                    "CONDITION2_PART1": "Utilisation de",
-                    "CONDITION2_PART2": "cibles régulières"
+                    "CONDITION1": "Deuxième meilleure moyenne des cinq meilleures feuilles de cible",
+                    "CONDITION1_PART2": "présentées durant la période de la compétition",
+                    "CONDITION2_PART1": "Calcul basé sur",
+                    "CONDITION2_PART2": "des cibles régulières uniquement"
                 },
                 "BRONZE": {
                     "TITRE": "Bronze",
-                    "CONDITION1": "Troisième meilleur score total",
-                    "CONDITION2_PART1": "Utilisation de",
-                    "CONDITION2_PART2": "cibles régulières"
+                    "CONDITION1": "Troisième meilleure moyenne des cinq meilleures feuilles de cible",
+                    "CONDITION1_PART2": "présentées durant la période de la compétition",
+                    "CONDITION2_PART1": "Calcul basé sur",
+                    "CONDITION2_PART2": "des cibles régulières uniquement"
                 },
                 "NOTE": {
                     "TITRE": "Note :",
@@ -287,6 +289,14 @@
                     "TEXTE3": "mais n'atteint pas les",
                     "TEXTE4": "200 points de base",
                     "TEXTE5": "ne sera classé dans aucun groupe, même avec un excellent pointage bonifié."
+                },
+                "PRIX": {
+                    "TITRE": "Prix attribué",
+                    "DESCRIPTION": "Crédit de renouvellement",
+                    "DESCRIPTION2": "Un crédit applicable lors du renouvellement de l’adhésion annuelle au club, attribué au tireur ayant obtenu ce classement.",
+                    "OR": "Une valeur de $",
+                    "ARGENT": "Une valeur de $",
+                    "BRONZE": "Une valeur de $"
                 }
             },
             "EQUIPEMENT": {
