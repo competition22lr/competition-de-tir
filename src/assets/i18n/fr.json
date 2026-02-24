@@ -123,16 +123,13 @@
                 "DESCRIPTION": "La compétition se déroule sur une période annuelle complète et repose sur un système de classements mensuels. Elle permet aux participants de soumettre, chaque mois, leur meilleure performance réalisée selon des conditions normalisées et équitables. Tout au long de l'année, les tireurs peuvent effectuer un nombre illimité de participations, sous réserve du respect des règles de tir, de validation et de dépôt des feuilles de cible. Les résultats sont ensuite traités par l'organisation afin d'établir les classements mensuels, puis le classement final annuel, qui détermine les récipiendaires des prix lors de l'assemblée générale annuelle.",
                 "PROCEDURE_TIR": {
                     "TITRE": "Procédure de tir et dépôt de la cible",
-                    "RECUPERATION_CIBLE": "Le tireur doit récupérer une feuille de cible officielle auprès de l’employé du champ de tir.",
-                    "DISTANCE": "Les tirs doivent être effectués à une distance fixe de 25 mètres, conformément au règlement en vigueur.",
-                    "DECISION": "À la fin de la séance de tir, le tireur décide s’il souhaite conserver ou non la feuille de cible obtenue.",
-                    "VALIDATION": "Si le tireur estime que cette feuille représente sa meilleure performance pour le mois en cours, celle-ci doit être validée et signée par un officiel de tir, puis remise à l’employé du champ de tir.",
-                    "LIMITE_MENSUELLE": "Une seule feuille de cible par tireur est acceptée par mois.",
+                    "DECISION": "À la fin de la séance de tir, le tireur doit retourner les feuilles cible utiliser ou NON a l'employé du champ de tir.",
+                    "LIMITE_MENSUELLE": "Une seule feuille de cible par tireur est acceptée par mois. soit la feuille avec le meilleure pointage inculent les points bonis.",
                     "DELAI": "La feuille de cible doit être remise le jour même où elle a été tirée; toute soumission ultérieure sera refusée."
                 },
                 "FEUILLES": {
                     "TITRE": "Feuilles de participation",
-                    "OBTENTION": "Les feuilles doivent être obtenues auprès d’un employé au comptoir de la boutique.",
+                    "OBTENTION": "Le tireur doit récupérer une feuille de cible officielle auprès de l’employé du champ de tir.",
                     "PARTICIPATIONS": "Le nombre de participations n’est pas limité durant l’année.",
                     "PRIX_MEMBRE": "Chaque feuille coûte 2 $ pour les membres.",
                     "PRIX_NON_MEMBRE": "Chaque feuille coûte 5 $ pour les non-membres.",
@@ -149,12 +146,17 @@
                     "CALCUL_MANUEL": "Le calcul des points est effectué manuellement par les responsables de l’organisation.",
                     "SAISIE_EXCEL": "Les résultats sont saisis dans un tableur Microsoft Excel.",
                     "PUBLICATION": "Le classement final et la remise des prix aux trois meilleurs tireurs ont lieu lors de l’assemblée générale annuelle.",
-                    "PRE_PUBLICATION": "Le classement provisoire est publié au cours de la première semaine du mois suivant, au plus tard le premier samedi."
+                    "PRE_PUBLICATION": "Le classement provisoire est publié au cours de la première semaine du mois suivant, au plus tard le premier samedi.",
+                    "PRIX": "L’attribution des prix est effectuée en fonction du classement officiel établi à l’issue de la compétition.",
+                    "PRIX_DETAIL": "Pour connaître en détail les distinctions, trophées et récompenses associés à chaque position, veuillez vous référer à la section « ",
+                    "PRIX_DETAIL2": " », laquelle précise les critères d’évaluation ainsi que les prix attribués selon le classement obtenu."
                 },
                 "TIRAGE": {
                     "TITRE": "Tirage au sort 50/50",
-                    "EXPLICATION": "Le tirage au sort mensuel du 50/50 est réalisé de manière électronique à l’aide d’un module intégré à Microsoft Excel.",
-                    "EQUITABLE": "Ce procédé garantit une sélection aléatoire et équitable parmi les participations valides."
+                    "PARTICIPATIONS": "Toute feuille-cible achetée et retournée confère automatiquement un droit de participation, qu’elle soit utilisée (tirée) ou non.",
+                    "EXPLICATION": "Le tirage au sort du 50/50 est effectué uniquement lorsque le montant cumulatif atteint un minimum de 100 $.",
+                    "AUCUN": "Aucun tirage n’est réalisé sur une base mensuelle ou périodique si ce seuil n’est pas atteint.",
+                    "EQUITABLE": "Le tirage est effectué de manière électronique au moyen d’un module de sélection aléatoire intégré directement à l’application officielle de la compétition (roue de fortune numérique), garantissant un processus impartial, transparent et conforme aux principes d’équité."
                 },
                 "NOTE": "Veuillez consulter les sections connexes pour plus de détails sur le fonctionnement de la compétition."
             },
