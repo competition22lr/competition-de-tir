@@ -14,10 +14,11 @@
                 <tr>
                     <th>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.COL_CLASSEMENT' | translate }}</th>
                     <th>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.COL_CONDITIONS' | translate }}</th>
+                    <th>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.TITRE' | translate }}</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- <tr>
                     <td class="trophy-card trophy-card-Diamant">
                         <div class="trophy-content">
                             <img [src]="getTrophyImage('Diamant')" class="trophy-img" alt="trophée Diamant" />
@@ -46,8 +47,8 @@
                             </li>
                         </ul>
                     </td>
-                </tr>
-                <tr>
+                </tr> -->
+                <!-- <tr>
                     <td class="trophy-card trophy-card-Platine">
                         <div class="trophy-content">
                             <img [src]="getTrophyImage('Platine')" class="trophy-img" alt="trophée Platine" />
@@ -67,7 +68,7 @@
                             </li>
                         </ul>
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td class="trophy-card trophy-card-Or">
                         <div class="trophy-content">
@@ -87,6 +88,11 @@
                             </li>
                         </ul>
                     </td>
+                    <td>
+                        <strong> {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.DESCRIPTION' | translate }}</strong>
+                        <br>
+                        {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.OR' | translate }}
+                    </td>
                 </tr>
                 <tr>
                     <td class="trophy-card trophy-card-Argent">
@@ -97,12 +103,19 @@
                     </td>
                     <td>
                         <ul class="custom-icon-list">
-                            <li><strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION1' | translate }}</strong></li>
+                            <li><strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION1' | translate }}</strong>
+                            </li>
                             <li>
                                 {{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION2_PART1' | translate }}
-                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION2_PART2' | translate }}</strong>
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.ARGENT.CONDITION2_PART2' | translate
+                                    }}</strong>
                             </li>
                         </ul>
+                    </td>
+                    <td>
+                        <strong> {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.DESCRIPTION' | translate }}</strong>
+                        <br>
+                        {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.ARGENT' | translate }}
                     </td>
                 </tr>
                 <tr>
@@ -114,12 +127,19 @@
                     </td>
                     <td>
                         <ul class="custom-icon-list">
-                            <li><strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION1' | translate }}</strong></li>
+                            <li><strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION1' | translate }}</strong>
+                            </li>
                             <li>
                                 {{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION2_PART1' | translate }}
-                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION2_PART2' | translate }}</strong>
+                                <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.BRONZE.CONDITION2_PART2' | translate
+                                    }}</strong>
                             </li>
                         </ul>
+                    </td>
+                    <td>
+                        <strong> {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.DESCRIPTION' | translate }}</strong>
+                        <br>
+                        {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.BRONZE' | translate }}
                     </td>
                 </tr>
             </tbody>
@@ -127,11 +147,17 @@
     </div>
     <div class="note">
         <i class="fad fa-lock-alt"></i>
+        <strong> {{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.DESCRIPTION' | translate }}</strong>
+        <p>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.PRIX.DESCRIPTION2' | translate }}</p>
+
+    </div>
+    <!-- <div class="note">
+        <i class="fad fa-lock-alt"></i>
         <strong> {{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TITRE' | translate }}</strong>
         {{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE1' | translate }}
         <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE2' | translate }}</strong>
         {{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE3' | translate }}
         <strong>{{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE4' | translate }}</strong>
         {{ 'REGLEMENT.SECTIONS.CLASSEMENT.NOTE.TEXTE5' | translate }}
-    </div>
+    </div> -->
 </div>
