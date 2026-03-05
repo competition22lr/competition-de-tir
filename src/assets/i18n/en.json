@@ -296,9 +296,9 @@
                     "TITRE": "Awarded Prize",
                     "DESCRIPTION": "Renewal credit",
                     "DESCRIPTION2": "A credit applicable upon renewal of the annual club membership, awarded to the shooter who achieved this ranking.",
-                    "OR": "A value of $",
-                    "ARGENT": "A value of $",
-                    "BRONZE": "A value of $"
+                    "OR": "A value of $200",
+                    "ARGENT": "A value of $150",
+                    "BRONZE": "A value of $100"
                 }
             },
             "EQUIPEMENT": {
