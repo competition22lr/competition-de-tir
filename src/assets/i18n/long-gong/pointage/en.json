@@ -1,6 +1,7 @@
 {
     "LONGGONG-SCORE": {
-        "TITRE": "4. Score",
+        "INDEX": "5. ",
+        "TITRE": "Score",
         "BAREME": {
             "TITRE": "Points System",
             "R1": "Each target corresponds to a specific point value depending on its size: Large = 1 point, Medium = 2 points, Small = 3 points.",

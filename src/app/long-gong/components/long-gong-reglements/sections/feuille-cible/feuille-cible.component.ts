@@ -18,7 +18,7 @@ export class FeuilleCibleComponent implements OnInit {
   constructor(public resultatsService: ResultatsService) { }
 
   ngOnInit() {
-    const imageUrl = this.resultatsService.imageLocationUrl + 'CiblecarabineCTO.jpg';
+    const imageUrl = this.resultatsService.imageLocationUrl + 'cibleLongGong.png';
 
     Utilistaire.generateWatermarkedImage(imageUrl).then((dataUrl) => {
       this.generatedImageUrl = dataUrl;

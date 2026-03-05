@@ -1,6 +1,7 @@
 {
     "LONGGONG-SCORE": {
-        "TITRE": "4. Pointage",
+        "INDEX": "5. ",
+        "TITRE": "Pointage",
         "BAREME": {
             "TITRE": "Barème des points",
             "R1": "Chaque gong correspond à une valeur en points selon sa taille : Grand = 1 point, Moyen = 2 points, Petit = 3 points.",

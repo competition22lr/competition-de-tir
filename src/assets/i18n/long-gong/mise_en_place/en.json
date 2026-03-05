@@ -1,6 +1,7 @@
 {
     "LONGGONG-MISEENPLACE": {
-        "TITRE": "2. Setup",
+        "INDEX": "2. ",
+        "TITRE": "Setup",
         "DISTANCE": {
             "TITRE": "Regulation distance",
             "R1": "All shots are taken at 25 meters from the firing line.",
