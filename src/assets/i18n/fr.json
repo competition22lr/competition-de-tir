@@ -296,9 +296,9 @@
                     "TITRE": "Prix attribué",
                     "DESCRIPTION": "Crédit de renouvellement",
                     "DESCRIPTION2": "Un crédit applicable lors du renouvellement de l’adhésion annuelle au club, attribué au tireur ayant obtenu ce classement.",
-                    "OR": "Une valeur de $",
-                    "ARGENT": "Une valeur de $",
-                    "BRONZE": "Une valeur de $"
+                    "OR": "Une valeur de 200$",
+                    "ARGENT": "Une valeur de 150$",
+                    "BRONZE": "Une valeur de 100$"
                 }
             },
             "EQUIPEMENT": {
