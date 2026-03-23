@@ -132,8 +132,8 @@
                     "OBTENTION": "The shooter must obtain an official target sheet from the range employee.",
                     "PARTICIPATIONS": "The number of entries is not limited during the year.",
                     "PRIX_MEMBRE": "Each sheet costs $2 for members.",
-                    "PRIX_NON_MEMBRE": "Each sheet costs $5 for non-members.",
-                    "FRAIS_TERRAIN": "Range access fees apply additionally."
+                    "PRIX_NON_MEMBRE": "Each sheet costs $2 for non-members.",
+                    "FRAIS_TERRAIN": "A range access fee of $10 applies additionally for non-members."
                 },
                 "VALIDATION": {
                     "TITRE": "Validation of Shots",

@@ -132,8 +132,8 @@
                     "OBTENTION": "Le tireur doit récupérer une feuille de cible officielle auprès de l’employé du champ de tir.",
                     "PARTICIPATIONS": "Le nombre de participations n’est pas limité durant l’année.",
                     "PRIX_MEMBRE": "Chaque feuille coûte 2 $ pour les membres.",
-                    "PRIX_NON_MEMBRE": "Chaque feuille coûte 5 $ pour les non-membres.",
-                    "FRAIS_TERRAIN": "Des frais d’accès au champ de tir s’appliquent en sus."
+                    "PRIX_NON_MEMBRE": "Chaque feuille coûte 2 $ pour les non-membres.",
+                    "FRAIS_TERRAIN": "Des frais d’accès au champ de tir de 10 $ s’appliquent en sus pour les non-membres."
                 },
                 "VALIDATION": {
                     "TITRE": "Validation des tirs",
