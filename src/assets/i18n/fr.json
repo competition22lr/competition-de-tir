@@ -3,7 +3,7 @@
     "SORTIE": "Sortie",
     "HEADER": {
         "TITRE": "Compétition de tir de précision",
-        "NOM_CLUB": "Club de Tir de l'Outaouais"
+        "NOM_CLUB": "Club de tir de l'Outaouais"
     },
     "FOOTER": {
         "DROITS": "© 2025 Compétition de tir - Tous droits réservés",
@@ -62,23 +62,23 @@
         "BRONZE": "Bronze"
     },
     "ACCUEIL": {
-        "TITRE": "Bienvenue sur le site de la Compétition de Tir de Précision",
+        "TITRE": "Bienvenue sur le site de la Compétition de tir de précision",
         "INTRO": "Cette plateforme vous permet de consulter les résultats mensuels, les règlements de la compétition et les informations utiles pour les tireurs participants.",
-        "HORAIRE_TITRE": "Heures d'ouverture de champ de tir:",
-        "NOTE": "* Veuillez vérifier le calendrier du club pour connaître l'horaire exact.",
+        "HORAIRE_TITRE": "Heures d'ouverture du champ de tir:",
+        "NOTE": "* Veuillez vérifier le calendrier de votre club pour connaître l'horaire exact.",
         "CLUB_TITRE": "Organisé par le ",
         "ADRESSE": "Adresse : ",
         "TELEPHONE": "Téléphone : ",
         "COURRIEL": "Courriel : ",
         "SITE_WEB": "Site Web : ",
-        "HORAIRE_SEMAINE": "Lundi au Vendredi : ",
-        "HORAIRE_SAMEDI": "Samedi : ",
-        "HORAIRE_DIMANCHE": "Dimanche : ",
+        "HORAIRE_SEMAINE": "lundi au vendredi : ",
+        "HORAIRE_SAMEDI": "samedi : ",
+        "HORAIRE_DIMANCHE": "dimanche : ",
         "HORAIRE_A": "à"
     },
     "CLASSEMENT_MENSUEL": {
         "CLASSEMENT": "Classement",
-        "SYSTEME_CLASSEMENT_TIREURS": "Système de Classement des Tireurs",
+        "SYSTEME_CLASSEMENT_TIREURS": "Système de classement des tireurs",
         "VERSION_IMPRIMABLE": "Version imprimable",
         "PRINT": "Imprimé"
     },
@@ -113,18 +113,18 @@
         "LANCER_TIRAGE": "Afficher roue de la chance"
     },
     "REGLEMENT": {
-        "TITRE": "Règlements de la compétition",
+        "TITRE": "Règlement de la compétition",
         "IMPRIMABLE": "Version imprimable",
         "TABLE.TITRE": "Table des matières",
         "PRINT": "Imprimé",
         "SECTIONS": {
             "DEROULEMENT": {
                 "TITRE": "Déroulement de la compétition",
-                "DESCRIPTION": "La compétition se déroule sur une période annuelle complète et repose sur un système de classements mensuels. Elle permet aux participants de soumettre, chaque mois, leur meilleure performance réalisée selon des conditions normalisées et équitables. Tout au long de l'année, les tireurs peuvent effectuer un nombre illimité de participations, sous réserve du respect des règles de tir, de validation et de dépôt des feuilles de cible. Les résultats sont ensuite traités par l'organisation afin d'établir les classements mensuels, puis le classement final annuel, qui détermine les récipiendaires des prix lors de l'assemblée générale annuelle.",
+                "DESCRIPTION": "La compétition se déroule sur une période annuelle complète et repose sur un système de classements mensuels. Elle permet aux participants de soumettre, chaque mois, leur meilleure performance réalisée selon des conditions normalisées et équitables. Tout au long de l'année, les tireurs peuvent effectuer un nombre illimité de participations, sous réserve du respect des règles de tir, de validation et de dépôt des feuilles de cible. Les résultats sont ensuite traités par l'organisation afin d'établir les classements mensuels, puis le classement final annuel, qui détermine les récipiendaires des prix.",
                 "PROCEDURE_TIR": {
                     "TITRE": "Procédure de tir et dépôt de la cible",
-                    "DECISION": "À la fin de la séance de tir, le tireur doit retourner les feuilles cible utiliser ou NON a l'employé du champ de tir.",
-                    "LIMITE_MENSUELLE": "Une seule feuille de cible par tireur est acceptée par mois. soit la feuille avec le meilleure pointage inculent les points bonis.",
+                    "DECISION": "À la fin de la séance de tir, le tireur doit retourner les feuilles cibles utilisées ou NON à l'employé du champ de tir.",
+                    "LIMITE_MENSUELLE": "Une seule feuille de cibles par tireur est acceptée par mois. soit la feuille avec le meilleur pointage incluant les points bonis,",
                     "DELAI": "La feuille de cible doit être remise le jour même où elle a été tirée; toute soumission ultérieure sera refusée."
                 },
                 "FEUILLES": {
@@ -137,7 +137,7 @@
                 },
                 "VALIDATION": {
                     "TITRE": "Validation des tirs",
-                    "ESTAMPILLE": "Chaque feuille doit être estampillée par l’employé lors de son émission.",
+                    "ESTAMPILLE": "Chaque feuille doit être estampillée par l’employé afin d'être validée.",
                     "DISTANCE": "Les cibles doivent obligatoirement être positionnées à une distance de 25 mètres.",
                     "REFUS_SIGNATURE": "En cas de non-respect de la distance, l’officiel ne pourra signer et la feuille sera considérée comme invalide."
                 },
@@ -145,17 +145,16 @@
                     "TITRE": "Traitement des résultats",
                     "CALCUL_MANUEL": "Le calcul des points est effectué manuellement par les responsables de l’organisation.",
                     "SAISIE_EXCEL": "Les résultats sont saisis dans un tableur Microsoft Excel.",
-                    "PUBLICATION": "Le classement final et la remise des prix aux trois meilleurs tireurs ont lieu lors de l’assemblée générale annuelle.",
-                    "PRE_PUBLICATION": "Le classement provisoire est publié au cours de la première semaine du mois suivant, au plus tard le premier samedi.",
+                    "PRE_PUBLICATION": "Le classement provisoire sera publié au début du mois suivant.",
                     "PRIX": "L’attribution des prix est effectuée en fonction du classement officiel établi à l’issue de la compétition.",
-                    "PRIX_DETAIL": "Pour connaître en détail les distinctions, trophées et récompenses associés à chaque position, veuillez vous référer à la section « ",
+                    "PRIX_DETAIL": "Pour connaître en détail les distinctions, trophées et récompenses associés au classement, veuillez vous référer à la section « ",
                     "PRIX_DETAIL2": " », laquelle précise les critères d’évaluation ainsi que les prix attribués selon le classement obtenu."
                 },
                 "TIRAGE": {
                     "TITRE": "Tirage au sort 50/50",
                     "PARTICIPATIONS": "Toute feuille-cible achetée et retournée confère automatiquement un droit de participation, qu’elle soit utilisée (tirée) ou non.",
                     "EXPLICATION": "Le tirage au sort du 50/50 est effectué uniquement lorsque le montant cumulatif atteint un minimum de 100 $.",
-                    "AUCUN": "Aucun tirage n’est réalisé sur une base mensuelle ou périodique si ce seuil n’est pas atteint.",
+                    "AUCUN": "Aucun tirage n’est réalisé sur une base mensuelle ou périodique si ce minimum n’est pas atteint.",
                     "EQUITABLE": "Le tirage est effectué de manière électronique au moyen d’un module de sélection aléatoire intégré directement à l’application officielle de la compétition (roue de fortune numérique), garantissant un processus impartial, transparent et conforme aux principes d’équité."
                 },
                 "NOTE": "Veuillez consulter les sections connexes pour plus de détails sur le fonctionnement de la compétition."
@@ -163,9 +162,9 @@
             "CATEGORIES": {
                 "TITRE": "Catégories",
                 "INTRO": "La définition des catégories officielles est en cours de finalisation. Cette classification visera à structurer équitablement la participation des tireurs selon différents critères, tels que :",
-                "TYPE_ARME": "Le type de carabine (air comprimé, .22 LR, percussion centrale, etc.)",
-                "EXPERIENCE": "Le niveau d'expérience (débutant, confirmé, expert)",
-                "CLASSE_AGE": "La classification ou l'âge (si applicable selon les règlements en vigueur)",
+                "TYPE_ARME": "Le type de carabine (air comprimé, .22 LR, percussion centrale, etc.).",
+                "EXPERIENCE": "Le niveau d'expérience (débutant, confirmé, expert).",
+                "CLASSE_AGE": "La classification ou l'âge (si applicable selon les règlements en vigueur).",
                 "NOTE_A_VENIR": "À venir : ",
                 "NOTE": "Les catégories officielles seront publiées prochainement après validation par les instances organisatrices."
             },
@@ -175,21 +174,21 @@
                 "INTRO2": "Elle doit être signée par l'officiel à l'issue de la séance.",
                 "ELEMENTS_TITRE": "Éléments contenus de la feuille de participation",
                 "ELEMENT_LISTE": [
-                    "Logo du club hôte",
-                    "Logo de la compétition",
-                    "Nom et prénom du tireur",
-                    "Numéro de membre",
-                    "Date de l'épreuve",
-                    "Calibre utilisé (ex : .22 LR)",
-                    "Position de tir",
-                    "Pointage total",
-                    "25 cibles identiques (5 pratiques, 20 comptabilisées)",
-                    "Estompe du club avec la signature de l'officiel de tir responsable"
+                    "Logo du club hôte.",
+                    "Logo de la compétition.",
+                    "Nom et prénom du tireur.",
+                    "Numéro de membre.",
+                    "Date de l'épreuve.",
+                    "Calibre utilisé (ex : .22 LR).",
+                    "Position de tir.",
+                    "Pointage total.",
+                    "25 cibles identiques (5 pratiques, 20 comptabilisées).",
+                    "Estampe du club avec la signature de l'officiel de tir responsable."
                 ],
                 "PRESENTATION_TITRE": "Présentation des cibles",
                 "PRESENTATION_TEXTE": "La présentation des cibles est uniforme pour l'ensemble des participants, qu'ils soient en position assise, debout ou appuyés sur une table de tir. Toutes les cibles, qu'elles se trouvent dans la zone d'entraînement (numérotée de P1 à P5) ou dans la section des tirs comptabilisés (numérotée de 1 à 20), respectent les mêmes critères de disposition et de visibilité.",
                 "ALT_IMAGE": "Cible carabine avec watermark",
-                "DIMENSIONS_TITRE": "Dimension des cibles régulières et Élites",
+                "DIMENSIONS_TITRE": "Dimension des cibles régulières et élites",
                 "DIMENSIONS_INTRO": "Donne les dimensions de chacun des anneaux de pointage ainsi que la dimension du point pour le boni.",
                 "TABLE": {
                     "COL_ELEMENT": "Élément du cadre cible",
@@ -203,29 +202,27 @@
                 "ROW4": "Anneau blanc de 8 points",
                 "ROW5": "Anneau noir de 7 points",
                 "ROW6": "Cadre numéroté de 1 à 20",
-                "EPREUVE_TITRE": "Détails de l'Épreuve Régulière",
-                "EPREUVE1": "Distance de tir : 25 mètres",
-                "EPREUVE2": "Position de tir : appuyé sur table de tir",
-                "EPREUVE3": "Type d'épreuve : précision",
-                "EPREUVE4": "Nombre de séries prévues : 5",
-                "EPREUVE5": "Nombre de coups par série : 5",
-                "EPREUVE6": "Nombre de tirs par feuille : illimité*",
+                "EPREUVE_TITRE": "Détails de l'épreuve régulière",
+                "EPREUVE1": "Distance de tir : 25 mètres.",
+                "EPREUVE2": "Position de tir : appuyée sur table de tir.",
+                "EPREUVE3": "Type d'épreuve : précision.",
+                "EPREUVE6": "Nombre de tirs par feuille : illimité*.",
                 "NOTE": "Voir la section Calcul des points pour les tirs qualifiés."
             },
             "CALCULPOINTS": {
                 "TITRE": "Calcul des points",
-                "DESCRIPTION": "Explique les règles de calcul des points pour chaque cible, pénalités, bonus éventuels, etc.",
+                "DESCRIPTION": "Cette section explique les règles de calcul des points pour chaque cible y compris les pénalités et les points bonus.",
                 "DESCRIPTION2": "Afin d’uniformiser les dimensions des impacts selon les divers calibres autorisés et ainsi assurer l’équité lors du pointage, un gabarit de superposition (.22 LR overlay) sera utilisé pour l’évaluation de toutes les cibles.",
                 "TIRPARFAIT": {
-                    "TITRE": "Tir Parfait",
-                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."
+                    "TITRE": "Tir parfait",
+                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, et fait <strong>complètement disparaître le point central</strong>. Il obtient <strong>10 points de base</strong> ainsi que <strong>1 point boni</strong>."
                 },
                 "TIRSOLIDE": {
-                    "TITRE": "Tir Excellent sans bonis",
-                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, <strong>mais</strong> ne fait <strong>pas</strong> completement disparetre le point central. il obtient <strong>10 points de base</strong>."
+                    "TITRE": "Tir excellent sans boni",
+                    "DESCRIPTION": "Le tireur atteint le centre de la cible, sans erreur, <strong>mais</strong> ne fait <strong>pas</strong> complètement disparaître le point central. Il obtient <strong>10 points de base</strong>."
                 },
                 "TIRINVALIDE": {
-                    "TITRE": "Tir Invalide",
+                    "TITRE": "Tir invalide",
                     "DESCRIPTION": "Le tir contient une erreur : <strong>double tir</strong> sur une même cible ou <strong>tir hors cible</strong> (dans l'encadrement mais hors zone de score). <strong>Aucun point n'est attribué</strong>."
                 },
                 "TIRTRICHE": {
@@ -235,7 +232,7 @@
                 }
             },
             "CLASSEMENT": {
-                "TITRE": "Système de Classement des Tireurs",
+                "TITRE": "Système de classement des tireurs",
                 "INTRO1": "Les tireurs sont classés en fonction de leurs performances lors des épreuves comptabilisées.",
                 "INTRO2": "le score de base",
                 "INTRO3": "les points bonis",
@@ -302,7 +299,7 @@
                 }
             },
             "EQUIPEMENT": {
-                "TITRE": "Équipement autorisé",
+                "TITRE": "Équipements autorisés",
                 "INTRO": "La réglementation suivante s'applique aux épreuves officielles de tir à la carabine. Tous les équipements doivent être conformes aux normes de sécurité et respecter les spécifications du règlement en vigueur.",
                 "ACCESSOIRES_NON_AUTORISES_TITRE": "Accessoires NON autorisés",
                 "ACCESSOIRES_NON_AUTORISES_LISTE": [
