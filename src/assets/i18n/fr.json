@@ -83,8 +83,8 @@
         "PRINT": "Imprimé"
     },
     "CLASSEMENT_ANNUEL": {
-        "TITRE": "Top 10 Annuel",
-        "TITRE_TOP10": "Classement Annuel - Top 10",
+        "TITRE": "Top 10 annuel",
+        "TITRE_TOP10": "Classement annuel - Top 10",
         "POINTAGE": "Pointage",
         "BONI": "Boni",
         "TOTAL": "Total",
@@ -372,8 +372,8 @@
             },
             "CALIBRES": {
                 "TITRE": "Calibres autorisés",
-                "DESCRIPTION": "Seuls les calibres spécifiquement mentionnés ci-dessous sont autorisés pour cette compétition. Toute autre munition est strictement interdite.",
-                "AUTRE": "D'autres calibres peuvent être acceptés conformément au règlement en vigueur et à la législation applicable.",
+                "DESCRIPTION": "Seuls les calibres mentionnés ci-dessous sont autorisés pour cette compétition. Cepandant, le directeur de la competition peux accepter d'autres calibres conformément au règlement en vigueur et à la législation applicable.",
+                "AUTRE": "",
                 "WYLDE": ".223 Wylde (chambre hybride compatible avec les munitions .223 Rem et 5.56 NATO)"
             }
         }
