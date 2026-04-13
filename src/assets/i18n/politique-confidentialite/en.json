@@ -1,0 +1,44 @@
+{
+    "PRIVACY": {
+        "TITLE": "Privacy Policy (Law 25)",
+        "LASTUPDATED": "Last updated",
+        "INTRO": {
+            "TITLE": "Introduction",
+            "TEXT": "This application complies with Quebec Law 25 regarding personal data protection."
+        },
+        "RESPONSIBLE": {
+            "TITLE": "Responsible Person",
+            "TEXT": "The person responsible for personal data protection is the application administrator. ",
+            "CONTACT": "Contact: "
+        },
+        "DATA": {
+            "TITLE": "Collected Data",
+            "NAME": "First and last name",
+            "MEMBER": "Membership number",
+            "SCORES": "Scores and results"
+        },
+        "PURPOSE": {
+            "TITLE": "Data Usage",
+            "TEXT": "Data is used to manage competitions and generate rankings."
+        },
+        "CONSENT": {
+            "TITLE": "Consent",
+            "TEXT": "By using this application, you consent to the collection and use of your data."
+        },
+        "RIGHTS": {
+            "TITLE": "Your Rights",
+            "ACCESS": "Access your data",
+            "RECTIFY": "Correct your data",
+            "DELETE": "Request deletion",
+            "PORTABILITY": "Receive your data"
+        },
+        "SECURITY": {
+            "TITLE": "Security",
+            "TEXT": "We implement security measures to protect your information."
+        },
+        "CONTACT": {
+            "TITLE": "Contact",
+            "TEXT": "For any request: admin@example.com"
+        }
+    }
+}

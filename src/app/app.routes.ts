@@ -8,6 +8,7 @@ import { TirageGagnantsComponent } from './components/tirage-gagnants/tirage-gag
 import { ImpressionReglementsComponent } from './components/impression-reglements/impression-reglements.component';
 import { ClassementAnnuelComponent } from './components/classement-annuel/classement-annuel.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { PolitiqueConfidentialiteComponent } from './components/politique-confidentialite/politique-confidentialite.component';
 
 export const routes: Routes = [
     { path: '', component: AccueilComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
     { path: 'classement/:competition/:mois', component: ClassementMensuelComponent },
     { path: 'reglements', component: ReglementsComponent },
     { path: 'mentions-legales', component: MentionsLegalesComponent },
+    { path: 'politique-confidentialite', component: PolitiqueConfidentialiteComponent },
     { path: 'impression/:competition/:mois/:langue', component: ImpressionClassementComponent },
     { path: 'gagnants-tirage/:competition', component: TirageGagnantsComponent },
     { path: 'gagnants-tirage/:competition/:spin', component: TirageGagnantsComponent },

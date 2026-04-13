@@ -246,40 +246,40 @@
                     "ALERT": "« Cette catégorie est actuellement en cours d'élaboration et n'est pas encore officiellement active. Aucun essai n'est prévu pour le moment. Sa mise en œuvre future sera déterminée par le comité organisateur selon l'évolution des besoins et des objectifs de la compétition. »",
                     "CONDITION1_PART1": "Score de",
                     "CONDITION1_PART2": "200 points de base minimum",
-                    "CONDITION1_PART3": "(hors bonis)",
-                    "CONDITION2": "Meilleur total de points bonis",
+                    "CONDITION1_PART3": "(hors bonis).",
+                    "CONDITION2": "Meilleur total de points bonis.",
                     "CONDITION3_PART1": "Utilisation de",
-                    "CONDITION3_PART2": "cibles d'élite",
-                    "CONDITION4": "Si le score de base n'est pas atteint, aucun classement n'est attribué"
+                    "CONDITION3_PART2": "cibles d'élite.",
+                    "CONDITION4": "Si le score de base n'est pas atteint, aucun classement n'est attribué."
                 },
                 "PLATINE": {
                     "TITRE": "Platine",
                     "CONDITION1_PART1": "Score de",
-                    "CONDITION1_PART2": "200 points de base minimum",
-                    "CONDITION2": "Meilleur total de points bonis",
+                    "CONDITION1_PART2": "200 points de base minimum.",
+                    "CONDITION2": "Meilleur total de points bonis.",
                     "CONDITION3_PART1": "Utilisation de",
-                    "CONDITION3_PART2": "cibles régulières"
+                    "CONDITION3_PART2": "cibles régulières."
                 },
                 "OR": {
                     "TITRE": "Or",
                     "CONDITION1": "Meilleure moyenne des cinq meilleures feuilles de cible",
-                    "CONDITION1_PART2": "présentées durant la période de la compétition",
+                    "CONDITION1_PART2": "présentées durant la période de la compétition.",
                     "CONDITION2_PART1": "Calcul basé sur",
-                    "CONDITION2_PART2": "des cibles régulières uniquement"
+                    "CONDITION2_PART2": "des cibles régulières uniquement."
                 },
                 "ARGENT": {
                     "TITRE": "Argent",
                     "CONDITION1": "Deuxième meilleure moyenne des cinq meilleures feuilles de cible",
-                    "CONDITION1_PART2": "présentées durant la période de la compétition",
+                    "CONDITION1_PART2": "présentées durant la période de la compétition.",
                     "CONDITION2_PART1": "Calcul basé sur",
-                    "CONDITION2_PART2": "des cibles régulières uniquement"
+                    "CONDITION2_PART2": "des cibles régulières uniquement."
                 },
                 "BRONZE": {
                     "TITRE": "Bronze",
                     "CONDITION1": "Troisième meilleure moyenne des cinq meilleures feuilles de cible",
-                    "CONDITION1_PART2": "présentées durant la période de la compétition",
+                    "CONDITION1_PART2": "présentées durant la période de la compétition.",
                     "CONDITION2_PART1": "Calcul basé sur",
-                    "CONDITION2_PART2": "des cibles régulières uniquement"
+                    "CONDITION2_PART2": "des cibles régulières uniquement."
                 },
                 "NOTE": {
                     "TITRE": "Note :",
@@ -293,6 +293,8 @@
                     "TITRE": "Prix attribué",
                     "DESCRIPTION": "Crédit de renouvellement",
                     "DESCRIPTION2": "Un crédit applicable lors du renouvellement de l’adhésion annuelle au club attribué au tireur ayant obtenu ce classement.",
+                    "DIAMANT": "",
+                    "PLATINE": "",
                     "OR": "Une valeur de 200 $",
                     "ARGENT": "Une valeur de 150 $",
                     "BRONZE": "Une valeur de 100 $"
