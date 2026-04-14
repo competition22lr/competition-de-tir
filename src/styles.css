@@ -47,7 +47,8 @@ ul.custom-icon-list li {
 }
 
 ul.custom-icon-list li::before {
-  content: "\f276"; /* map-pin pour le niveau 1 */
+  content: "\f276";
+  /* map-pin pour le niveau 1 */
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   position: absolute;
@@ -59,13 +60,14 @@ ul.custom-icon-list li::before {
 }
 
 /* ✅ Icône différente pour les sous-éléments */
-ul.custom-icon-list ul{
+ul.custom-icon-list ul {
   list-style: none;
   padding-left: 1rem;
 }
 
 ul.custom-icon-list ul li::before {
-  content: "\f276"; /* map-pin pour le niveau 1 */
+  content: "\f276";
+  /* map-pin pour le niveau 1 */
   font-family: 'Font Awesome 5 Pro';
   font-style: normal;
   font-weight: 400;
@@ -77,3 +79,21 @@ ul.custom-icon-list ul li::before {
   color: #004993;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #007acc;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

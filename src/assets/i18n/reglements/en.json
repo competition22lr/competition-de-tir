@@ -1,0 +1,273 @@
+{
+    "REGLEMENT": {
+        "TITRE": "Competition Rules",
+        "IMPRIMABLE": "Printable version",
+        "TABLE.TITRE": "Table of contents",
+        "PRINT": "Printed",
+        "SECTIONS": {
+            "DEROULEMENT": {
+                "TITRE": "Competition Progress",
+                "DESCRIPTION": "The competition takes place over a full annual period and is based on a system of monthly rankings. It allows participants to submit, each month, their best performance achieved under standardized and fair conditions. Throughout the year, shooters may perform an unlimited number of attempts, provided they comply with shooting rules, validation procedures, and target sheet submission. The results are then processed by the organization to establish the monthly rankings, followed by the final annual ranking, which determines the prize recipients.",
+                "PROCEDURE_TIR": {
+                    "TITRE": "Shooting procedure and target submission",
+                    "DECISION": "At the end of the shooting session, the shooter must return the used or UNUSED target sheets to the shooting range employee.",
+                    "LIMITE_MENSUELLE": "Only one target sheet per shooter is accepted per month, being the sheet with the best score including bonus points.",
+                    "DELAI": "The target sheet must be submitted on the same day it was shot; any later submission will be refused."
+                },
+                "FEUILLES": {
+                    "TITRE": "Participation sheets",
+                    "OBTENTION": "The shooter must obtain an official target sheet from the shooting range employee.",
+                    "PARTICIPATIONS": "The number of participations is not limited during the year.",
+                    "PRIX_MEMBRE": "Each sheet costs $2 for members.",
+                    "PRIX_NON_MEMBRE": "Each sheet costs $2 for non-members.",
+                    "FRAIS_TERRAIN": "An additional $10 shooting range access fee applies for non-members."
+                },
+                "VALIDATION": {
+                    "TITRE": "Shot validation",
+                    "ESTAMPILLE": "Each sheet must be stamped by the employee to be validated.",
+                    "DISTANCE": "Targets must be positioned at a mandatory distance of 25 meters.",
+                    "REFUS_SIGNATURE": "If the distance is not respected, the official cannot sign and the sheet will be considered invalid."
+                },
+                "TRAITEMENT": {
+                    "TITRE": "Result processing",
+                    "CALCUL_MANUEL": "Point calculation is performed manually by the organization’s officials.",
+                    "SAISIE_EXCEL": "Results are entered into a Microsoft Excel spreadsheet.",
+                    "PRE_PUBLICATION": "The provisional ranking will be published at the beginning of the following month.",
+                    "PRIX": "Prize attribution is based on the official ranking established at the end of the competition.",
+                    "PRIX_DETAIL": "For detailed information on distinctions, trophies, and rewards associated with the ranking, please refer to the section “",
+                    "PRIX_DETAIL2": "”, which specifies the evaluation criteria and the prizes awarded according to the ranking obtained."
+                },
+                "TIRAGE": {
+                    "TITRE": "50/50 Draw",
+                    "PARTICIPATIONS": "Any purchased and returned target sheet automatically grants a participation right, whether used (shot) or not.",
+                    "EXPLICATION": "The 50/50 draw is conducted only when the cumulative amount reaches a minimum of $100.",
+                    "AUCUN": "No draw is held monthly or periodically if this minimum is not reached.",
+                    "EQUITABLE": "The draw is conducted electronically using a random selection module integrated directly into the official competition application (digital fortune wheel), ensuring an impartial, transparent, and fair process."
+                },
+                "NOTE": "Please consult the related sections for more details on the competition’s operation."
+            },
+            "CATEGORIES": {
+                "TITRE": "Categories",
+                "INTRO": "The definition of official categories is currently being finalized. This classification aims to fairly structure shooter participation according to various criteria, such as:",
+                "TYPE_ARME": "Type of rifle (air rifle, .22 LR, centerfire, etc.).",
+                "EXPERIENCE": "Experience level (beginner, intermediate, expert).",
+                "CLASSE_AGE": "Classification or age (if applicable according to current regulations).",
+                "NOTE_A_VENIR": "Coming soon:",
+                "NOTE": "Official categories will be published shortly after validation by the organizing authorities."
+            },
+            "FEUILLEPOINTS": {
+                "TITRE": "Target sheet",
+                "INTRO1": "The scoring sheet is an official document used to record each shooter’s individual results during an event.",
+                "INTRO2": "It must be signed by the official at the end of the session.",
+                "ELEMENTS_TITRE": "Elements included in the participation sheet",
+                "ELEMENT_LISTE": [
+                    "Host club logo.",
+                    "Competition logo.",
+                    "Shooter’s first and last name.",
+                    "Membership number.",
+                    "Event date.",
+                    "Caliber used (e.g., .22 LR).",
+                    "Shooting position.",
+                    "Total score.",
+                    "25 identical targets (5 practice, 20 scored).",
+                    "Club stamp with the signature of the responsible shooting official."
+                ],
+                "PRESENTATION_TITRE": "Target presentation",
+                "PRESENTATION_TEXTE": "The target layout is uniform for all participants, whether seated, standing, or supported on a shooting table. All targets, whether in the practice area (numbered P1 to P5) or in the scored section (numbered 1 to 20), follow the same layout and visibility criteria.",
+                "ALT_IMAGE": "Rifle target with watermark",
+                "DIMENSIONS_TITRE": "Dimensions of regular and elite targets",
+                "DIMENSIONS_INTRO": "Provides the dimensions of each scoring ring as well as the size of the bonus point dot.",
+                "TABLE": {
+                    "COL_ELEMENT": "Target frame element",
+                    "COL_DIMENSIONS": "Dimension in millimeters",
+                    "REGULIERE": "Regular",
+                    "ELITE": "Elite"
+                },
+                "ROW1": "Central point for a perfect shot",
+                "ROW2": "White 10‑point ring",
+                "ROW3": "Black 9‑point ring",
+                "ROW4": "White 8‑point ring",
+                "ROW5": "Black 7‑point ring",
+                "ROW6": "Frame numbered 1 to 20",
+                "EPREUVE_TITRE": "Regular event details",
+                "EPREUVE1": "Shooting distance: 25 meters.",
+                "EPREUVE2": "Shooting position: supported on shooting table.",
+                "EPREUVE3": "Event type: precision.",
+                "EPREUVE6": "Number of shots per sheet: unlimited*.",
+                "NOTE": "See the Points Calculation section for qualified shots."
+            },
+            "CALCULPOINTS": {
+                "TITRE": "Points calculation",
+                "DESCRIPTION": "This section explains the rules for calculating points for each target, including penalties and bonus points.",
+                "DESCRIPTION2": "To standardize impact dimensions across the various authorized calibers and ensure fairness during scoring, an overlay template (.22 LR overlay) will be used for evaluating all targets.",
+                "TIRPARFAIT": {
+                    "TITRE": "Perfect shot",
+                    "DESCRIPTION": "The shooter hits the center of the target without error and completely removes the central dot. They earn 10 base points plus 1 bonus point."
+                },
+                "TIRSOLIDE": {
+                    "TITRE": "Excellent shot without bonus",
+                    "DESCRIPTION": "The shooter hits the center of the target without error but does not completely remove the central dot. They earn 10 base points."
+                },
+                "TIRINVALIDE": {
+                    "TITRE": "Invalid shot",
+                    "DESCRIPTION": "The shot contains an error: double shot on the same target or shot off-target (within the frame but outside the scoring zone). No points are awarded."
+                },
+                "TIRTRICHE": {
+                    "TITRE": "Attempted cheating",
+                    "DESCRIPTION": "A target is modified, replaced, or manipulated to artificially improve its score.",
+                    "DQ_AUTO": "Automatic disqualification"
+                }
+            },
+            "CLASSEMENT": {
+                "TITRE": "Shooter ranking system",
+                "INTRO1": "Shooters are ranked based on their performance during scored events:",
+                "INTRO2": "base score",
+                "INTRO3": "bonus points",
+                "INTRO4": "target type",
+                "INTRO5": "as well as the",
+                "INTRO6": "overall ranking obtained",
+                "COL_CLASSEMENT": "Ranking",
+                "COL_CONDITIONS": "Conditions for obtaining",
+                "NON-ACTIF": {
+                    "ALERT": "“This category is not yet officially active. Its future implementation will be determined by the organizing committee based on the competition’s evolving needs and objectives.”"
+                },
+                "DIAMANT": {
+                    "TITRE": "Diamond",
+                    "ALERT": "“This category is currently under development and is not yet officially active. No trials are planned at the moment. Its future implementation will be determined by the organizing committee based on the competition’s evolving needs and objectives.”",
+                    "CONDITION1_PART1": "Score of",
+                    "CONDITION1_PART2": "minimum 200 base points",
+                    "CONDITION1_PART3": "(excluding bonuses).",
+                    "CONDITION2": "Highest total of bonus points.",
+                    "CONDITION3_PART1": "Use of",
+                    "CONDITION3_PART2": "elite targets.",
+                    "CONDITION4": "If the base score is not reached, no ranking is awarded."
+                },
+                "PLATINE": {
+                    "TITRE": "Platinum",
+                    "CONDITION1_PART1": "Score of",
+                    "CONDITION1_PART2": "minimum 200 base points.",
+                    "CONDITION2": "Highest total of bonus points.",
+                    "CONDITION3_PART1": "Use of",
+                    "CONDITION3_PART2": "regular targets."
+                },
+                "OR": {
+                    "TITRE": "Gold",
+                    "CONDITION1": "Best average of the five best target sheets",
+                    "CONDITION1_PART2": "submitted during the competition period.",
+                    "CONDITION2_PART1": "Calculation based on",
+                    "CONDITION2_PART2": "regular targets only."
+                },
+                "ARGENT": {
+                    "TITRE": "Silver",
+                    "CONDITION1": "Second-best average of the five best target sheets",
+                    "CONDITION1_PART2": "submitted during the competition period.",
+                    "CONDITION2_PART1": "Calculation based on",
+                    "CONDITION2_PART2": "regular targets only."
+                },
+                "BRONZE": {
+                    "TITRE": "Bronze",
+                    "CONDITION1": "Third-best average of the five best target sheets",
+                    "CONDITION1_PART2": "submitted during the competition period.",
+                    "CONDITION2_PART1": "Calculation based on",
+                    "CONDITION2_PART2": "regular targets only."
+                },
+                "NOTE": {
+                    "TITRE": "Note:",
+                    "TEXTE1": "A shooter attempting the",
+                    "TEXTE2": "Diamond",
+                    "TEXTE3": "ranking but failing to reach",
+                    "TEXTE4": "200 base points",
+                    "TEXTE5": "will not be ranked in any group, even with an excellent bonus score."
+                },
+                "PRIX": {
+                    "TITRE": "Award granted",
+                    "DESCRIPTION": "Renewal credit",
+                    "DESCRIPTION2": "A credit applicable to the annual club membership renewal, awarded to the shooter who achieves this ranking.",
+                    "DIAMANT": "",
+                    "PLATINE": "",
+                    "OR": "A value of $200",
+                    "ARGENT": "A value of $150",
+                    "BRONZE": "A value of $100"
+                }
+            },
+            "EQUIPEMENT": {
+                "TITRE": "Authorized equipment",
+                "INTRO": "The following regulations apply to official rifle shooting events. All equipment must comply with safety standards and the specifications of the current rules.",
+                "ACCESSOIRES_NON_AUTORISES_TITRE": "NON-authorized accessories",
+                "ACCESSOIRES_NON_AUTORISES_LISTE": [
+                    "Bipod, tripod, or sandbag positioned at the rear"
+                ],
+                "REMARQUE": "Note: Any equipment not listed above must be validated by the organization before the competition begins.",
+                "SECURITE": {
+                    "TITRE": "Mandatory safety equipment",
+                    "ELEMENTS": {
+                        "AUDITIVE": "Hearing protection (e.g., earmuffs or approved earplugs).",
+                        "OCULAIRE": "Eye protection (e.g., ballistic safety glasses)."
+                    },
+                    "NOTE": {
+                        "TEXTE": "Prescription glasses are accepted as eye protection.",
+                        "LABEL": "Note:"
+                    }
+                },
+                "CARABINES": {
+                    "TITRE": "Rifles admissible for the competition",
+                    "DESCRIPTION": "The following rifles are authorized, provided they comply with competition rules and applicable laws.",
+                    "TYPES": {
+                        "ANNULAIRE": "Rimfire rifles.",
+                        "ANNULAIRE_LIEN": "(.17 HMR, .22 LR or similar).",
+                        "CENTRALE": "Centerfire rifles.",
+                        "CENTRALE_LIEN": "(regulated calibers).",
+                        "AIR": "Air rifles."
+                    },
+                    "ALIMENTATION": {
+                        "TITRE": "Feeding systems.",
+                        "MANUEL": "Manual feeding (single loading).",
+                        "FIXE": "Fixed magazine.",
+                        "AMOVIBLE": "Detachable magazine."
+                    },
+                    "ACTION": {
+                        "TITRE": "Action types",
+                        "SEMI_AUTO": "Semi-automatic.",
+                        "VERROU": "Side bolt-action.",
+                        "LEVIER": "Lever-action.",
+                        "BASCULE": "Break-action or hinged.",
+                        "POMPE": "Pump-action.",
+                        "BARILLET": "Revolving cylinder."
+                    }
+                },
+                "ACCESSOIRES": {
+                    "TITRE": "Authorized accessories",
+                    "CATEGORIES": {
+                        "VISEE": "Sight systems",
+                        "CONFORT": "Comfort and adjustment elements",
+                        "SUPPORT": "Supports and complementary equipment"
+                    },
+                    "VISEE": {
+                        "ITEM1": "Diopters and front sights (without magnifying optics).",
+                        "ITEM2": "Scope, red dot.",
+                        "ITEM3": "High‑precision scope."
+                    },
+                    "CONFORT": {
+                        "ITEM1": "Adjustable butt plate.",
+                        "ITEM2": "Adjustable cheek rest.",
+                        "ITEM3": "Shooting gloves.",
+                        "ITEM4": "Eye patch / blinder."
+                    },
+                    "SUPPORT": {
+                        "ITEM1": "Bipod, tripod, or sandbag (front only).",
+                        "ITEM2": "Shooting table or bench (depending on competitions).",
+                        "ITEM3": "Personal shooting mat.",
+                        "ITEM4": "Muzzle brake.",
+                        "ITEM5": "Barrel tuner."
+                    }
+                }
+            },
+            "CALIBRES": {
+                "TITRE": "Authorized calibers",
+                "DESCRIPTION": "Only the calibers listed below are authorized for this competition. However, the competition director may accept other calibers in accordance with current regulations and applicable legislation.",
+                "AUTRE": "",
+                "WYLDE": ".223 Wylde (hybrid chamber compatible with .223 Rem and 5.56 NATO ammunition)"
+            }
+        }
+    }
+}

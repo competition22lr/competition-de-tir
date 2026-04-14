@@ -1,5 +1,7 @@
 <div class="privacy-container">
+
     <h1 class="privacy-title">
+        <i class="fad fa-user-secret" fa-lg></i>
         {{ 'PRIVACY.TITLE' | translate }}
     </h1>
 
@@ -17,8 +19,10 @@
         <p>
             {{ 'PRIVACY.RESPONSIBLE.TEXT' | translate }}
             <br>
-            {{ 'PRIVACY.RESPONSIBLE.CONTACT' | translate }}
-            <a routerLink="/contact"><i class="fad fa-comments-alt"></i> </a>
+            <a routerLink="/contact">
+                <i class="fad fa-comments-alt"></i>
+                {{ 'PRIVACY.RESPONSIBLE.CONTACT' | translate }}
+            </a>
         </p>
     </section>
 
@@ -28,7 +32,6 @@
             <li>{{ 'PRIVACY.DATA.NAME' | translate }}</li>
             <li>{{ 'PRIVACY.DATA.MEMBER' | translate }}</li>
             <li>{{ 'PRIVACY.DATA.SCORES' | translate }}</li>
-            <li>{{ 'PRIVACY.DATA.TECH' | translate }}</li>
         </ul>
     </section>
 
@@ -57,8 +60,8 @@
         <p>{{ 'PRIVACY.SECURITY.TEXT' | translate }}</p>
     </section>
 
-    <section class="privacy-section">
+    <!-- <section class="privacy-section">
         <h2>{{ 'PRIVACY.CONTACT.TITLE' | translate }}</h2>
         <p>{{ 'PRIVACY.CONTACT.TEXT' | translate }}</p>
-    </section>
+    </section> -->
 </div>
