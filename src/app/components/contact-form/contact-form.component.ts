@@ -23,7 +23,7 @@ export class ContactFormComponent {
     message: ['', Validators.required],
   });
 
-  sujets = ['SUGGESTION', 'REGLEMENT', 'LICENCE'];
+  sujets = ['SUGGESTION', 'REGLEMENT', 'LICENCE', 'CONFIDENTIALITE'];
   sections = ['DEROULEMENT', 'CATEGORIES', 'FEUILLEPOINTS', 'CALCULPOINTS', 'CLASSEMENT', 'EQUIPEMENT', 'CALIBRES'];
 
   get isSectionRequired(): boolean {
@@ -73,7 +73,7 @@ export class ContactFormComponent {
       });
   }
 
-  
+
 }
 
 export function emailPlusStrictValidator(control: AbstractControl): ValidationErrors | null {

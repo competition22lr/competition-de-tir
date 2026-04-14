@@ -39,6 +39,7 @@
     <h2>{{ 'MENTIONS_LEGALES.PROPRIETE_TITRE' | translate }}</h2>
     <p>
       {{ 'MENTIONS_LEGALES.PROPRIETE_CONTENU' | translate }}
+      <strong>Sylvain Trépanier</strong>{{ 'MENTIONS_LEGALES.PROPRIETE_CONTENU2' | translate }}
     </p>
   </section>
 
@@ -47,6 +48,11 @@
     <p>
       {{ 'MENTIONS_LEGALES.DONNEES_CONTENU' | translate }}
     </p>
+    <p>
+      {{ 'MENTIONS_LEGALES.DONNEES_CONTENU2' | translate }}
+    </p>
+    <a [routerLink]="['/politique-confidentialite']"><i class="fad fa-user-secret"></i> {{ 'PRIVACY.TITLE' |
+      translate }}</a>
   </section>
 
   <section>

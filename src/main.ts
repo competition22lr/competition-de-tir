@@ -1,7 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { provideHttpClient, HttpClient } from '@angular/common/http';
-import { provideRouter, withEnabledBlockingInitialNavigation } from '@angular/router';
+import { provideRouter, withEnabledBlockingInitialNavigation, withInMemoryScrolling } from '@angular/router';
 import { routes } from './app/app.routes';
 import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { importProvidersFrom, Injectable } from '@angular/core';
@@ -13,7 +13,14 @@ import { multiTranslateLoaderFactory } from './app/multi-translate-loader';
 bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(),
-    provideRouter(routes, withEnabledBlockingInitialNavigation()),
+    provideRouter(
+      routes,
+      withEnabledBlockingInitialNavigation(),
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',
+        scrollPositionRestoration: 'top'
+      })
+    ),
     {
       provide: TranslateLoader,
       useFactory: multiTranslateLoaderFactory,

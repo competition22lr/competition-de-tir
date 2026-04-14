@@ -1,0 +1,67 @@
+<div class="privacy-container">
+
+    <h1 class="privacy-title">
+        <i class="fad fa-user-secret" fa-lg></i>
+        {{ 'PRIVACY.TITLE' | translate }}
+    </h1>
+
+    <p class="privacy-date">
+        {{ 'PRIVACY.LASTUPDATED' | translate }}: {{ lastUpdated | date }}
+    </p>
+
+    <section class="privacy-section">
+        <h2>{{ 'PRIVACY.INTRO.TITLE' | translate }}</h2>
+        <p>{{ 'PRIVACY.INTRO.TEXT' | translate }}</p>
+    </section>
+
+    <section class="privacy-section">
+        <h2>{{ 'PRIVACY.RESPONSIBLE.TITLE' | translate }}</h2>
+        <p>
+            {{ 'PRIVACY.RESPONSIBLE.TEXT' | translate }}
+            <br>
+            <a routerLink="/contact">
+                <i class="fad fa-comments-alt"></i>
+                {{ 'PRIVACY.RESPONSIBLE.CONTACT' | translate }}
+            </a>
+        </p>
+    </section>
+
+    <section class="privacy-section">
+        <h2>{{ 'PRIVACY.DATA.TITLE' | translate }}</h2>
+        <ul>
+            <li>{{ 'PRIVACY.DATA.NAME' | translate }}</li>
+            <li>{{ 'PRIVACY.DATA.MEMBER' | translate }}</li>
+            <li>{{ 'PRIVACY.DATA.SCORES' | translate }}</li>
+        </ul>
+    </section>
+
+    <section class="privacy-section">
+        <h2>{{ 'PRIVACY.PURPOSE.TITLE' | translate }}</h2>
+        <p>{{ 'PRIVACY.PURPOSE.TEXT' | translate }}</p>
+    </section>
+
+    <section class="privacy-section">
+        <h2>{{ 'PRIVACY.CONSENT.TITLE' | translate }}</h2>
+        <p>{{ 'PRIVACY.CONSENT.TEXT' | translate }}</p>
+    </section>
+
+    <section class="privacy-section">
+        <h2>{{ 'PRIVACY.RIGHTS.TITLE' | translate }}</h2>
+        <ul>
+            <li>{{ 'PRIVACY.RIGHTS.ACCESS' | translate }}</li>
+            <li>{{ 'PRIVACY.RIGHTS.RECTIFY' | translate }}</li>
+            <li>{{ 'PRIVACY.RIGHTS.DELETE' | translate }}</li>
+            <li>{{ 'PRIVACY.RIGHTS.PORTABILITY' | translate }}</li>
+        </ul>
+    </section>
+
+    <section class="privacy-section">
+        <h2>{{ 'PRIVACY.SECURITY.TITLE' | translate }}</h2>
+        <p>{{ 'PRIVACY.SECURITY.TEXT' | translate }}</p>
+    </section>
+
+    <!-- <section class="privacy-section">
+        <h2>{{ 'PRIVACY.CONTACT.TITLE' | translate }}</h2>
+        <p>{{ 'PRIVACY.CONTACT.TEXT' | translate }}</p>
+    </section> -->
+</div>

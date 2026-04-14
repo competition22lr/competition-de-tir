@@ -1,0 +1,44 @@
+{
+    "PRIVACY": {
+        "TITLE": "Politique de confidentialité (Loi 25)",
+        "LASTUPDATED": "Dernière mise à jour",
+        "INTRO": {
+            "TITLE": "Introduction",
+            "TEXT": "Cette application respecte la Loi 25 du Québec concernant la protection des renseignements personnels."
+        },
+        "RESPONSIBLE": {
+            "TITLE": "Responsable",
+            "TEXT": "Le responsable de la protection des renseignements personnels est l’administrateur de l’application.",
+            "CONTACT": "Contactez-nous via notre page de contact pour toute question ou demande concernant vos données."
+        },
+        "DATA": {
+            "TITLE": "Données collectées",
+            "NAME": "Nom et prénom",
+            "MEMBER": "Numéro de membre",
+            "SCORES": "Résultats et scores"
+        },
+        "PURPOSE": {
+            "TITLE": "Utilisation des données",
+            "TEXT": "Les données sont utilisées pour gérer les compétitions et produire les classements."
+        },
+        "CONSENT": {
+            "TITLE": "Consentement",
+            "TEXT": "En utilisant cette application, vous consentez à la collecte et à l’utilisation de vos données."
+        },
+        "RIGHTS": {
+            "TITLE": "Vos droits",
+            "ACCESS": "Accéder à vos données",
+            "RECTIFY": "Corriger vos données",
+            "DELETE": "Demander la suppression",
+            "PORTABILITY": "Obtenir vos données"
+        },
+        "SECURITY": {
+            "TITLE": "Sécurité",
+            "TEXT": "Nous mettons en place des mesures de sécurité pour protéger vos informations."
+        },
+        "CONTACT": {
+            "TITLE": "Contact",
+            "TEXT": "Pour toute demande : admin@exemple.com"
+        }
+    }
+}
