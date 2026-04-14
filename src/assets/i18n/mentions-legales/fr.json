@@ -1,0 +1,24 @@
+{
+    "MENTIONS_LEGALES": {
+        "TITRE": "Mentions légales",
+        "EDITEUR_TITRE": "Éditeur du site",
+        "EDITEUR_CONTENU": "Le présent site est édité par :",
+        "EDITEUR_NOM": "Sylvain Trépanier",
+        "EDITEUR_CLUB": "pour le ",
+        "EDITEUR_ADRESSE": "Adresse :",
+        "EDITEUR_ADRESSE2": "(Sortie 174 de l'Autoroute 50)",
+        "EDITEUR_TEL": "Téléphone :",
+        "EDITEUR_SITE": "Site Web :",
+        "RESPONSABLE": "Responsable de la publication :",
+        "PROPRIETE_TITRE": "Propriété intellectuelle",
+        "PROPRIETE_CONTENU": "L'ensemble du contenu présent sur ce site (textes, images, graphismes, logos, vidéos, etc.) est la propriété exclusive de ",
+        "PROPRIETE_CONTENU2": ", sauf mention contraire. Toute reproduction, distribution, modification ou adaptation, sans l'accord préalable écrit, est interdite.",
+        "DONNEES_TITRE": "Protection des données personnelles",
+        "DONNEES_CONTENU": "Les données éventuellement collectées via ce site (formulaire de contact, inscriptions, etc.) sont uniquement utilisées dans le cadre de l’activité du club de tir. Conformément à la loi 25 « Loi modernisant des dispositions législatives en matière de protection des renseignements personnels », vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant. ",
+        "DONNEES_CONTENU2": "Pour exercer ce droit, veuillez nous contacter par le biais de notre formulaire de contact.",
+        "COOKIES_TITRE": "Cookies",
+        "COOKIES_CONTENU": "Ce site peut utiliser des cookies pour améliorer l'expérience utilisateur. Vous pouvez configurer votre navigateur pour refuser tout ou partie des cookies.",
+        "RESPONSABILITE_TITRE": "Limitation de responsabilité",
+        "RESPONSABILITE_CONTENU": "L'éditeur du site ou le responsable de la publication ne peut être tenue responsable des erreurs ou omissions dans les informations diffusées, ni de l'utilisation qui pourrait en être faite."
+    }
+}

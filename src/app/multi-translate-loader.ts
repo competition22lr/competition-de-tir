@@ -13,6 +13,7 @@ export class MultiTranslateLoader implements TranslateLoader {
             `assets/i18n/${lang}.json`,
             `assets/i18n/politique-confidentialite/${lang}.json`,
             `assets/i18n/reglements/${lang}.json`,
+            `assets/i18n/mentions-legales/${lang}.json`,
             `assets/i18n/long-gong/${lang}.json`,
             `assets/i18n/long-gong/securite/${lang}.json`,
             `assets/i18n/long-gong/ordre_passage/${lang}.json`,

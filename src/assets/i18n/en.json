@@ -12,26 +12,6 @@
         "APROPOS": "About",
         "VERSION": "Version"
     },
-    "MENTIONS_LEGALES": {
-        "TITRE": "Legal Notice",
-        "EDITEUR_TITRE": "Site Publisher",
-        "EDITEUR_CONTENU": "This site is published by:",
-        "EDITEUR_NOM": "Sylvain Trépanier",
-        "EDITEUR_CLUB": "for the ",
-        "EDITEUR_ADRESSE": "Address:",
-        "EDITEUR_ADRESSE2": "(Exit 174 off Highway 50)",
-        "EDITEUR_TEL": "Phone:",
-        "EDITEUR_SITE": "Website:",
-        "RESPONSABLE": "Publication Manager:",
-        "PROPRIETE_TITRE": "Intellectual Property",
-        "PROPRIETE_CONTENU": "All content present on this site (texts, images, graphics, logos, videos, etc.) is the exclusive property of the association or its partners, unless otherwise stated. Any reproduction, distribution, modification, or adaptation, without prior written agreement, is prohibited.",
-        "DONNEES_TITRE": "Personal Data Protection",
-        "DONNEES_CONTENU": "Any data collected via this site (contact form, registrations, etc.) is used solely within the scope of the association's activities. In accordance with the Data Protection Act and GDPR, you have the right to access, rectify, and delete data concerning you. To exercise this right, contact us at: [Contact Email].",
-        "COOKIES_TITRE": "Cookies",
-        "COOKIES_CONTENU": "This site may use cookies to improve the user experience. You can configure your browser to refuse all or part of the cookies.",
-        "RESPONSABILITE_TITRE": "Limitation of Liability",
-        "RESPONSABILITE_CONTENU": "The association cannot be held responsible for errors or omissions in the information disseminated, nor for the use that may be made of it."
-    },
     "SIDENAV": {
         "BOUTON_LANGUE": "Afficher le site en Français",
         "BOUTON_GAGNANTS5050": "50/50 Winners",
