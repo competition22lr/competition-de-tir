@@ -1,0 +1,24 @@
+{
+    "TIRAGE": {
+        "TITRE": "Monthly 50/50 Draw Winners",
+        "INTRO": "Each shooter automatically receives",
+        "INTRO.1": "1 entry",
+        "INTRO.2": "per",
+        "INTRO.3": "submitted target score sheet",
+        "INTRO.4": ", ensuring a fair chance for all participants.",
+        "DETAILS_BONUS": "Additional",
+        "DETAILS_BONUS.1": "bonus entries",
+        "DETAILS_BONUS.2": "are awarded based on the",
+        "DETAILS_BONUS.3": "monthly ranking",
+        "PARTICIPATIONS": "Additional entries",
+        "DIAMANT_NOTE": "Not counted",
+        "DIAMANT_NOTE.1": "(pending validation)",
+        "PLATINE_NOTE": "+15 entries",
+        "OR_NOTE": "+10 entries",
+        "ARGENT_NOTE": "+5 entries",
+        "BRONZE_NOTE": "+3 entries",
+        "CONCLUSION": "These bonuses reward performance while combining active participation. The ranking thus becomes a strategic lever to increase your chances of winning the monthly draw.",
+        "AUCUN_GAGNANT": "No winner for this competition.",
+        "LANCER_TIRAGE": "Show luck wheel"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "ACCUEIL": {
+        "TITRE": "Welcome to the Precision Shooting Competition website",
+        "INTRO": "This platform allows you to view monthly results, competition rules, and useful information for participating shooters.",
+        "HORAIRE_TITRE": "Shooting range opening hours:",
+        "NOTE": "* Please check your club's calendar for the exact schedule.",
+        "CLUB_TITRE": "Organized by ",
+        "ADRESSE": "Address: ",
+        "TELEPHONE": "Phone: ",
+        "COURRIEL": "Email: ",
+        "SITE_WEB": "Website: ",
+        "HORAIRE_SEMAINE": "Monday to Friday: ",
+        "HORAIRE_SAMEDI": "Saturday: ",
+        "HORAIRE_DIMANCHE": "Sunday: ",
+        "HORAIRE_A": "to"
+    }
+}
