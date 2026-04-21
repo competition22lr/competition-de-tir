@@ -11,6 +11,11 @@ export class MultiTranslateLoader implements TranslateLoader {
     getTranslation(lang: string) {
         const paths = [
             `assets/i18n/${lang}.json`,
+            `assets/i18n/accueil/${lang}.json`,
+            `assets/i18n/contact/${lang}.json`,
+            `assets/i18n/footer/${lang}.json`,
+            `assets/i18n/sidenav/${lang}.json`,
+            `assets/i18n/tirage/${lang}.json`,
             `assets/i18n/politique-confidentialite/${lang}.json`,
             `assets/i18n/reglements/${lang}.json`,
             `assets/i18n/mentions-legales/${lang}.json`,
