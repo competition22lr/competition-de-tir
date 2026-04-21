@@ -1,0 +1,31 @@
+{
+    "CONTACT": {
+        "TITLE": "Contact Form",
+        "SUBJECT": "Subject",
+        "SELECT_SUBJECT": "-- Select a subject --",
+        "SUBJECTS": {
+            "SUGGESTION": "Suggestion for addition or improvement",
+            "REGLEMENT": "Request for clarification on a section of the rules",
+            "LICENCE": "Request under the license published on GitHub",
+            "CONFIDENTIALITE": "Privacy Policy (Law 25)"
+        },
+        "SECTION": "Rule section",
+        "SELECT_SECTION": "-- Select a section --",
+        "SECTIONS": {
+            "DEROULEMENT": "Competition process",
+            "CATEGORIES": "Categories",
+            "FEUILLEPOINTS": "Target score sheet",
+            "CALCULPOINTS": "Score calculation",
+            "CLASSEMENT": "Shooter ranking system",
+            "EQUIPEMENT": "Authorized equipment",
+            "CALIBRES": "Authorized calibers"
+        },
+        "NAME": "Name",
+        "EMAIL": "Email",
+        "MESSAGE": "Message",
+        "SEND": "Send",
+        "SENT_CONFIRMATION": "Your message has been prepared in your email client.",
+        "ERROR_REQUIRED": "This field is required.",
+        "ERROR_EMAIL": "Invalid email address."
+    }
+}

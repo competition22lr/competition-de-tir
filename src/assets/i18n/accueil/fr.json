@@ -1,0 +1,17 @@
+{
+    "ACCUEIL": {
+        "TITRE": "Bienvenue sur le site de la Compétition de tir de précision",
+        "INTRO": "Cette plateforme vous permet de consulter les résultats mensuels, les règlements de la compétition et les informations utiles pour les tireurs participants.",
+        "HORAIRE_TITRE": "Heures d'ouverture du champ de tir:",
+        "NOTE": "* Veuillez vérifier le calendrier de votre club pour connaître l'horaire exact.",
+        "CLUB_TITRE": "Organisé par le ",
+        "ADRESSE": "Adresse : ",
+        "TELEPHONE": "Téléphone : ",
+        "COURRIEL": "Courriel : ",
+        "SITE_WEB": "Site Web : ",
+        "HORAIRE_SEMAINE": "lundi au vendredi : ",
+        "HORAIRE_SAMEDI": "samedi : ",
+        "HORAIRE_DIMANCHE": "dimanche : ",
+        "HORAIRE_A": "à"
+    }
+}

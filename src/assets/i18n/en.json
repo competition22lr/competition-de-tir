@@ -5,20 +5,6 @@
         "TITRE": "Precision Shooting Competition",
         "NOM_CLUB": "Outaouais Shooting Club"
     },
-    "FOOTER": {
-        "DROITS": "© 2025 Shooting Competition - All rights reserved",
-        "MENTIONS_LEGALES": "Legal Notice",
-        "CONTACT": "Contact",
-        "APROPOS": "About",
-        "VERSION": "Version"
-    },
-    "SIDENAV": {
-        "BOUTON_LANGUE": "Afficher le site en Français",
-        "BOUTON_GAGNANTS5050": "50/50 Winners",
-        "REGLEMENT": "Regulations",
-        "ACCUEIL": "Home",
-        "SELECTIONNER_COMPETITION": "Select a competition"
-    },
     "MOIS": {
         "1": "January",
         "2": "February",
@@ -41,89 +27,23 @@
         "ARGENT": "Silver",
         "BRONZE": "Bronze"
     },
-    "ACCUEIL": {
-        "TITRE": "Welcome to the Precision Shooting Competition website",
-        "INTRO": "This platform allows you to consult monthly results, competition regulations, and useful information for participating shooters.",
-        "HORAIRE_TITRE": "Shooting Range Opening Hours:",
-        "NOTE": "* Please check the club calendar for the exact schedule.",
-        "CLUB_TITRE": "Organized by the ",
-        "ADRESSE": "Address: ",
-        "TELEPHONE": "Phone: ",
-        "COURRIEL": "Email: ",
-        "SITE_WEB": "Website: ",
-        "HORAIRE_SEMAINE": "Monday to Friday: ",
-        "HORAIRE_SAMEDI": "Saturday: ",
-        "HORAIRE_DIMANCHE": "Sunday: ",
-        "HORAIRE_A": "to"
-    },
     "CLASSEMENT_MENSUEL": {
         "CLASSEMENT": "Ranking",
-        "SYSTEME_CLASSEMENT_TIREURS": "Shooter Ranking System",
+        "SYSTEME_CLASSEMENT_TIREURS": "Shooter ranking system",
         "VERSION_IMPRIMABLE": "Printable version",
         "PRINT": "Printed"
     },
     "CLASSEMENT_ANNUEL": {
-        "TITRE": "Annual Top 10",
-        "TITRE_TOP10": "Annual Ranking - Top 10",
+        "TITRE": "Top 10 annual ranking",
+        "TITRE_TOP10": "Annual ranking - Top 10",
         "POINTAGE": "Score",
         "BONI": "Bonus",
         "TOTAL": "Total",
-        "MOIS_MEILLEUR_SCORE": "Best score obtained in"
-    },
-    "TIRAGE": {
-        "TITRE": "Monthly 50/50 Draw Winners",
-        "INTRO": "Each shooter automatically receives",
-        "INTRO.1": "1 entry",
-        "INTRO.2": "per",
-        "INTRO.3": "target sheet submitted",
-        "INTRO.4": ", ensuring a fair chance for all participants.",
-        "DETAILS_BONUS": "Additional",
-        "DETAILS_BONUS.1": "entries",
-        "DETAILS_BONUS.2": "are granted based on the",
-        "DETAILS_BONUS.3": "monthly ranking",
-        "PARTICIPATIONS": "Additional entries",
-        "DIAMANT_NOTE": "Not counted",
-        "DIAMANT_NOTE.1": "(validation in progress)",
-        "PLATINE_NOTE": "+15 entries",
-        "OR_NOTE": "+10 entries",
-        "ARGENT_NOTE": "+5 entries",
-        "BRONZE_NOTE": "+3 entries",
-        "CONCLUSION": "These bonuses reward performance while combining active participation. The ranking thus becomes a strategic lever to increase your chances of winning the monthly draw.",
-        "AUCUN_GAGNANT": "No winners for this competition.",
-        "LANCER_TIRAGE": "Show wheel of fortune"
+        "MOIS_MEILLEUR_SCORE": "Best score achieved in"
     },
     "POPUP_PARTICIPATIONS": {
-        "MESSAGE": "This shooter has participated {{count}} times in this competition.",
-        "MOIS": "Month of participation",
+        "MESSAGE": "This shooter participated {{count}} times in this competition.",
+        "MOIS": "Participation months",
         "FERMER": "Close"
-    },
-    "CONTACT": {
-        "TITLE": "Contact Form",
-        "SUBJECT": "Subject",
-        "SELECT_SUBJECT": "-- Choose a subject --",
-        "SUBJECTS": {
-            "SUGGESTION": "Suggestion for addition or improvement",
-            "REGLEMENT": "Request for clarification on a section of the regulations",
-            "LICENCE": "Request under the license displayed on GitHub",
-            "CONFIDENTIALITE": "Privacy Policy (Loi 25)"
-        },
-        "SECTION": "Regulation Section",
-        "SELECT_SECTION": "-- Choose a section --",
-        "SECTIONS": {
-            "DEROULEMENT": "Competition process",
-            "CATEGORIES": "Categories",
-            "FEUILLEPOINTS": "Target sheet",
-            "CALCULPOINTS": "Point calculation",
-            "CLASSEMENT": "Shooter ranking system",
-            "EQUIPEMENT": "Authorized equipment",
-            "CALIBRES": "Authorized calibers"
-        },
-        "NAME": "Name",
-        "EMAIL": "Email",
-        "MESSAGE": "Message",
-        "SEND": "Send",
-        "SENT_CONFIRMATION": "Your message has been prepared in your email client.",
-        "ERROR_REQUIRED": "This field is required.",
-        "ERROR_EMAIL": "Invalid email address."
     }
 }
