@@ -1,0 +1,81 @@
+<div class="page">
+
+    <h1>Créer un club</h1>
+
+    <form [formGroup]="form" (ngSubmit)="save()">
+
+        <div class="grid">
+
+            <div>
+                <label>Nom du club *</label>
+                <input type="text" formControlName="nom_club">
+            </div>
+
+            <div>
+                <label>Description</label>
+                <input type="text" formControlName="description">
+            </div>
+
+            <div>
+                <label>Adresse</label>
+                <input type="text" formControlName="adresse_ligne1">
+            </div>
+
+            <div>
+                <label>Ville</label>
+                <input type="text" formControlName="ville">
+            </div>
+
+            <div>
+                <label>Province</label>
+                <input type="text" formControlName="province">
+            </div>
+
+            <div>
+                <label>Code postal</label>
+                <input type="text" formControlName="code_postal">
+            </div>
+
+            <div>
+                <label>Pays</label>
+                <input type="text" formControlName="pays">
+            </div>
+
+            <div>
+                <label>Téléphone</label>
+                <input type="text" formControlName="telephone">
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" formControlName="email">
+            </div>
+
+            <div>
+                <label>Site web</label>
+                <input type="text" formControlName="site_web">
+            </div>
+
+            <div>
+                <label>Google Maps URL</label>
+                <input type="text" formControlName="google_maps_url">
+            </div>
+
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" formControlName="actif">
+                Actif
+            </label>
+        </div>
+
+        <div class="actions">
+            <button type="submit" [disabled]="loading">
+                {{ loading ? 'Création...' : 'Créer le club' }}
+            </button>
+        </div>
+
+    </form>
+
+</div>

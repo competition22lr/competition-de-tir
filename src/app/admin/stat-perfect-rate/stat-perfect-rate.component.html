@@ -1,0 +1,11 @@
+<div class="card">
+    <h3>% Parfait</h3>
+
+    <div *ngIf="resultats.length; else empty">
+        {{ percent }} %
+    </div>
+
+    <ng-template #empty>
+        <span>Aucune donnée</span>
+    </ng-template>
+</div>

@@ -1,0 +1,55 @@
+<div class="page">
+
+    <h1>Sélection du club</h1>
+
+    <!-- 🔍 Recherche + filtres -->
+    <div class="filters">
+        <input type="text" placeholder="🔍 Rechercher (nom ou ville)..." [(ngModel)]="search" (input)="applyFilters()">
+
+        <label class="checkbox">
+            <input type="checkbox" [(ngModel)]="showOnlyActive" (change)="applyFilters()">
+            Actifs seulement
+        </label>
+    </div>
+
+    <!-- 📊 Résumé -->
+    <div class="summary">
+        {{ filteredClubs.length }} club(s) trouvé(s)
+    </div>
+
+    <!-- ⏳ Chargement -->
+    <div *ngIf="loading" class="loading">
+        ⏳ Chargement des clubs...
+    </div>
+
+    <!-- ❌ Aucun résultat -->
+    <div *ngIf="!loading && filteredClubs.length === 0" class="empty">
+        Aucun club trouvé 😕
+    </div>
+
+    <!-- 📋 Liste -->
+    <div class="list">
+        <div class="item" *ngFor="let club of filteredClubs; trackBy: trackByClub" (click)="selectClub(club.id_club)">
+            <div class="header">
+                <strong>{{ club.nom_club }}</strong>
+
+                <span class="badge" [class.active]="club.actif" [class.inactive]="!club.actif">
+                    {{ club.actif ? 'Actif' : 'Inactif' }}
+                </span>
+            </div>
+
+            <div class="info">
+                📍 {{ club.ville }}
+                <span *ngIf="club.province">, {{ club.province }}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ➕ Actions -->
+    <div class="actions">
+        <button class="primary" (click)="createNew.emit()">
+            ➕ Créer un nouveau club
+        </button>
+    </div>
+
+</div>

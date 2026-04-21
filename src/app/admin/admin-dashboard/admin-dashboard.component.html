@@ -1,0 +1,69 @@
+<div class="dashboard">
+
+    <!-- 🔥 STEPPER -->
+    <div class="stepper">
+
+        <div class="step" [class.active]="section === 'club-select'" (click)="goToClub()">
+            1. Club
+        </div>
+
+        <div class="step" [class.disabled]="isStepDisabled('competition')" [class.active]="section === 'competition'"
+            (click)="goToCompetition()">
+            2. Compétition
+        </div>
+
+        <div class="step" [class.disabled]="isStepDisabled('session')" [class.active]="section === 'session'"
+            (click)="goToSession()">
+            3. Session
+        </div>
+
+        <div class="step" [class.disabled]="isStepDisabled('tireur')" [class.active]="section === 'tireur'"
+            (click)="goToTireur()">
+            4. Gestion des tireurs
+        </div>
+
+        <div class="step" [class.disabled]="isStepDisabled('resultat')" [class.active]="section === 'resultat'"
+            (click)="goToResultat()">
+            5. Feuille de tir
+        </div>
+
+    </div>
+
+    <!-- 🔵 CLUB -->
+    <app-club-select *ngIf="section === 'club-select'" (selected)="onClubSelected($event)"
+        (createNew)="section = 'club-create'">
+    </app-club-select>
+
+    <app-club-form *ngIf="section === 'club-create'" (created)="onClubCreated($event)">
+    </app-club-form>
+
+    <!-- 🟠 COMPETITION -->
+    <app-competition-select *ngIf="section === 'competition'" [clubId]="selectedClubId"
+        (selected)="onCompetitionSelected($event)" (createNew)="section = 'competition-create'">
+    </app-competition-select>
+
+    <app-competition-form *ngIf="section === 'competition-create'" [clubId]="selectedClubId"
+        (created)="onCompetitionCreated($event)">
+    </app-competition-form>
+
+    <!-- 🟡 SESSION -->
+    <app-session-select *ngIf="section === 'session'" [competitionId]="selectedCompetitionId"
+        (selected)="onSessionSelected($event)" (createNew)="section = 'session-create'">
+    </app-session-select>
+
+    <app-session-form *ngIf="section === 'session-create'" [competitionId]="selectedCompetitionId"
+        (created)="onSessionCreated($event)">
+    </app-session-form>
+
+    <!-- 🟣 TIREUR (NOUVEAU STEP) -->
+    <app-session-tireurs *ngIf="section === 'tireur'" [idSession]="selectedSessionId" [idClub]="selectedClubId"
+        [idCompetition]="selectedCompetitionId" (selectedMembre)="onMembreSelected($event)"
+        (createFeuille)="goToResultat()">
+    </app-session-tireurs>
+
+    <!-- 🔴 RESULTAT + CIBLES (1:1 FINAL COMPONENT) -->
+    <app-resultat-feuille-cible *ngIf="section === 'resultat'" [idSession]="selectedSessionId"
+        [idMembre]="selectedMembreId" [idClub]="selectedClubId" (saved)="onResultatSaved($event)">
+    </app-resultat-feuille-cible>
+
+</div>

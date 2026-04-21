@@ -27,5 +27,9 @@ export const routes: Routes = [
     {
         path: 'long-gong',
         loadChildren: () => import('./long-gong/long-gong.routes').then(m => m.longGongRoutes)
+    },
+    {
+        path: 'admin',
+        loadChildren: () => import('./admin/admin.routes').then(m => m.adminRoutes)
     }
 ];

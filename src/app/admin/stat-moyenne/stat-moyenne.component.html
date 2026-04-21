@@ -1,0 +1,11 @@
+<div class="card">
+    <h3>Moyenne</h3>
+
+    <div *ngIf="resultats.length; else empty">
+        {{ moyenne | number:'1.0-2' }}
+    </div>
+
+    <ng-template #empty>
+        <span>Aucune donnée</span>
+    </ng-template>
+</div>

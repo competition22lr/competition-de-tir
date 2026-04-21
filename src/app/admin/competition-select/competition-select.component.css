@@ -1,0 +1,65 @@
+.page {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filters input {
+    flex: 1;
+    padding: 8px;
+}
+
+.summary {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.badge.active {
+    background: green;
+    color: white;
+}
+
+.actions {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -5,7 +5,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Competition } from '../../models/competition.model';
-import { MeilleurScore } from '../../models/MeilleurScore';
+import { MeilleurScore } from '../../models/MeilleurScore.model';
 import { MoisResultats } from '../../models/mois-resultats.model';
 import { ResultatsService } from '../../services/resultats.service';
 import { Utilistaire } from '../../services/utilitaire';

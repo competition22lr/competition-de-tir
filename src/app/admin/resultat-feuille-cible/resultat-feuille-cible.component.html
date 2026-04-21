@@ -1,0 +1,74 @@
+<div class="page" [formGroup]="form">
+
+    <h1>Feuille de tir officielle</h1>
+
+    <!-- ===================== -->
+    <!-- HEADER (resultats) -->
+    <!-- ===================== -->
+    <div class="header">
+
+        <!-- 🔥 MEMBRE -->
+        <select formControlName="id_membre">
+            <option [ngValue]="null">-- Sélectionner un membre --</option>
+            <option *ngFor="let m of membres" [value]="m.id_membre">
+                {{ m.prenom }} {{ m.nom }} ({{ m.num_membre }})
+            </option>
+        </select>
+
+        <input type="date" formControlName="date_tir">
+        <input type="number" formControlName="numero_feuille" placeholder="Feuille">
+        <input type="text" formControlName="calibre" placeholder="Calibre">
+        <input type="text" formControlName="position_tir" placeholder="Position">
+        <input type="text" formControlName="signature_officiel" placeholder="Signature">
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- TOTAL -->
+    <!-- ===================== -->
+    <div class="totals">
+        <div>Base: <b>{{ totalBase }}</b></div>
+        <div>Bonus: <b>{{ totalBonus }}</b></div>
+        <div class="final">TOTAL: <b>{{ total }}</b></div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- CIBLES -->
+    <!-- ===================== -->
+    <div class="grid" formArrayName="cibles">
+
+        <!-- header -->
+        <div class="row header">
+            <div>#</div>
+            <div>Score</div>
+            <div>Bonus</div>
+        </div>
+
+        <!-- lignes -->
+        <div class="row" *ngFor="let c of cibles.controls; let i = index">
+
+            <div>{{ i + 1 }}</div>
+
+            <input type="number" [formControl]="getScore(i)" min="0" max="10">
+
+            <input type="number" [formControl]="getBonus(i)" min="0" max="1">
+
+        </div>
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- NOTE -->
+    <!-- ===================== -->
+    <textarea formControlName="note" placeholder="Note"></textarea>
+
+    <!-- ===================== -->
+    <!-- ACTION -->
+    <!-- ===================== -->
+    <div class="actions">
+        <button (click)="save()" [disabled]="loading || form.invalid">
+            {{ loading ? 'Sauvegarde...' : 'Enregistrer la feuille' }}
+        </button>
+    </div>
+
+</div>

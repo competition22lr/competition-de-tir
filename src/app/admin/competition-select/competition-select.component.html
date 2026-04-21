@@ -1,0 +1,48 @@
+<div class="page">
+
+    <h1>Compétitions</h1>
+
+    <div class="filters">
+        <input type="text" placeholder="🔍 Rechercher une compétition..." [(ngModel)]="search" (input)="applyFilters()">
+
+        <label>
+            <input type="checkbox" [(ngModel)]="showOnlyActive" (change)="applyFilters()">
+            Actifs seulement
+        </label>
+    </div>
+
+    <div class="summary">
+        {{ filtered.length }} compétition(s)
+    </div>
+
+    <div *ngIf="loading">Chargement...</div>
+
+    <div *ngIf="!loading && filtered.length === 0">
+        Aucune compétition trouvée
+    </div>
+
+    <div class="list">
+        <div class="item" *ngFor="let comp of filtered; trackBy: trackByComp" (click)="select(comp.id_competition)">
+
+            <div class="header">
+                <strong>{{ comp.nom }}</strong>
+
+                <span class="badge" [class.active]="comp.actif">
+                    {{ comp.actif ? 'Actif' : 'Inactif' }}
+                </span>
+            </div>
+
+            <div class="info">
+                📅 {{ comp.date_debut }} → {{ comp.date_fin }}
+            </div>
+
+        </div>
+    </div>
+
+    <div class="actions">
+        <button (click)="createNew.emit()">
+            ➕ Créer une compétition
+        </button>
+    </div>
+
+</div>

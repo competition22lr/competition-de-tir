@@ -1,0 +1,56 @@
+<div class="membre-select">
+
+    <!-- 🔍 FILTRES -->
+    <div class="filters">
+
+        <input type="text" placeholder="Rechercher (nom, prénom, # membre)" [(ngModel)]="search"
+            (input)="applyFilters()">
+
+        <label>
+            <input type="checkbox" [(ngModel)]="showActiveOnly" (change)="applyFilters()">
+            Actifs seulement
+        </label>
+
+    </div>
+
+    <!-- LISTE -->
+    <div class="list">
+
+        <div class="card" *ngFor="let m of filtered; trackBy: trackById" (click)="select(m)"
+            [class.selected]="selectedId === m.id_membre">
+
+            <!-- INFOS -->
+            <div class="content">
+
+                <!-- LIGNE 1 -->
+                <div class="top">
+
+                    <span class="name">
+                        {{ m.nom.toUpperCase() }} {{ m.prenom }}
+                    </span>
+
+                    <span class="meta">
+                        (#{{ m.num_membre }})
+                    </span>
+
+                    <span class="status" [class.active]="m.actif" [class.inactive]="!m.actif">
+                        {{ m.actif ? 'Actif' : 'Inactif' }}
+                    </span>
+
+                </div>
+
+                <!-- LIGNE 2 -->
+                <div class="bottom" *ngIf="m.courriel || m.telephone">
+
+                    <span *ngIf="m.courriel">📧 {{ m.courriel }}</span>
+                    <span *ngIf="m.telephone">📞 {{ m.telephone }}</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

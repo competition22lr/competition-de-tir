@@ -1,0 +1,63 @@
+<div class="page">
+
+    <h1>Créer une compétition</h1>
+
+    <form [formGroup]="form" (ngSubmit)="save()">
+
+        <div class="grid">
+
+            <!-- Club -->
+            <div>
+                <label>Club</label>
+                <input type="number" formControlName="id_club">
+            </div>
+
+            <!-- Type compétition -->
+            <div>
+                <label>Type compétition</label>
+                <input type="number" formControlName="id_type">
+            </div>
+
+            <!-- Nom -->
+            <div>
+                <label>Nom *</label>
+                <input type="text" formControlName="nom">
+            </div>
+
+            <!-- Description -->
+            <div>
+                <label>Description</label>
+                <input type="text" formControlName="description">
+            </div>
+
+            <!-- Dates -->
+            <div>
+                <label>Date début *</label>
+                <input type="date" formControlName="date_debut">
+            </div>
+
+            <div>
+                <label>Date fin *</label>
+                <input type="date" formControlName="date_fin">
+            </div>
+
+        </div>
+
+        <!-- Actif -->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" formControlName="actif">
+                Active
+            </label>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <button type="submit" [disabled]="loading">
+                {{ loading ? 'Création...' : 'Créer la compétition' }}
+            </button>
+        </div>
+
+    </form>
+
+</div>

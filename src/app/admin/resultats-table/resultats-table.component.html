@@ -1,0 +1,19 @@
+<table *ngIf="resultats.length; else empty">
+
+    <tr>
+        <th>Date</th>
+        <th>Feuille</th>
+        <th>Total</th>
+    </tr>
+
+    <tr *ngFor="let r of resultats">
+        <td>{{ r.date_tir }}</td>
+        <td>#{{ r.numero_feuille }}</td>
+        <td>{{ r.total }}</td>
+    </tr>
+
+</table>
+
+<ng-template #empty>
+    <p>Aucune feuille pour ce tireur</p>
+</ng-template>

@@ -1,0 +1,60 @@
+<div class="page">
+
+    <h1>Gestion des tireurs</h1>
+
+    <!-- ===================== -->
+    <!-- MEMBRE -->
+    <!-- ===================== -->
+    <div class="block">
+
+        <h2>Tireur</h2>
+
+        <app-membre-select [idClub]="idClub" [idCompetition]="idCompetition" [idSession]="idSession"
+            (selected)="onMembreSelected($event)">
+        </app-membre-select>
+
+        <button (click)="addMembre()">
+            ➕ Nouveau membre
+        </button>
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- RESULTATS -->
+    <!-- ===================== -->
+    <div class="block" *ngIf="selectedMembreId">
+
+        <h2>Feuilles de tir</h2>
+
+        <app-resultats-table [resultats]="resultats">
+        </app-resultats-table>
+
+        <button (click)="addFeuille()">
+            ➕ Nouvelle feuille
+        </button>
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- STATS -->
+    <!-- ===================== -->
+    <div class="block stats" *ngIf="selectedMembreId">
+
+        <h2>Statistiques tireur</h2>
+
+        <div class="stats-grid">
+
+            <app-stat-moyenne [resultats]="resultats">
+            </app-stat-moyenne>
+
+            <app-stat-meilleur-score [resultats]="resultats">
+            </app-stat-meilleur-score>
+
+            <app-stat-perfect-rate [resultats]="resultats">
+            </app-stat-perfect-rate>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,96 @@
+.membre-select {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 🔍 FILTERS */
+.filters {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.filters input {
+    flex: 1;
+    padding: 8px;
+}
+
+/* 🔥 GRID RESPONSIVE */
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 12px;
+}
+
+/* 🧱 CARD */
+.card {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    border-color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* 🔥 SELECTED */
+.card.selected {
+    border: 2px solid #007bff;
+    background: #eef6ff;
+}
+
+/* 📦 CONTENT */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* 🧾 TOP LINE */
+.top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* STATUS */
+.status {
+    margin-left: auto;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+.status.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* 📞 CONTACT */
+.bottom {
+    font-size: 0.85rem;
+    color: #555;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}

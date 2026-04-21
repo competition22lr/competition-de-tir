@@ -1,0 +1,30 @@
+.dashboard {
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* STEP BAR */
+.stepper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.step {
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: #eee;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.step.active {
+    background: #2c3e50;
+    color: white;
+}
+
+.step.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}

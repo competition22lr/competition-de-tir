@@ -1,0 +1,58 @@
+<div class="page">
+
+    <h1>Sélection de session</h1>
+
+    <!-- 🔍 Filters -->
+    <div class="filters">
+
+        <input type="text" placeholder="🔍 Rechercher année ou mois..." [(ngModel)]="search" (input)="applyFilters()">
+
+        <label>
+            <input type="checkbox" [(ngModel)]="showOnlyOpen" (change)="applyFilters()">
+            Sessions ouvertes seulement
+        </label>
+
+    </div>
+
+    <!-- 📊 Summary -->
+    <div class="summary">
+        {{ filtered.length }} session(s)
+    </div>
+
+    <!-- ⏳ Loading -->
+    <div *ngIf="loading">Chargement...</div>
+
+    <!-- ❌ Empty -->
+    <div *ngIf="!loading && filtered.length === 0">
+        Aucune session trouvée
+    </div>
+
+    <!-- 📋 List -->
+    <div class="list">
+
+        <div class="item" *ngFor="let s of filtered; trackBy: trackBySession" (click)="select(s.id_session)">
+
+            <div class="header">
+                <strong>{{ s.annee }} - Mois {{ s.mois }}</strong>
+
+                <span class="badge" [class.locked]="s.verrouille">
+                    {{ s.verrouille ? 'Verrouillée' : 'Ouverte' }}
+                </span>
+            </div>
+
+            <div class="info">
+                📅 {{ s.date_debut }} → {{ s.date_fin }}
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ➕ Create -->
+    <div class="actions">
+        <button (click)="createNew.emit()">
+            ➕ Créer une session
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,34 @@
+<div class="page">
+
+    <h1>Créer une session</h1>
+
+    <form [formGroup]="form" (ngSubmit)="save()">
+
+        <div class="grid">
+
+            <input type="number" formControlName="id_competition" placeholder="ID compétition">
+
+            <input type="number" formControlName="annee" placeholder="Année">
+
+            <input type="number" formControlName="mois" placeholder="Mois (1-12)">
+
+            <input type="date" formControlName="date_debut">
+
+            <input type="date" formControlName="date_fin">
+
+        </div>
+
+        <label>
+            <input type="checkbox" formControlName="verrouille">
+            Verrouiller la session
+        </label>
+
+        <div class="actions">
+            <button type="submit" [disabled]="loading">
+                {{ loading ? 'Création...' : 'Créer session' }}
+            </button>
+        </div>
+
+    </form>
+
+</div>

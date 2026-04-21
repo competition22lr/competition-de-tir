@@ -1,0 +1,11 @@
+<div class="card">
+    <h3>Meilleur score</h3>
+
+    <div *ngIf="resultats.length; else empty">
+        {{ best }}
+    </div>
+
+    <ng-template #empty>
+        <span>Aucune donnée</span>
+    </ng-template>
+</div>

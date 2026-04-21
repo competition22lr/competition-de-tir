@@ -1,0 +1,40 @@
+.page {
+    max-width: 900px;
+    margin: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid {
+    margin-top: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.row.header {
+    font-weight: bold;
+}
+
+.totals {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.final {
+    font-size: 18px;
+}
+
+.actions {
+    margin-top: 20px;
+}

@@ -1,0 +1,121 @@
+.page {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 🔍 filtres */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filters input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 📊 résumé */
+.summary {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* ⏳ loading */
+.loading {
+    text-align: center;
+    margin: 20px;
+}
+
+/* ❌ empty */
+.empty {
+    text-align: center;
+    margin: 20px;
+    color: #999;
+}
+
+/* 📋 liste */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 🧱 item */
+.item {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.item:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* info */
+.info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* badge */
+.badge {
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.badge.active {
+    background: #2ecc71;
+    color: white;
+}
+
+.badge.inactive {
+    background: #e74c3c;
+    color: white;
+}
+
+/* actions */
+.actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button.primary {
+    padding: 10px 20px;
+    border: none;
+    background: #2c3e50;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.primary:hover {
+    opacity: 0.9;
+}
