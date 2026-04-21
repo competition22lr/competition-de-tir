@@ -1,0 +1,31 @@
+{
+    "CONTACT": {
+        "TITLE": "Formulaire de contact",
+        "SUBJECT": "Sujet",
+        "SELECT_SUBJECT": "-- Choisir un sujet --",
+        "SUBJECTS": {
+            "SUGGESTION": "Suggestion d’ajout ou d’amélioration",
+            "REGLEMENT": "Demande de précision sur une section des règlements",
+            "LICENCE": "Demande en vertu de la licence affichée sur GitHub",
+            "CONFIDENTIALITE": "Politique de confidentialité (Loi 25)"
+        },
+        "SECTION": "Section du règlement",
+        "SELECT_SECTION": "-- Choisir une section --",
+        "SECTIONS": {
+            "DEROULEMENT": "Déroulement de la compétition",
+            "CATEGORIES": "Catégories",
+            "FEUILLEPOINTS": "Feuille de cible",
+            "CALCULPOINTS": "Calcul des points",
+            "CLASSEMENT": "Système de Classement des Tireurs",
+            "EQUIPEMENT": "Équipement autorisé",
+            "CALIBRES": "Calibres autorisés"
+        },
+        "NAME": "Nom",
+        "EMAIL": "Courriel",
+        "MESSAGE": "Message",
+        "SEND": "Envoyer",
+        "SENT_CONFIRMATION": "Votre message a été préparé dans votre client courriel.",
+        "ERROR_REQUIRED": "Ce champ est obligatoire.",
+        "ERROR_EMAIL": "Adresse courriel invalide."
+    }
+}
