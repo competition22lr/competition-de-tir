@@ -1,0 +1,22 @@
+<div class="form">
+
+    <h2>Nouveau membre</h2>
+
+    <input placeholder="Numéro membre" formControlName="num_membre">
+    <input placeholder="Prénom" formControlName="prenom">
+    <input placeholder="Nom" formControlName="nom">
+
+    <input placeholder="Courriel" formControlName="courriel">
+    <input placeholder="Téléphone" formControlName="telephone">
+
+    <label>
+        <input type="checkbox" formControlName="actif">
+        Actif
+    </label>
+
+    <div class="actions">
+        <button (click)="save()">💾 Enregistrer</button>
+        <button (click)="cancel.emit()">Annuler</button>
+    </div>
+
+</div>

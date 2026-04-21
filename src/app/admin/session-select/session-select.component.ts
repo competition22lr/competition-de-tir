@@ -1,7 +1,10 @@
-import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MOCK_SESSIONS } from '../../mocks/mock-sessions';
+import { AdminStateService } from '../state/admin-state.service';
+import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-session-select',
   standalone: true,
@@ -9,9 +12,7 @@ import { MOCK_SESSIONS } from '../../mocks/mock-sessions';
   templateUrl: './session-select.component.html',
   styleUrls: ['./session-select.component.css']
 })
-export class SessionSelectComponent implements OnChanges {
-
-  @Input() competitionId?: number;
+export class SessionSelectComponent implements OnInit, OnDestroy {
 
   @Output() selected = new EventEmitter<number>();
   @Output() createNew = new EventEmitter<void>();
@@ -23,11 +24,31 @@ export class SessionSelectComponent implements OnChanges {
   showOnlyOpen = true;
   loading = false;
 
-  ngOnChanges() {
-    this.load();
+  private sub?: Subscription;
+  private competitionId?: number;
+
+  constructor(private adminState: AdminStateService) { }
+
+  ngOnInit() {
+    this.sub = this.adminState.stateChanges$.subscribe(state => {
+      if (state.competitionId !== this.competitionId) {
+        this.competitionId = state.competitionId;
+        this.load();
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
   }
 
   load() {
+    if (!this.competitionId) {
+      this.sessions = [];
+      this.filtered = [];
+      return;
+    }
+
     this.loading = true;
 
     setTimeout(() => {
@@ -59,6 +80,7 @@ export class SessionSelectComponent implements OnChanges {
   }
 
   select(id: number) {
+    this.adminState.setSession(id);
     this.selected.emit(id);
   }
 

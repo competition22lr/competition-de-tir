@@ -38,32 +38,28 @@
     </app-club-form>
 
     <!-- 🟠 COMPETITION -->
-    <app-competition-select *ngIf="section === 'competition'" [clubId]="selectedClubId"
-        (selected)="onCompetitionSelected($event)" (createNew)="section = 'competition-create'">
+    <app-competition-select *ngIf="section === 'competition'" (selected)="onCompetitionSelected($event)"
+        (createNew)="section = 'competition-create'">
     </app-competition-select>
 
-    <app-competition-form *ngIf="section === 'competition-create'" [clubId]="selectedClubId"
-        (created)="onCompetitionCreated($event)">
+    <app-competition-form *ngIf="section === 'competition-create'" (created)="onCompetitionCreated($event)">
     </app-competition-form>
 
     <!-- 🟡 SESSION -->
-    <app-session-select *ngIf="section === 'session'" [competitionId]="selectedCompetitionId"
-        (selected)="onSessionSelected($event)" (createNew)="section = 'session-create'">
+    <app-session-select *ngIf="section === 'session'" (selected)="onSessionSelected($event)"
+        (createNew)="section = 'session-create'">
     </app-session-select>
 
-    <app-session-form *ngIf="section === 'session-create'" [competitionId]="selectedCompetitionId"
-        (created)="onSessionCreated($event)">
+    <app-session-form *ngIf="section === 'session-create'" (created)="onSessionCreated($event)">
     </app-session-form>
 
     <!-- 🟣 TIREUR (NOUVEAU STEP) -->
-    <app-session-tireurs *ngIf="section === 'tireur'" [idSession]="selectedSessionId" [idClub]="selectedClubId"
-        [idCompetition]="selectedCompetitionId" (selectedMembre)="onMembreSelected($event)"
+    <app-session-tireurs *ngIf="section === 'tireur'" (selectedMembre)="onMembreSelected($event)"
         (createFeuille)="goToResultat()">
     </app-session-tireurs>
 
     <!-- 🔴 RESULTAT + CIBLES (1:1 FINAL COMPONENT) -->
-    <app-resultat-feuille-cible *ngIf="section === 'resultat'" [idSession]="selectedSessionId"
-        [idMembre]="selectedMembreId" [idClub]="selectedClubId" (saved)="onResultatSaved($event)">
+    <app-resultat-feuille-cible *ngIf="section === 'resultat'" (saved)="onResultatSaved($event)">
     </app-resultat-feuille-cible>
 
 </div>

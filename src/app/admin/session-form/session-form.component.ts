@@ -1,7 +1,9 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { AdminStateService } from '../state/admin-state.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-session-form',
@@ -10,20 +12,22 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './session-form.component.html',
   styleUrls: ['./session-form.component.css']
 })
-export class SessionFormComponent {
+export class SessionFormComponent implements OnInit, OnDestroy {
 
-  @Input() competitionId?: number;
   @Output() created = new EventEmitter<number>();
 
   form: FormGroup;
   loading = false;
 
+  private sub?: Subscription;
+  private competitionId?: number;
+
   constructor(
     private fb: FormBuilder,
-    private http: HttpClient
+    private http: HttpClient,
+    private adminState: AdminStateService
   ) {
 
-    // ✅ INITIALISATION ICI (IMPORTANT)
     this.form = this.fb.group({
       id_competition: [null, Validators.required],
       annee: [2026, Validators.required],
@@ -35,13 +39,25 @@ export class SessionFormComponent {
   }
 
   ngOnInit() {
-    if (this.competitionId) {
-      this.form.patchValue({
-        id_competition: this.competitionId
-      });
+    this.sub = this.adminState.stateChanges$.subscribe(state => {
+      if (state.competitionId !== this.competitionId) {
+        this.competitionId = state.competitionId;
 
-      this.form.get('id_competition')?.disable();
-    }
+        this.form.patchValue({
+          id_competition: this.competitionId
+        });
+
+        if (this.competitionId) {
+          this.form.get('id_competition')?.disable();
+        } else {
+          this.form.get('id_competition')?.enable();
+        }
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
   }
 
   save() {
@@ -54,6 +70,7 @@ export class SessionFormComponent {
     this.http.post<any>('/api/sessions', payload).subscribe({
       next: (res) => {
         this.loading = false;
+
         this.created.emit(res.id_session);
 
         this.form.reset({
@@ -62,6 +79,10 @@ export class SessionFormComponent {
           mois: 1,
           verrouille: false
         });
+
+        if (this.competitionId) {
+          this.form.get('id_competition')?.disable();
+        }
       },
       error: () => this.loading = false
     });

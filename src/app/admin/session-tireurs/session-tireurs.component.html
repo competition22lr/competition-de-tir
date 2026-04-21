@@ -6,24 +6,26 @@
     <!-- MEMBRE -->
     <!-- ===================== -->
     <div class="block">
-
         <h2>Tireur</h2>
 
-        <app-membre-select [idClub]="idClub" [idCompetition]="idCompetition" [idSession]="idSession"
-            (selected)="onMembreSelected($event)">
+        <!-- MEMBRE SELECT -->
+        <app-membre-select *ngIf="!showCreateMembre" (selected)="onMembreSelected($event)">
         </app-membre-select>
 
-        <button (click)="addMembre()">
+        <!-- MEMBRE CREATE -->
+        <app-membre-form *ngIf="showCreateMembre" (created)="onMembreCreated($event)" (cancel)="onCancelCreate()">
+        </app-membre-form>
+
+        <!-- ACTION -->
+        <button *ngIf="!showCreateMembre" (click)="addMembre()">
             ➕ Nouveau membre
         </button>
-
     </div>
 
     <!-- ===================== -->
     <!-- RESULTATS -->
     <!-- ===================== -->
-    <div class="block" *ngIf="selectedMembreId">
-
+    <div class="block" *ngIf="membreId">
         <h2>Feuilles de tir</h2>
 
         <app-resultats-table [resultats]="resultats">
@@ -32,29 +34,21 @@
         <button (click)="addFeuille()">
             ➕ Nouvelle feuille
         </button>
-
     </div>
 
     <!-- ===================== -->
     <!-- STATS -->
     <!-- ===================== -->
-    <div class="block stats" *ngIf="selectedMembreId">
-
+    <div class="block stats" *ngIf="membreId">
         <h2>Statistiques tireur</h2>
 
         <div class="stats-grid">
+            <app-stat-moyenne [resultats]="resultats"></app-stat-moyenne>
 
-            <app-stat-moyenne [resultats]="resultats">
-            </app-stat-moyenne>
+            <app-stat-meilleur-score [resultats]="resultats"></app-stat-meilleur-score>
 
-            <app-stat-meilleur-score [resultats]="resultats">
-            </app-stat-meilleur-score>
-
-            <app-stat-perfect-rate [resultats]="resultats">
-            </app-stat-perfect-rate>
-
+            <app-stat-perfect-rate [resultats]="resultats"></app-stat-perfect-rate>
         </div>
-
     </div>
 
 </div>

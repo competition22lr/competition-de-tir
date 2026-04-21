@@ -1,8 +1,10 @@
-import { Component, EventEmitter, Input, Output, OnInit, SimpleChanges, OnChanges, input } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MOCK_MEMBRES } from '../../mocks/mock-membres';
 import { Membre } from '../../models/membre.model';
+import { AdminStateService } from '../state/admin-state.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-membre-select',
@@ -11,11 +13,8 @@ import { Membre } from '../../models/membre.model';
   templateUrl: './membre-select.component.html',
   styleUrls: ['./membre-select.component.css']
 })
-export class MembreSelectComponent implements OnInit, OnChanges {
+export class MembreSelectComponent implements OnInit, OnDestroy {
 
-  @Input() idClub?: number;
-  @Input() idCompetition?: number;
-  @Input() idSession?: number;
   @Output() selected = new EventEmitter<number>();
 
   membres: Membre[] = [];
@@ -25,39 +24,44 @@ export class MembreSelectComponent implements OnInit, OnChanges {
   showActiveOnly = true;
   selectedId: number | null = null;
 
+  private sub?: Subscription;
+
+  private clubId?: number;
+
+  constructor(private adminState: AdminStateService) { }
+
   ngOnInit(): void {
-    this.load();
+    this.sub = this.adminState.stateChanges$.subscribe(state => {
+      if (state.clubId !== this.clubId) {
+        this.clubId = state.clubId;
+        this.load();
+      }
+    });
   }
 
-  // 🔥 IMPORTANT: reload si club change
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['idClub']) {
-      this.load();
-    }
+  ngOnDestroy(): void {
+    this.sub?.unsubscribe();
   }
 
-  // 🔥 LOAD + FILTER CLUB
+  // =========================
+  // LOAD
+  // =========================
   load(): void {
-
-    console.log('🔥 idClub reçu:', this.idClub, typeof this.idClub);
 
     let list = [...MOCK_MEMBRES];
 
-    // 🔥 FIX HARD: cast en number
-    if (this.idClub !== undefined && this.idClub !== null) {
-
-      const clubId = Number(this.idClub);
-
-      list = list.filter(m => m.id_club === clubId);
+    if (this.clubId !== undefined && this.clubId !== null) {
+      const id = Number(this.clubId);
+      list = list.filter(m => m.id_club === id);
     }
-
-    console.log('🔥 membres filtrés:', list);
 
     this.membres = list;
     this.applyFilters();
   }
 
-  // 🔍 FILTER + SEARCH
+  // =========================
+  // FILTER
+  // =========================
   applyFilters(): void {
 
     let list = this.membres;
@@ -81,14 +85,18 @@ export class MembreSelectComponent implements OnInit, OnChanges {
     );
   }
 
-  // 🎯 SELECT
-  select(m: any): void {
+  // =========================
+  // SELECT
+  // =========================
+  select(m: Membre): void {
     this.selectedId = m.id_membre;
-    this.selected.emit(m.id_membre);
 
+    this.adminState.setMembre(m.id_membre); // 🔥 STATE CENTRAL
+
+    this.selected.emit(m.id_membre); // optionnel compat
   }
 
-  trackById(index: number, item: any): number {
+  trackById(index: number, item: Membre): number {
     return item.id_membre;
   }
 }

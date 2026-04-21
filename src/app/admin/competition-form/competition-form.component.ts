@@ -1,7 +1,9 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { AdminStateService } from '../state/admin-state.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-competition-form',
@@ -10,17 +12,20 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './competition-form.component.html',
   styleUrls: ['./competition-form.component.css']
 })
-export class CompetitionFormComponent implements OnInit {
+export class CompetitionFormComponent implements OnInit, OnDestroy {
 
-  @Input() clubId?: number;
   @Output() created = new EventEmitter<number>();
 
   form: FormGroup;
   loading = false;
 
+  private sub?: Subscription;
+  private clubId?: number;
+
   constructor(
     private fb: FormBuilder,
-    private http: HttpClient
+    private http: HttpClient,
+    private adminState: AdminStateService
   ) {
 
     this.form = this.fb.group({
@@ -38,13 +43,25 @@ export class CompetitionFormComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.clubId) {
-      this.form.patchValue({
-        id_club: this.clubId
-      });
+    this.sub = this.adminState.stateChanges$.subscribe(state => {
+      if (state.clubId !== this.clubId) {
+        this.clubId = state.clubId;
 
-      this.form.get('id_club')?.disable();
-    }
+        this.form.patchValue({
+          id_club: this.clubId
+        });
+
+        if (this.clubId) {
+          this.form.get('id_club')?.disable();
+        } else {
+          this.form.get('id_club')?.enable();
+        }
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
   }
 
   save() {
@@ -63,10 +80,15 @@ export class CompetitionFormComponent implements OnInit {
 
         this.created.emit(res.id_competition);
 
+        // reset propre mais en gardant le club courant
         this.form.reset({
           id_club: this.clubId,
           actif: true
         });
+
+        if (this.clubId) {
+          this.form.get('id_club')?.disable();
+        }
       },
       error: (err) => {
         this.loading = false;

@@ -10,6 +10,8 @@ import { SessionFormComponent } from '../session-form/session-form.component';
 import { ResultatFeuilleCibleComponent } from '../resultat-feuille-cible/resultat-feuille-cible.component';
 import { SessionTireursComponent } from '../session-tireurs/session-tireurs.component';
 
+import { AdminStateService } from '../state/admin-state.service';
+
 type Section =
   | 'club-select'
   | 'club-create'
@@ -41,70 +43,41 @@ export class AdminDashboardComponent {
 
   section: Section = 'club-select';
 
-  selectedClubId?: number;
-  selectedCompetitionId?: number;
-  selectedSessionId?: number;
-  selectedMembreId?: number;
-
-  // =========================
-  // RESET PRO
-  // =========================
-  private reset(level: 'club' | 'competition' | 'session') {
-
-    if (level === 'club') {
-      this.selectedCompetitionId = undefined;
-      this.selectedSessionId = undefined;
-      this.selectedMembreId = undefined;
-    }
-
-    if (level === 'competition') {
-      this.selectedSessionId = undefined;
-      this.selectedMembreId = undefined;
-    }
-
-    if (level === 'session') {
-      this.selectedMembreId = undefined;
-    }
-  }
+  constructor(public state: AdminStateService) { }
 
   // =========================
   // CLUB
   // =========================
   onClubSelected(id: number) {
-    this.selectedClubId = id;
-    this.reset('club');
+    console.log('selected club', id);
+    this.state.setClub(id);
     this.section = 'competition';
   }
 
   onClubCreated(id: number) {
-    this.selectedClubId = id;
-    this.reset('club');
+    this.state.setClub(id);
     this.section = 'competition';
   }
 
   goToClub() {
     this.section = 'club-select';
-    this.selectedClubId = undefined;
-    this.reset('club');
   }
 
   // =========================
   // COMPETITION
   // =========================
   onCompetitionSelected(id: number) {
-    this.selectedCompetitionId = id;
-    this.reset('competition');
+    this.state.setCompetition(id);
     this.section = 'session';
   }
 
   onCompetitionCreated(id: number) {
-    this.selectedCompetitionId = id;
-    this.reset('competition');
+    this.state.setCompetition(id);
     this.section = 'session';
   }
 
   goToCompetition() {
-    if (!this.selectedClubId) return;
+    if (!this.state.snapshot.clubId) return;
     this.section = 'competition';
   }
 
@@ -112,19 +85,17 @@ export class AdminDashboardComponent {
   // SESSION
   // =========================
   onSessionSelected(id: number) {
-    this.selectedSessionId = id;
-    this.reset('session');
-    this.section = 'tireur'; // 🔥 IMPORTANT
+    this.state.setSession(id);
+    this.section = 'tireur';
   }
 
   onSessionCreated(id: number) {
-    this.selectedSessionId = id;
-    this.reset('session');
+    this.state.setSession(id);
     this.section = 'tireur';
   }
 
   goToSession() {
-    if (!this.selectedCompetitionId) return;
+    if (!this.state.snapshot.competitionId) return;
     this.section = 'session';
   }
 
@@ -132,24 +103,24 @@ export class AdminDashboardComponent {
   // TIREUR
   // =========================
   onMembreSelected(id: number) {
-    this.selectedMembreId = id;
+    this.state.setMembre(id);
   }
 
   goToTireur() {
-    if (!this.selectedSessionId) return;
+    if (!this.state.snapshot.sessionId) return;
     this.section = 'tireur';
   }
 
   // =========================
   // RESULTAT
   // =========================
-  onResultatSaved(id: number) {
-    // optionnel: toast / refresh
+  goToResultat() {
+    if (!this.state.snapshot.membreId) return;
+    this.section = 'resultat';
   }
 
-  goToResultat() {
-    if (!this.selectedMembreId) return;
-    this.section = 'resultat';
+  onResultatSaved(id: number) {
+    // hook futur
   }
 
   // =========================
@@ -157,11 +128,14 @@ export class AdminDashboardComponent {
   // =========================
   isStepDisabled(step: Section): boolean {
 
-    if (step === 'competition') return !this.selectedClubId;
-    if (step === 'session') return !this.selectedCompetitionId;
-    if (step === 'tireur') return !this.selectedSessionId;
-    if (step === 'resultat') return !this.selectedMembreId;
+    const s = this.state.snapshot;
 
-    return false;
+    switch (step) {
+      case 'competition': return !s.clubId;
+      case 'session': return !s.competitionId;
+      case 'tireur': return !s.sessionId;
+      case 'resultat': return !s.membreId;
+      default: return false;
+    }
   }
 }

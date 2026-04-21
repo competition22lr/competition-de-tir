@@ -41,17 +41,6 @@ export class ClubSelectComponent implements OnInit {
       this.applyFilters();
       this.loading = false;
     }, 800);
-
-    // this.http.get<any[]>('/api/clubs').subscribe({
-    //   next: (res) => {
-    //     this.clubs = res;
-    //     this.applyFilters();
-    //     this.loading = false;
-    //   },
-    //   error: () => {
-    //     this.loading = false;
-    //   }
-    // });
   }
 
   applyFilters() {

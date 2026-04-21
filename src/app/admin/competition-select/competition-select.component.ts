@@ -1,7 +1,9 @@
-import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MOCK_COMPETITIONS } from '../../mocks/mock-competitions';
+import { AdminStateService } from '../state/admin-state.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-competition-select',
@@ -10,9 +12,7 @@ import { MOCK_COMPETITIONS } from '../../mocks/mock-competitions';
   templateUrl: './competition-select.component.html',
   styleUrls: ['./competition-select.component.css']
 })
-export class CompetitionSelectComponent implements OnChanges {
-
-  @Input() clubId?: number;
+export class CompetitionSelectComponent implements OnInit, OnDestroy {
 
   @Output() selected = new EventEmitter<number>();
   @Output() createNew = new EventEmitter<void>();
@@ -24,14 +24,40 @@ export class CompetitionSelectComponent implements OnChanges {
   showOnlyActive = true;
   loading = false;
 
-  ngOnChanges() {
-    this.load();
+  private sub?: Subscription;
+  private clubId?: number;
+
+  constructor(private adminState: AdminStateService) { }
+
+  ngOnInit() {
+    this.adminState.stateChanges$.subscribe(state => {
+
+      if (!state.clubId) {
+        this.competitions = [];
+        this.filtered = [];
+        return;
+      }
+
+      if (state.clubId !== this.clubId) {
+        this.clubId = state.clubId;
+        this.load();
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
   }
 
   load() {
+    if (!this.clubId) {
+      this.competitions = [];
+      this.filtered = [];
+      return;
+    }
+
     this.loading = true;
 
-    // 🔥 MOCK API FILTER BY CLUB
     setTimeout(() => {
       this.competitions = MOCK_COMPETITIONS.filter(
         c => c.id_club === this.clubId
@@ -60,7 +86,12 @@ export class CompetitionSelectComponent implements OnChanges {
   }
 
   select(id: number) {
+    this.adminState.setCompetition(id);
     this.selected.emit(id);
+  }
+
+  create() {
+    this.createNew.emit();
   }
 
   trackByComp(index: number, item: any) {
